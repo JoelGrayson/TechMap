@@ -1,0 +1,18 @@
+{
+  "name": "processing-csv",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Joel Grayson <joel@joelgrayson.com> (https://github.com/JoelGrayson)",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "dotenv": "^16.5.0",
+    "node-geocoder": "^4.4.1",
+    "papaparse": "^5.5.3"
+  }
+}
