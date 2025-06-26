@@ -10,8 +10,35 @@ import SwiftUI
 //TODO: option to change from Bay Area to NYC
 
 struct SettingsTabView: View {
+    @Environment(\.colorScheme) var colorScheme
+    @State private var authVM = AuthVM()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if let errorMessage = authVM.errorMessage {
+            Text("Auth error \(errorMessage)")
+        }
+        if let email = authVM.email, let name = authVM.name, let photoURL = authVM.photoURL {
+            HStack {
+                Text("Signed in as \(name) <\(email)>")
+            }
+            Text("Signed in with \(email)")
+        }
+        Button {
+            Task {
+                await authVM.signInWithGoogle()
+            }
+        } label: {
+            HStack {
+                Image("google")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 30, alignment: .center)
+                Text("Sign in with Google")
+                    .foregroundStyle(colorScheme == .dark ? .white : .black)
+            }
+            .frame(maxWidth: .infinity)
+        }
+        .buttonStyle(.bordered)
     }
 }
 
