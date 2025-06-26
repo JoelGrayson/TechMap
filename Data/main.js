@@ -20,39 +20,20 @@ const geocoder=NodeGeocoder({
             data[i].lat=lat;
             data[i].lng=lng;
         }
-        const logoUrl=data[i].logo+'?token='+process.env.LOGO_SECRET_TOKEN;
-        const imageName=data[i].logo.split('/').at(-1);
+        const imageName=data[i].logo.split('/').at(-1)+'.jpg';
         data[i].imageName=imageName;
-        // axios.get(logoUrl, {
-        //     responseType: 'stream'
-        // })
-        //     .then(res=>{
-        //         res.data.pipe(fs.createWriteStream('images/'+imageName));
-        //     });
+        const logoUrl=data[i].logo+'?token='+process.env.LOGO_PUBLIC_TOKEN;
+        axios.get(logoUrl, {
+            responseType: 'stream'
+        })
+            .then(res=>{
+                res.data.pipe(fs.createWriteStream('images/'+imageName));
+            });
+        data[i].logo=undefined;
     }
     const outputString=JSON.stringify(data, null, 4);
     await fsPromises.writeFile('output.json', outputString);
     // console.log(outputString);
     console.log('Done writing', data.length, 'companies to output.json. Downloading logo images to images folder.');
 })();
-
-
-// logo=logo.replace('YOUR-LOGODEV-TOKEN', process.env.LOGO_DEV_TOKEN);
-
-// const res=await geocoder.geocode(address);
-
-// if (res?.[0]?.latitude) {
-// output.push({
-//     name,
-//     address,
-//     lat: res.latitude,
-//     lng: res.longitude,
-//     logo
-// });
-// } else {
-// console.log('There is no geocoding for the address', address, 'from item', result.data);
-// }
-
-//         console.log('Done. Wrote', output.length, 'companies to output.json');
-//         fs.writeFile('./output.json', JSON.stringify(output));
 

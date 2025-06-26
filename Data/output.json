@@ -2,745 +2,652 @@
     {
         "name": "Apple",
         "address": "Apple Park, 1 Apple Park Way, Cupertino, CA 95014",
-        "logo": "https://img.logo.dev/apple.com",
         "lat": 37.3287379,
         "lng": -122.0078912,
-        "imageName": "apple.com"
+        "imageName": "apple.com.jpg"
     },
     {
         "name": "Google (Alphabet)",
         "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
-        "logo": "https://img.logo.dev/google.com",
         "lat": 37.4220093,
         "lng": -122.0847515,
-        "imageName": "google.com"
+        "imageName": "google.com.jpg"
     },
     {
         "name": "Meta (Facebook)",
         "address": "1601 Willow Road Menlo Park, CA 94025",
-        "logo": "https://img.logo.dev/meta.com",
         "lat": 37.482503,
         "lng": -122.1479457,
-        "imageName": "meta.com"
+        "imageName": "meta.com.jpg"
     },
     {
         "name": "Netflix",
         "address": "121 Albright Way, Los Gatos, CA 95032",
-        "logo": "https://img.logo.dev/netflix.com",
         "lat": 37.2570306,
         "lng": -121.9639833,
-        "imageName": "netflix.com"
+        "imageName": "netflix.com.jpg"
     },
     {
         "name": "Intel",
         "address": "2200 Mission College Blvd, Santa Clara, CA 95054",
-        "logo": "https://img.logo.dev/intel.com",
         "lat": 37.3880625,
         "lng": -121.9655205,
-        "imageName": "intel.com"
+        "imageName": "intel.com.jpg"
     },
     {
         "name": "Nvidia",
         "address": "2788 San Tomas Expressway, Santa Clara, CA 95051",
-        "logo": "https://img.logo.dev/nvidia.com",
         "lat": 37.37187,
         "lng": -121.9659302,
-        "imageName": "nvidia.com"
+        "imageName": "nvidia.com.jpg"
     },
     {
         "name": "HP (Hewlett-Packard)",
         "address": "1501 Page Mill Road, Palo Alto, CA 94304",
-        "logo": "https://img.logo.dev/hp.com",
         "lat": 37.4118261,
         "lng": -122.1481305,
-        "imageName": "hp.com"
+        "imageName": "hp.com.jpg"
     },
     {
         "name": "Cisco Systems",
         "address": "170 West Tasman Drive, San Jose, CA 95134",
-        "logo": "https://img.logo.dev/cisco.com",
         "lat": 37.4083615,
         "lng": -121.9541545,
-        "imageName": "cisco.com"
+        "imageName": "cisco.com.jpg"
     },
     {
         "name": "Adobe",
         "address": "345 Park Avenue, San Jose, CA 95110",
-        "logo": "https://img.logo.dev/adobe.com",
         "lat": 37.3308453,
         "lng": -121.8942626,
-        "imageName": "adobe.com"
+        "imageName": "adobe.com.jpg"
     },
     {
         "name": "eBay",
         "address": "2025 Hamilton Avenue, San Jose, CA 95125",
-        "logo": "https://img.logo.dev/ebay.com",
         "lat": 37.2952019,
         "lng": -121.9267507,
-        "imageName": "ebay.com"
+        "imageName": "ebay.com.jpg"
     },
     {
         "name": "PayPal",
         "address": "2211 N 1st St, San Jose, CA 95131-2021",
-        "logo": "https://img.logo.dev/paypal.com",
         "lat": 37.3768642,
         "lng": -121.9229464,
-        "imageName": "paypal.com"
+        "imageName": "paypal.com.jpg"
     },
     {
         "name": "Tesla Engineering HQ",
         "address": "1501 Page Mill Road Palo Alto, CA 94304",
-        "logo": "https://img.logo.dev/tesla.com",
         "lat": 37.4118261,
         "lng": -122.1481305,
-        "imageName": "tesla.com"
+        "imageName": "tesla.com.jpg"
     },
     {
         "name": "LinkedIn HQ",
         "address": "1000 W Maude Ave, Sunnyvale, CA 94085",
-        "logo": "https://img.logo.dev/linkedin.com",
         "lat": 37.3923878,
         "lng": -122.0421758,
-        "imageName": "linkedin.com"
+        "imageName": "linkedin.com.jpg"
     },
     {
         "name": "LinkedIn Office",
         "address": "222 Second Street, San Francisco, CA 94105",
-        "logo": "https://img.logo.dev/linkedin.com",
         "lat": 37.7864752,
         "lng": -122.3981167,
-        "imageName": "linkedin.com"
+        "imageName": "linkedin.com.jpg"
     },
     {
         "name": "Yahoo",
         "address": "701 1st Ave, Sunnyvale, CA 94089",
-        "logo": "https://img.logo.dev/yahoo.com",
         "lat": 37.4187924,
         "lng": -122.0257514,
-        "imageName": "yahoo.com"
+        "imageName": "yahoo.com.jpg"
     },
     {
         "name": "Oracle",
         "address": "Oracle Building 300, 300 Oracle Pkwy, Redwood City, CA 94065",
-        "logo": "https://img.logo.dev/oracle.com",
         "lat": 37.53059750000001,
         "lng": -122.264388,
-        "imageName": "oracle.com"
+        "imageName": "oracle.com.jpg"
     },
     {
         "name": "Western Digital",
         "address": "5601 Great Oaks Parkway, San Jose, CA 95119",
-        "logo": "https://img.logo.dev/westerndigital.com",
         "lat": 37.2456193,
         "lng": -121.7937037,
-        "imageName": "westerndigital.com"
+        "imageName": "westerndigital.com.jpg"
     },
     {
         "name": "AMD (Advanced Micro Devices)",
         "address": "2485 Augustine Drive, Santa Clara, CA 95054",
-        "logo": "https://img.logo.dev/amd.com",
         "lat": 37.3829254,
         "lng": -121.9703842,
-        "imageName": "amd.com"
+        "imageName": "amd.com.jpg"
     },
     {
         "name": "Salesforce",
         "address": "Salesforce Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105",
-        "logo": "https://img.logo.dev/salesforce.com",
         "lat": 37.7897969,
         "lng": -122.3972342,
-        "imageName": "salesforce.com"
+        "imageName": "salesforce.com.jpg"
     },
     {
         "name": "Zoom Video Communications",
         "address": "55 Almaden Boulevard, 6th Floor, San Jose, CA 95113",
-        "logo": "https://img.logo.dev/zoom.us",
         "lat": 37.3329888,
         "lng": -121.8951264,
-        "imageName": "zoom.us"
+        "imageName": "zoom.us.jpg"
     },
     {
         "name": "YouTube (Google)",
         "address": "901 Cherry Avenue, San Bruno, CA 94066",
-        "logo": "https://img.logo.dev/youtube.com",
         "lat": 37.6282436,
         "lng": -122.4263355,
-        "imageName": "youtube.com"
+        "imageName": "youtube.com.jpg"
     },
     {
         "name": "WhatsApp (Meta)",
         "address": "1601 Willow Rd, Menlo Park, CA 94025",
-        "logo": "https://img.logo.dev/whatsapp.com",
         "lat": 37.482503,
         "lng": -122.1479457,
-        "imageName": "whatsapp.com"
+        "imageName": "whatsapp.com.jpg"
     },
     {
         "name": "Instagram (Meta)",
         "address": "200 Jefferson Dr, Menlo Park, CA 94025",
-        "logo": "https://img.logo.dev/instagram.com",
         "lat": 37.4799547,
         "lng": -122.1690575,
-        "imageName": "instagram.com"
+        "imageName": "instagram.com.jpg"
     },
     {
         "name": "Fitbit (Google)",
         "address": "199 Fremont Street 14th Floor, San Francisco, CA 94105",
-        "logo": "https://img.logo.dev/fitbit.com",
         "lat": 37.789873,
         "lng": -122.394781,
-        "imageName": "fitbit.com"
+        "imageName": "fitbit.com.jpg"
     },
     {
         "name": "Nest (Google)",
         "address": "3400 Hillview Avenue Palo Alto, CA 94304",
-        "logo": "https://img.logo.dev/nest.com",
         "lat": 37.4036507,
         "lng": -122.1476521,
-        "imageName": "nest.com"
+        "imageName": "nest.com.jpg"
     },
     {
         "name": "DoorDash",
         "address": "303 2nd Street Suite 800 San Francisco, CA 94107",
-        "logo": "https://img.logo.dev/doordash.com",
         "lat": 37.7853512,
         "lng": -122.395477,
-        "imageName": "doordash.com"
+        "imageName": "doordash.com.jpg"
     },
     {
         "name": "Uber",
         "address": "1725 Third Street San Francisco, CA 94158 United States",
-        "logo": "https://img.logo.dev/uber.com",
         "lat": 37.7673722,
         "lng": -122.3887739,
-        "imageName": "uber.com"
+        "imageName": "uber.com.jpg"
     },
     {
         "name": "Lyft",
         "address": "185 Berry St Suite 400, San Francisco, CA 94107",
-        "logo": "https://img.logo.dev/lyft.com",
         "lat": 37.7765663,
         "lng": -122.3920774,
-        "imageName": "lyft.com"
+        "imageName": "lyft.com.jpg"
     },
     {
         "name": "Pinterest",
         "address": "651 Brannan Street San Francisco, CA 94107 United States",
-        "logo": "https://img.logo.dev/pinterest.com",
         "lat": 37.7754369,
         "lng": -122.3996287,
-        "imageName": "pinterest.com"
+        "imageName": "pinterest.com.jpg"
     },
     {
         "name": "Dropbox",
         "address": "1800 Owens St, San Francisco, CA 94158",
-        "logo": "https://img.logo.dev/dropbox.com",
         "lat": 37.76511170000001,
         "lng": -122.39269,
-        "imageName": "dropbox.com"
+        "imageName": "dropbox.com.jpg"
     },
     {
         "name": "Slack",
         "address": "500 Howard St, San Francisco, CA 94105",
-        "logo": "https://img.logo.dev/slack.com",
         "lat": 37.7883503,
         "lng": -122.3963764,
-        "imageName": "slack.com"
+        "imageName": "slack.com.jpg"
     },
     {
         "name": "Reddit",
         "address": "548 Market Street Suite 16093 San Francisco, CA 94104",
-        "logo": "https://img.logo.dev/reddit.com",
         "lat": 37.7908517,
         "lng": -122.4006138,
-        "imageName": "reddit.com"
+        "imageName": "reddit.com.jpg"
     },
     {
         "name": "Square (Block)",
         "address": "1455 Market St #600, San Francisco, CA 94103",
-        "logo": "https://img.logo.dev/squareup.com",
         "lat": 37.7754538,
         "lng": -122.4177334,
-        "imageName": "squareup.com"
+        "imageName": "squareup.com.jpg"
     },
     {
         "name": "Stripe",
         "address": "354 Oyster Point Blvd, South San Francisco, CA 94080",
-        "logo": "https://img.logo.dev/stripe.com",
         "lat": 37.6622895,
         "lng": -122.383587,
-        "imageName": "stripe.com"
+        "imageName": "stripe.com.jpg"
     },
     {
         "name": "Robinhood",
         "address": "85 Willow Rd, Menlo Park, CA 94025",
-        "logo": "https://img.logo.dev/robinhood.com",
         "lat": 37.4545281,
         "lng": -122.1650922,
-        "imageName": "robinhood.com"
+        "imageName": "robinhood.com.jpg"
     },
     {
         "name": "ZoomInfo",
         "address": "805 Broadway St #900, Vancouver, WA 98660",
-        "logo": "https://img.logo.dev/zoominfo.com",
         "lat": 45.6277198,
         "lng": -122.6697387,
-        "imageName": "zoominfo.com"
+        "imageName": "zoominfo.com.jpg"
     },
     {
         "name": "Roku",
         "address": "1155 Coleman Ave, San Jose, CA 95110",
-        "logo": "https://img.logo.dev/roku.com",
         "lat": 37.3529581,
         "lng": -121.9260145,
-        "imageName": "roku.com"
+        "imageName": "roku.com.jpg"
     },
     {
         "name": "DocuSign",
         "address": "221 Main St Suite 1550, San Francisco, CA 94105",
-        "logo": "https://img.logo.dev/docusign.com",
         "lat": 37.790344,
         "lng": -122.392177,
-        "imageName": "docusign.com"
+        "imageName": "docusign.com.jpg"
     },
     {
         "name": "Atlassian",
         "address": "350 Bush St, Floor 13, San Francisco, CA 94104",
-        "logo": "https://img.logo.dev/atlassian.com",
         "lat": 37.7910081,
         "lng": -122.4033221,
-        "imageName": "atlassian.com"
+        "imageName": "atlassian.com.jpg"
     },
     {
         "name": "GitHub",
         "address": "88 Colin P Kelly Jr St, San Francisco, CA 94107",
-        "logo": "https://img.logo.dev/github.com",
         "lat": 37.7822647,
         "lng": -122.39117,
-        "imageName": "github.com"
+        "imageName": "github.com.jpg"
     },
     {
         "name": "Box",
         "address": "900 Jefferson Ave, Redwood City, CA 94063",
-        "logo": "https://img.logo.dev/box.com",
         "lat": 37.48487,
         "lng": -122.229315,
-        "imageName": "box.com"
+        "imageName": "box.com.jpg"
     },
     {
         "name": "Evernote",
         "address": "305 Walnut St, Redwood City, CA 94063",
-        "logo": "https://img.logo.dev/evernote.com",
         "lat": 37.4920771,
         "lng": -122.2224462,
-        "imageName": "evernote.com"
+        "imageName": "evernote.com.jpg"
     },
     {
         "name": "Symantec",
         "address": "60 E Rio Salado Pkwy #1000, Tempe, AZ 85281",
-        "logo": "https://img.logo.dev/symantec.com",
         "lat": 33.4314106,
         "lng": -111.9397918,
-        "imageName": "symantec.com"
+        "imageName": "symantec.com.jpg"
     },
     {
         "name": "Fortinet",
         "address": "899 Kifer Rd, Sunnyvale, CA 94086",
-        "logo": "https://img.logo.dev/fortinet.com",
         "lat": 37.3756011,
         "lng": -122.0112969,
-        "imageName": "fortinet.com"
+        "imageName": "fortinet.com.jpg"
     },
     {
         "name": "Juniper Networks",
         "address": "1133 Innovation Way, Sunnyvale, CA 94089",
-        "logo": "https://img.logo.dev/juniper.net",
         "lat": 37.4075369,
         "lng": -122.0293769,
-        "imageName": "juniper.net"
+        "imageName": "juniper.net.jpg"
     },
     {
         "name": "Arista Networks",
         "address": "5453 Great America Pkwy, Santa Clara, CA 95054",
-        "logo": "https://img.logo.dev/arista.com",
         "lat": 37.4119567,
         "lng": -121.9761527,
-        "imageName": "arista.com"
+        "imageName": "arista.com.jpg"
     },
     {
         "name": "Seagate Technology",
         "address": "47488 Kato Rd, Fremont, CA 94538",
-        "logo": "https://img.logo.dev/seagate.com",
         "lat": 37.4769034,
         "lng": -121.9306374,
-        "imageName": "seagate.com"
+        "imageName": "seagate.com.jpg"
     },
     {
         "name": "Logitech",
         "address": "7700 Gateway Blvd, Newark, CA 94560",
-        "logo": "https://img.logo.dev/logitech.com",
         "lat": 37.5391586,
         "lng": -122.0616318,
-        "imageName": "logitech.com"
+        "imageName": "logitech.com.jpg"
     },
     {
         "name": "GoPro",
         "address": "3025 Clearview Way, San Mateo, CA 94402",
-        "logo": "https://img.logo.dev/gopro.com",
         "lat": 37.5344622,
         "lng": -122.330383,
-        "imageName": "gopro.com"
+        "imageName": "gopro.com.jpg"
     },
     {
         "name": "Electronic Arts (EA)",
         "address": "209 Redwood Shores Pkwy, Redwood City, CA 94065",
-        "logo": "https://img.logo.dev/ea.com",
         "lat": 37.5228593,
         "lng": -122.2536905,
-        "imageName": "ea.com"
+        "imageName": "ea.com.jpg"
     },
     {
         "name": "Zynga",
         "address": "699 8th St, San Francisco, CA 94103",
-        "logo": "https://img.logo.dev/zynga.com",
         "lat": 37.7704556,
         "lng": -122.4041025,
-        "imageName": "zynga.com"
+        "imageName": "zynga.com.jpg"
     },
     {
         "name": "Super Micro Computer",
         "address": "980 Rock Ave, San Jose, CA 95131",
-        "logo": "https://img.logo.dev/supermicro.com",
         "lat": 37.3892159,
         "lng": -121.9049216,
-        "imageName": "supermicro.com"
+        "imageName": "supermicro.com.jpg"
     },
     {
         "name": "Intuit (TurboTax, QuickBooks)",
         "address": "2700 Coast Ave, Mountain View, CA 94043",
-        "logo": "https://img.logo.dev/intuit.com",
         "lat": 37.4306346,
         "lng": -122.0960826,
-        "imageName": "intuit.com"
+        "imageName": "intuit.com.jpg"
     },
     {
         "name": "Palantir Technologies",
         "address": "1200 17th St, Floor 15, Denver, CO 80202",
-        "logo": "https://img.logo.dev/palantir.com",
         "lat": 39.7495021,
         "lng": -104.9962985,
-        "imageName": "palantir.com"
+        "imageName": "palantir.com.jpg"
     },
     {
         "name": "Genentech",
         "address": "1 DNA Way, South San Francisco, CA 94080",
-        "logo": "https://img.logo.dev/gene.com",
         "lat": 37.6566481,
         "lng": -122.378031,
-        "imageName": "gene.com"
+        "imageName": "gene.com.jpg"
     },
     {
         "name": "Gilead Sciences",
         "address": "333 Lakeside Dr, Foster City, CA 94404",
-        "logo": "https://img.logo.dev/gilead.com",
         "lat": 37.5669823,
         "lng": -122.2816625,
-        "imageName": "gilead.com"
+        "imageName": "gilead.com.jpg"
     },
     {
         "name": "Illumina",
         "address": "5200 Illumina Way, San Diego, CA 92122",
-        "logo": "https://img.logo.dev/illumina.com",
         "lat": 32.8704019,
         "lng": -117.1989921,
-        "imageName": "illumina.com"
+        "imageName": "illumina.com.jpg"
     },
     {
         "name": "23andMe",
         "address": "223 N Mathilda Ave, Sunnyvale, CA 94086",
-        "logo": "https://img.logo.dev/23andme.com",
         "lat": 37.3827896,
         "lng": -122.0335455,
-        "imageName": "23andme.com"
+        "imageName": "23andme.com.jpg"
     },
     {
         "name": "OpenAI",
         "address": "1455 3rd Street San Francisco, CA 94158",
-        "logo": "https://img.logo.dev/openai.com",
         "lat": 37.7700936,
         "lng": -122.3889942,
-        "imageName": "openai.com"
+        "imageName": "openai.com.jpg"
     },
     {
         "name": "Anthropic",
         "address": "548 Market St, San Francisco, CA 94104",
-        "logo": "https://img.logo.dev/anthropic.com",
         "lat": 37.7908517,
         "lng": -122.4006138,
-        "imageName": "anthropic.com"
+        "imageName": "anthropic.com.jpg"
     },
     {
         "name": "Synnex",
         "address": "44201 Nobel Dr, Fremont, CA 94538",
-        "logo": "https://img.logo.dev/synnex.com",
         "lat": 37.496726,
         "lng": -121.9798511,
-        "imageName": "synnex.com"
+        "imageName": "synnex.com.jpg"
     },
     {
         "name": "Lam Research",
         "address": "4650 Cushing Pkwy, Fremont, CA 94538",
-        "logo": "https://img.logo.dev/lamresearch.com",
         "lat": 37.4885263,
         "lng": -121.9570265,
-        "imageName": "lamresearch.com"
+        "imageName": "lamresearch.com.jpg"
     },
     {
         "name": "KLA Corporation",
         "address": "1 Technology Dr, Milpitas, CA 95035",
-        "logo": "https://img.logo.dev/kla.com",
         "lat": 37.4213037,
         "lng": -121.9240275,
-        "imageName": "kla.com"
+        "imageName": "kla.com.jpg"
     },
     {
         "name": "Marvell Technology",
         "address": "5488 Marvell Ln, Santa Clara, CA 95054",
-        "logo": "https://img.logo.dev/marvell.com",
         "lat": 37.4116952,
         "lng": -121.982038,
-        "imageName": "marvell.com"
+        "imageName": "marvell.com.jpg"
     },
     {
         "name": "Nutanix",
         "address": "1740 Technology Dr, San Jose, CA 95110",
-        "logo": "https://img.logo.dev/nutanix.com",
         "lat": 37.3676689,
         "lng": -121.9181011,
-        "imageName": "nutanix.com"
+        "imageName": "nutanix.com.jpg"
     },
     {
         "name": "Pure Storage",
         "address": "650 Castro St #400, Mountain View, CA 94041",
-        "logo": "https://img.logo.dev/purestorage.com",
         "lat": 37.3878672,
         "lng": -122.0830261,
-        "imageName": "purestorage.com"
+        "imageName": "purestorage.com.jpg"
     },
     {
         "name": "Splunk",
         "address": "270 Brannan St, San Francisco, CA 94107",
-        "logo": "https://img.logo.dev/splunk.com",
         "lat": 37.782784,
         "lng": -122.3913852,
-        "imageName": "splunk.com"
+        "imageName": "splunk.com.jpg"
     },
     {
         "name": "RingCentral",
         "address": "20 Davis Dr, Belmont, CA 94002",
-        "logo": "https://img.logo.dev/ringcentral.com",
         "lat": 37.5108949,
         "lng": -122.3065331,
-        "imageName": "ringcentral.com"
+        "imageName": "ringcentral.com.jpg"
     },
     {
         "name": "Sumo Logic",
         "address": "855 Main St #100, Redwood City, CA 94063",
-        "logo": "https://img.logo.dev/sumologic.com",
         "lat": 37.4855756,
         "lng": -122.2259889,
-        "imageName": "sumologic.com"
+        "imageName": "sumologic.com.jpg"
     },
     {
         "name": "Five9",
         "address": "3001 Bishop Dr #350, San Ramon, CA 94583",
-        "logo": "https://img.logo.dev/five9.com",
         "lat": 37.7644739,
         "lng": -121.9621458,
-        "imageName": "five9.com"
+        "imageName": "five9.com.jpg"
     },
     {
         "name": "Smartsheet",
         "address": "500 108th Ave NE #200, Bellevue, WA 98004",
-        "logo": "https://img.logo.dev/smartsheet.com",
         "lat": 47.6150107,
         "lng": -122.1957478,
-        "imageName": "smartsheet.com"
+        "imageName": "smartsheet.com.jpg"
     },
     {
         "name": "Coupa Software",
         "address": "1855 S Grant St, San Mateo, CA 94402",
-        "logo": "https://img.logo.dev/coupa.com",
         "lat": 37.5534964,
         "lng": -122.2995154,
-        "imageName": "coupa.com"
+        "imageName": "coupa.com.jpg"
     },
     {
         "name": "Bill.com",
         "address": "6220 America Center Dr #100, San Jose, CA 95002",
-        "logo": "https://img.logo.dev/bill.com",
         "lat": 37.4185226,
         "lng": -121.9784034,
-        "imageName": "bill.com"
+        "imageName": "bill.com.jpg"
     },
     {
         "name": "Nextdoor",
         "address": "420 Taylor St, San Francisco, CA 94102",
-        "logo": "https://img.logo.dev/nextdoor.com",
         "lat": 37.7864553,
         "lng": -122.4111101,
-        "imageName": "nextdoor.com"
+        "imageName": "nextdoor.com.jpg"
     },
     {
         "name": "Instacart",
         "address": "50 Beale St #600, San Francisco, CA 94105",
-        "logo": "https://img.logo.dev/instacart.com",
         "lat": 37.791302,
         "lng": -122.3963906,
-        "imageName": "instacart.com"
+        "imageName": "instacart.com.jpg"
     },
     {
         "name": "Chime",
         "address": "77 Maiden Ln, San Francisco, CA 94108",
-        "logo": "https://img.logo.dev/chime.com",
         "lat": 37.7882562,
         "lng": -122.4046581,
-        "imageName": "chime.com"
+        "imageName": "chime.com.jpg"
     },
     {
         "name": "SoFi",
         "address": "234 1st St, San Francisco, CA 94105",
-        "logo": "https://img.logo.dev/sofi.com",
         "lat": 37.7877665,
         "lng": -122.3957115,
-        "imageName": "sofi.com"
+        "imageName": "sofi.com.jpg"
     },
     {
         "name": "Affirm",
         "address": "650 California St, San Francisco, CA 94108",
-        "logo": "https://img.logo.dev/affirm.com",
         "lat": 37.7929223,
         "lng": -122.405241,
-        "imageName": "affirm.com"
+        "imageName": "affirm.com.jpg"
     },
     {
         "name": "Plaid",
         "address": "123 Mission St #900, San Francisco, CA 94105",
-        "logo": "https://img.logo.dev/plaid.com",
         "lat": 37.7917585,
         "lng": -122.394398,
-        "imageName": "plaid.com"
+        "imageName": "plaid.com.jpg"
     },
     {
         "name": "Carta",
         "address": "333 Bush St, San Francisco, CA 94104",
-        "logo": "https://img.logo.dev/carta.com",
         "lat": 37.7907897,
         "lng": -122.4031102,
-        "imageName": "carta.com"
+        "imageName": "carta.com.jpg"
     },
     {
         "name": "Brex",
         "address": "405 Howard Street Floor 2 San Francisco, CA 94105",
-        "logo": "https://img.logo.dev/brex.com",
         "lat": 37.7886088,
         "lng": -122.3953756,
-        "imageName": "brex.com"
+        "imageName": "brex.com.jpg"
     },
     {
         "name": "Gusto",
         "address": "525 20th St, San Francisco, CA 94107",
-        "logo": "https://img.logo.dev/gusto.com",
         "lat": 37.7598766,
         "lng": -122.3860163,
-        "imageName": "gusto.com"
+        "imageName": "gusto.com.jpg"
     },
     {
         "name": "Blend Labs",
         "address": "415 Kearny St, San Francisco, CA 94108",
-        "logo": "https://img.logo.dev/blend.com",
         "lat": 37.7918954,
         "lng": -122.4045358,
-        "imageName": "blend.com"
+        "imageName": "blend.com.jpg"
     },
     {
         "name": "Upstart",
         "address": "2950 S Delaware St, San Mateo, CA 94403",
-        "logo": "https://img.logo.dev/upstart.com",
         "lat": 37.5413944,
         "lng": -122.2997062,
-        "imageName": "upstart.com"
+        "imageName": "upstart.com.jpg"
     },
     {
         "name": "Mashgin",
         "address": "3500 Edison Way, Menlo Park, CA 94025",
-        "logo": "https://img.logo.dev/mashgin.com",
         "lat": 37.4766319,
         "lng": -122.1969753,
-        "imageName": "mashgin.com"
+        "imageName": "mashgin.com.jpg"
     },
     {
         "name": "Figma",
         "address": "760 Market St, Floor 5, San Francisco, CA 94102",
-        "logo": "https://img.logo.dev/figma.com",
         "lat": 37.7861007,
         "lng": -122.4056342,
-        "imageName": "figma.com"
+        "imageName": "figma.com.jpg"
     },
     {
         "name": "Notion Labs",
         "address": "2300 Harrison St, San Francisco, CA 94110",
-        "logo": "https://img.logo.dev/notion.so",
         "lat": 37.76039,
         "lng": -122.4131897,
-        "imageName": "notion.so"
+        "imageName": "notion.so.jpg"
     },
     {
         "name": "Airtable",
         "address": "799 Market St, San Francisco, CA 94103",
-        "logo": "https://img.logo.dev/airtable.com",
         "lat": 37.7856544,
         "lng": -122.4052753,
-        "imageName": "airtable.com"
+        "imageName": "airtable.com.jpg"
     },
     {
         "name": "Zapier",
         "address": "548 Market St #62411, San Francisco, CA 94104",
-        "logo": "https://img.logo.dev/zapier.com",
         "lat": 37.7908517,
         "lng": -122.4006138,
-        "imageName": "zapier.com"
+        "imageName": "zapier.com.jpg"
     },
     {
         "name": "Miro",
         "address": "201 Mission St #2900, San Francisco, CA 94105",
-        "logo": "https://img.logo.dev/miro.com",
         "lat": 37.7914374,
         "lng": -122.3950694,
-        "imageName": "miro.com"
+        "imageName": "miro.com.jpg"
     },
     {
         "name": "Datadog",
         "address": "620 3rd St, San Francisco, CA 94107",
-        "logo": "https://img.logo.dev/datadoghq.com",
         "lat": 37.7795133,
         "lng": -122.3940493,
-        "imageName": "datadoghq.com"
+        "imageName": "datadoghq.com.jpg"
     },
     {
         "name": "Unity Technologies",
         "address": "657 Mission St, San Francisco, CA 94105",
-        "logo": "https://img.logo.dev/unity.com",
         "lat": 37.7867095,
         "lng": -122.4008276,
-        "imageName": "unity.com"
+        "imageName": "unity.com.jpg"
     },
     {
         "name": "AppLovin",
         "address": "1100 Page Mill Rd, Palo Alto, CA 94304",
-        "logo": "https://img.logo.dev/applovin.com",
         "lat": 37.4152188,
         "lng": -122.153139,
-        "imageName": "applovin.com"
+        "imageName": "applovin.com.jpg"
     }
 ]
