@@ -3,6 +3,7 @@ const fs=require('fs');
 const fsPromises=fs.promises;
 const NodeGeocoder=require('node-geocoder');
 const axios=require('axios');
+const uuid=require('uuid').v4;
 
 const geocoder=NodeGeocoder({
     provider: 'google',
@@ -14,6 +15,7 @@ const geocoder=NodeGeocoder({
     const data=JSON.parse(await fsPromises.readFile('./input-data.json'));
     for (let i=0; i<data.length; i++) {
         process.stdout.write('*');
+        data[i].id=uuid();
         const res=await geocoder.geocode(data[i].address);
         const lat=res?.[0]?.latitude, lng=res?.[0]?.longitude;
         if (lat && lng) {
@@ -34,6 +36,6 @@ const geocoder=NodeGeocoder({
     const outputString=JSON.stringify(data, null, 4);
     await fsPromises.writeFile('output.json', outputString);
     // console.log(outputString);
-    console.log('Done writing', data.length, 'companies to output.json. Downloading logo images to images folder.');
+    console.log('\nDone writing', data.length, 'companies to output.json. Downloading logo images to images folder.');
 })();
 
