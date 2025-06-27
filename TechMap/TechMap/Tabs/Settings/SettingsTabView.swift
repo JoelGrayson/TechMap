@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 //TODO: option to change from Bay Area to NYC
 
@@ -19,26 +20,32 @@ struct SettingsTabView: View {
         }
         if let email = authVM.email, let name = authVM.name, let photoURL = authVM.photoURL {
             HStack {
+                KFImage(photoURL)
                 Text("Signed in as \(name) <\(email)>")
             }
-            Text("Signed in with \(email)")
-        }
-        Button {
-            Task {
-                await authVM.signInWithGoogle()
+            Button("Sign Out") {
+                authVM.signOut()
             }
-        } label: {
-            HStack {
-                Image("google")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 30, alignment: .center)
-                Text("Sign in with Google")
-                    .foregroundStyle(colorScheme == .dark ? .white : .black)
-            }
-            .frame(maxWidth: .infinity)
+            .buttonStyle(.bordered)
         }
-        .buttonStyle(.bordered)
+        if !authVM.isSignedIn {
+            Button {
+                Task {
+                    await authVM.signInWithGoogle()
+                }
+            } label: {
+                HStack {
+                    Image("google")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 30, alignment: .center)
+                    Text("Sign in with Google")
+                        .foregroundStyle(colorScheme == .dark ? .white : .black)
+                }
+                .frame(maxWidth: .infinity)
+            }
+            .buttonStyle(.bordered)
+        }
     }
 }
 

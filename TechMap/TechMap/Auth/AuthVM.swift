@@ -21,7 +21,9 @@ class AuthVM {
     var photoURL: URL?
     var uid: String?
     
-    init() { }
+    init() {
+        checkAuthState() //for persisting
+    }
     
     func signInWithGoogle() async -> Bool {
         guard let clientID = FirebaseApp.app()?.options.clientID else {
@@ -49,10 +51,7 @@ class AuthVM {
             let credential = GoogleAuthProvider.credential(withIDToken: idToken.tokenString, accessToken: accessToken.tokenString)
             let result = try await Auth.auth().signIn(with: credential)
             let firebaseUser = result.user
-            email = firebaseUser.email
-            name = firebaseUser.displayName
-            photoURL = firebaseUser.photoURL
-            uid = firebaseUser.uid
+            setPropertiesFrom(user: firebaseUser)
             
             isSignedIn = true
             errorMessage = nil //no error
@@ -62,6 +61,42 @@ class AuthVM {
             errorMessage = error.localizedDescription
             return false
         }
+    }
+    
+    func setPropertiesFrom(user: User) {
+        self.email = user.email
+        self.name = user.displayName
+        self.photoURL = user.photoURL
+        self.uid = user.uid
+    }
+    
+    func signOut() {
+        do {
+            try Auth.auth().signOut()
+            reset()
+        } catch {
+            print(error)
+            errorMessage = error.localizedDescription
+        }
+    }
+    
+    func checkAuthState() {
+        let _ = Auth.auth().addStateDidChangeListener { auth, user in
+            DispatchQueue.main.async {
+                if let user = user {
+                    self.setPropertiesFrom(user: user)
+                }
+            }
+        }
+    }
+    
+    func reset() {
+        isSignedIn = false
+        errorMessage = nil
+        email = nil
+        name = nil
+        photoURL = nil
+        uid = nil
     }
 }
 
