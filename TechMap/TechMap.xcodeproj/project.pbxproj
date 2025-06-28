@@ -29,6 +29,7 @@
 		38C259F92E10745300233CFE /* CompanyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C259F82E10745300233CFE /* CompanyDetails.swift */; };
 		38C259FC2E1074D900233CFE /* imageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C259FB2E1074D900233CFE /* imageURL.swift */; };
 		38C259FF2E1075FB00233CFE /* CloseIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C259FE2E1075FB00233CFE /* CloseIcon.swift */; };
+		38C25A012E1081C600233CFE /* openInMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A002E1081C600233CFE /* openInMaps.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		38C259F82E10745300233CFE /* CompanyDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetails.swift; sourceTree = "<group>"; };
 		38C259FB2E1074D900233CFE /* imageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageURL.swift; sourceTree = "<group>"; };
 		38C259FE2E1075FB00233CFE /* CloseIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseIcon.swift; sourceTree = "<group>"; };
+		38C25A002E1081C600233CFE /* openInMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openInMaps.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				38C259FB2E1074D900233CFE /* imageURL.swift */,
+				38C25A002E1081C600233CFE /* openInMaps.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				38303E4A2E0DB17B0085AFC4 /* ListTabView.swift in Sources */,
 				38C259F52E106ABF00233CFE /* JMarker.swift in Sources */,
 				38303E3E2E0DB1180085AFC4 /* TabsView.swift in Sources */,
+				38C25A012E1081C600233CFE /* openInMaps.swift in Sources */,
 				38303E462E0DB1650085AFC4 /* MapTabView.swift in Sources */,
 				38303E3F2E0DB1180085AFC4 /* TechMapApp.swift in Sources */,
 				38C259EB2E0FB2CE00233CFE /* MockData.swift in Sources */,

@@ -21,9 +21,9 @@ struct CompanyDetails: View {
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
-                HStack {
-                    // Logo
-                    if let company {
+                if let company {
+                    HStack {
+                        // Logo
                         if let url = imageURL(imageName: company.imageName) {
                             AsyncImage(url: url) { phase in
                                 switch phase {
@@ -43,50 +43,55 @@ struct CompanyDetails: View {
                         
                         // Name
                         Text(company.name)
-                    }
-                    
-                    Spacer()
-                    
-                    // Check/Uncheck button
-                    if checked {
-                        Button("Uncheck") {
-                            uncheck()
-                        }
-                    } else {
-                        Button("Mark as Visited") {
-                            markAsVisited()
-                        }
-                    }
-                    
-                    // Close Button
-                    Button {
-                        self.company = nil
-                    } label: {
-                        CloseIcon()
-                    }
-                }
-                
-                HStack {
-                    Image(systemName: "mappin")
-                        .frame(width: Styles.charIconSize, height: Styles.charIconSize)
-                    Text(company?.address ?? "")
-                        .lineLimit(1)
-                        .truncationMode(.tail)
-                }
-                HStack {
-                    Image(systemName: "figure.walk")
-                        .frame(width: Styles.charIconSize, height: Styles.charIconSize)
-                    Text("5 min walk")
-                    Button("Get Directions") {
                         
-                    }
-                    Button("Open in Maps") {
+                        Spacer()
                         
+                        // Check/Uncheck button
+                        if checked {
+                            Button("Uncheck") {
+                                uncheck()
+                            }
+                        } else {
+                            Button("Mark as Visited") {
+                                markAsVisited()
+                            }
+                        }
+                        
+                        // Close Button
+                        Button {
+                            self.company = nil
+                        } label: {
+                            CloseIcon()
+                        }
                     }
-                }
-                HStack {
+                    
+                    HStack {
+                        Image(systemName: "mappin")
+                            .frame(width: Styles.charIconSize, height: Styles.charIconSize)
+                        Text(company.address)
+                            .lineLimit(1)
+                            .truncationMode(.tail)
+                    }
+                    HStack {
+                        Image(systemName: "figure.walk")
+                            .frame(width: Styles.charIconSize, height: Styles.charIconSize)
+                        Text("5 min walk")
+                        Button("Get Directions") {
+                            // TODO: implement
+                        }
+                        Button("Open in Maps") {
+                            openInMaps(lat: company.lat, lng: company.lng, address: company.address)
+                        }
+                    }
+                    
                     ScrollView {
-                        Text(Image(systemName: "info")) + Text(company?.description ?? "")
+                        HStack(alignment: .firstTextBaseline) {
+                            Image(systemName: "info")
+                                .frame(width: Styles.charIconSize, height: Styles.charIconSize)
+                                .font(.body)
+                            
+                            Text(company.description)
+                        }
                     }
                     .lineLimit(8)
                 }

@@ -54,7 +54,7 @@ struct MapTabView: View {
                         
                     }
                 )
-                .frame(width: geo.size.width, height: companyDetailsHeight)
+                .frame(height: companyDetailsHeight)
                 .padding()
             }
         }
