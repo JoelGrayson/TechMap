@@ -55,6 +55,8 @@ struct CompanyDetails: View {
                             Button("Mark as Visited") {
                                 markAsVisited()
                             }
+                            .buttonStyle(.bordered)
+                            .tint(Color.checked)
                         }
                         
                         // Close Button
@@ -68,20 +70,23 @@ struct CompanyDetails: View {
                     HStack {
                         Image(systemName: "mappin")
                             .frame(width: Styles.charIconSize, height: Styles.charIconSize)
-                        Text(company.address)
-                            .lineLimit(1)
-                            .truncationMode(.tail)
+                        Button {
+                            openInMaps(lat: company.lat, lng: company.lng, name: company.name, address: company.address)
+                        } label: {
+                            Text(company.address)
+                                .lineLimit(1)
+                                .truncationMode(.tail)
+                        }
                     }
                     HStack {
                         Image(systemName: "figure.walk")
                             .frame(width: Styles.charIconSize, height: Styles.charIconSize)
                         Text("5 min walk")
-                        Button("Get Directions") {
+                        Spacer()
+                        Button("Directions") {
                             // TODO: implement
                         }
-                        Button("Open in Maps") {
-                            openInMaps(lat: company.lat, lng: company.lng, address: company.address)
-                        }
+                        .buttonStyle(.bordered)
                     }
                     
                     ScrollView {
