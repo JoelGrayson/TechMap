@@ -39,41 +39,47 @@ struct ListTabView: View {
                 Text("Visited (\(checks.count))")
                     .sectionTitle()
                 
-                List(checksWithAssociatedCompanies, id: \CheckWithAssociatedCompany.check.id) { c in
-                    if let company = c.company {
-                        NavigationLink(value: company) {
-                            HStack {
-                                InlineLogo(imageName: company.imageName)
-                                Text(company.name)
-                                Spacer()
-                                Text(JDateFormatter.formatRelatively(c.check.createdAt))
-                                    .padding(.vertical, 4)
+                if checksWithAssociatedCompanies.isEmpty {
+                    Text("You have not visited any companies yet. Click on a company on the map and select \"Mark as Visited\" to visit one.")
+                        .padding(.vertical)
+                        .padding(.bottom)
+                } else {
+                    List(checksWithAssociatedCompanies, id: \CheckWithAssociatedCompany.check.id) { c in
+                        if let company = c.company {
+                            NavigationLink(value: company) {
+                                HStack {
+                                    InlineLogo(imageName: company.imageName)
+                                    Text(company.name)
+                                    Spacer()
+                                    Text(JDateFormatter.formatRelatively(c.check.createdAt))
+                                        .padding(.vertical, 4)
+                                }
                             }
+                        } else {
+                            // there is a bug
+                            Text(c.check.companyId)
                         }
-                    } else {
-                        // there is a bug
-                        Text(c.check.companyId)
+                    }
+                    .listStyle(.plain)
+                }
+                
+                
+                Text("Not Visited Yet (\(notVisitedYet.count))")
+                    .sectionTitle()
+                
+                List(notVisitedYet) { company in
+                    NavigationLink(value: company) {
+                        HStack {
+                            InlineLogo(imageName: company.imageName)
+                            Text(company.name)
+                        }
                     }
                 }
+                .listStyle(.plain)
             }
             .navigationDestination(for: Company.self) { company in
                 CompanyDetails(company: .constant(company), checks: checks, firebaseVM: firebaseVM, closable: false)
             }
-            .listStyle(.plain)
-            
-            
-            Text("Not Visited Yet (\(notVisitedYet.count))")
-                .sectionTitle()
-            
-            List(notVisitedYet) { company in
-                NavigationLink(value: company) {
-                    HStack {
-                        InlineLogo(imageName: company.imageName)
-                        Text(company.name)
-                    }
-                }
-            }
-            .listStyle(.plain)
         }
         .padding()
     }

@@ -48,6 +48,7 @@ struct CompanyDetails: View {
                             Button("Uncheck") {
                                 uncheck()
                             }
+                            .buttonStyle(.bordered)
                         } else {
                             Button("Mark as Visited") {
                                 markAsVisited()
@@ -105,7 +106,7 @@ struct CompanyDetails: View {
                             Text(company.description)
                         }
                     }
-                    .lineLimit(8)
+                    .lineLimit(closable ? 8 : nil) //when closable, it is in its small form
                 }
             }
             .opacity(hidden ? 0 : 1)
