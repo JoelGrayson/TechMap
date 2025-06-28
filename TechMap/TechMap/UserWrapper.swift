@@ -11,7 +11,10 @@ struct UserWrapper: View {
     @State private var firebaseVM = FirebaseVM()
     
     var body: some View {
-        TabsView()
+        TabsView(firebaseVM: firebaseVM)
+            .onAppear {
+                firebaseVM.checkAuthState()
+            }
     }
 }
 

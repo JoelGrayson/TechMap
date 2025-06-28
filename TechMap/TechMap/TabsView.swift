@@ -9,14 +9,16 @@ import SwiftUI
 import FirebaseFirestore
 
 struct TabsView: View {
+    let firebaseVM: FirebaseVM
+    
     @FirestoreQuery(collectionPath: "companies")
     var companies: [Company]
     
-    @FirestoreQuery(
-        collectionPath: "checks",
-        predicates: [.where("userId", isEqualTo: firebaseVM.uid)]
-    )
-    var checks: [Check]
+//    @FirestoreQuery(
+//        collectionPath: "checks",
+//        predicates: [.where("userId", isEqualTo: firebaseVM.uid)]
+//    )
+//    var checks: [Check]
     
     var body: some View {
         TabView {
@@ -33,6 +35,3 @@ struct TabsView: View {
     }
 }
 
-#Preview {
-    TabsView()
-}

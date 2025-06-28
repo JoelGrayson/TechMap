@@ -10,11 +10,18 @@ import FirebaseCore
 import FirebaseAuth
 import GoogleSignIn
 import GoogleSignInSwift
+import FirebaseFirestore
+
+enum SignInState {
+    case notSignedIn
+    case anonymouslySignedIn
+    case signedIn
+}
 
 @Observable
 class FirebaseVM { //handles auth and firestore
     // Auth
-    var isSignedIn: Bool = false
+    var isSignedIn: SignInState = .notSignedIn
     var errorMessage: String?
     
     var email: String?
@@ -23,11 +30,20 @@ class FirebaseVM { //handles auth and firestore
     var uid: String?
     
     
-    init() {
-        checkAuthState() //for persisting
+    // Auth Functions
+    func signInAnonymously() async {
+        do {
+            let result = try await Auth.auth().signInAnonymously()
+            let uid = result.user.uid
+            print("Signed in with UID", uid)
+            self.uid = uid
+            self.isSignedIn = .anonymouslySignedIn
+        } catch {
+            print("Could not sign in anonymously")
+            print(error.localizedDescription)
+        }
     }
     
-    // Auth Functions
     func signInWithGoogle() async -> Bool {
         guard let clientID = FirebaseApp.app()?.options.clientID else {
             fatalError("No Google ClientID in Firebase config")
@@ -52,11 +68,26 @@ class FirebaseVM { //handles auth and firestore
             }
             let accessToken = user.accessToken
             let credential = GoogleAuthProvider.credential(withIDToken: idToken.tokenString, accessToken: accessToken.tokenString)
-            let result = try await Auth.auth().signIn(with: credential)
-            let firebaseUser = result.user
-            setPropertiesFrom(user: firebaseUser)
+            if let currentUser = Auth.auth().currentUser, currentUser.isAnonymous {
+                // Try to link the anonymous user to the Google account
+                do {
+                    let result = try await currentUser.link(with: credential)
+                    setPropertiesFrom(user: result.user)
+                    print("Linked anonymous account to user")
+                } catch {
+                    // If linking fails (credential already exists), sign in directly
+                    print("Linking failed, signing in directly: \(error.localizedDescription)")
+                    let result = try await Auth.auth().signIn(with: credential)
+                    setPropertiesFrom(user: result.user)
+                    print("Signed in with existing Google account")
+                }
+            } else {
+                let result = try await Auth.auth().signIn(with: credential)
+                setPropertiesFrom(user: result.user)
+                print("Signed in with a blank slate account")
+            }
             
-            isSignedIn = true
+            isSignedIn = .signedIn
             errorMessage = nil //no error
             return true
         } catch {
@@ -87,14 +118,25 @@ class FirebaseVM { //handles auth and firestore
         let _ = Auth.auth().addStateDidChangeListener { auth, user in
             DispatchQueue.main.async {
                 if let user = user {
+                    print("Signed in with user", user)
                     self.setPropertiesFrom(user: user)
+                    if user.isAnonymous {
+                        self.isSignedIn = .anonymouslySignedIn
+                    } else {
+                        self.isSignedIn = .signedIn
+                    }
+                } else {
+                    print("Signing in anonymously")
+                    Task {
+                        await self.signInAnonymously()
+                    }
                 }
             }
         }
     }
     
     func reset() {
-        isSignedIn = false
+        isSignedIn = .notSignedIn
         errorMessage = nil
         email = nil
         name = nil
@@ -109,10 +151,39 @@ class FirebaseVM { //handles auth and firestore
             print("A user is required to add a check")
             return
         }
+        
+        let db = Firestore.firestore()
+        let check = Check(companyId: companyId, userId: uid, createdAt: .now, device: "iphone app")
+        
+        do {
+            try db
+                .collection("checkmarks")
+                .addDocument(from: check)
+        } catch {
+            print("Failed to add checkmarks: \(error)")
+        }
     }
     
     func deleteCheck(companyId: String) {
+        guard let uid = uid else {
+            print("A user is required to delete a check")
+            return
+        }
         
+        // Copied from ChatGPT
+        let db = Firestore.firestore()
+        db
+            .collection("checkmarks")
+            .whereField("userId", isEqualTo: uid)
+            .whereField("companyId", isEqualTo: companyId)
+            .getDocuments { snapshot, error in
+                guard let docs = snapshot?.documents else { return }
+                for doc in docs {
+                    doc.reference.delete() { error in
+                        print("Could not delete checkmark with companyId \(companyId) for uid \(uid)")
+                    }
+                }
+            }
     }
 }
 
