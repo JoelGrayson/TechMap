@@ -13,9 +13,6 @@ struct JMarker: View {
     var selected: Bool
     
     // Computed properties
-    var imageURL: URL? {
-        URL(string: Constants.imageBasePath+imageName)
-    }
     var scaleFactor: CGFloat {
         selected ? 1.3 : 1.0
     }
@@ -25,7 +22,7 @@ struct JMarker: View {
             RoundedRectangle(cornerRadius: Styles.cornerRadius)
                 .fill(checked ? Color("Checked") : Color("Unchecked"))
             
-            AsyncImage(url: imageURL) { phase in
+            AsyncImage(url: imageURL(imageName: imageName)) { phase in
                 switch phase {
                 case .empty:
                     ProgressView()
