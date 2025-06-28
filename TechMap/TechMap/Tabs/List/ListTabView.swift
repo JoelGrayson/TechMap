@@ -46,6 +46,7 @@ struct ListTabView: View {
                 }
                 .navigationDestination(for: Company.self) { company in
                     Text(company.name)
+//                    CompanyDetails(company: .init(company), height: .infinity, checked: false, markAsVisited: <#T##() -> Void#>, uncheck: <#T##() -> Void#>)
                     // CompanyDetails(company: company, height: .infinity, checked: <#T##Bool#>, markAsVisited: <#T##() -> Void#>, uncheck: <#T##() -> Void#>)
                 }
                 .listStyle(.plain)

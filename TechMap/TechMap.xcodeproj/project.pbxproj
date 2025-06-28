@@ -37,6 +37,7 @@
 		38C25A0D2E109D1E00233CFE /* RelativeDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A0C2E109D1E00233CFE /* RelativeDateFormatter.swift */; };
 		38C25A0F2E109EB800233CFE /* InlineLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A0E2E109EB800233CFE /* InlineLogo.swift */; };
 		38C25A132E10A38F00233CFE /* check.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 38C25A122E10A38F00233CFE /* check.m4a */; };
+		38C25A172E10A9DE00233CFE /* playSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A162E10A9DE00233CFE /* playSound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		38C25A0C2E109D1E00233CFE /* RelativeDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeDateFormatter.swift; sourceTree = "<group>"; };
 		38C25A0E2E109EB800233CFE /* InlineLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineLogo.swift; sourceTree = "<group>"; };
 		38C25A122E10A38F00233CFE /* check.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = check.m4a; sourceTree = "<group>"; };
+		38C25A162E10A9DE00233CFE /* playSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playSound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,8 @@
 				38C25A002E1081C600233CFE /* openInMaps.swift */,
 				38C25A072E109B2400233CFE /* companyChecked.swift */,
 				38C25A0C2E109D1E00233CFE /* RelativeDateFormatter.swift */,
+				38C25A162E10A9DE00233CFE /* playSound.swift */,
+				38C25A122E10A38F00233CFE /* check.m4a */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -183,7 +187,6 @@
 			isa = PBXGroup;
 			children = (
 				38C259FE2E1075FB00233CFE /* CloseIcon.swift */,
-				38C25A122E10A38F00233CFE /* check.m4a */,
 				38C25A0E2E109EB800233CFE /* InlineLogo.swift */,
 			);
 			path = Components;
@@ -299,6 +302,7 @@
 				38C25A042E10862300233CFE /* Check.swift in Sources */,
 				38C25A082E109B2400233CFE /* companyChecked.swift in Sources */,
 				38C259F52E106ABF00233CFE /* JMarker.swift in Sources */,
+				38C25A172E10A9DE00233CFE /* playSound.swift in Sources */,
 				38C25A0F2E109EB800233CFE /* InlineLogo.swift in Sources */,
 				38C25A0B2E109C3900233CFE /* View+TextModifiers.swift in Sources */,
 				38303E3E2E0DB1180085AFC4 /* TabsView.swift in Sources */,

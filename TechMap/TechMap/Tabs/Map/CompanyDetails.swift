@@ -9,13 +9,24 @@ import SwiftUI
 
 struct CompanyDetails: View {
     @Binding var company: Company?
-    let height: CGFloat
-    let checked: Bool
-    let markAsVisited: () -> Void
-    let uncheck: () -> Void
+    let checks: [Check]
+    let firebaseVM: FirebaseVM
     
-    var hidden: Bool {
+    // Computed properties
+    private var checked: Bool {
+        companyChecked(company: company, checks: checks)
+    }
+    private var hidden: Bool {
         company == nil
+    }
+    
+    // Actions
+    private func markAsVisited() {
+        firebaseVM.addCheck(companyId: company?.id)
+        playSound(named: "check")
+    }
+    private func uncheck() {
+        firebaseVM.deleteCheck(companyId: company?.id)
     }
     
     var body: some View {
@@ -89,12 +100,6 @@ struct CompanyDetails: View {
             .opacity(hidden ? 0 : 1)
             .padding()
         }
-        .background {
-            RoundedRectangle(cornerRadius: Styles.cornerRadius)
-                .fill(Color.whiteOrBlack)
-        }
-        .offset(y: hidden ? height * 1.2 : 0) //when there is no company, it closes itself
-        .animation(.spring, value: hidden)
     }
 }
 //

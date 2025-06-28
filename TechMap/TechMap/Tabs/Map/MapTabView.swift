@@ -8,7 +8,6 @@
 import SwiftUI
 import MapKit
 import Kingfisher
-import AVFoundation
 
 struct MapTabView: View {
     var firebaseVM: FirebaseVM
@@ -16,21 +15,6 @@ struct MapTabView: View {
     var checks: [Check]
     
     @State var selectedCompany: Company?
-    @State private var audioPlayer: AVAudioPlayer?
-    
-    private func playCustomSound() {
-        guard let soundURL = Bundle.main.url(forResource: "check", withExtension: "m4a") else { return }
-        
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
-            audioPlayer?.prepareToPlay()
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-            audioPlayer?.play()
-        } catch {
-            print("Error playing sound: \(error)")
-        }
-    }
     
     var body: some View {
         GeometryReader { geo in
@@ -56,22 +40,16 @@ struct MapTabView: View {
                     MapScaleView() //only appears when zooming in and out
                 }
                 
-                let companyDetailsHeight = geo.size.height * 0.5
+                let height = geo.size.height * 0.5 //height for this company details pane
                 
-                CompanyDetails(
-                    company: $selectedCompany,
-                    height: companyDetailsHeight,
-                    
-                    checked: companyChecked(company: selectedCompany, checks: checks),
-                    markAsVisited: {
-                        firebaseVM.addCheck(companyId: selectedCompany?.id)
-                        playCustomSound()
-                    },
-                    uncheck: {
-                        firebaseVM.deleteCheck(companyId: selectedCompany?.id)
-                    }
-                )
-                .frame(height: companyDetailsHeight)
+                CompanyDetails(company: $selectedCompany, checks: checks, firebaseVM: firebaseVM)
+                .frame(height: height)
+                .background {
+                    RoundedRectangle(cornerRadius: Styles.cornerRadius)
+                        .fill(Color.whiteOrBlack)
+                }
+                .offset(y: selectedCompany == nil ? height * 1.2 : 0) //when there is no company, it closes itself
+                .animation(.spring, value: selectedCompany == nil)
                 .padding()
             }
         }
