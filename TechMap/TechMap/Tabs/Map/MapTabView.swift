@@ -16,6 +16,32 @@ struct MapTabView: View {
     var checks: [Check]
     
     @State var selectedCompany: Company?
+    @State private var audioPlayer: AVAudioPlayer?
+    
+    private func playCustomSound() {
+        print("Attempting to play custom sound...")
+        
+        guard let soundURL = Bundle.main.url(forResource: "check", withExtension: "m4a") else {
+            print("Could not find check.m4a file in bundle")
+            return
+        }
+        
+        print("Found sound file at: \(soundURL)")
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+            audioPlayer?.prepareToPlay()
+            
+            // Configure audio session for playback
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            let success = audioPlayer?.play() ?? false
+            print("Audio play attempted, success: \(success)")
+        } catch {
+            print("Error playing sound: \(error.localizedDescription)")
+        }
+    }
     
     var body: some View {
         GeometryReader { geo in
@@ -50,7 +76,7 @@ struct MapTabView: View {
                     checked: companyChecked(company: selectedCompany, checks: checks),
                     markAsVisited: {
                         firebaseVM.addCheck(companyId: selectedCompany?.id)
-                        AudioServicesPlaySystemSound(1016) // Pleasant ding sound
+                        playCustomSound()
                     },
                     uncheck: {
                         firebaseVM.deleteCheck(companyId: selectedCompany?.id)
