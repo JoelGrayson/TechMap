@@ -10,9 +10,14 @@ import SwiftUI
 struct JMarker: View {
     var checked: Bool
     var imageName: String
+    var selected: Bool
     
+    // Computed properties
     var imageURL: URL? {
         URL(string: Constants.imageBasePath+imageName)
+    }
+    var scaleFactor: CGFloat {
+        selected ? 1.3 : 1.0
     }
     
     var body: some View {
@@ -44,7 +49,11 @@ struct JMarker: View {
                     .offset(x: Styles.markerSize*0.2, y: Styles.markerSize*(-0.1))
             }
         }
-        .frame(width: Styles.markerSize, height: Styles.markerSize)
+        .frame(
+            width: Styles.markerSize * scaleFactor,
+            height: Styles.markerSize * scaleFactor
+        )
+        .animation(.spring(duration: Styles.animationDuration), value: scaleFactor)
     }
 }
 
@@ -60,7 +69,7 @@ struct CheckmarkShape: Shape {
 
 #Preview {
     VStack {
-        JMarker(checked: true, imageName: "apple.com.jpg")
-        JMarker(checked: false, imageName: "apple.com.jpg")
+        JMarker(checked: true, imageName: "apple.com.jpg", selected: false)
+        JMarker(checked: false, imageName: "apple.com.jpg", selected: false)
     }
 }

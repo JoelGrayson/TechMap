@@ -16,13 +16,16 @@ struct MapTabView: View {
     @State var selectedCompany: Company?
     
     var body: some View {
-        Text("Hello, World!")
         Map(selection: $selectedCompany) {
             UserAnnotation() //display user's current location on the map
             
             ForEach(companies) { company in
                 Annotation(company.name, coordinate: .init(latitude: company.lat, longitude: company.lng)) {
-                    JMarker(checked: company.name.first == "A", imageName: company.imageName)
+                    JMarker(
+                        checked: company.name.first == "A",
+                        imageName: company.imageName,
+                        selected: selectedCompany == company
+                    )
                 }
                 .tag(company)
             }
