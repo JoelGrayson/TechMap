@@ -113,7 +113,4 @@ struct CompanyDetails: View {
         }
     }
 }
-//
-//#Preview {
-//    CompanyDetails(company: .init(MockData.companies[0]), height: 500.0, checked: false, markAsVisited: {}, uncheck: {})
-//}
+

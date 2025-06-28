@@ -11,6 +11,7 @@ struct JDateFormatter {
     static var relativeFormatter: RelativeDateTimeFormatter {
         let f = RelativeDateTimeFormatter()
         f.unitsStyle = .abbreviated
+        f.dateTimeStyle = .named
         return f
     }
     
