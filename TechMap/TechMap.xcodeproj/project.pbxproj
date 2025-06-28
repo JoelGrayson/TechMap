@@ -24,6 +24,8 @@
 		38C259EB2E0FB2CE00233CFE /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C259EA2E0FB2CE00233CFE /* MockData.swift */; };
 		38C259ED2E104D6500233CFE /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C259EC2E104D6500233CFE /* Company.swift */; };
 		38C259F12E10559300233CFE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C259F02E10559300233CFE /* Constants.swift */; };
+		38C259F52E106ABF00233CFE /* JMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C259F42E106ABF00233CFE /* JMarker.swift */; };
+		38C259F72E106E6B00233CFE /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C259F62E106E6B00233CFE /* Styles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		38C259EA2E0FB2CE00233CFE /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		38C259EC2E104D6500233CFE /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		38C259F02E10559300233CFE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		38C259F42E106ABF00233CFE /* JMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMarker.swift; sourceTree = "<group>"; };
+		38C259F62E106E6B00233CFE /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				38303E452E0DB1650085AFC4 /* MapTabView.swift */,
+				38C259F42E106ABF00233CFE /* JMarker.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				38C259EC2E104D6500233CFE /* Company.swift */,
 				38C259EA2E0FB2CE00233CFE /* MockData.swift */,
 				38C259F02E10559300233CFE /* Constants.swift */,
+				38C259F62E106E6B00233CFE /* Styles.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,8 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C259F72E106E6B00233CFE /* Styles.swift in Sources */,
 				38303E5C2E0E00970085AFC4 /* FirebaseVM.swift in Sources */,
 				38303E4A2E0DB17B0085AFC4 /* ListTabView.swift in Sources */,
+				38C259F52E106ABF00233CFE /* JMarker.swift in Sources */,
 				38303E3E2E0DB1180085AFC4 /* TabsView.swift in Sources */,
 				38303E462E0DB1650085AFC4 /* MapTabView.swift in Sources */,
 				38303E3F2E0DB1180085AFC4 /* TechMapApp.swift in Sources */,

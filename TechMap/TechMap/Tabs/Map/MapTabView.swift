@@ -17,19 +17,12 @@ struct MapTabView: View {
     
     var body: some View {
         Text("Hello, World!")
-//        List(companies) { company in
-//            Text(company.name)
-//        }
         Map(selection: $selectedCompany) {
             UserAnnotation() //display user's current location on the map
             
             ForEach(companies) { company in
                 Annotation(company.name, coordinate: .init(latitude: company.lat, longitude: company.lng)) {
-                    VStack {
-                        if let url = URL(string: Constants.imageBasePath+company.imageName) {
-                            KFImage(url)
-                        }
-                    }
+                    JMarker(checked: company.name.first == "A", imageName: company.imageName)
                 }
                 .tag(company)
             }
