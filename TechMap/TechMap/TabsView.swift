@@ -6,18 +6,25 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 struct TabsView: View {
+    @State private var firebaseVM = FirebaseVM()
+    @FirestoreQuery(
+        collectionPath: "companies",
+    )
+    var companies: [Company]
+    
     var body: some View {
         TabView {
             Tab("Map", systemImage: "mappin.circle.fill") {
-                MapTabView()
+                MapTabView(firebaseVM: firebaseVM, companies: companies)
             }
             Tab("List", systemImage: "list.bullet") {
-                MapTabView()
+                ListTabView(firebaseVM: firebaseVM)
             }
             Tab("Settings", systemImage: "gearshape.fill") {
-                SettingsTabView()
+                SettingsTabView(firebaseVM: firebaseVM)
             }
         }
     }

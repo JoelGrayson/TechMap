@@ -19,8 +19,11 @@
 		38303E532E0DF55D0085AFC4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 38303E522E0DF55D0085AFC4 /* FirebaseFirestore */; };
 		38303E562E0DF8620085AFC4 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 38303E552E0DF8620085AFC4 /* GoogleSignIn */; };
 		38303E582E0DF8620085AFC4 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 38303E572E0DF8620085AFC4 /* GoogleSignInSwift */; };
-		38303E5C2E0E00970085AFC4 /* AuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38303E5B2E0E00970085AFC4 /* AuthVM.swift */; };
+		38303E5C2E0E00970085AFC4 /* FirebaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38303E5B2E0E00970085AFC4 /* FirebaseVM.swift */; };
 		38C259E62E0E653A00233CFE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 38C259E52E0E653A00233CFE /* Kingfisher */; };
+		38C259EB2E0FB2CE00233CFE /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C259EA2E0FB2CE00233CFE /* MockData.swift */; };
+		38C259ED2E104D6500233CFE /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C259EC2E104D6500233CFE /* Company.swift */; };
+		38C259EF2E10513800233CFE /* JFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C259EE2E10513400233CFE /* JFirestore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +37,10 @@
 		38303E492E0DB17B0085AFC4 /* ListTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTabView.swift; sourceTree = "<group>"; };
 		38303E4B2E0DF46E0085AFC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38303E592E0DF8A10085AFC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		38303E5B2E0E00970085AFC4 /* AuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVM.swift; sourceTree = "<group>"; };
+		38303E5B2E0E00970085AFC4 /* FirebaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseVM.swift; sourceTree = "<group>"; };
+		38C259EA2E0FB2CE00233CFE /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		38C259EC2E104D6500233CFE /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		38C259EE2E10513400233CFE /* JFirestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JFirestore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,7 @@
 				38303E3C2E0DB1180085AFC4 /* TechMapApp.swift */,
 				38303E3A2E0DB1180085AFC4 /* TabsView.swift */,
 				38303E412E0DB1400085AFC4 /* Tabs */,
-				38303E5A2E0E00740085AFC4 /* Auth */,
+				38303E5A2E0E00740085AFC4 /* Model */,
 			);
 			path = TechMap;
 			sourceTree = "<group>";
@@ -119,12 +125,15 @@
 			path = List;
 			sourceTree = "<group>";
 		};
-		38303E5A2E0E00740085AFC4 /* Auth */ = {
+		38303E5A2E0E00740085AFC4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				38303E5B2E0E00970085AFC4 /* AuthVM.swift */,
+				38C259EE2E10513400233CFE /* JFirestore.swift */,
+				38303E5B2E0E00970085AFC4 /* FirebaseVM.swift */,
+				38C259EC2E104D6500233CFE /* Company.swift */,
+				38C259EA2E0FB2CE00233CFE /* MockData.swift */,
 			);
-			path = Auth;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,12 +220,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38303E5C2E0E00970085AFC4 /* AuthVM.swift in Sources */,
+				38303E5C2E0E00970085AFC4 /* FirebaseVM.swift in Sources */,
 				38303E4A2E0DB17B0085AFC4 /* ListTabView.swift in Sources */,
 				38303E3E2E0DB1180085AFC4 /* TabsView.swift in Sources */,
 				38303E462E0DB1650085AFC4 /* MapTabView.swift in Sources */,
 				38303E3F2E0DB1180085AFC4 /* TechMapApp.swift in Sources */,
+				38C259EF2E10513800233CFE /* JFirestore.swift in Sources */,
+				38C259EB2E0FB2CE00233CFE /* MockData.swift in Sources */,
 				38303E482E0DB16D0085AFC4 /* SettingsTabView.swift in Sources */,
+				38C259ED2E104D6500233CFE /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

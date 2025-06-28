@@ -12,7 +12,8 @@ import GoogleSignIn
 import GoogleSignInSwift
 
 @Observable
-class AuthVM {
+class FirebaseVM { //handles auth and firestore
+    // Auth
     var isSignedIn: Bool = false
     var errorMessage: String?
     
@@ -20,6 +21,11 @@ class AuthVM {
     var name: String?
     var photoURL: URL?
     var uid: String?
+    
+    
+    // Checklists (Firestore)
+    // TODO:
+    
     
     init() {
         checkAuthState() //for persisting

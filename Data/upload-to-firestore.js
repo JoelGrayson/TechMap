@@ -9,7 +9,8 @@ initializeApp({
     credential: cert(serviceAccount)
 });
 
-const db=getFirestore('techmap');
+const db=getFirestore(); //use the (default) firebase database because this is what @FirestoreQuery works with
+// const db=getFirestore('techmap');
 
 // Upload the data
 (async ()=>{

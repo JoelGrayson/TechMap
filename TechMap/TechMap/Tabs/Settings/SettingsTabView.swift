@@ -12,26 +12,26 @@ import Kingfisher
 
 struct SettingsTabView: View {
     @Environment(\.colorScheme) var colorScheme
-    @State private var authVM = AuthVM()
+    var firebaseVM: FirebaseVM
     
     var body: some View {
-        if let errorMessage = authVM.errorMessage {
+        if let errorMessage = firebaseVM.errorMessage {
             Text("Auth error \(errorMessage)")
         }
-        if let email = authVM.email, let name = authVM.name, let photoURL = authVM.photoURL {
+        if let email = firebaseVM.email, let name = firebaseVM.name, let photoURL = firebaseVM.photoURL {
             HStack {
                 KFImage(photoURL)
                 Text("Signed in as \(name) <\(email)>")
             }
             Button("Sign Out") {
-                authVM.signOut()
+                firebaseVM.signOut()
             }
             .buttonStyle(.bordered)
         }
-        if !authVM.isSignedIn {
+        if !firebaseVM.isSignedIn {
             Button {
                 Task {
-                    await authVM.signInWithGoogle()
+                    await firebaseVM.signInWithGoogle()
                 }
             } label: {
                 HStack {
@@ -50,5 +50,5 @@ struct SettingsTabView: View {
 }
 
 #Preview {
-    SettingsTabView()
+    SettingsTabView(firebaseVM: MockData.firebaseVM)
 }
