@@ -10,9 +10,7 @@ import FirebaseFirestore
 
 struct TabsView: View {
     @State private var firebaseVM = FirebaseVM()
-    @FirestoreQuery(
-        collectionPath: "companies",
-    )
+    @FirestoreQuery(collectionPath: "companies")
     var companies: [Company]
     
     var body: some View {

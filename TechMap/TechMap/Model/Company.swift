@@ -8,7 +8,7 @@
 import SwiftUI
 import FirebaseFirestore
 
-struct Company: Codable, Identifiable {
+struct Company: Codable, Identifiable, Hashable {
     @DocumentID var id: String?
     var name: String
     var address: String
