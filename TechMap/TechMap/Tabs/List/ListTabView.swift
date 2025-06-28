@@ -12,19 +12,16 @@ struct ListTabView: View {
     var companies: [Company]
     var checks: [Check]
     
-        var notVisitedYet: [Company] {
-            companies.filter {
-                !companyChecked(company: $0, checks: checks)
-            }
+    var notVisitedYet: [Company] {
+        companies.filter {
+            !companyChecked(company: $0, checks: checks)
         }
+    }
 
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
-                Text("Visited \(checks.count) of \(companies.count) companies")
-                    .padding(.bottom)
-                
-                Text("Visited")
+                Text("Visited (\(checks.count))")
                     .sectionTitle()
                 
                 List(checks) { check in
@@ -36,7 +33,7 @@ struct ListTabView: View {
                                 InlineLogo(imageName: associatedCompany.imageName)
                                 Text(associatedCompany.name)
                                 Spacer()
-                                Text(RelativeDateFormatter.format(check.createdAt))
+                                Text(JDateFormatter.formatRelatively(check.createdAt))
                                     .padding(.vertical, 4)
                             } else {
                                 // there is a bug
@@ -50,13 +47,16 @@ struct ListTabView: View {
                 }
                 .listStyle(.plain)
                 
-                Text("Not Visited Yet")
+                
+                Text("Not Visited Yet (\(notVisitedYet.count))")
                     .sectionTitle()
                 
                 List(notVisitedYet) { company in
-                    HStack {
-                        InlineLogo(imageName: company.imageName)
-                        Text(company.name)
+                    NavigationLink(value: company) {
+                        HStack {
+                            InlineLogo(imageName: company.imageName)
+                            Text(company.name)
+                        }
                     }
                 }
                 .listStyle(.plain)

@@ -34,7 +34,7 @@
 		38C25A062E10884900233CFE /* UserWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A052E10884900233CFE /* UserWrapper.swift */; };
 		38C25A082E109B2400233CFE /* companyChecked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A072E109B2400233CFE /* companyChecked.swift */; };
 		38C25A0B2E109C3900233CFE /* View+TextModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A0A2E109C3900233CFE /* View+TextModifiers.swift */; };
-		38C25A0D2E109D1E00233CFE /* RelativeDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A0C2E109D1E00233CFE /* RelativeDateFormatter.swift */; };
+		38C25A0D2E109D1E00233CFE /* JDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A0C2E109D1E00233CFE /* JDateFormatter.swift */; };
 		38C25A0F2E109EB800233CFE /* InlineLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A0E2E109EB800233CFE /* InlineLogo.swift */; };
 		38C25A132E10A38F00233CFE /* check.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 38C25A122E10A38F00233CFE /* check.m4a */; };
 		38C25A172E10A9DE00233CFE /* playSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A162E10A9DE00233CFE /* playSound.swift */; };
@@ -65,7 +65,7 @@
 		38C25A052E10884900233CFE /* UserWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWrapper.swift; sourceTree = "<group>"; };
 		38C25A072E109B2400233CFE /* companyChecked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = companyChecked.swift; sourceTree = "<group>"; };
 		38C25A0A2E109C3900233CFE /* View+TextModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TextModifiers.swift"; sourceTree = "<group>"; };
-		38C25A0C2E109D1E00233CFE /* RelativeDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeDateFormatter.swift; sourceTree = "<group>"; };
+		38C25A0C2E109D1E00233CFE /* JDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDateFormatter.swift; sourceTree = "<group>"; };
 		38C25A0E2E109EB800233CFE /* InlineLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineLogo.swift; sourceTree = "<group>"; };
 		38C25A122E10A38F00233CFE /* check.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = check.m4a; sourceTree = "<group>"; };
 		38C25A162E10A9DE00233CFE /* playSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playSound.swift; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 				38C259FB2E1074D900233CFE /* imageURL.swift */,
 				38C25A002E1081C600233CFE /* openInMaps.swift */,
 				38C25A072E109B2400233CFE /* companyChecked.swift */,
-				38C25A0C2E109D1E00233CFE /* RelativeDateFormatter.swift */,
+				38C25A0C2E109D1E00233CFE /* JDateFormatter.swift */,
 				38C25A162E10A9DE00233CFE /* playSound.swift */,
 				38C25A122E10A38F00233CFE /* check.m4a */,
 			);
@@ -307,7 +307,7 @@
 				38C25A0B2E109C3900233CFE /* View+TextModifiers.swift in Sources */,
 				38303E3E2E0DB1180085AFC4 /* TabsView.swift in Sources */,
 				38C25A012E1081C600233CFE /* openInMaps.swift in Sources */,
-				38C25A0D2E109D1E00233CFE /* RelativeDateFormatter.swift in Sources */,
+				38C25A0D2E109D1E00233CFE /* JDateFormatter.swift in Sources */,
 				38303E462E0DB1650085AFC4 /* MapTabView.swift in Sources */,
 				38303E3F2E0DB1180085AFC4 /* TechMapApp.swift in Sources */,
 				38C259EB2E0FB2CE00233CFE /* MockData.swift in Sources */,

@@ -14,8 +14,8 @@ struct CompanyDetails: View {
     let closable: Bool
     
     // Computed properties
-    private var checked: Bool {
-        companyChecked(company: company, checks: checks)
+    private var checked: Check? {
+        associatedCheck(company: company, checks: checks)
     }
     private var hidden: Bool {
         company == nil
@@ -44,7 +44,7 @@ struct CompanyDetails: View {
                         Spacer()
                         
                         // Check/Uncheck button
-                        if checked {
+                        if checked != nil {
                             Button("Uncheck") {
                                 uncheck()
                             }
@@ -80,12 +80,20 @@ struct CompanyDetails: View {
                     HStack {
                         Image(systemName: "figure.walk")
                             .frame(width: Styles.charIconSize, height: Styles.charIconSize)
-                        Text("5 min walk")
+                        Text("5 min walk") //TODO: calculate
                         Spacer()
                         Button("Directions") {
                             // TODO: implement
                         }
                         .buttonStyle(.bordered)
+                    }
+                    
+                    if let checked {
+                        HStack {
+                            Image(systemName: "checkmark")
+                                .frame(width: Styles.charIconSize, height: Styles.charIconSize)
+                            Text("Visited on \(JDateFormatter.formatAbsolutely(checked.createdAt)) (\(JDateFormatter.formatRelatively(checked.createdAt)))")
+                        }
                     }
                     
                     ScrollView {
