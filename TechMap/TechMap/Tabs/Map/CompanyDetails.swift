@@ -15,15 +15,51 @@ struct CompanyDetails: View {
         VStack {
             VStack(alignment: .leading) {
                 HStack {
+                    // Logo
                     if let url = imageURL(imageName: company.imageName) {
-                        AsyncImage(url: url)
+                        AsyncImage(url: url) { phase in
+                            switch phase {
+                            case .empty:
+                                ProgressView()
+                            case .success(let image):
+                                image
+                                    .resizable()
+                                    .frame(width: Styles.charSize, height: Styles.charSize)
+                            case .failure:
+                                EmptyView()
+                            @unknown default:
+                                EmptyView()
+                            }
+                        }
                     }
+                    
+                    // Name
                     Text(company.name)
-                    //TODO: (5 min walk)
+                    
+                    
+                    
                 }
                 
-                Text(company.address)
-                Text(company.description)
+                HStack {
+                    Image(systemName: "mappin")
+                    Text(company.address)
+                        .lineLimit(1)
+                        .truncationMode(.tail)
+                }
+                HStack {
+                    Text("5 min walk")
+                    Button("Get Directions") {
+                        
+                    }
+                    Button("Open in Maps") {
+                        
+                    }
+                }
+                HStack {
+                    ScrollView {
+                        Text(company.description)
+                    }
+                }
             }
             .padding()
         }
@@ -37,6 +73,7 @@ struct CompanyDetails: View {
             } label: {
                 CloseIcon()
             }
+            .padding([.trailing, .top])
         }
     }
 }
