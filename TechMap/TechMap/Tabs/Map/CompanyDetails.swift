@@ -10,6 +10,9 @@ import SwiftUI
 struct CompanyDetails: View {
     let company: Company
     let onClose: () -> Void
+    let checked: Bool
+    let markAsVisited: () -> Void
+    let uncheck: () -> Void
     
     var body: some View {
         VStack {
@@ -24,7 +27,7 @@ struct CompanyDetails: View {
                             case .success(let image):
                                 image
                                     .resizable()
-                                    .frame(width: Styles.charSize, height: Styles.charSize)
+                                    .frame(width: Styles.charIconSize, height: Styles.charIconSize)
                             case .failure:
                                 EmptyView()
                             @unknown default:
@@ -37,16 +40,37 @@ struct CompanyDetails: View {
                     Text(company.name)
                     
                     
+                    Spacer()
                     
+                    // Check/Uncheck button
+                    if checked {
+                        Button("Uncheck") {
+                            uncheck()
+                        }
+                    } else {
+                        Button("Mark as Visited") {
+                            markAsVisited()
+                        }
+                    }
+                    
+                    // Close Button
+                    Button {
+                        onClose()
+                    } label: {
+                        CloseIcon()
+                    }
                 }
                 
                 HStack {
                     Image(systemName: "mappin")
+                        .frame(width: Styles.charIconSize, height: Styles.charIconSize)
                     Text(company.address)
                         .lineLimit(1)
                         .truncationMode(.tail)
                 }
                 HStack {
+                    Image(systemName: "figure.walk")
+                        .frame(width: Styles.charIconSize, height: Styles.charIconSize)
                     Text("5 min walk")
                     Button("Get Directions") {
                         
@@ -57,8 +81,9 @@ struct CompanyDetails: View {
                 }
                 HStack {
                     ScrollView {
-                        Text(company.description)
+                        Text(Image(systemName: "info")) + Text(company.description)
                     }
+                    .lineLimit(8)
                 }
             }
             .padding()
@@ -67,17 +92,9 @@ struct CompanyDetails: View {
             RoundedRectangle(cornerRadius: Styles.cornerRadius)
                 .fill(Color.whiteOrBlack)
         }
-        .overlay(alignment: .topTrailing) {
-            Button {
-                onClose()
-            } label: {
-                CloseIcon()
-            }
-            .padding([.trailing, .top])
-        }
     }
 }
 
 #Preview {
-    CompanyDetails(company: MockData.companies[0], onClose: {})
+    CompanyDetails(company: MockData.companies[0], onClose: {}, checked: false, markAsVisited: {}, uncheck: {})
 }

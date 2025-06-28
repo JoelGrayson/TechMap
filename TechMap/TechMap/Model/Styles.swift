@@ -14,6 +14,6 @@ struct Styles {
     static let borderSize = 5 as CGFloat
     static let animationDuration = 0.3 as CGFloat
     static let closeIconSize = 8 as CGFloat
-    static let charSize = 22 as CGFloat
+    static let charIconSize = 22 as CGFloat
 }
 
