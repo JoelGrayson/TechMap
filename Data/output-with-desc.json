@@ -1,0 +1,839 @@
+[
+    {
+        "name": "Apple",
+        "address": "Apple Park, 1 Apple Park Way, Cupertino, CA 95014",
+        "id": "d2767b84-b725-4cd1-b07e-ea6c65bcc4a1",
+        "lat": 37.3287379,
+        "lng": -122.0078912,
+        "imageName": "apple.com.jpg",
+        "description": "Apple Inc. designs and sells iPhones, Macs, iPads, Apple Watch, and other premium consumer electronics. It pairs this hardware with proprietary software like iOS and macOS and services such as iCloud, Apple Music, and Apple TV+. Founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne, the company pioneered the graphical-user-interface personal computer. Apple is publicly traded (AAPL) and is regularly ranked among the world’s most valuable companies. Its headquarters, Apple Park, is a circular, solar-powered campus often called “the spaceship.”"
+    },
+    {
+        "name": "Google (Alphabet)",
+        "address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+        "id": "20598f52-d573-4c6c-9dc9-3102ac2bf5f4",
+        "lat": 37.4220101,
+        "lng": -122.0847516,
+        "imageName": "google.com.jpg",
+        "description": "Alphabet is the parent company of Google and numerous other businesses ranging from self-driving cars (Waymo) to health tech (Verily). Google dominates global web search and digital advertising while also operating Android, YouTube, Google Cloud, and Google Maps. Founded in 1998 by Larry Page and Sergey Brin, the firm restructured as Alphabet in 2015 to separate its core internet services from longer-term “moonshots.” Advertising still provides the lion’s share of revenue, but cloud services and AI tools are the fastest-growing segments. Alphabet is one of the “Big Five” U.S. tech giants and trades under the tickers GOOGL and GOOG."
+    },
+    {
+        "name": "Meta (Facebook)",
+        "address": "1601 Willow Road Menlo Park, CA 94025",
+        "id": "7e777c6a-eec2-42e7-a974-9df48cb42540",
+        "lat": 37.482503,
+        "lng": -122.1479457,
+        "imageName": "meta.com.jpg",
+        "description": "Meta Platforms owns Facebook, Instagram, WhatsApp, Messenger, and Threads, serving billions of monthly users worldwide. Advertising on these social apps generates nearly all of the company’s revenue, making Meta one of the largest digital ad sellers. Rebranded from Facebook to Meta in 2021, the company invests heavily in virtual- and augmented-reality hardware through its Reality Labs division. Founder and CEO Mark Zuckerberg has positioned Meta to build the “metaverse,” an immersive, interconnected digital world. Despite rapid growth, the firm faces ongoing scrutiny over privacy, content moderation, and competition."
+    },
+    {
+        "name": "Netflix",
+        "address": "121 Albright Way, Los Gatos, CA 95032",
+        "id": "cf4ce934-cea0-422e-8f2d-2482c602216a",
+        "lat": 37.2570306,
+        "lng": -121.9639833,
+        "imageName": "netflix.com.jpg",
+        "description": "Netflix is the world’s leading subscription streaming service, offering films, TV series, and mobile games in more than 190 countries. Originally a DVD-by-mail company founded in 1997, it pivoted to streaming in 2007 and began producing original content like “House of Cards” in 2013. Today its library features hundreds of Netflix Originals that often dominate award shows and global pop-culture conversation. The platform operates on tiered, monthly plans and introduced an ad-supported option in 2023. With tens of millions of subscribers, Netflix competes with Disney+, Prime Video, and other big streamers for viewer attention."
+    },
+    {
+        "name": "Intel",
+        "address": "2200 Mission College Blvd, Santa Clara, CA 95054",
+        "id": "091d9ebc-f457-43b4-b5ae-7f0fef6008a4",
+        "lat": 37.3880625,
+        "lng": -121.9655205,
+        "imageName": "intel.com.jpg",
+        "description": "Intel Corporation is a pioneer of the microprocessor, powering most personal computers for decades with its x86 CPU architecture. Founded in 1968, the company now produces processors, graphics chips, networking gear, memory, and advanced packaging technologies. Intel is investing billions in U.S. and European fabs to regain manufacturing leadership and meet growing AI and data-center demand. Its products serve PCs, servers, edge-computing devices, and automotive applications. The iconic “Intel Inside” marketing campaign made the brand a household name."
+    },
+    {
+        "name": "Nvidia",
+        "address": "2788 San Tomas Expressway, Santa Clara, CA 95051",
+        "id": "95b2cb57-dc34-45ff-bd4a-221014be2498",
+        "lat": 37.37187,
+        "lng": -121.9659302,
+        "imageName": "nvidia.com.jpg",
+        "description": "Nvidia pioneered the graphics processing unit (GPU) in 1999, sparking the modern PC-gaming boom. Its parallel-processing chips now power cutting-edge AI, data-center acceleration, autonomous vehicles, and digital-twin simulations. Led by co-founder Jensen Huang, Nvidia has transformed into a full-stack computing company providing hardware, software, and cloud services such as DGX systems and the Omniverse platform. GeForce GPUs remain popular with gamers and creators, while the company’s data-center revenue has surged amid generative-AI demand. Nvidia briefly surpassed US $3 trillion in market capitalization in 2025, reflecting its central role in the AI economy."
+    },
+    {
+        "name": "HP (Hewlett-Packard)",
+        "address": "1501 Page Mill Road, Palo Alto, CA 94304",
+        "id": "dbaa9191-30b8-45b7-b1f5-49490178bb09",
+        "lat": 37.4118261,
+        "lng": -122.1481305,
+        "imageName": "hp.com.jpg",
+        "description": "HP Inc. traces its roots to a 1939 Palo Alto garage often cited as the birthplace of Silicon Valley. The company focuses today on PCs, printers, and related services after splitting from Hewlett Packard Enterprise in 2015. HP is a global PC-shipment leader, known for its Spectre laptops, OMEN gaming rigs, and enterprise LaserJet printers. It is committed to sustainability, using recycled plastics and closing the loop on printer supplies. HP operates in nearly every country, serving consumers, businesses, and schools with hardware, managed print, and device-as-a-service offerings."
+    },
+    {
+        "name": "Cisco Systems",
+        "address": "170 West Tasman Drive, San Jose, CA 95134",
+        "id": "7c05700d-1ca6-4067-91f4-22ea403ab688",
+        "lat": 37.4083615,
+        "lng": -121.9541545,
+        "imageName": "cisco.com.jpg",
+        "description": "Cisco Systems is the world’s leading supplier of networking equipment and enterprise cybersecurity solutions. Its routers, switches, wireless gear, and Webex collaboration suite underpin much of the internet’s backbone and corporate IT infrastructure. Founded in 1984 by Stanford computer scientists, Cisco grew rapidly during the dot-com boom by acquiring dozens of startups. The company now derives a growing share of revenue from subscription software, security, and observability products. Cisco’s certification programs (CCNA, CCIE) are industry standards for network professionals."
+    },
+    {
+        "name": "Adobe",
+        "address": "345 Park Avenue, San Jose, CA 95110",
+        "id": "e42811ba-4600-4b03-8f3b-fa5e2f2b71ad",
+        "lat": 37.3308453,
+        "lng": -121.8942626,
+        "imageName": "adobe.com.jpg",
+        "description": "Adobe Inc. empowers creatives and marketers with flagship software such as Photoshop, Illustrator, Premiere Pro, and Acrobat PDF. Since 2013 the company has shifted to a cloud-subscription model under Creative Cloud, Document Cloud, and Experience Cloud brands. Adobe Sensei, its AI engine, fuels generative-AI features like Firefly for image synthesis and automated video edits. Founded in 1982, Adobe helped establish the desktop-publishing revolution with PostScript and later the ubiquitous PDF standard. Its tools are considered industry benchmarks for digital imaging, design, and marketing analytics."
+    },
+    {
+        "name": "eBay",
+        "address": "2025 Hamilton Avenue, San Jose, CA 95125",
+        "id": "f20eb476-2e82-4b03-a523-96d56ca6bc13",
+        "lat": 37.2952019,
+        "lng": -121.9267507,
+        "imageName": "ebay.com.jpg",
+        "description": "eBay Inc. is a global e-commerce marketplace that enables consumer-to-consumer and business-to-consumer sales of new and used goods. Founded in 1995 as AuctionWeb by Pierre Omidyar, it popularized online auctions before shifting toward fixed-price “Buy It Now” listings. The platform hosts 130 million active buyers and handled about US $73 billion in gross merchandise volume in 2024. eBay generates revenue through seller fees, advertising, and payment services after spinning off PayPal in 2015. Its feedback rating system established early trust and remains a hallmark of online marketplaces."
+    },
+    {
+        "name": "PayPal",
+        "address": "2211 N 1st St, San Jose, CA 95131-2021",
+        "id": "b6aec80d-d266-407f-b99a-85e8fa85e496",
+        "lat": 37.3768642,
+        "lng": -121.9229464,
+        "imageName": "paypal.com.jpg",
+        "description": "PayPal Holdings operates one of the world’s largest digital-payments platforms, connecting more than 400 million consumers and merchants across nearly 200 markets. Its services enable online checkout, peer-to-peer transfers via PayPal and Venmo, and in-store QR payments. Founded in 1998 and famously tied to the “PayPal Mafia” of Silicon Valley entrepreneurs, it was acquired by eBay in 2002 and spun out as an independent public company in 2015. PayPal earns fees on each transaction and offers merchant services like fraud protection and working-capital loans. The firm is expanding into crypto trading and “buy now, pay later” installments."
+    },
+    {
+        "name": "Tesla Engineering HQ",
+        "address": "1501 Page Mill Road Palo Alto, CA 94304",
+        "id": "2c10dcde-ba7c-458c-9658-5e6078cc0576",
+        "lat": 37.4118261,
+        "lng": -122.1481305,
+        "imageName": "tesla.com.jpg",
+        "description": "Tesla, Inc. designs and manufactures electric vehicles, battery-storage systems, and solar-energy products with a mission to accelerate the world’s transition to sustainable energy. The Palo Alto Engineering HQ focuses on vehicle design, powertrain innovation, and Autopilot software. Since the 2012 Model S, Tesla has scaled production to deliver mass-market EVs like the Model 3 and Model Y and premium products such as Cybertruck and Semi. Tesla operates a global Supercharger network to alleviate range anxiety and sells energy products including Powerwall and Megapack batteries. CEO Elon Musk’s bold timelines and innovations keep Tesla in the media spotlight and stock-market limelight."
+    },
+    {
+        "name": "LinkedIn HQ",
+        "address": "1000 W Maude Ave, Sunnyvale, CA 94085",
+        "id": "f9486faa-0410-4ae8-bc4a-0ebc5de98a51",
+        "lat": 37.3923878,
+        "lng": -122.0421758,
+        "imageName": "linkedin.com.jpg",
+        "description": "LinkedIn is the world’s largest professional networking platform, boasting over one billion members across 200+ countries. Users maintain digital résumés, connect with colleagues, search jobs, and publish industry content, while recruiters and sales teams leverage premium data tools. Founded in 2003 and acquired by Microsoft for US $26 billion in 2016, LinkedIn generates revenue from advertising, subscriptions like LinkedIn Premium and Sales Navigator, and talent solutions. Its Sunnyvale campus houses product, engineering, and sales teams that support the ever-growing network. The platform’s “Open to Work” and skill-endorsement features have reshaped modern hiring."
+    },
+    {
+        "name": "LinkedIn Office",
+        "address": "222 Second Street, San Francisco, CA 94105",
+        "id": "4d2d4ff0-fbf0-4a50-a7d2-71984b856e2a",
+        "lat": 37.7864752,
+        "lng": -122.3981167,
+        "imageName": "linkedin.com.jpg",
+        "description": "LinkedIn’s San Francisco office anchors its presence in the heart of the Bay Area tech scene. Teams here focus on product design, engineering initiatives, and partnerships with enterprise customers. The downtown location enables collaboration with startups and Fortune 500 clients seeking talent solutions. Like all LinkedIn sites, it emphasizes a culture of transformation, integrity, and results. The office also hosts community events on career development and diversity in tech."
+    },
+    {
+        "name": "Yahoo",
+        "address": "701 1st Ave, Sunnyvale, CA 94089",
+        "id": "c0161a80-3e3a-4df4-8ec5-fa5028a8bffa",
+        "lat": 37.4187924,
+        "lng": -122.0257514,
+        "imageName": "yahoo.com.jpg",
+        "description": "Yahoo is an internet pioneer offering email, news, sports, finance, and advertising services to a global audience. Founded in 1994, the company once dominated web search and media before selling its core business to Verizon in 2017; it is now privately held as part of Apollo Global Management. Yahoo’s homepage, fantasy-sports leagues, and Yahoo Finance remain heavily trafficked destinations. Most revenue comes from digital display and search advertising sold across its content network. The iconic exclamation-point logo and purple color scheme still resonate with longtime users."
+    },
+    {
+        "name": "Oracle",
+        "address": "Oracle Building 300, 300 Oracle Pkwy, Redwood City, CA 94065",
+        "id": "3c57de9a-f563-4ce7-a227-9d5972128c16",
+        "lat": 37.53059750000001,
+        "lng": -122.264388,
+        "imageName": "oracle.com.jpg",
+        "description": "Oracle Corporation is a multinational provider of database software, cloud infrastructure, and enterprise applications such as ERP, HCM, and CRM. Founded in 1977 by Larry Ellison, the company commercialized the first SQL relational database and remains a market leader with Oracle Database and Exadata systems. It offers Oracle Cloud Infrastructure (OCI) to compete with AWS, Azure, and Google Cloud, emphasizing high-performance and security for enterprise workloads. Oracle has acquired over 140 companies, including Sun Microsystems, PeopleSoft, and Cerner, to broaden its portfolio. Headquarters at Redwood Shores feature the distinctive blue glass “sailboat” towers overlooking a man-made lagoon."
+    },
+    {
+        "name": "Western Digital",
+        "address": "5601 Great Oaks Parkway, San Jose, CA 95119",
+        "id": "8a4ed159-150b-433a-ad82-f391e1003568",
+        "lat": 37.2456193,
+        "lng": -121.7937037,
+        "imageName": "westerndigital.com.jpg",
+        "description": "Western Digital designs and manufactures data-storage devices and solutions under the Western Digital, WD, and SanDisk brands. Its product lineup spans hard-disk drives, solid-state drives, and flash memory used in PCs, smartphones, data centers, and connected cars. Founded in 1970 as General Digital, the company pivoted from semiconductors to storage and now operates large fabrication facilities in the U.S. and Asia. Western Digital partners with Kioxia in Japan to produce advanced flash memory. As global data generation skyrockets, the firm focuses on capacity leadership and energy-efficient drives."
+    },
+    {
+        "name": "AMD (Advanced Micro Devices)",
+        "address": "2485 Augustine Drive, Santa Clara, CA 95054",
+        "id": "388e6cd0-2a67-431d-a5cd-26e294df4d74",
+        "lat": 37.3829254,
+        "lng": -121.9703842,
+        "imageName": "amd.com.jpg",
+        "description": "Advanced Micro Devices designs high-performance CPUs, GPUs, and adaptive SoCs for PCs, gaming consoles, data centers, and automotive systems. Its Ryzen processors and Radeon graphics compete head-to-head with Intel and Nvidia, while EPYC server chips power hyperscale clouds. AMD became a fabless company after spinning off GlobalFoundries in 2009 and acquired FPGA leader Xilinx in 2022 to expand into adaptive computing. CEO Lisa Su is credited with reviving AMD’s fortunes through innovative Zen architectures. The company’s chips appear in both Microsoft Xbox and Sony PlayStation consoles."
+    },
+    {
+        "name": "Salesforce",
+        "address": "Salesforce Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105",
+        "id": "6f6a42af-3651-48a0-815d-95bdc54b9fac",
+        "lat": 37.7897969,
+        "lng": -122.3972342,
+        "imageName": "salesforce.com.jpg",
+        "description": "Salesforce pioneered cloud-based customer-relationship-management (CRM) software with its 1999 “No Software” model. Its Customer 360 platform now includes sales, service, marketing, analytics, and Slack collaboration tools. Chairman Marc Benioff champions a stakeholder-capitalism ethos and the company’s 1-1-1 philanthropic model of donating equity, products, and employee time. Salesforce Tower dominates the San Francisco skyline and features an Ohana culture emphasizing equality and innovation. The company powers digital transformation for enterprises worldwide and is a component of the Dow Jones Industrial Average."
+    },
+    {
+        "name": "Zoom Video Communications",
+        "address": "55 Almaden Boulevard, 6th Floor, San Jose, CA 95113",
+        "id": "bc4d85b7-7f21-417e-aaff-57737c3897fc",
+        "lat": 37.3329888,
+        "lng": -121.8951264,
+        "imageName": "zoom.us.jpg",
+        "description": "Zoom provides cloud-based video meetings, team chat, webinars, and an expanding phone and contact-center platform. Founded in 2011 by former Cisco Webex engineer Eric Yuan, Zoom gained global prominence during the COVID-19 pandemic as remote work and schooling exploded. The company now bills itself as an AI-first communications provider with tools like Zoom AI Companion for meeting summaries. Zoom’s freemium model allows unlimited 40-minute group calls, fostering viral adoption before upselling paid plans. Headquarters remain in Silicon Valley, but the service is used by governments, enterprises, and families worldwide."
+    },
+    {
+        "name": "YouTube (Google)",
+        "address": "901 Cherry Avenue, San Bruno, CA 94066",
+        "id": "e658ef93-c237-4615-82c9-6177a0afd3ab",
+        "lat": 37.6282436,
+        "lng": -122.4263355,
+        "imageName": "youtube.com.jpg",
+        "description": "YouTube is the world’s largest video-sharing platform, hosting over two billion logged-in users who watch more than a billion hours of video daily. Founded in 2005 and acquired by Google in 2006 for US $1.65 billion, it now offers ad-supported content, YouTube Premium subscriptions, and live-TV streaming via YouTube TV. Creators monetize through ads, memberships, and merchandise shelves, while YouTube Shorts competes with TikTok for short-form attention. The San Bruno HQ manages policy, trust and safety, and product engineering. YouTube’s influence spans entertainment, education, news, and social movements."
+    },
+    {
+        "name": "WhatsApp (Meta)",
+        "address": "1601 Willow Rd, Menlo Park, CA 94025",
+        "id": "b415d311-0e2f-4e70-ad9f-fa3bbf03868b",
+        "lat": 37.482503,
+        "lng": -122.1479457,
+        "imageName": "whatsapp.com.jpg",
+        "description": "WhatsApp is a free, end-to-end encrypted messaging and calling app used by over two billion people worldwide. Launched in 2009, it was acquired by Facebook (now Meta) in 2014 for approximately US $19 billion, one of the largest tech deals ever. The app supports text, voice, video, group chats, and file sharing, relying on a user’s phone number rather than usernames. WhatsApp Business tools help merchants provide customer support and catalog listings, with future plans for payments in select regions. Privacy-focused features like disappearing messages aim to maintain trust amid encryption debates."
+    },
+    {
+        "name": "Instagram (Meta)",
+        "address": "200 Jefferson Dr, Menlo Park, CA 94025",
+        "id": "3f031f9c-f20f-426a-86bf-c536123eaaf3",
+        "lat": 37.4799547,
+        "lng": -122.1690575,
+        "imageName": "instagram.com.jpg",
+        "description": "Instagram is a photo- and video-sharing social network popular for curated images, short Reels, and influencer culture. Launched in 2010 and bought by Facebook for US $1 billion in 2012, it now boasts well over two billion monthly users. Key features include Stories, IGTV, shopping tags, and creator subscriptions that help monetize content. Instagram’s algorithmic feed and explore tab make it a powerful marketing platform for brands and celebrities. Concerns over mental health impacts on teens have pushed the company to add safety and time-management tools."
+    },
+    {
+        "name": "Fitbit (Google)",
+        "address": "199 Fremont Street 14th Floor, San Francisco, CA 94105",
+        "id": "9124b928-0ef3-4fd0-a08c-1b8c31820bd9",
+        "lat": 37.789873,
+        "lng": -122.394781,
+        "imageName": "fitbit.com.jpg",
+        "description": "Fitbit makes wearable fitness trackers and smartwatches that monitor activity, sleep, heart rate, and more to encourage healthier lifestyles. Founded in 2007, the company went public in 2015 and was acquired by Google in 2021 to bolster its hardware portfolio. Popular devices include the Charge series, Versa watches, and Pixel Watch line that now integrates deeper with Google services. Users engage through the Fitbit app’s social challenges, premium coaching, and wellness insights. Fitbit data has been used in health studies, raising both opportunities and privacy considerations."
+    },
+    {
+        "name": "Nest (Google)",
+        "address": "3400 Hillview Avenue Palo Alto, CA 94304",
+        "id": "92d02355-2ce5-4286-b890-be35618aa2e8",
+        "lat": 37.4036507,
+        "lng": -122.1476521,
+        "imageName": "nest.com.jpg",
+        "description": "Google Nest offers smart-home products such as learning thermostats, security cameras, doorbells, speakers, and displays designed for energy savings and convenience. Originally founded as Nest Labs in 2010 by Tony Fadell and Matt Rogers, it was acquired by Google for US $3.2 billion in 2014. Nest products leverage machine learning to adapt to user habits and integrate with Google Assistant for voice control. In 2018 Google unified its smart-home lineup under the Google Nest brand. The devices emphasize sustainability, security, and seamless setup within the Google Home ecosystem."
+    },
+    {
+        "name": "DoorDash",
+        "address": "303 2nd Street Suite 800 San Francisco, CA 94107",
+        "id": "a865c247-489d-49b2-8125-0feb6133aa0e",
+        "lat": 37.7853512,
+        "lng": -122.395477,
+        "imageName": "doordash.com.jpg",
+        "description": "DoorDash is North America’s largest on-demand food-delivery and logistics platform, connecting customers with restaurants, convenience stores, and grocers. Founded in 2013 by Stanford students, it operates in thousands of cities across the U.S., Canada, Australia, and beyond. DoorDash partners with independent “Dashers” who choose flexible shifts and earn delivery fees and tips. Revenue comes from delivery fees, merchant commissions, advertising, and the DashPass subscription offering reduced fees. The company went public in 2020 and is expanding into ultrafast grocery and nationwide shipping."
+    },
+    {
+        "name": "Uber",
+        "address": "1725 Third Street San Francisco, CA 94158 United States",
+        "id": "3e722921-190b-40c8-9312-06b3945399f7",
+        "lat": 37.7673722,
+        "lng": -122.3887739,
+        "imageName": "uber.com.jpg",
+        "description": "Uber Technologies began as a ride-hailing app in 2009 and has evolved into a global multimodal mobility and delivery platform. Users can book cars, scooters, shared rides, or order food via Uber Eats and groceries via Uber Direct in over 70 countries. The company uses dynamic pricing and a two-sided marketplace that matches riders with independent driver-partners. Uber invests in autonomous-vehicle research and freight logistics to diversify beyond rides. Regulatory challenges and driver classification debates continue as it pursues profitability."
+    },
+    {
+        "name": "Lyft",
+        "address": "185 Berry St Suite 400, San Francisco, CA 94107",
+        "id": "94154955-5778-444e-84e0-33fc0b613d72",
+        "lat": 37.7765663,
+        "lng": -122.3920774,
+        "imageName": "lyft.com.jpg",
+        "description": "Lyft offers ride-hailing, rental bikes and scooters, and car rentals primarily in the United States and Canada. Founded in 2012 as a spinoff of Zimride, Lyft brands itself on friendliness and pink mustache imagery to differentiate from Uber. Drivers use their own cars and earn flexible income while passengers enjoy on-demand rides through the app. Revenue comes from trip commissions and subscription products like Lyft Pink for frequent riders. The company is exploring autonomous-vehicle partnerships to lower costs and improve safety."
+    },
+    {
+        "name": "Pinterest",
+        "address": "651 Brannan Street San Francisco, CA 94107 United States",
+        "id": "30558fb6-5752-4b69-8e00-5c4bf4f6e892",
+        "lat": 37.7754369,
+        "lng": -122.3996287,
+        "imageName": "pinterest.com.jpg",
+        "description": "Pinterest is a visual-discovery platform where over 500 million monthly users “pin” images and videos to themed boards for inspiration on recipes, fashion, DIY projects, and more. Founded in 2010, the site functions like a digital scrapbook and drives significant referral traffic to e-commerce sites. Pinterest monetizes through visual search advertising and shoppable product pins. Its positive, planning-oriented community distinguishes it from other social networks. Recent features include AI-powered style matching and creator-led Idea Pins."
+    },
+    {
+        "name": "Dropbox",
+        "address": "1800 Owens St, San Francisco, CA 94158",
+        "id": "539172cf-d6f8-4f25-a1f4-81452819de82",
+        "lat": 37.76511170000001,
+        "lng": -122.39269,
+        "imageName": "dropbox.com.jpg",
+        "description": "Dropbox provides cloud storage, file synchronization, and collaborative tools to more than 700 million registered users. Founded in 2007 after a forgotten USB drive inspired co-founder Drew Houston, Dropbox pioneered seamless folder syncing across devices. The platform offers Dropbox Paper for document collaboration and integrates with Slack, Zoom, and Microsoft Office. Revenue comes from paid individual and business subscriptions beyond its free 2 GB tier. Dropbox focuses on a “Virtual First” remote-work culture and carbon-neutral operations."
+    },
+    {
+        "name": "Slack",
+        "address": "500 Howard St, San Francisco, CA 94105",
+        "id": "bead80cf-4950-4286-9601-7f4d6f0152f2",
+        "lat": 37.7883503,
+        "lng": -122.3963764,
+        "imageName": "slack.com.jpg",
+        "description": "Slack is a business-messaging platform that replaces email with organized channels, direct messages, and app integrations. Launched in 2013 from a failed gaming startup, it quickly became essential for team collaboration thanks to its searchable history and playful design. Slack supports voice/video calls and workflows, integrating with thousands of third-party tools. The company was acquired by Salesforce for US $27.7 billion in 2021, forming the backbone of Salesforce’s digital HQ strategy. Millions of users rely on Slack emojis, bots, and huddles to streamline daily work."
+    },
+    {
+        "name": "Reddit",
+        "address": "548 Market Street Suite 16093 San Francisco, CA 94104",
+        "id": "fae1c3fb-2743-4a1b-93bb-a869cd7aac40",
+        "lat": 37.7908517,
+        "lng": -122.4006138,
+        "imageName": "reddit.com.jpg",
+        "description": "Reddit is a vast network of user-created communities (subreddits) covering almost any topic imaginable, from news and science to memes and niche hobbies. Founded in 2005, it brands itself as “the front page of the internet,” with content ranked by community upvotes and comments. Reddit generates revenue through advertising, premium memberships (Reddit Premium), and digital goods such as Reddit Coins. Its open, anonymous culture fosters lively debate and occasional controversy, including the influential r/WallStreetBets stock-trading community. Reddit filed for an IPO in 2024, aiming to scale while preserving its community ethos."
+    },
+    {
+        "name": "Square (Block)",
+        "address": "1455 Market St #600, San Francisco, CA 94103",
+        "id": "75e5ff84-0e15-4f6c-b471-cf6827056e1b",
+        "lat": 37.7754538,
+        "lng": -122.4177334,
+        "imageName": "squareup.com.jpg",
+        "description": "Block, Inc. (formerly Square) provides financial-services hardware and software that enable small businesses to accept card payments via Square Readers and Square POS systems. Founded in 2009 by Jack Dorsey, it expanded into Cash App peer-to-peer payments, Buy Now Pay Later via Afterpay, and Bitcoin services through TBD and Spiral. The seller ecosystem offers inventory, payroll, and e-commerce tools that integrate with Square terminals. Block rebranded in 2021 to reflect its broader ecosystem beyond point-of-sale. Its business model blends hardware sales, transaction fees, and subscription services."
+    },
+    {
+        "name": "Stripe",
+        "address": "354 Oyster Point Blvd, South San Francisco, CA 94080",
+        "id": "c54bd255-aa80-41fc-8ef0-37a7dec88c39",
+        "lat": 37.6622895,
+        "lng": -122.383587,
+        "imageName": "stripe.com.jpg",
+        "description": "Stripe provides online payment processing and financial infrastructure APIs used by millions of internet businesses from startups to Fortune 500 companies. Founded in 2010 by Irish brothers Patrick and John Collison, Stripe simplifies accepting cards, bank debits, and mobile wallets in over 135 currencies. The company has expanded into billing, tax, fraud prevention, lending, and carbon-removal marketplaces. Despite remaining private, Stripe is one of the highest-valued fintech firms, surpassing US $50 billion in 2025. Its developer-friendly documentation and quick integration time are industry benchmarks."
+    },
+    {
+        "name": "Robinhood",
+        "address": "85 Willow Rd, Menlo Park, CA 94025",
+        "id": "7d3977f2-1002-4fb0-bf1a-d1e8496914e8",
+        "lat": 37.4545281,
+        "lng": -122.1650922,
+        "imageName": "robinhood.com.jpg",
+        "description": "Robinhood Markets revolutionized retail investing by offering commission-free stock, ETF, options, and crypto trading via a mobile-first app. Founded in 2013, it targets younger investors with intuitive design and no account minimums. Revenue comes from payment for order flow, margin interest, and Robinhood Gold subscriptions. The platform gained notoriety during the 2021 GameStop short squeeze, spotlighting its role in meme-stock culture. Robinhood’s mission is to democratize finance for all, but it faces scrutiny over gamification and outages."
+    },
+    {
+        "name": "ZoomInfo",
+        "address": "805 Broadway St #900, Vancouver, WA 98660",
+        "id": "d9ca3584-0865-4b39-ad42-fddd940a66cb",
+        "lat": 45.6277198,
+        "lng": -122.6697387,
+        "imageName": "zoominfo.com.jpg",
+        "description": "ZoomInfo Technologies offers a cloud-based go-to-market intelligence platform that provides contact data, intent signals, and workflow automation for B2B sales and marketing teams. Launched in 2007, it aggregates data through web crawlers, contributed contacts, and machine learning, claiming millions of business profiles. Users leverage the platform to find decision-makers, build targeted lists, and integrate insights into CRM systems. ZoomInfo went public in 2020 under the ticker ZI. Compliance programs aim to address privacy and data accuracy concerns."
+    },
+    {
+        "name": "Roku",
+        "address": "1155 Coleman Ave, San Jose, CA 95110",
+        "id": "0eb01df0-c8f9-4ae4-adab-ef3778c7db8d",
+        "lat": 37.3529581,
+        "lng": -121.9260145,
+        "imageName": "roku.com.jpg",
+        "description": "Roku builds streaming media players, smart-TV operating systems, and an advertising platform that reaches tens of millions of U.S. households. Founded in 2002, Roku’s affordable sticks and TVs make over-the-top viewing simple, while its Roku Channel offers free, ad-supported content and live TV. Revenue splits roughly between hardware sales and higher-margin platform ads/subscriptions. Roku’s OS partners with TV manufacturers like TCL and Hisense to embed its interface natively. The company competes with Amazon Fire TV, Apple TV, and Google TV in the crowded streaming ecosystem."
+    },
+    {
+        "name": "DocuSign",
+        "address": "221 Main St Suite 1550, San Francisco, CA 94105",
+        "id": "0e391dc5-cd89-4c2d-9d41-393e0b11d9f7",
+        "lat": 37.790344,
+        "lng": -122.392177,
+        "imageName": "docusign.com.jpg",
+        "description": "DocuSign is the market leader in electronic signatures and digital agreement-management solutions, helping organizations automate contract workflows. Founded in 2003, it allows legally binding signatures on virtually any device and complies with eIDAS and U.S. ESIGN acts. The broader DocuSign Agreement Cloud includes CLM, contract analytics, and identity verification services. DocuSign’s APIs integrate with Salesforce, Microsoft 365, and Google Workspace. Millions of users completed more than one billion agreements through the platform as businesses shift to paperless operations."
+    },
+    {
+        "name": "Atlassian",
+        "address": "350 Bush St, Floor 13, San Francisco, CA 94104",
+        "id": "4275291e-84df-40ae-8ad2-aa4e0eba8c15",
+        "lat": 37.7910081,
+        "lng": -122.4033221,
+        "imageName": "atlassian.com.jpg",
+        "description": "Atlassian develops collaboration and productivity software for software teams, including Jira for project tracking, Confluence for documentation, and Trello for visual boards. Founded in Sydney in 2002, the company pursued a unique no-salesforce, self-service model and later listed on the NASDAQ in 2015. Atlassian’s cloud migration is driving recurring revenue growth, with over 260,000 customers worldwide. Products integrate into DevOps toolchains and are popular among agile development teams. Atlassian champions an open-company, no-BS culture and remote-first work practices."
+    },
+    {
+        "name": "GitHub",
+        "address": "88 Colin P Kelly Jr St, San Francisco, CA 94107",
+        "id": "5000b8a1-af92-49d0-92f7-cdae07dc46cc",
+        "lat": 37.7822647,
+        "lng": -122.39117,
+        "imageName": "github.com.jpg",
+        "description": "GitHub hosts the world’s largest code-sharing and collaboration platform, with more than 100 million developers contributing to public and private repositories. Founded in 2008, it popularized Git distributed-version control and offers issue tracking, CI/CD, and security tools. Microsoft acquired GitHub for US $7.5 billion in 2018, keeping it independent and open to all languages and frameworks. GitHub Copilot, powered by OpenAI, uses AI to suggest code, transforming developer productivity. The Octocat mascot symbolizes open-source culture and community."
+    },
+    {
+        "name": "Box",
+        "address": "900 Jefferson Ave, Redwood City, CA 94063",
+        "id": "d38bad7f-97fe-496e-84c7-0a0719b3f902",
+        "lat": 37.48487,
+        "lng": -122.229315,
+        "imageName": "box.com.jpg",
+        "description": "Box offers secure cloud content management, enabling enterprises to store, share, and collaborate on files with compliance controls and deep integrations. Launched in 2005 by college student Aaron Levie, Box pivoted from consumer to enterprise focus and went public in 2015. Its platform includes Box Sign for e-signatures, Box Shield for data-loss prevention, and Box Relay for workflow automation. The company touts zero-trust architecture and partnerships with Microsoft, Google, and Slack. Box serves heavily regulated industries like healthcare, finance, and government."
+    },
+    {
+        "name": "Evernote",
+        "address": "305 Walnut St, Redwood City, CA 94063",
+        "id": "06c4cb85-df97-493b-8f71-207369378022",
+        "lat": 37.4920771,
+        "lng": -122.2224462,
+        "imageName": "evernote.com.jpg",
+        "description": "Evernote is a note-taking and information-organization app that allows users to capture ideas, web clippings, documents, and tasks across devices. Founded in 2008, it pioneered cloud-synced notebooks with powerful search and tagging. Monetization comes from premium subscriptions offering offline access, increased storage, and collaboration features. In 2023, Evernote was acquired by Italian company Bending Spoons to revitalize growth. Competitors include Microsoft OneNote, Notion, and Google Keep."
+    },
+    {
+        "name": "Symantec",
+        "address": "60 E Rio Salado Pkwy #1000, Tempe, AZ 85281",
+        "id": "ac3f3a80-3ac6-45a3-af64-72f2c60ee480",
+        "lat": 33.4314106,
+        "lng": -111.9397918,
+        "imageName": "symantec.com.jpg",
+        "description": "Symantec’s enterprise-security business, now part of Broadcom, provides endpoint protection, email security, and threat-intelligence services to global organizations. Founded in 1982, Symantec became synonymous with Norton antivirus for consumers, which was later spun off as Gen Digital. Broadcom acquired Symantec’s enterprise division in 2019 for US $10.7 billion, integrating it with its infrastructure software portfolio. The Symantec brand continues to deliver zero-trust solutions and advanced threat detection. Research divisions publish widely cited threat reports on cyber-crime trends."
+    },
+    {
+        "name": "Fortinet",
+        "address": "899 Kifer Rd, Sunnyvale, CA 94086",
+        "id": "e14d73dc-9b77-4315-8b32-214533a675fc",
+        "lat": 37.3756011,
+        "lng": -122.0112969,
+        "imageName": "fortinet.com.jpg",
+        "description": "Fortinet develops cybersecurity solutions such as next-generation firewalls, secure SD-WAN, and endpoint protection, all unified by its FortiOS operating system. Founded in 2000 by brothers Ken and Michael Xie, the company’s ASIC-accelerated FortiGate firewalls deliver high performance at lower cost. The Fortinet Security Fabric integrates network, cloud, and IoT security under a single management console. Training services like the NSE certification program address the global cyber-skills gap. Fortinet is publicly traded (FTNT) and services enterprises, service providers, and governments worldwide."
+    },
+    {
+        "name": "Juniper Networks",
+        "address": "1133 Innovation Way, Sunnyvale, CA 94089",
+        "id": "7c6459be-d21e-4f88-a0f5-08375c1e1394",
+        "lat": 37.4075369,
+        "lng": -122.0293769,
+        "imageName": "juniper.net.jpg",
+        "description": "Juniper Networks designs high-performance networking hardware, software, and security solutions for service providers, enterprises, and cloud operators. Its MX routers, QFX switches, and Mist AI-driven Wi-Fi compete with Cisco in backbone and data-center deployments. Founded in 1996, Juniper introduced ASIC-based routers that accelerated internet traffic in the dot-com era. The company now emphasizes AI-driven networking and experience-first management through its Mist acquisition. Juniper’s Contrail software supports multicloud orchestration and network virtualization."
+    },
+    {
+        "name": "Arista Networks",
+        "address": "5453 Great America Pkwy, Santa Clara, CA 95054",
+        "id": "c247826e-6b6d-4e9f-a27b-2fda5e4f4d02",
+        "lat": 37.4119567,
+        "lng": -121.9761527,
+        "imageName": "arista.com.jpg",
+        "description": "Arista Networks supplies cloud-scale data-center switches and routers built on its Extensible Operating System (EOS). Founded in 2004 by former Cisco execs Andy Bechtolsheim and Jayshree Ullal, Arista became a preferred vendor for hyperscale clouds and financial-trading networks requiring low latency. Its 400G and 800G platforms power AI clusters, and Arista CloudVision provides centralized automation and telemetry. The company’s open-standards approach and high-reliability silicon have driven rapid market-share gains. Arista is headquartered in Santa Clara with R&D in India and Canada."
+    },
+    {
+        "name": "Seagate Technology",
+        "address": "47488 Kato Rd, Fremont, CA 94538",
+        "id": "f6b39c71-6f77-405b-b0e8-06e105b38baf",
+        "lat": 37.4769034,
+        "lng": -121.9306374,
+        "imageName": "seagate.com.jpg",
+        "description": "Seagate is a leading manufacturer of hard-disk drives (HDDs) and storage-solutions provider for data centers, PCs, and consumer electronics. Founded in 1979, Seagate shipped the first 5.25-inch HDD and continues to push capacity using Heat-Assisted Magnetic Recording (HAMR) technology. The company’s Lyve cloud and edge storage services offer subscription-based data management. Seagate competes with Western Digital and Toshiba in the HDD market while collaborating on open-source storage initiatives. Headquarters are in Fremont, California, with manufacturing in the U.S. and Asia."
+    },
+    {
+        "name": "Logitech",
+        "address": "7700 Gateway Blvd, Newark, CA 94560",
+        "id": "24c644bf-9ac9-45a6-9b4b-2f1fcfcbe0a5",
+        "lat": 37.5391586,
+        "lng": -122.0616318,
+        "imageName": "logitech.com.jpg",
+        "description": "Logitech designs peripherals such as mice, keyboards, webcams, headsets, and gaming gear under the Logitech G, ASTRO, and Blue brands. Founded in 1981 in Switzerland, it pioneered the first commercially successful computer mouse. The company experienced renewed growth by focusing on esports-grade devices, work-from-home webcams, and creator products like StreamCam. Sustainability is central to Logitech’s strategy, with many products now using recycled plastics and carbon-neutral packaging. Logitech International trades on both the SIX Swiss Exchange and NASDAQ (LOGI)."
+    },
+    {
+        "name": "GoPro",
+        "address": "3025 Clearview Way, San Mateo, CA 94402",
+        "id": "787d5d39-3c47-46ea-9194-a4e6be329acb",
+        "lat": 37.5344622,
+        "lng": -122.330383,
+        "imageName": "gopro.com.jpg",
+        "description": "GoPro makes rugged, compact action cameras and accessories that capture immersive footage for sports, travel, and vlogging. Founded by Nick Woodman in 2002, the company popularized wearable POV filming with its HERO lineup. GoPro’s Quik app offers automatic video edits, while GoPro Subscription provides unlimited cloud backup and camera replacement. The firm has ventured into 360° and drone cameras, though the Karma drone was discontinued. User-generated GoPro videos have become iconic across social media and broadcast sports."
+    },
+    {
+        "name": "Electronic Arts (EA)",
+        "address": "209 Redwood Shores Pkwy, Redwood City, CA 94065",
+        "id": "37d41ac1-b780-411b-a4fc-3d8d8cfd29b2",
+        "lat": 37.5228593,
+        "lng": -122.2536905,
+        "imageName": "ea.com.jpg",
+        "description": "Electronic Arts is one of the world’s largest video-game publishers, known for franchises like EA Sports FC (formerly FIFA), Madden NFL, The Sims, Apex Legends, and Battlefield. Founded in 1982, EA pioneered treating game developers as “software artists.” The company now focuses on live services, mobile expansion, and EA Play subscription offerings. EA’s Frostbite engine powers many titles, and acquisitions such as Codemasters and Glu Mobile bolster its portfolio. Competitive gaming and in-game purchases drive recurring revenue alongside annual sports releases."
+    },
+    {
+        "name": "Zynga",
+        "address": "699 8th St, San Francisco, CA 94103",
+        "id": "85bf9240-8c3e-4eb3-8183-e72be4f8d0ad",
+        "lat": 37.7704556,
+        "lng": -122.4041025,
+        "imageName": "zynga.com.jpg",
+        "description": "Zynga develops social and mobile games such as Words With Friends, FarmVille, and CSR Racing, engaging hundreds of millions of players. Founded in 2007 and named after the co-founder’s bulldog, the company initially thrived on Facebook-based games before shifting to mobile. Zynga monetizes through in-app purchases and advertising. In 2022, it was acquired by Take-Two Interactive for US $12.7 billion to strengthen Take-Two’s mobile presence. The studio focuses on live-ops updates and branded collaborations to retain players."
+    },
+    {
+        "name": "Super Micro Computer",
+        "address": "980 Rock Ave, San Jose, CA 95131",
+        "id": "770cacc2-52a7-4e0e-b676-80cced3b326d",
+        "lat": 37.3892159,
+        "lng": -121.9049216,
+        "imageName": "supermicro.com.jpg",
+        "description": "Supermicro produces high-performance, energy-efficient servers, storage systems, and motherboards for data centers, cloud, AI, and edge computing. Founded in 1993, the company emphasizes rapid deployment of the latest Intel and AMD processors in modular, “building-block” designs. Its server racks are used by hyperscale and enterprise customers worldwide. Supermicro is investing in green-compute facilities and liquid-cooling solutions to reduce data-center power usage. Headquarters and a large manufacturing campus reside in San Jose, California."
+    },
+    {
+        "name": "Intuit (TurboTax, QuickBooks)",
+        "address": "2700 Coast Ave, Mountain View, CA 94043",
+        "id": "0f47819e-5cdb-4245-b6b8-041e3b704309",
+        "lat": 37.4306346,
+        "lng": -122.0960826,
+        "imageName": "intuit.com.jpg",
+        "description": "Intuit provides financial-management software including QuickBooks for small-business accounting, TurboTax for tax preparation, and Credit Karma for consumer credit monitoring. Founded in 1983, Intuit popularized user-friendly financial software and has transitioned to cloud-based SaaS offerings. Its Mailchimp acquisition added marketing automation to the ecosystem. Intuit uses AI under the umbrella of “Intuit Assist” to deliver personalized advice and automation. The company’s products aim to help consumers and small businesses prosper by simplifying money matters."
+    },
+    {
+        "name": "Palantir Technologies",
+        "address": "1200 17th St, Floor 15, Denver, CO 80202",
+        "id": "21724e5b-bb04-4a9f-afcd-4294c2c4f993",
+        "lat": 39.7495021,
+        "lng": -104.9962985,
+        "imageName": "palantir.com.jpg",
+        "description": "Palantir builds data-integration and analytics platforms used by governments, defense agencies, and commercial enterprises to make sense of complex, disparate datasets. Its flagship products are Palantir Gotham for intelligence and defense and Palantir Foundry for commercial customers. Founded in 2003 with backing from the CIA’s In-Q-Tel, Palantir became known for counter-terrorism and fraud-detection work. The company went public via direct listing in 2020 and later relocated headquarters from Palo Alto to Denver. Palantir advocates an ethical stance on data privacy while remaining a polarizing player due to its government contracts."
+    },
+    {
+        "name": "Genentech",
+        "address": "1 DNA Way, South San Francisco, CA 94080",
+        "id": "a76e6873-7e63-42e1-a3bf-4213ed0cfb97",
+        "lat": 37.6566481,
+        "lng": -122.378031,
+        "imageName": "gene.com.jpg",
+        "description": "Genentech, a member of the Roche Group, is a pioneering biotechnology company credited with commercializing recombinant DNA therapeutics. Founded in 1976, it developed breakthrough drugs like Rituxan for cancer and Pulmozyme for cystic fibrosis. The company’s research campus in South San Francisco is a major hub for oncology, immunology, and neuroscience innovation. Genentech’s patient-assistance programs and science education outreach reflect its mission to do now what patients need next. Roche completed its full acquisition of Genentech in 2009, maintaining the brand and research independence."
+    },
+    {
+        "name": "Gilead Sciences",
+        "address": "333 Lakeside Dr, Foster City, CA 94404",
+        "id": "51a55aa2-17c5-4399-90af-c3a43175ea27",
+        "lat": 37.5669823,
+        "lng": -122.2816625,
+        "imageName": "gilead.com.jpg",
+        "description": "Gilead Sciences is a biopharmaceutical company best known for antiviral therapies treating HIV, hepatitis C, and COVID-19. Founded in 1987, Gilead revolutionized HCV care with curative drugs Harvoni and Sovaldi and produces Truvada and Biktarvy for HIV prevention and treatment. The company expanded into oncology with its 2020 acquisition of Immunomedics and CAR-T developer Kite Pharma. Gilead’s headquarters overlook a man-made lake in Foster City, symbolizing its Bay Area biotech roots. Access programs aim to widen availability of lifesaving antivirals in low-income countries."
+    },
+    {
+        "name": "Illumina",
+        "address": "5200 Illumina Way, San Diego, CA 92122",
+        "id": "72a60ed7-a1cc-462d-83ac-1bac4ee6e294",
+        "lat": 32.8704019,
+        "lng": -117.1989921,
+        "imageName": "illumina.com.jpg",
+        "description": "Illumina is the global leader in next-generation DNA sequencing technology, enabling rapid, low-cost genomic analysis. Its sequencing instruments, reagents, and software are used in research, clinical diagnostics, and population-genomics programs. Founded in 1998, Illumina’s innovations have helped reduce the cost of sequencing a human genome from millions to under $200. Regulatory scrutiny led to divesting its Grail cancer-screening subsidiary in 2025. Illumina’s mission is to unlock the power of the genome to improve human health."
+    },
+    {
+        "name": "23andMe",
+        "address": "223 N Mathilda Ave, Sunnyvale, CA 94086",
+        "id": "cc30672b-4417-45e8-9fbd-dbf37deab3ef",
+        "lat": 37.3827896,
+        "lng": -122.0335455,
+        "imageName": "23andme.com.jpg",
+        "description": "23andMe offers direct-to-consumer genetic testing kits that provide ancestry insights and health-risk reports based on DNA analysis. Founded in 2006, it became the first company to receive FDA authorization to market such tests without a prescription. Data from consenting customers supports drug-discovery partnerships, including a multi-year collaboration with GlaxoSmithKline. In 2021, 23andMe went public via SPAC, emphasizing its dual role as a consumer brand and biotech-research platform. Privacy policies and data-sharing transparency are core to customer trust."
+    },
+    {
+        "name": "OpenAI",
+        "address": "1455 3rd Street San Francisco, CA 94158",
+        "id": "7dfe8cc1-44ab-4ef7-bbdf-3885d23ac13d",
+        "lat": 37.7700936,
+        "lng": -122.3889942,
+        "imageName": "openai.com.jpg",
+        "description": "OpenAI researches and deploys artificial general intelligence (AGI) that benefits all of humanity, best known for language models like ChatGPT and DALL-E image generation. Founded in 2015 as a non-profit, it created a capped-profit structure to fund massive compute needs while aligning with its mission. Microsoft is OpenAI’s primary cloud partner and investor, integrating models into Azure and Copilot products. OpenAI’s API allows businesses to build generative-AI applications for code, content, and data analysis. The organization advocates for responsible AI governance and safety research."
+    },
+    {
+        "name": "Anthropic",
+        "address": "548 Market St, San Francisco, CA 94104",
+        "id": "aa1d0d00-bbc7-4ab5-9cbd-f203bf573748",
+        "lat": 37.7908517,
+        "lng": -122.4006138,
+        "imageName": "anthropic.com.jpg",
+        "description": "Anthropic is an AI-safety-focused research company developing large language models under the Claude family, emphasizing constitutional AI and alignment. Founded in 2021 by former OpenAI researchers Dario and Daniela Amodei, the startup has secured billions in funding from Google and AWS. Anthropic aims to create reliable, steerable, and interpretable AI systems to mitigate risks of misinformation and misuse. Its Claude models power chat assistants and enterprise knowledge tools via API and integrations. The company publishes safety research and collaborates on policy initiatives."
+    },
+    {
+        "name": "Synnex",
+        "address": "44201 Nobel Dr, Fremont, CA 94538",
+        "id": "1068459d-9f70-451a-8618-4f8ddccc5c4e",
+        "lat": 37.496726,
+        "lng": -121.9798511,
+        "imageName": "synnex.com.jpg",
+        "description": "Synnex, now operating as TD Synnex after a 2021 merger with Tech Data, is one of the world’s largest IT distributors and solutions aggregators. It provides logistics, integration services, and supply-chain management for over 150,000 technology resellers. The company distributes hardware, software, and cloud services from vendors like HP, Cisco, Microsoft, and Apple. TD Synnex supports partners with financing, education, and lifecycle management programs. Headquarters are cobranded in Fremont, California, and Clearwater, Florida."
+    },
+    {
+        "name": "Lam Research",
+        "address": "4650 Cushing Pkwy, Fremont, CA 94538",
+        "id": "2c99091c-11e3-4920-8786-353e8bb80fc9",
+        "lat": 37.4885263,
+        "lng": -121.9570265,
+        "imageName": "lamresearch.com.jpg",
+        "description": "Lam Research supplies wafer-fabrication equipment and services critical to producing advanced semiconductor devices. Its plasma-etch and deposition tools enable chipmakers like TSMC, Samsung, and Intel to pattern nanoscale transistor structures. Founded in 1980, Lam plays a pivotal role in scaling Moore’s Law by introducing atomic-layer processes and EUV-compatible chambers. The company invests heavily in R&D and a global network of customer engineering centers. Semiconductor equipment cycles make Lam’s revenue sensitive to foundry capital-expenditure trends."
+    },
+    {
+        "name": "KLA Corporation",
+        "address": "1 Technology Dr, Milpitas, CA 95035",
+        "id": "c2a4aa0c-3ef8-46e4-9a76-ee36ae74719e",
+        "lat": 37.4213037,
+        "lng": -121.9240275,
+        "imageName": "kla.com.jpg",
+        "description": "KLA develops process-control and yield-management systems that inspect and measure silicon wafers and chips during semiconductor fabrication. Its optical and e-beam inspection tools detect defects at nanometer scales, helping manufacturers improve yields and reduce costs. Formed by the 1997 merger of KLA Instruments and Tencor, the company now integrates AI to analyze vast inspection data. KLA’s metrology equipment is essential for advanced-node production, competing with companies like Applied Materials and ASML. The Milpitas campus includes a state-of-the-art cleanroom and training center."
+    },
+    {
+        "name": "Marvell Technology",
+        "address": "5488 Marvell Ln, Santa Clara, CA 95054",
+        "id": "4944055c-eb37-4b23-aea7-ed7745774ff8",
+        "lat": 37.4116952,
+        "lng": -121.982038,
+        "imageName": "marvell.com.jpg",
+        "description": "Marvell designs data-infrastructure semiconductor solutions, including networking, storage, and custom ASICs for cloud, 5G, and automotive markets. Founded in 1995, Marvell reinvented itself through acquisitions like Cavium and Innovium and a focus on high-speed Ethernet and PAM4 optical DSPs. Its custom silicon unit collaborates with hyperscale cloud providers on AI accelerators and security chips. Marvell’s portfolio targets bandwidth-hungry workloads and edge-to-cloud connectivity. Headquarters reside in Santa Clara, with R&D centers worldwide."
+    },
+    {
+        "name": "Nutanix",
+        "address": "1740 Technology Dr, San Jose, CA 95110",
+        "id": "7cd49109-6ecc-4fbf-8b80-bf32748105b5",
+        "lat": 37.3676689,
+        "lng": -121.9181011,
+        "imageName": "nutanix.com.jpg",
+        "description": "Nutanix pioneered hyperconverged infrastructure (HCI), combining compute, storage, and networking into a single software-defined platform that runs on industry-standard servers. Founded in 2009, its Acropolis OS and Prism management simplify data-center operations and enable hybrid cloud deployments. Nutanix has transitioned to a subscription-licensed software model and partners closely with HPE, Lenovo, and Dell. Its clusters host enterprise workloads, virtual desktops, and Kubernetes containers. The company is expanding into database-as-a-service and cloud-native management."
+    },
+    {
+        "name": "Pure Storage",
+        "address": "650 Castro St #400, Mountain View, CA 94041",
+        "id": "f79f9101-9606-487c-bdeb-81da31e4d95f",
+        "lat": 37.3878672,
+        "lng": -122.0830261,
+        "imageName": "purestorage.com.jpg",
+        "description": "Pure Storage delivers all-flash data storage arrays and subscription services that replace legacy spinning disks with faster, more energy-efficient NVMe media. Founded in 2009, Pure’s Evergreen and Pure-as-a-Service models provide non-disruptive upgrades and OPEX flexibility. Its FlashArray and FlashBlade lines support databases, analytics, AI, and unstructured data workloads. Pure’s unique DirectFlash architecture reduces latency and improves endurance. The company emphasizes sustainability by touting power savings compared to traditional storage."
+    },
+    {
+        "name": "Splunk",
+        "address": "270 Brannan St, San Francisco, CA 94107",
+        "id": "6f9533bb-5ec4-435f-8220-1a930250b191",
+        "lat": 37.782784,
+        "lng": -122.3913852,
+        "imageName": "splunk.com.jpg",
+        "description": "Splunk provides a platform for collecting, indexing, and analyzing machine-generated data to deliver observability and cybersecurity insights. Its core product turns logs and metrics into dashboards, alerts, and AI-driven analytics. Founded in 2003, Splunk coined the term “Google for machine data” and now serves DevOps, IT, and security teams. Splunk transitioned to cloud subscriptions and was acquired by Cisco in 2024 to bolster its security and observability portfolio. Customers use Splunk to monitor applications, detect threats, and ensure compliance."
+    },
+    {
+        "name": "RingCentral",
+        "address": "20 Davis Dr, Belmont, CA 94002",
+        "id": "b8c64dfd-ed3e-445c-b08e-a945826c88eb",
+        "lat": 37.5108949,
+        "lng": -122.3065331,
+        "imageName": "ringcentral.com.jpg",
+        "description": "RingCentral offers cloud-based unified-communications-as-a-service (UCaaS) including business phone, video meetings, team messaging, and contact-center solutions. Founded in 1999, RingCentral displaced legacy PBX systems with its VoIP and mobile apps. The company partners with Avaya and Mitel to migrate on-prem customers to the cloud. RingCentral’s MVP platform integrates with Microsoft Teams, Salesforce, and hundreds of other apps. Predictive analytics and AI-powered transcriptions enhance productivity and customer engagement."
+    },
+    {
+        "name": "Sumo Logic",
+        "address": "855 Main St #100, Redwood City, CA 94063",
+        "id": "a2e91176-f514-45ef-a59b-c555ee8b6884",
+        "lat": 37.4855756,
+        "lng": -122.2259889,
+        "imageName": "sumologic.com.jpg",
+        "description": "Sumo Logic delivers cloud-native log management and security analytics as a multi-tenant SaaS platform. Founded in 2010, it helps DevSecOps teams monitor application performance, troubleshoot incidents, and detect threats in real time. The platform leverages machine learning to provide anomaly detection and predictive insights. Sumo Logic supports structured and unstructured data from AWS, Azure, Kubernetes, and more. In 2023, the company was taken private by Francisco Partners to accelerate growth in cybersecurity and observability."
+    },
+    {
+        "name": "Five9",
+        "address": "3001 Bishop Dr #350, San Ramon, CA 94583",
+        "id": "695c6e29-953c-4324-ba24-174bf3c1eae3",
+        "lat": 37.7644739,
+        "lng": -121.9621458,
+        "imageName": "five9.com.jpg",
+        "description": "Five9 provides cloud contact-center software that enables businesses to deliver omnichannel customer service via voice, chat, email, and social media. Founded in 2001, it replaced legacy on-premise call centers with scalable, AI-powered solutions. Five9’s Intelligent Cloud Contact Center integrates with CRM systems like Salesforce and uses predictive dialing and speech analytics. A proposed acquisition by Zoom in 2021 fell through, but the two companies remain strategic partners. Five9 serves enterprises in retail, healthcare, finance, and outsourcing."
+    },
+    {
+        "name": "Smartsheet",
+        "address": "500 108th Ave NE #200, Bellevue, WA 98004",
+        "id": "2dfb36b3-b379-4e6d-8272-3c9922b7f34b",
+        "lat": 47.6150107,
+        "lng": -122.1957478,
+        "imageName": "smartsheet.com.jpg",
+        "description": "Smartsheet offers a work-management platform that combines spreadsheet ease with project-management and automation capabilities. Launched in 2006, it enables teams to plan, track, and report on projects using grids, cards, Gantt charts, and dashboards. Integrations with Microsoft 365, Google Workspace, and Slack enhance collaboration. Smartsheet Gov provides a FedRAMP-authorized version for U.S. government agencies. Use cases range from marketing campaigns to construction schedules and IT service management."
+    },
+    {
+        "name": "Coupa Software",
+        "address": "1855 S Grant St, San Mateo, CA 94402",
+        "id": "36655442-6030-453d-acaa-8ec90b720135",
+        "lat": 37.5534964,
+        "lng": -122.2995154,
+        "imageName": "coupa.com.jpg",
+        "description": "Coupa delivers cloud spend-management software that helps organizations control procurement, invoicing, and expenses on a single platform. Founded in 2006, Coupa emphasizes “Value as a Service,” tracking customer savings and ROI. The platform uses community intelligence data and AI to benchmark pricing and flag compliance issues. In 2023, private-equity firm Thoma Bravo acquired Coupa for US $8 billion, taking it private to accelerate innovation. Customers across industries use Coupa to gain visibility and automate business spend."
+    },
+    {
+        "name": "Bill.com",
+        "address": "6220 America Center Dr #100, San Jose, CA 95002",
+        "id": "d63c694d-5ed4-4063-ae2b-9fe4912dced7",
+        "lat": 37.4185226,
+        "lng": -121.9784034,
+        "imageName": "bill.com.jpg",
+        "description": "Bill.com automates accounts-payable and accounts-receivable workflows for small and mid-size businesses, streamlining invoice capture, approvals, payments, and reconciliation. Founded in 2006, it integrates with QuickBooks, Xero, NetSuite, and major banks. The company expanded into expense management with its acquisition of Divvy and into cross-border payments via international wires. Bill.com earns revenue from software subscriptions and transaction fees. Its AI-enabled Intelligent Virtual Assistant extracts invoice data and matches it to purchase orders."
+    },
+    {
+        "name": "Nextdoor",
+        "address": "420 Taylor St, San Francisco, CA 94102",
+        "id": "5d025e1d-5ec3-4b6c-bae9-766a1870616a",
+        "lat": 37.7864553,
+        "lng": -122.4111101,
+        "imageName": "nextdoor.com.jpg",
+        "description": "Nextdoor is a social-networking app for neighborhoods, where verified residents share local news, recommendations, and community alerts. Launched in 2011, it operates in 11 countries and partners with public agencies for emergency communications. Businesses use Nextdoor Ads and free Business Pages to reach nearby customers. The company went public via SPAC in 2021 under the ticker KIND. Privacy is reinforced through address verification, though moderation challenges persist."
+    },
+    {
+        "name": "Instacart",
+        "address": "50 Beale St #600, San Francisco, CA 94105",
+        "id": "87f6f96c-e676-48e2-a84f-89d5173682b6",
+        "lat": 37.791302,
+        "lng": -122.3963906,
+        "imageName": "instacart.com.jpg",
+        "description": "Instacart operates a grocery-delivery and pick-up marketplace, connecting shoppers with retailers like Kroger, Costco, and Walmart across North America. Founded in 2012 by Apoorva Mehta, the platform uses a network of gig-economy shoppers to fulfill orders. Revenue comes from delivery fees, Instacart + subscriptions, and a growing retail-media advertising business. Instacart went public in 2023 under the ticker CART. The company is expanding into software services that power grocers’ own e-commerce sites."
+    },
+    {
+        "name": "Chime",
+        "address": "77 Maiden Ln, San Francisco, CA 94108",
+        "id": "d40e3c43-0f85-4fd0-86d1-37c97092a6a8",
+        "lat": 37.7882562,
+        "lng": -122.4046581,
+        "imageName": "chime.com.jpg",
+        "description": "Chime is a neobank offering fee-free checking accounts, savings, and secured credit-builder cards through partnerships with FDIC-insured banks. Founded in 2012, it targets millennials underserved by traditional banks, highlighting no overdraft fees and early paycheck access. The Chime app provides real-time transaction alerts and automatic savings features. Revenue primarily comes from interchange fees on debit-card transactions. Chime remains privately held and one of the most valuable U.S. fintech startups."
+    },
+    {
+        "name": "SoFi",
+        "address": "234 1st St, San Francisco, CA 94105",
+        "id": "4d4f5635-ed3a-4440-95e4-36f34ca3a514",
+        "lat": 37.7877665,
+        "lng": -122.3957115,
+        "imageName": "sofi.com.jpg",
+        "description": "SoFi Technologies began as a student-loan refinancer in 2011 and evolved into a one-stop financial-services app offering personal loans, mortgages, stock and crypto trading, credit cards, and banking. It obtained a U.S. bank charter in 2022 after acquiring Golden Pacific Bancorp. SoFi Stadium naming rights boosted brand recognition through NFL and major events. The company targets digitally native consumers with educational content and community resources. SoFi’s Galileo subsidiary provides payments-processing APIs to other fintechs."
+    },
+    {
+        "name": "Affirm",
+        "address": "650 California St, San Francisco, CA 94108",
+        "id": "742066bd-3da9-4920-84a9-ee63cdcbfddb",
+        "lat": 37.7929223,
+        "lng": -122.405241,
+        "imageName": "affirm.com.jpg",
+        "description": "Affirm offers Buy Now Pay Later financing that lets consumers split purchases into installment payments with transparent terms and no late fees. Founded in 2012 by PayPal co-founder Max Levchin, Affirm partners with merchants like Amazon, Shopify, and Peloton to boost conversion and average order value. Affirm Card extends BNPL flexibility to everyday purchases. The company earns revenue from merchant fees and interest on longer-term loans. Critics monitor the impact of BNPL on consumer debt, prompting increased regulation."
+    },
+    {
+        "name": "Plaid",
+        "address": "123 Mission St #900, San Francisco, CA 94105",
+        "id": "fb643bb5-e75f-4f79-9625-e332b241bec7",
+        "lat": 37.7917585,
+        "lng": -122.394398,
+        "imageName": "plaid.com.jpg",
+        "description": "Plaid provides APIs that let fintech apps connect securely to customers’ bank accounts for payments, identity, and financial-data aggregation. Founded in 2013, Plaid underpins services like Venmo, Robinhood, and Chime. A $5.3 billion acquisition by Visa was blocked by regulators in 2021, after which Plaid raised funding independently. The company is expanding into payroll data, credit underwriting, and open-banking initiatives. Plaid’s mission is to unlock financial freedom for everyone by powering modern digital finance."
+    },
+    {
+        "name": "Carta",
+        "address": "333 Bush St, San Francisco, CA 94104",
+        "id": "d161c28f-b73c-4c85-ab97-1c3fc721f8da",
+        "lat": 37.7907897,
+        "lng": -122.4031102,
+        "imageName": "carta.com.jpg",
+        "description": "Carta manages cap tables, valuations, and equity plans for private and public companies, making ownership more transparent. Founded in 2012, it digitized paper stock certificates and simplified issuing option grants to employees. Carta’s platform hosts secondary share sales through CartaX and provides fund-administration services for VCs. The company advocates for broader employee equity and publishes an annual State of Private Markets report. Privacy concerns and market fluctuations challenge its expansion into trading."
+    },
+    {
+        "name": "Brex",
+        "address": "405 Howard Street Floor 2 San Francisco, CA 94105",
+        "id": "274a4c1c-f12c-44a8-b989-4ba0c4076c2b",
+        "lat": 37.7886088,
+        "lng": -122.3953756,
+        "imageName": "brex.com.jpg",
+        "description": "Brex offers corporate cards, spend-management software, and venture debt tailored to startups and fast-growing businesses. Launched in 2017 by Brazilian founders, Brex uses real-time underwriting to provide high limits without personal guarantees. It expanded into business banking and global expense management through its Empower platform. Brex rewards points can be redeemed for travel, crypto, or statement credits. In 2024 the company shifted focus to larger tech and mid-market customers, pausing services for smaller SMBs."
+    },
+    {
+        "name": "Gusto",
+        "address": "525 20th St, San Francisco, CA 94107",
+        "id": "e01c2774-e659-4576-a15e-f05e9c40db18",
+        "lat": 37.7598766,
+        "lng": -122.3860163,
+        "imageName": "gusto.com.jpg",
+        "description": "Gusto provides cloud payroll, HR, and benefits administration to over 300,000 small- and medium-sized businesses in the United States. Founded in 2011 as ZenPayroll, it automates tax filings, direct deposits, and compliance. Gusto Wallet offers employees budgeting tools and early wage access. The platform integrates with accounting and time-tracking apps, delivering a one-stop HR solution. Gusto prioritizes employee experience and transparent pricing over traditional payroll providers."
+    },
+    {
+        "name": "Blend Labs",
+        "address": "415 Kearny St, San Francisco, CA 94108",
+        "id": "86dd3a4f-4aef-45fc-b85b-c450abd2633b",
+        "lat": 37.7918954,
+        "lng": -122.4045358,
+        "imageName": "blend.com.jpg",
+        "description": "Blend provides digital-lending software that streamlines mortgage, consumer-loan, and deposit-account origination for banks and credit unions. Founded in 2012, Blend’s white-label platform powers applications for Wells Fargo, U.S. Bank, and other major lenders. It leverages data connectivity to prefill forms and verify income quickly, reducing application friction. Blend went public in 2021 but faces mortgage-market cycles that affect revenue. The company is expanding into identity verification and home-equity products."
+    },
+    {
+        "name": "Upstart",
+        "address": "2950 S Delaware St, San Mateo, CA 94403",
+        "id": "57f6df70-3c67-44c4-afd6-ef5191010108",
+        "lat": 37.5413944,
+        "lng": -122.2997062,
+        "imageName": "upstart.com.jpg",
+        "description": "Upstart is an AI-driven lending platform that partners with banks to offer personal loans, auto refinancing, and small-business loans. Founded by former Google execs in 2012, it uses alternative data like education and employment to assess creditworthiness. Upstart’s model aims to expand credit access to thin-file borrowers while maintaining low default rates. The company operates as a loan marketplace, selling most originations to bank partners or capital markets. Economic conditions and funding-cost swings influence loan volumes."
+    },
+    {
+        "name": "Mashgin",
+        "address": "3500 Edison Way, Menlo Park, CA 94025",
+        "id": "f6abd630-8f76-46cc-8d9e-feebb9c29314",
+        "lat": 37.4766319,
+        "lng": -122.1969753,
+        "imageName": "mashgin.com.jpg",
+        "description": "Mashgin builds AI-powered self-checkout kiosks that use computer vision to identify multiple items instantly without barcodes. Founded in 2013, the system is deployed in stadiums, cafeterias, and convenience stores to reduce wait times. Customers place items on the tray, see the total, and pay in seconds. Mashgin reports average transaction times under 15 seconds and increased throughput for merchants. The company competes with Amazon Just Walk Out and other cashierless technologies."
+    },
+    {
+        "name": "Figma",
+        "address": "760 Market St, Floor 5, San Francisco, CA 94102",
+        "id": "730e4b2a-39a8-4043-adf3-6c23ba0a8197",
+        "lat": 37.7861007,
+        "lng": -122.4056342,
+        "imageName": "figma.com.jpg",
+        "description": "Figma offers a browser-based interface-design and collaboration platform that allows teams to co-design in real time, replacing desktop tools like Sketch. Founded in 2012, its multiplayer editing, component libraries, and design-system features have made it a favorite among product designers. Figma Community lets users share and remix templates and plugins. Adobe announced a $20 billion acquisition in 2022, but antitrust regulators blocked the deal in 2024. Figma continues to expand with FigJam online whiteboards and DevMode handoff tools."
+    },
+    {
+        "name": "Notion Labs",
+        "address": "2300 Harrison St, San Francisco, CA 94110",
+        "id": "1cb9d2b1-0352-483e-bb9b-13d3a12f5df4",
+        "lat": 37.76039,
+        "lng": -122.4131897,
+        "imageName": "notion.so.jpg",
+        "description": "Notion is an all-in-one workspace for notes, databases, project management, and wikis, used by individuals and teams to organize information flexibly. Launched in 2016, Notion’s block-based pages allow drag-and-drop customization without coding. The tool’s templates and integrations support use cases from personal journaling to company knowledge bases. Notion AI assists with writing, summarizing, and task creation. The company remains privately funded and profitable, with a vibrant community and marketplace ecosystem."
+    },
+    {
+        "name": "Airtable",
+        "address": "799 Market St, San Francisco, CA 94103",
+        "id": "6719637c-d43a-4a16-af57-fdc97e4a6225",
+        "lat": 37.7856544,
+        "lng": -122.4052753,
+        "imageName": "airtable.com.jpg",
+        "description": "Airtable combines the familiarity of spreadsheets with the power of relational databases to let users build custom workflow apps without code. Founded in 2012, Airtable Base can track projects, inventory, or content calendars and syncs across views like grid, kanban, and timeline. The platform supports scripting, automation, and an extensive marketplace of extensions. Enterprise adoption has grown through data-governance and connected-apps features. Airtable is used by marketing teams, product managers, and non-technical builders worldwide."
+    },
+    {
+        "name": "Zapier",
+        "address": "548 Market St #62411, San Francisco, CA 94104",
+        "id": "f0f0a9c3-0036-4902-b5c9-68a9b7d0fe99",
+        "lat": 37.7908517,
+        "lng": -122.4006138,
+        "imageName": "zapier.com.jpg",
+        "description": "Zapier is a no-code automation platform enabling users to connect over 6,000 web apps and automate workflows called “Zaps.” Founded in 2011, it allows small businesses and individuals to transfer data and trigger actions without developer resources. Zapier’s freemium model scales to paid tiers offering multi-step Zaps, premium apps, and advanced features. The fully remote company is bootstrapped and profitable, often cited as a leader in the no-code movement. AI-powered Zap creation and “Interfaces” micro-apps extend its automation capabilities."
+    },
+    {
+        "name": "Miro",
+        "address": "201 Mission St #2900, San Francisco, CA 94105",
+        "id": "ecb35769-d0c0-4f73-9406-161e2d0820bb",
+        "lat": 37.7914374,
+        "lng": -122.3950694,
+        "imageName": "miro.com.jpg",
+        "description": "Miro offers an online collaborative whiteboard used by distributed teams for brainstorming, agile planning, and diagramming. Founded in 2011 (as RealtimeBoard), Miro surged in popularity during remote-work shifts. The platform features sticky notes, templates, and integrations with Slack, Jira, and Zoom. Miroverse hosts community-created templates for design sprints, OKRs, and user-journey maps. The company is headquartered in Amsterdam and San Francisco, serving over 60 million users."
+    },
+    {
+        "name": "Datadog",
+        "address": "620 3rd St, San Francisco, CA 94107",
+        "id": "06408f35-41f7-42ef-bdee-d57e03af4997",
+        "lat": 37.7795133,
+        "lng": -122.3940493,
+        "imageName": "datadoghq.com.jpg",
+        "description": "Datadog provides cloud-scale monitoring and security for applications, infrastructure, logs, and user experience, consolidating observability into a single SaaS platform. Founded in 2010, it integrates with 700+ technologies, including AWS, Kubernetes, and PostgreSQL. Datadog’s real-user monitoring (RUM) and APM help DevOps teams detect performance issues quickly. The company has expanded into cloud-security posture management and application-security testing. Datadog went public in 2019 and continues rapid growth driven by digital transformation."
+    },
+    {
+        "name": "Unity Technologies",
+        "address": "657 Mission St, San Francisco, CA 94105",
+        "id": "08d5d35f-c43d-4e44-b900-1ca468b40c2c",
+        "lat": 37.7867095,
+        "lng": -122.4008276,
+        "imageName": "unity.com.jpg",
+        "description": "Unity develops a real-time 3D game engine and development platform used in over half of the world’s mobile and VR games. Founded in Denmark in 2004, Unity democratized game creation with an accessible engine and asset store. Beyond gaming, Unity powers simulations in automotive, film, architecture, and digital twins. The company monetizes through software subscriptions, advertising (Unity Ads), and in-game purchases. A 2023 merger with ironSource expanded Unity’s ad-tech capabilities amid competition with Epic Games’ Unreal Engine."
+    },
+    {
+        "name": "AppLovin",
+        "address": "1100 Page Mill Rd, Palo Alto, CA 94304",
+        "id": "416bb904-e5d3-4620-9ba6-048511609808",
+        "lat": 37.4152188,
+        "lng": -122.153139,
+        "imageName": "applovin.com.jpg",
+        "description": "AppLovin provides a software platform for mobile app developers to acquire users, monetize through advertising, and analyze performance. Founded in 2012, it combines the AppLovin Exchange, MAX mediation, and SparkLabs creative tools. The company owns and operates its own studios, including Machine Zone and Lion Studios, producing games like “Game of War.” AppLovin went public in 2021 and pivoted toward AI-driven ad targeting after privacy changes challenged mobile advertising. It competes with Unity Ads and ironSource in the app-monetization ecosystem."
+    }
+]
