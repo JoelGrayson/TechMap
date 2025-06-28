@@ -7,6 +7,7 @@
 
 import SwiftUI
 import MapKit
+import Kingfisher
 
 struct MapTabView: View {
     var firebaseVM: FirebaseVM
@@ -23,9 +24,12 @@ struct MapTabView: View {
             UserAnnotation() //display user's current location on the map
             
             ForEach(companies) { company in
-                Marker(coordinate: .init(latitude: company.lat, longitude: company.lng)) {
-                    Text(company.name)
-                    // Image()
+                Annotation(company.name, coordinate: .init(latitude: company.lat, longitude: company.lng)) {
+                    VStack {
+                        if let url = URL(string: Constants.imageBasePath+company.imageName) {
+                            KFImage(url)
+                        }
+                    }
                 }
                 .tag(company)
             }
