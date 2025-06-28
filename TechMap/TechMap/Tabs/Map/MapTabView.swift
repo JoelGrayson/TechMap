@@ -19,27 +19,16 @@ struct MapTabView: View {
     @State private var audioPlayer: AVAudioPlayer?
     
     private func playCustomSound() {
-        print("Attempting to play custom sound...")
-        
-        guard let soundURL = Bundle.main.url(forResource: "check", withExtension: "m4a") else {
-            print("Could not find check.m4a file in bundle")
-            return
-        }
-        
-        print("Found sound file at: \(soundURL)")
+        guard let soundURL = Bundle.main.url(forResource: "check", withExtension: "m4a") else { return }
         
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
             audioPlayer?.prepareToPlay()
-            
-            // Configure audio session for playback
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)
-            
-            let success = audioPlayer?.play() ?? false
-            print("Audio play attempted, success: \(success)")
+            audioPlayer?.play()
         } catch {
-            print("Error playing sound: \(error.localizedDescription)")
+            print("Error playing sound: \(error)")
         }
     }
     

@@ -8,6 +8,12 @@
 import SwiftUI
 
 extension View {
+    func sectionTitle() -> some View {
+        self
+            .font(.title3)
+            .bold()
+    }
+    
     func title() -> some View {
         self
             .font(.title)

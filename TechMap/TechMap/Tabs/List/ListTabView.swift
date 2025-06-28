@@ -11,23 +11,18 @@ struct ListTabView: View {
     var firebaseVM: FirebaseVM
     var companies: [Company]
     var checks: [Check]
-//    
-//    var visited: [Company] {
-//        companies.filter {
-//            companyChecked(company: $0, checks: checks)
-//        }
-//    }
-//    var notVisitedYet: [Company] {
-//        companies.filter {
-//            !companyChecked(company: $0, checks: checks)
-//        }
-//    }
     
+        var notVisitedYet: [Company] {
+            companies.filter {
+                !companyChecked(company: $0, checks: checks)
+            }
+        }
+
     var body: some View {
         Text("Visited \(checks.count) of \(companies.count) companies")
         
         Text("Visited")
-            .title()
+            .sectionTitle()
         
         List(checks) { check in
             let associatedCompany = companies.first(where: { $0.id == check.companyId })
@@ -35,6 +30,7 @@ struct ListTabView: View {
                 HStack {
                     InlineLogo(imageName: associatedCompany.imageName)
                     Text(associatedCompany.name)
+                    Spacer()
                     Text(RelativeDateFormatter.format(check.createdAt))
                 }
             } else {
@@ -44,9 +40,14 @@ struct ListTabView: View {
         }
         
         Text("Not Visited Yet")
-            .title()
+            .sectionTitle()
         
-        
+        List(notVisitedYet) { company in
+            HStack {
+                InlineLogo(imageName: company.imageName)
+                Text(company.name)
+            }
+        }
     }
 }
 
