@@ -24,22 +24,7 @@ struct CompanyDetails: View {
                 if let company {
                     HStack {
                         // Logo
-                        if let url = imageURL(imageName: company.imageName) {
-                            AsyncImage(url: url) { phase in
-                                switch phase {
-                                case .empty:
-                                    ProgressView()
-                                case .success(let image):
-                                    image
-                                        .resizable()
-                                        .frame(width: Styles.charIconSize, height: Styles.charIconSize)
-                                case .failure:
-                                    EmptyView()
-                                @unknown default:
-                                    EmptyView()
-                                }
-                            }
-                        }
+                        InlineLogo(imageName: company.imageName)
                         
                         // Name
                         Text(company.name)

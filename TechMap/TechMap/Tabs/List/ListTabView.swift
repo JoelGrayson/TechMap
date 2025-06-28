@@ -11,19 +11,41 @@ struct ListTabView: View {
     var firebaseVM: FirebaseVM
     var companies: [Company]
     var checks: [Check]
+//    
+//    var visited: [Company] {
+//        companies.filter {
+//            companyChecked(company: $0, checks: checks)
+//        }
+//    }
+//    var notVisitedYet: [Company] {
+//        companies.filter {
+//            !companyChecked(company: $0, checks: checks)
+//        }
+//    }
     
     var body: some View {
         Text("Visited \(checks.count) of \(companies.count) companies")
         
         Text("Visited")
-            .bold()
+            .title()
         
         List(checks) { check in
-            Text(check.companyId)
+            let associatedCompany = companies.first(where: { $0.id == check.companyId })
+            if let associatedCompany {
+                HStack {
+                    InlineLogo(imageName: associatedCompany.imageName)
+                    Text(associatedCompany.name)
+                    Text(RelativeDateFormatter.format(check.createdAt))
+                }
+            } else {
+                // there is a bug
+                Text(check.companyId)
+            }
         }
         
         Text("Not Visited Yet")
-            .bold()
+            .title()
+        
         
     }
 }

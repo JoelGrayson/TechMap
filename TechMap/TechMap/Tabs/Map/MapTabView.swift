@@ -8,6 +8,7 @@
 import SwiftUI
 import MapKit
 import Kingfisher
+import AVFoundation
 
 struct MapTabView: View {
     var firebaseVM: FirebaseVM
@@ -49,6 +50,7 @@ struct MapTabView: View {
                     checked: companyChecked(company: selectedCompany, checks: checks),
                     markAsVisited: {
                         firebaseVM.addCheck(companyId: selectedCompany?.id)
+                        AudioServicesPlaySystemSound(1016) // Pleasant ding sound
                     },
                     uncheck: {
                         firebaseVM.deleteCheck(companyId: selectedCompany?.id)

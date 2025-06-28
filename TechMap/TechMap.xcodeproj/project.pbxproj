@@ -33,6 +33,9 @@
 		38C25A042E10862300233CFE /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A032E10862300233CFE /* Check.swift */; };
 		38C25A062E10884900233CFE /* UserWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A052E10884900233CFE /* UserWrapper.swift */; };
 		38C25A082E109B2400233CFE /* companyChecked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A072E109B2400233CFE /* companyChecked.swift */; };
+		38C25A0B2E109C3900233CFE /* View+TextModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A0A2E109C3900233CFE /* View+TextModifiers.swift */; };
+		38C25A0D2E109D1E00233CFE /* RelativeDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A0C2E109D1E00233CFE /* RelativeDateFormatter.swift */; };
+		38C25A0F2E109EB800233CFE /* InlineLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A0E2E109EB800233CFE /* InlineLogo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,9 @@
 		38C25A032E10862300233CFE /* Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
 		38C25A052E10884900233CFE /* UserWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWrapper.swift; sourceTree = "<group>"; };
 		38C25A072E109B2400233CFE /* companyChecked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = companyChecked.swift; sourceTree = "<group>"; };
+		38C25A0A2E109C3900233CFE /* View+TextModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TextModifiers.swift"; sourceTree = "<group>"; };
+		38C25A0C2E109D1E00233CFE /* RelativeDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelativeDateFormatter.swift; sourceTree = "<group>"; };
+		38C25A0E2E109EB800233CFE /* InlineLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineLogo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +112,9 @@
 				38303E3A2E0DB1180085AFC4 /* TabsView.swift */,
 				38303E412E0DB1400085AFC4 /* Tabs */,
 				38303E5A2E0E00740085AFC4 /* Model */,
-				38C259FA2E1074B400233CFE /* Utils */,
 				38C259FD2E1075F100233CFE /* Components */,
+				38C259FA2E1074B400233CFE /* Utils */,
+				38C25A092E109C3100233CFE /* Extensions */,
 				38C25A022E1085EC00233CFE /* Constants */,
 			);
 			path = TechMap;
@@ -165,6 +172,7 @@
 				38C259FB2E1074D900233CFE /* imageURL.swift */,
 				38C25A002E1081C600233CFE /* openInMaps.swift */,
 				38C25A072E109B2400233CFE /* companyChecked.swift */,
+				38C25A0C2E109D1E00233CFE /* RelativeDateFormatter.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				38C259FE2E1075FB00233CFE /* CloseIcon.swift */,
+				38C25A0E2E109EB800233CFE /* InlineLogo.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -185,6 +194,14 @@
 				38C259F62E106E6B00233CFE /* Styles.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		38C25A092E109C3100233CFE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				38C25A0A2E109C3900233CFE /* View+TextModifiers.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,8 +295,11 @@
 				38C25A042E10862300233CFE /* Check.swift in Sources */,
 				38C25A082E109B2400233CFE /* companyChecked.swift in Sources */,
 				38C259F52E106ABF00233CFE /* JMarker.swift in Sources */,
+				38C25A0F2E109EB800233CFE /* InlineLogo.swift in Sources */,
+				38C25A0B2E109C3900233CFE /* View+TextModifiers.swift in Sources */,
 				38303E3E2E0DB1180085AFC4 /* TabsView.swift in Sources */,
 				38C25A012E1081C600233CFE /* openInMaps.swift in Sources */,
+				38C25A0D2E109D1E00233CFE /* RelativeDateFormatter.swift in Sources */,
 				38303E462E0DB1650085AFC4 /* MapTabView.swift in Sources */,
 				38303E3F2E0DB1180085AFC4 /* TechMapApp.swift in Sources */,
 				38C259EB2E0FB2CE00233CFE /* MockData.swift in Sources */,
