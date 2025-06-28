@@ -14,24 +14,46 @@ struct TabsView: View {
     @FirestoreQuery(collectionPath: "companies")
     var companies: [Company]
     
-//    @FirestoreQuery(
-//        collectionPath: "checks",
-//        predicates: [.where("userId", isEqualTo: firebaseVM.uid)]
-//    )
-//    var checks: [Check]
+    @State private var checks: [Check] = []
     
     var body: some View {
         TabView {
             Tab("Map", systemImage: "mappin.circle.fill") {
-                MapTabView(firebaseVM: firebaseVM, companies: companies)
+                MapTabView(firebaseVM: firebaseVM, companies: companies, checks: checks)
             }
             Tab("List", systemImage: "list.bullet") {
-                ListTabView(firebaseVM: firebaseVM)
+                ListTabView(firebaseVM: firebaseVM, companies: companies, checks: checks)
             }
             Tab("Settings", systemImage: "gearshape.fill") {
                 SettingsTabView(firebaseVM: firebaseVM)
             }
         }
+        .onAppear {
+            loadChecks()
+        }
+        .onChange(of: firebaseVM.uid) {
+            loadChecks()
+        }
+    }
+    
+    func loadChecks() {
+        guard let uid = firebaseVM.uid else {
+            print("UID not found when loading checks")
+            return
+        }
+        let db = Firestore.firestore()
+        db.collection("checkmarks")
+            .whereField("userId", isEqualTo: uid)
+            .addSnapshotListener { snapshot, error in
+                guard let documents = snapshot?.documents else {
+                    print("Error fetching checks: \(error?.localizedDescription ?? "Unknown error")")
+                    return
+                }
+                
+                self.checks = documents.compactMap { document in
+                    try? document.data(as: Check.self)
+                }
+            }
     }
 }
 

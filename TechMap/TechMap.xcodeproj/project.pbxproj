@@ -32,6 +32,7 @@
 		38C25A012E1081C600233CFE /* openInMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A002E1081C600233CFE /* openInMaps.swift */; };
 		38C25A042E10862300233CFE /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A032E10862300233CFE /* Check.swift */; };
 		38C25A062E10884900233CFE /* UserWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A052E10884900233CFE /* UserWrapper.swift */; };
+		38C25A082E109B2400233CFE /* companyChecked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C25A072E109B2400233CFE /* companyChecked.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		38C25A002E1081C600233CFE /* openInMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openInMaps.swift; sourceTree = "<group>"; };
 		38C25A032E10862300233CFE /* Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
 		38C25A052E10884900233CFE /* UserWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWrapper.swift; sourceTree = "<group>"; };
+		38C25A072E109B2400233CFE /* companyChecked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = companyChecked.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				38C259FB2E1074D900233CFE /* imageURL.swift */,
 				38C25A002E1081C600233CFE /* openInMaps.swift */,
+				38C25A072E109B2400233CFE /* companyChecked.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				38303E5C2E0E00970085AFC4 /* FirebaseVM.swift in Sources */,
 				38303E4A2E0DB17B0085AFC4 /* ListTabView.swift in Sources */,
 				38C25A042E10862300233CFE /* Check.swift in Sources */,
+				38C25A082E109B2400233CFE /* companyChecked.swift in Sources */,
 				38C259F52E106ABF00233CFE /* JMarker.swift in Sources */,
 				38303E3E2E0DB1180085AFC4 /* TabsView.swift in Sources */,
 				38C25A012E1081C600233CFE /* openInMaps.swift in Sources */,

@@ -12,6 +12,7 @@ import Kingfisher
 struct MapTabView: View {
     var firebaseVM: FirebaseVM
     var companies: [Company]
+    var checks: [Check]
     
     @State var selectedCompany: Company?
     
@@ -24,7 +25,7 @@ struct MapTabView: View {
                     ForEach(companies) { company in
                         Annotation(company.name, coordinate: .init(latitude: company.lat, longitude: company.lng)) {
                             JMarker(
-                                checked: company.name.first == "A",
+                                checked: companyChecked(company: company, checks: checks),
                                 imageName: company.imageName,
                                 selected: selectedCompany == company
                             )
@@ -45,13 +46,12 @@ struct MapTabView: View {
                     company: $selectedCompany,
                     height: companyDetailsHeight,
                     
-                    // TODO: fill in these values
-                    checked: false,
+                    checked: companyChecked(company: selectedCompany, checks: checks),
                     markAsVisited: {
-                        
+                        firebaseVM.addCheck(companyId: selectedCompany?.id)
                     },
                     uncheck: {
-                        
+                        firebaseVM.deleteCheck(companyId: selectedCompany?.id)
                     }
                 )
                 .frame(height: companyDetailsHeight)
@@ -62,5 +62,6 @@ struct MapTabView: View {
 }
 
 #Preview {
-    MapTabView(firebaseVM: MockData.firebaseVM, companies: MockData.companies)
+    MapTabView(firebaseVM: MockData.firebaseVM, companies: MockData.companies, checks: MockData.checks)
 }
+

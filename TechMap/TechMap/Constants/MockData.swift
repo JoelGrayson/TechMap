@@ -44,5 +44,6 @@ struct MockData {
             """
         )
     ]
+    static let checks = [Check]()
 }
 

@@ -146,9 +146,13 @@ class FirebaseVM { //handles auth and firestore
     
     
     // Checks functions
-    func addCheck(companyId: String) {
+    func addCheck(companyId: String?) {
         guard let uid = uid else {
             print("A user is required to add a check")
+            return
+        }
+        guard let companyId else {
+            print("companyId undefined. Ignoring add action.")
             return
         }
         
@@ -164,9 +168,13 @@ class FirebaseVM { //handles auth and firestore
         }
     }
     
-    func deleteCheck(companyId: String) {
+    func deleteCheck(companyId: String?) {
         guard let uid = uid else {
             print("A user is required to delete a check")
+            return
+        }
+        guard let companyId else {
+            print("companyId undefined. Ignoring delete action.")
             return
         }
         

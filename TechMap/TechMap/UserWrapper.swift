@@ -11,7 +11,13 @@ struct UserWrapper: View {
     @State private var firebaseVM = FirebaseVM()
     
     var body: some View {
-        TabsView(firebaseVM: firebaseVM)
+        VStack {
+            if firebaseVM.isSignedIn == .notSignedIn {
+                ProgressView() //creating an account for anything to work
+            } else {
+                TabsView(firebaseVM: firebaseVM)
+            }
+        }
             .onAppear {
                 firebaseVM.checkAuthState()
             }
