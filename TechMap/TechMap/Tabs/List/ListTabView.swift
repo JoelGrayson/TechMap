@@ -22,6 +22,7 @@ struct ListTabView: View {
         NavigationStack {
             VStack(alignment: .leading) {
                 Text("Visited \(checks.count) of \(companies.count) companies")
+                    .padding(.bottom)
                 
                 Text("Visited")
                     .sectionTitle()
@@ -45,9 +46,7 @@ struct ListTabView: View {
                     }
                 }
                 .navigationDestination(for: Company.self) { company in
-                    Text(company.name)
-//                    CompanyDetails(company: .init(company), height: .infinity, checked: false, markAsVisited: <#T##() -> Void#>, uncheck: <#T##() -> Void#>)
-                    // CompanyDetails(company: company, height: .infinity, checked: <#T##Bool#>, markAsVisited: <#T##() -> Void#>, uncheck: <#T##() -> Void#>)
+                    CompanyDetails(company: .constant(company), checks: checks, firebaseVM: firebaseVM, closable: false)
                 }
                 .listStyle(.plain)
                 

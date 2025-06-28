@@ -42,7 +42,7 @@ struct MapTabView: View {
                 
                 let height = geo.size.height * 0.5 //height for this company details pane
                 
-                CompanyDetails(company: $selectedCompany, checks: checks, firebaseVM: firebaseVM)
+                CompanyDetails(company: $selectedCompany, checks: checks, firebaseVM: firebaseVM, closable: true)
                 .frame(height: height)
                 .background {
                     RoundedRectangle(cornerRadius: Styles.cornerRadius)

@@ -11,6 +11,7 @@ struct CompanyDetails: View {
     @Binding var company: Company?
     let checks: [Check]
     let firebaseVM: FirebaseVM
+    let closable: Bool
     
     // Computed properties
     private var checked: Bool {
@@ -56,10 +57,12 @@ struct CompanyDetails: View {
                         }
                         
                         // Close Button
-                        Button {
-                            self.company = nil
-                        } label: {
-                            CloseIcon()
+                        if closable {
+                            Button {
+                                self.company = nil
+                            } label: {
+                                CloseIcon()
+                            }
                         }
                     }
                     
