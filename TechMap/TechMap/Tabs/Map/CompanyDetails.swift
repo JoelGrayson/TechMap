@@ -8,37 +8,42 @@
 import SwiftUI
 
 struct CompanyDetails: View {
-    let company: Company
-    let onClose: () -> Void
+    @Binding var company: Company?
+    let height: CGFloat
     let checked: Bool
     let markAsVisited: () -> Void
     let uncheck: () -> Void
+    
+    var hidden: Bool {
+        company == nil
+    }
     
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
                 HStack {
                     // Logo
-                    if let url = imageURL(imageName: company.imageName) {
-                        AsyncImage(url: url) { phase in
-                            switch phase {
-                            case .empty:
-                                ProgressView()
-                            case .success(let image):
-                                image
-                                    .resizable()
-                                    .frame(width: Styles.charIconSize, height: Styles.charIconSize)
-                            case .failure:
-                                EmptyView()
-                            @unknown default:
-                                EmptyView()
+                    if let company {
+                        if let url = imageURL(imageName: company.imageName) {
+                            AsyncImage(url: url) { phase in
+                                switch phase {
+                                case .empty:
+                                    ProgressView()
+                                case .success(let image):
+                                    image
+                                        .resizable()
+                                        .frame(width: Styles.charIconSize, height: Styles.charIconSize)
+                                case .failure:
+                                    EmptyView()
+                                @unknown default:
+                                    EmptyView()
+                                }
                             }
                         }
+                        
+                        // Name
+                        Text(company.name)
                     }
-                    
-                    // Name
-                    Text(company.name)
-                    
                     
                     Spacer()
                     
@@ -55,7 +60,7 @@ struct CompanyDetails: View {
                     
                     // Close Button
                     Button {
-                        onClose()
+                        self.company = nil
                     } label: {
                         CloseIcon()
                     }
@@ -64,7 +69,7 @@ struct CompanyDetails: View {
                 HStack {
                     Image(systemName: "mappin")
                         .frame(width: Styles.charIconSize, height: Styles.charIconSize)
-                    Text(company.address)
+                    Text(company?.address ?? "")
                         .lineLimit(1)
                         .truncationMode(.tail)
                 }
@@ -81,20 +86,23 @@ struct CompanyDetails: View {
                 }
                 HStack {
                     ScrollView {
-                        Text(Image(systemName: "info")) + Text(company.description)
+                        Text(Image(systemName: "info")) + Text(company?.description ?? "")
                     }
                     .lineLimit(8)
                 }
             }
+            .opacity(hidden ? 0 : 1)
             .padding()
         }
         .background {
             RoundedRectangle(cornerRadius: Styles.cornerRadius)
                 .fill(Color.whiteOrBlack)
         }
+        .offset(y: hidden ? height * 1.2 : 0) //when there is no company, it closes itself
+        .animation(.spring, value: hidden)
     }
 }
-
-#Preview {
-    CompanyDetails(company: MockData.companies[0], onClose: {}, checked: false, markAsVisited: {}, uncheck: {})
-}
+//
+//#Preview {
+//    CompanyDetails(company: .init(MockData.companies[0]), height: 500.0, checked: false, markAsVisited: {}, uncheck: {})
+//}

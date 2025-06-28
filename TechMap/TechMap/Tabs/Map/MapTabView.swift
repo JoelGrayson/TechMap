@@ -39,24 +39,23 @@ struct MapTabView: View {
                     MapScaleView() //only appears when zooming in and out
                 }
                 
-                if let selectedCompany {
-                    CompanyDetails(
-                        company: selectedCompany,
-                        onClose: {
-                            self.selectedCompany = nil
-                        },
-                        // TODO: fill in these values
-                        checked: false,
-                        markAsVisited: {
-                            
-                        },
-                        uncheck: {
-                            
-                        }
-                    )
-                    .frame(width: geo.size.width, height: geo.size.height * 0.4)
-                    .padding()
-                }
+                let companyDetailsHeight = geo.size.height * 0.5
+                
+                CompanyDetails(
+                    company: $selectedCompany,
+                    height: companyDetailsHeight,
+                    
+                    // TODO: fill in these values
+                    checked: false,
+                    markAsVisited: {
+                        
+                    },
+                    uncheck: {
+                        
+                    }
+                )
+                .frame(width: geo.size.width, height: companyDetailsHeight)
+                .padding()
             }
         }
     }
