@@ -16,7 +16,7 @@ struct TechMapApp: App {
     
     var body: some Scene {
         WindowGroup {
-            TabsView()
+            UserWrapper()
         }
     }
 }

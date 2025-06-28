@@ -23,14 +23,11 @@ class FirebaseVM { //handles auth and firestore
     var uid: String?
     
     
-    // Checklists (Firestore)
-    // TODO:
-    
-    
     init() {
         checkAuthState() //for persisting
     }
     
+    // Auth Functions
     func signInWithGoogle() async -> Bool {
         guard let clientID = FirebaseApp.app()?.options.clientID else {
             fatalError("No Google ClientID in Firebase config")
@@ -103,6 +100,19 @@ class FirebaseVM { //handles auth and firestore
         name = nil
         photoURL = nil
         uid = nil
+    }
+    
+    
+    // Checks functions
+    func addCheck(companyId: String) {
+        guard let uid = uid else {
+            print("A user is required to add a check")
+            return
+        }
+    }
+    
+    func deleteCheck(companyId: String) {
+        
     }
 }
 

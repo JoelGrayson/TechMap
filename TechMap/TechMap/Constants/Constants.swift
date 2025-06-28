@@ -10,3 +10,4 @@ import Foundation
 struct Constants {
     static let imageBasePath = "https://joelgrayson.com/image/techmap/logos/" //e.g. +"netflix.com.jpg"
 }
+
