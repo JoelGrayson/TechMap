@@ -13,7 +13,6 @@ struct CompanyDetails: View {
     @Binding var company: Company?
     let checks: [Check]
     let firebaseVM: FirebaseVM
-    let locationVM: LocationVM
     let closable: Bool
     let onDirectionsRequested: ((Company) -> Void)?
     
@@ -32,6 +31,30 @@ struct CompanyDetails: View {
     }
     private func uncheck() {
         firebaseVM.deleteCheck(companyId: company?.id)
+    }
+    
+    @State private var distance: String?
+    @State private var time: String?
+    
+    func calculateDistanceAndTime() {
+        guard let company else { return }
+        
+        let request = MKDirections.Request()
+        request.source = MKMapItem.forCurrentLocation()
+        request.destination = MKMapItem(
+            placemark: MKPlacemark(
+                coordinate: CLLocationCoordinate2D(latitude: company.lat, longitude: company.lng)
+            )
+        )
+        request.transportType = .walking //TODO: make this configurable in settings
+        
+        let directions = MKDirections(request: request)
+        directions.calculateETA { response, error in
+            DispatchQueue.main.async {
+                self.distance = response?.distance.description
+                self.time = response?.expectedTravelTime.description
+            }
+        }
     }
     
     var body: some View {
@@ -129,6 +152,19 @@ struct CompanyDetails: View {
             .opacity(hidden ? 0 : 1)
             .padding()
         }
+        .onAppear {
+            calculateDistanceAndTime()
+        }
+        .onChange(of: company) { oldValue, newValue in
+            if oldValue != newValue {
+                calculateDistanceAndTime()
+            }
+        }
     }
+}
+
+struct DistanceAndTime {
+    var distance: String
+    var time: String
 }
 
