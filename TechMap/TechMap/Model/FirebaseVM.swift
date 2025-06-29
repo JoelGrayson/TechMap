@@ -1,5 +1,5 @@
 //
-//  AuthVM.swift
+//  FirebaseVM.swift
 //  TechMap
 //
 //  Created by Joel Grayson on 6/26/25.
@@ -11,6 +11,10 @@ import FirebaseAuth
 import GoogleSignIn
 import GoogleSignInSwift
 import FirebaseFirestore
+
+// for Continue with Apple
+import CryptoKit
+import AuthenticationServices
 
 enum SignInState {
     case notSignedIn
@@ -29,6 +33,7 @@ class FirebaseVM { //handles auth and firestore
     var photoURL: URL?
     var uid: String?
     
+    private var currentNonce: String?
     
     // Auth Functions
     func signInAnonymously() async {
@@ -94,6 +99,46 @@ class FirebaseVM { //handles auth and firestore
             print(error.localizedDescription)
             errorMessage = error.localizedDescription
             return false
+        }
+    }
+    
+    // Two Continue with Apple functions
+    func handleSignInWithAppleRequest(_ request: ASAuthorizationAppleIDRequest) {
+        request.requestedScopes = [.fullName, .email]
+        let nonce = randomNonceString()
+        currentNonce = nonce
+        request.nonce = sha256(nonce)
+    }
+    
+    func handleSignInWithAppleCompletion(_ result: Result<ASAuthorization, Error>) {
+        if case .failure(let failure) = result {
+            errorMessage = failure.localizedDescription
+            return
+        }
+        if case .success(let authorization) = result {
+            if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
+                guard let nonce = currentNonce else {
+                    fatalError("Invalid state: a login callback was received, but no login request was sent.")
+                }
+                guard let appleIDToken = appleIDCredential.identityToken else {
+                    print("Unable to fetch identify token.")
+                    return
+                }
+                guard let idTokenString = String(data: appleIDToken, encoding: .utf8) else {
+                    print("Unable to serialise token string from data: \(appleIDToken.debugDescription)")
+                    return
+                }
+                let credential = OAuthProvider.credential(providerID: .apple, idToken: idTokenString, rawNonce: nonce)
+                
+                Task {
+                    do {
+                        let result = try await Auth.auth().signIn(with: credential)
+                        setPropertiesFrom(user: result.user)
+                    } catch {
+                        print("Error authenticating: \(error.localizedDescription)")
+                    }
+                }
+            }
         }
     }
     
