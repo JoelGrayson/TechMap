@@ -13,8 +13,10 @@ import AuthenticationServices
 
 struct SettingsTabView: View {
     @Environment(\.colorScheme) var colorScheme
-    var firebaseVM: FirebaseVM
     
+    var firebaseVM: FirebaseVM
+    var locationVM: LocationVM
+
     var body: some View {
         VStack {
             if let errorMessage = firebaseVM.errorMessage {
@@ -80,5 +82,5 @@ struct SettingsTabView: View {
 }
 
 #Preview {
-    SettingsTabView(firebaseVM: MockData.firebaseVM)
+    SettingsTabView(firebaseVM: MockData.firebaseVM, locationVM: .init())
 }

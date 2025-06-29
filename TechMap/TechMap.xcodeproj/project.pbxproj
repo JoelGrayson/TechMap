@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		381C1DCA2E11ADE5006BF692 /* randomNonceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C1DC92E11ADE5006BF692 /* randomNonceString.swift */; };
+		381C1DCC2E11B8EC006BF692 /* LocationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C1DCB2E11B8EC006BF692 /* LocationVM.swift */; };
 		38303E3E2E0DB1180085AFC4 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38303E3A2E0DB1180085AFC4 /* TabsView.swift */; };
 		38303E3F2E0DB1180085AFC4 /* TechMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38303E3C2E0DB1180085AFC4 /* TechMapApp.swift */; };
 		38303E402E0DB1180085AFC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38303E392E0DB1180085AFC4 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		381C1DC92E11ADE5006BF692 /* randomNonceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomNonceString.swift; sourceTree = "<group>"; };
+		381C1DCB2E11B8EC006BF692 /* LocationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVM.swift; sourceTree = "<group>"; };
 		38303E2A2E0DB0A50085AFC4 /* TechMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38303E392E0DB1180085AFC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38303E3A2E0DB1180085AFC4 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				38303E5B2E0E00970085AFC4 /* FirebaseVM.swift */,
 				38C259EC2E104D6500233CFE /* Company.swift */,
 				38C25A032E10862300233CFE /* Check.swift */,
+				381C1DCB2E11B8EC006BF692 /* LocationVM.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				38C25A042E10862300233CFE /* Check.swift in Sources */,
 				38C25A082E109B2400233CFE /* companyChecked.swift in Sources */,
 				381C1DCA2E11ADE5006BF692 /* randomNonceString.swift in Sources */,
+				381C1DCC2E11B8EC006BF692 /* LocationVM.swift in Sources */,
 				38C259F52E106ABF00233CFE /* JMarker.swift in Sources */,
 				38C25A172E10A9DE00233CFE /* playSound.swift in Sources */,
 				38C25A0F2E109EB800233CFE /* InlineLogo.swift in Sources */,

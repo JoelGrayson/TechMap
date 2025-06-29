@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import CoreLocation
+import MapKit
 
 struct CompanyDetails: View {
     @Binding var company: Company?
     let checks: [Check]
     let firebaseVM: FirebaseVM
+    let locationVM: LocationVM
     let closable: Bool
     let onDirectionsRequested: ((Company) -> Void)?
     
@@ -71,6 +74,8 @@ struct CompanyDetails: View {
                     HStack {
                         Image(systemName: "mappin")
                             .frame(width: Styles.charIconSize, height: Styles.charIconSize)
+                        
+                        // Address which is a link that opens in maps when clicked
                         Button {
                             openInMaps(lat: company.lat, lng: company.lng, name: company.name, address: company.address)
                         } label: {
@@ -80,10 +85,17 @@ struct CompanyDetails: View {
                         }
                     }
                     HStack {
+                        // Walk icon
                         Image(systemName: "figure.walk")
                             .frame(width: Styles.charIconSize, height: Styles.charIconSize)
-                        Text("5 min walk") //TODO: calculate
+                        
+                        // Distance like "5 min walk"
+                        if let distance = locationVM.distance(to: selectedCompany) {
+                            Text(distance)
+                        }
+                        
                         Spacer()
+                        // Directions button
                         if let onDirectionsRequested {
                             Button("Directions") {
                                 onDirectionsRequested(company)
@@ -92,10 +104,12 @@ struct CompanyDetails: View {
                         }
                     }
                     
+                    // If you visited, it tells you when you visited it
                     if let checked {
                         HStack {
                             Image(systemName: "checkmark")
                                 .frame(width: Styles.charIconSize, height: Styles.charIconSize)
+                            
                             Text("Visited on \(JDateFormatter.formatAbsolutely(checked.createdAt)) (\(JDateFormatter.formatRelatively(checked.createdAt)))")
                         }
                     }

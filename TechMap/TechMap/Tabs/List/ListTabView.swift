@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListTabView: View {
     var firebaseVM: FirebaseVM
+    var locationVM: LocationVM
     var companies: [Company]
     var checks: [Check]
     
@@ -78,7 +79,14 @@ struct ListTabView: View {
                 .listStyle(.plain)
             }
             .navigationDestination(for: Company.self) { company in
-                CompanyDetails(company: .constant(company), checks: checks, firebaseVM: firebaseVM, closable: false, onDirectionsRequested: nil)
+                CompanyDetails(
+                    company: .constant(company),
+                    checks: checks,
+                    firebaseVM: firebaseVM,
+                    locationVM: locationVM,
+                    closable: false,
+                    onDirectionsRequested: nil
+                )
             }
         }
         .padding()
@@ -92,5 +100,5 @@ struct CheckWithAssociatedCompany {
 }
 
 #Preview {
-    ListTabView(firebaseVM: MockData.firebaseVM, companies: MockData.companies, checks: MockData.checks)
+    ListTabView(firebaseVM: MockData.firebaseVM, locationVM: .init(), companies: MockData.companies, checks: MockData.checks)
 }

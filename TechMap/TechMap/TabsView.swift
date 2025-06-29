@@ -10,6 +10,7 @@ import FirebaseFirestore
 
 struct TabsView: View {
     let firebaseVM: FirebaseVM
+    @State private var locationVM = LocationVM()
     
     @FirestoreQuery(collectionPath: "companies")
     var companies: [Company]
@@ -19,13 +20,13 @@ struct TabsView: View {
     var body: some View {
         TabView {
             Tab("Map", systemImage: "mappin.circle.fill") {
-                MapTabView(firebaseVM: firebaseVM, companies: companies, checks: checks)
+                MapTabView(firebaseVM: firebaseVM, locationVM: locationVM, companies: companies, checks: checks)
             }
             Tab("List", systemImage: "list.bullet") {
-                ListTabView(firebaseVM: firebaseVM, companies: companies, checks: checks)
+                ListTabView(firebaseVM: firebaseVM, locationVM: locationVM, companies: companies, checks: checks)
             }
             Tab("Settings", systemImage: "gearshape.fill") {
-                SettingsTabView(firebaseVM: firebaseVM)
+                SettingsTabView(firebaseVM: firebaseVM, locationVM: locationVM)
             }
         }
         .onAppear {

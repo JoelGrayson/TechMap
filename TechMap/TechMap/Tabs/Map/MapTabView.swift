@@ -11,6 +11,7 @@ import Kingfisher
 
 struct MapTabView: View {
     var firebaseVM: FirebaseVM
+    var locationVM: LocationVM
     var companies: [Company]
     var checks: [Check]
     
@@ -60,9 +61,10 @@ struct MapTabView: View {
                 let height = geo.size.height * 0.5 //height for this company details pane
                 
                 CompanyDetails(
-                    company: $selectedCompany, 
+                    company: $selectedCompany,
                     checks: checks, 
-                    firebaseVM: firebaseVM, 
+                    firebaseVM: firebaseVM,
+                    locationVM: locationVM,
                     closable: true,
                     onDirectionsRequested: { company in
                         calculateRoute(to: company)
@@ -102,6 +104,6 @@ struct MapTabView: View {
 }
 
 #Preview {
-    MapTabView(firebaseVM: MockData.firebaseVM, companies: MockData.companies, checks: MockData.checks)
+    MapTabView(firebaseVM: MockData.firebaseVM, locationVM: .init(), companies: MockData.companies, checks: MockData.checks)
 }
 
