@@ -13,6 +13,7 @@ struct CompanyDetails: View {
     @Binding var company: Company?
     let checks: [Check]
     let firebaseVM: FirebaseVM
+    let locationVM: LocationVM
     let closable: Bool
     let onDirectionsRequested: ((Company) -> Void)?
     
@@ -35,27 +36,6 @@ struct CompanyDetails: View {
     
     @State private var distance: String?
     @State private var time: String?
-    
-    func calculateDistanceAndTime() {
-        guard let company else { return }
-        
-        let request = MKDirections.Request()
-        request.source = MKMapItem.forCurrentLocation()
-        request.destination = MKMapItem(
-            placemark: MKPlacemark(
-                coordinate: CLLocationCoordinate2D(latitude: company.lat, longitude: company.lng)
-            )
-        )
-        request.transportType = .walking //TODO: make this configurable in settings
-        
-        let directions = MKDirections(request: request)
-        directions.calculateETA { response, error in
-            DispatchQueue.main.async {
-                self.distance = response?.distance.description
-                self.time = response?.expectedTravelTime.description
-            }
-        }
-    }
     
     var body: some View {
         VStack {
@@ -113,8 +93,8 @@ struct CompanyDetails: View {
                             .frame(width: Styles.charIconSize, height: Styles.charIconSize)
                         
                         // Distance like "5 min walk"
-                        if let distance = locationVM.distance(to: selectedCompany) {
-                            Text(distance)
+                        if let distance = locationVM.distance, let time = locationVM.time {
+                            Text("Dist: \(distance), time: \(time)")
                         }
                         
                         Spacer()
@@ -153,12 +133,15 @@ struct CompanyDetails: View {
             .padding()
         }
         .onAppear {
-            calculateDistanceAndTime()
+            locationVM.company = company
+            locationVM.startTracking()
         }
-        .onChange(of: company) { oldValue, newValue in
-            if oldValue != newValue {
-                calculateDistanceAndTime()
-            }
+        .onDisappear() {
+            locationVM.company = nil
+            locationVM.stopTracking()
+        }
+        .onChange(of: company) {
+            locationVM.company = company
         }
     }
 }

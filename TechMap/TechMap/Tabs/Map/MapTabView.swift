@@ -64,6 +64,7 @@ struct MapTabView: View {
                     company: $selectedCompany,
                     checks: checks, 
                     firebaseVM: firebaseVM,
+                    locationVM: locationVM,
                     closable: true,
                     onDirectionsRequested: { company in
                         calculateRoute(to: company)
