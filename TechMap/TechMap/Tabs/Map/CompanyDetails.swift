@@ -94,7 +94,7 @@ struct CompanyDetails: View {
                         
                         // Distance like "5 min walk"
                         if let distance = locationVM.distance, let time = locationVM.time {
-                            Text("Dist: \(distance), time: \(time)")
+                            Text("\(time) walk (\(distance))")
                         }
                         
                         Spacer()

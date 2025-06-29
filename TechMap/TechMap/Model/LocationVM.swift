@@ -64,8 +64,20 @@ class LocationVM: NSObject, CLLocationManagerDelegate {
         let directions = MKDirections(request: request)
         directions.calculateETA { response, error in
             DispatchQueue.main.async {
-                self.distance = response?.distance.description
-                self.time = response?.expectedTravelTime.description
+                if let response = response {
+                    // Format distance using MeasurementFormatter
+                    let distanceFormatter = MeasurementFormatter()
+                    distanceFormatter.unitOptions = .naturalScale
+                    distanceFormatter.numberFormatter.maximumFractionDigits = 1
+                    let distance = Measurement(value: response.distance, unit: UnitLength.meters)
+                    self.distance = distanceFormatter.string(from: distance)
+                    
+                    // Format time using DateComponentsFormatter
+                    let timeFormatter = DateComponentsFormatter()
+                    timeFormatter.unitsStyle = .abbreviated
+                    timeFormatter.allowedUnits = [.hour, .minute]
+                    self.time = timeFormatter.string(from: response.expectedTravelTime)
+                }
             }
         }
     }
