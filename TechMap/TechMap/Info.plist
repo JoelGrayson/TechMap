@@ -17,5 +17,9 @@
 	<string>551239120409-47h00kppqcp8dv1egb335b62mk3vcaso.apps.googleusercontent.com</string>
 	<key>GIDClientId</key>
 	<string></string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app can use your location when app in use to see which companies are closest to you.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>This app can use your location to see which companies are closest to you.</string>
 </dict>
 </plist>

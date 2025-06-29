@@ -12,6 +12,7 @@ struct CompanyDetails: View {
     let checks: [Check]
     let firebaseVM: FirebaseVM
     let closable: Bool
+    let onDirectionsRequested: ((Company) -> Void)?
     
     // Computed properties
     private var checked: Check? {
@@ -83,10 +84,12 @@ struct CompanyDetails: View {
                             .frame(width: Styles.charIconSize, height: Styles.charIconSize)
                         Text("5 min walk") //TODO: calculate
                         Spacer()
-                        Button("Directions") {
-                            // TODO: implement
+                        if let onDirectionsRequested {
+                            Button("Directions") {
+                                onDirectionsRequested(company)
+                            }
+                            .buttonStyle(.bordered)
                         }
-                        .buttonStyle(.bordered)
                     }
                     
                     if let checked {

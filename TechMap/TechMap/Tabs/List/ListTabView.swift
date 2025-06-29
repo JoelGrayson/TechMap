@@ -78,7 +78,7 @@ struct ListTabView: View {
                 .listStyle(.plain)
             }
             .navigationDestination(for: Company.self) { company in
-                CompanyDetails(company: .constant(company), checks: checks, firebaseVM: firebaseVM, closable: false)
+                CompanyDetails(company: .constant(company), checks: checks, firebaseVM: firebaseVM, closable: false, onDirectionsRequested: nil)
             }
         }
         .padding()
