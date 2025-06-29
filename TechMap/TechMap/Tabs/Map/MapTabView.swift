@@ -23,7 +23,44 @@ struct MapTabView: View {
         GeometryReader { geo in
             ZStack(alignment: .bottom) {
                 Map(selection: $selectedCompany) {
-                    UserAnnotation() //display user's current location on the map
+                    UserAnnotation {
+                        ZStack {
+                            // Direction cone/sector with gradient
+                            Path { path in
+                                let center = CGPoint(x: 25.5, y: 25.5)
+                                let radius: CGFloat = 44.6
+                                let startAngle: Double = -30 // degrees
+                                let endAngle: Double = 30   // degrees
+                                
+                                path.move(to: center)
+                                path.addArc(center: center, 
+                                           radius: radius, 
+                                           startAngle: .degrees(startAngle), 
+                                           endAngle: .degrees(endAngle), 
+                                           clockwise: false)
+                                path.closeSubpath()
+                            }
+                            .fill(
+                                RadialGradient(
+                                    colors: [.blue.opacity(0.6), .blue.opacity(0.1)],
+                                    center: .center,
+                                    startRadius: 12.8,
+                                    endRadius: 44.6
+                                )
+                            )
+                            .frame(width: 51, height: 51)
+                            
+                            // Main blue dot
+                            Circle()
+                                .fill(.blue)
+                                .frame(width: 20.4, height: 20.4)
+                                .overlay(
+                                    Circle()
+                                        .stroke(.white, lineWidth: 2.6)
+                                )
+                        }
+                        .rotationEffect(Angle(degrees: locationVM.heading))
+                    }
                     
                     ForEach(companies) { company in
                         Annotation(company.name, coordinate: .init(latitude: company.lat, longitude: company.lng)) {

@@ -146,8 +146,3 @@ struct CompanyDetails: View {
     }
 }
 
-struct DistanceAndTime {
-    var distance: String
-    var time: String
-}
-

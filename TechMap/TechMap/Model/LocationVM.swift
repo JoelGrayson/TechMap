@@ -19,14 +19,18 @@ class LocationVM: NSObject, CLLocationManagerDelegate {
     }
     func startTracking() {
         locationManager.startUpdatingLocation()
+        locationManager.startUpdatingHeading()
     }
     func stopTracking() {
         locationManager.stopUpdatingLocation()
+        locationManager.stopUpdatingHeading()
     }
     
     // Calculated published properties. Accessed by the user
     var time: String?
     var distance: String?
+    var currentLocation: CLLocation?
+    var heading: CLLocationDirection = 0
     
     override init() {
         super.init()
@@ -37,7 +41,12 @@ class LocationVM: NSObject, CLLocationManagerDelegate {
     private var locationManager = CLLocationManager()
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        currentLocation = locations.last
         calculate() //when moving around, calculate the new location
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        heading = newHeading.trueHeading
     }
     
     func calculate() {
@@ -61,3 +70,4 @@ class LocationVM: NSObject, CLLocationManagerDelegate {
         }
     }
 }
+
