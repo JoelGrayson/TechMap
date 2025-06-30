@@ -13,7 +13,7 @@ struct FeedbackButton: View {
             Link(destination: url) {
                 Text("Leave Feedback or Report a Bug")
             }
-            .buttonStyle(.borderless)
+            .buttonStyle(.bordered)
         } else {
             Text("If you have any feedback or there is a bug, feel free to email joel@joelgrayson.com")
         }
@@ -23,3 +23,4 @@ struct FeedbackButton: View {
 #Preview {
     FeedbackButton()
 }
+

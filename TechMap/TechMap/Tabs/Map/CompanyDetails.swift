@@ -95,23 +95,24 @@ struct CompanyDetails: View {
                                 .truncationMode(.tail)
                         }
                     }
-                    HStack {
-                        // Walk icon
-                        Image(systemName: settings.transportationMethod == .walking ? "figure.walk" : "car.fill")
-                            .frame(width: Styles.charIconSize, height: Styles.charIconSize)
-                        
-                        // Distance like "5 min walk"
-                        if let distance = locationVM.distance, let time = locationVM.time {
+                    if let distance = locationVM.distance, let time = locationVM.time {
+                        HStack {
+                            // Walk icon
+                            Image(systemName: settings.transportationMethod == .walking ? "figure.walk" : "car.fill")
+                                .frame(width: Styles.charIconSize, height: Styles.charIconSize)
+                            
+                            // Distance like "5 min walk"
                             Text("\(time) \(settings.transportationMethod == .walking ? "walk" : "drive") (\(distance))")
-                        }
-                        
-                        Spacer()
-                        // Directions button
-                        if let onDirectionsRequested {
-                            Button("Directions") {
-                                onDirectionsRequested(company)
+                            
+                            
+                            Spacer()
+                            // Directions button
+                            if let onDirectionsRequested {
+                                Button("Directions") {
+                                    onDirectionsRequested(company)
+                                }
+                                .buttonStyle(.bordered)
                             }
-                            .buttonStyle(.bordered)
                         }
                     }
                     
