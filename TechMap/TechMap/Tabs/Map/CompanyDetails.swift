@@ -8,6 +8,7 @@
 import SwiftUI
 import CoreLocation
 import MapKit
+import SwiftData
 
 struct CompanyDetails: View {
     @Binding var company: Company?
@@ -36,6 +37,11 @@ struct CompanyDetails: View {
     
     @State private var distance: String?
     @State private var time: String?
+    
+    @Query var rawSettings: [Settings]
+    var settings: Settings {
+        rawSettings.first ?? Settings.defaultSettings
+    }
     
     var body: some View {
         VStack {
@@ -89,12 +95,12 @@ struct CompanyDetails: View {
                     }
                     HStack {
                         // Walk icon
-                        Image(systemName: "figure.walk")
+                        Image(systemName: settings.transportationMethod == .walking ? "figure.walk" : "car.fill")
                             .frame(width: Styles.charIconSize, height: Styles.charIconSize)
                         
                         // Distance like "5 min walk"
                         if let distance = locationVM.distance, let time = locationVM.time {
-                            Text("\(time) walk (\(distance))")
+                            Text("\(time) \(settings.transportationMethod == .walking ? "walk" : "drive") (\(distance))")
                         }
                         
                         Spacer()

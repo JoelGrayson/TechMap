@@ -10,12 +10,10 @@ import MapKit
 
 func jTransportationTypeToMK(_ j: Settings.TransportMethod) -> MKDirectionsTransportType {
     switch j {
-    case .biking:
+    case .driving:
         return MKDirectionsTransportType.automobile
     case .walking:
         return MKDirectionsTransportType.walking
-    default:
-        return MKDirectionsTransportType.automobile
     }
 }
 

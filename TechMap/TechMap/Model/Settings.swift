@@ -21,7 +21,6 @@ class Settings {
     
     enum TransportMethod: String, Codable {
         case walking //default
-        case biking
         case driving
     }
     

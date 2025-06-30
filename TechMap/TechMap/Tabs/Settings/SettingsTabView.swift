@@ -127,8 +127,6 @@ struct SettingsTabView: View {
                     ) {
                         Text("Walking")
                             .tag(Settings.TransportMethod.walking)
-                        Text("Biking")
-                            .tag(Settings.TransportMethod.biking)
                         Text("Driving")
                             .tag(Settings.TransportMethod.driving)
                     }
