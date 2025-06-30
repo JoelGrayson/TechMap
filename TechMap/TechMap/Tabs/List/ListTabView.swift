@@ -29,9 +29,13 @@ struct ListTabView: View {
             }
     }
     var notVisitedYet: [Company] {
-        companies.filter {
-            !companyChecked(company: $0, checks: checks)
-        }
+        companies
+            .filter {
+                !companyChecked(company: $0, checks: checks)
+            }
+            .sorted {
+                $0.name < $1.name
+            }
     }
     
     var body: some View {

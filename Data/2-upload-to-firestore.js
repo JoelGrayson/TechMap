@@ -14,7 +14,7 @@ const db=getFirestore(); //use the (default) firebase database because this is w
 
 async function uploadJSON(filename) {
     /** @type {{ name: string; address: string; id: string; lat: number; lng: number; imageName: string; description: string, wikipediaSlug: string }[]} */
-    const companies=JSON.parse(await fs.readFile('./2-geocoded/bay-area/2/output-with-wiki.json'));
+    const companies=JSON.parse(await fs.readFile(filename));
 
     const collectionRef=db.collection('companies');
     for (const company of companies) {
