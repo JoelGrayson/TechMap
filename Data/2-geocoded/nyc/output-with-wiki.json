@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Trello",
+    "address": "80 State St, Albany, NY 12207",
+    "description": "Visual collaboration and project management tool using boards, lists, and cards to organize tasks and workflows for teams and individuals.",
+    "imageName": "trello.com.jpg",
+    "id": "825aa359-a7d5-4d20-9736-df94ab036973",
+    "lat": 42.6493893,
+    "lng": -73.7524892,
+    "wikipediaSlug": "Trello"
+  },
+  {
+    "name": "SeatGeek",
+    "address": "902 Broadway, New York, NY 10010",
+    "description": "Mobile-focused ticket platform that enables users to buy and sell tickets for live sports, concerts, and theater events.",
+    "imageName": "seatgeek.com.jpg",
+    "id": "1ff6e548-8ad0-47d5-ba62-ebe7ead2199d",
+    "lat": 40.7394362,
+    "lng": -73.9895524,
+    "wikipediaSlug": "SeatGeek"
+  },
+  {
+    "name": "MongoDB",
+    "address": "1633 Broadway, 38th Floor, New York, NY 10019",
+    "description": "Developer of a leading general-purpose, document-based database platform, offering cloud and on-premises solutions for scalable data management.",
+    "imageName": "mongodb.com.jpg",
+    "id": "d7a84784-f723-4a59-ac3c-ddfa3793864b",
+    "lat": 40.7620791,
+    "lng": -73.98460990000001,
+    "wikipediaSlug": "MongoDB"
+  },
+  {
+    "name": "Etsy",
+    "address": "117 Adams Street, Brooklyn, NY 11201",
+    "description": "Global online marketplace specializing in unique, handmade, vintage, and creative goods from independent sellers.",
+    "imageName": "etsy.com.jpg",
+    "id": "6dba7613-eec3-41b9-8abe-e25543944c70",
+    "lat": 40.7005529,
+    "lng": -73.98828879999999,
+    "wikipediaSlug": "Etsy"
+  },
+  {
+    "name": "Codecademy",
+    "address": "600 Broadway, 2nd Floor New York, NY 10012",
+    "description": "Online interactive learning platform offering coding classes in various programming languages for beginners and professionals.",
+    "imageName": "codecademy.com.jpg",
+    "id": "9249a77c-3f0c-4c34-9257-fa2f9189d269",
+    "lat": 40.7246343,
+    "lng": -73.9976263,
+    "wikipediaSlug": "Codecademy"
+  },
+  {
+    "name": "Kickstarter",
+    "address": "58 Kent St, Brooklyn, NY 11222",
+    "description": "Crowdfunding platform enabling creators to raise funds for creative projects in art, music, technology, and more.",
+    "imageName": "kickstarter.com.jpg",
+    "id": "1f4dfed6-219d-4d34-a48b-9ec9d29d88b0",
+    "lat": 40.7303597,
+    "lng": -73.9586928,
+    "wikipediaSlug": "Kickstarter"
+  },
+  {
+    "name": "Peloton",
+    "address": "441 9th Avenue, 6th Floor, New York, NY 10001",
+    "description": "Fitness technology company offering connected exercise equipment and subscription-based interactive workout classes.",
+    "imageName": "onepeloton.com.jpg",
+    "id": "f6d45a55-2ae8-4ef0-a9cb-b6a531c25166",
+    "lat": 40.7539512,
+    "lng": -73.9965153,
+    "wikipediaSlug": "Peloton_Interactive"
+  },
+  {
+    "name": "Squarespace",
+    "address": "225 Varick Street, 12th Floor, New York, NY 10014",
+    "description": "All-in-one website building and hosting platform providing tools for creating professional websites, online stores, and portfolios.",
+    "imageName": "squarespace.com.jpg",
+    "id": "2f9a29b9-c0c6-4e83-a256-887ba79ce79c",
+    "lat": 40.7289729,
+    "lng": -74.00549389999999,
+    "wikipediaSlug": "Squarespace"
+  },
+  {
+    "name": "Zocdoc",
+    "address": "568 Broadway, 2nd Floor, New York, NY 10012",
+    "description": "Online healthcare marketplace allowing patients to find doctors, book appointments, and access telehealth services.",
+    "imageName": "zocdoc.com.jpg",
+    "id": "9b8cc6fb-168b-49c8-a53a-d5647ab1e07d",
+    "lat": 40.7243328,
+    "lng": -73.997408,
+    "wikipediaSlug": "Zocdoc"
+  },
+  {
+    "name": "Vimeo",
+    "address": "330 West 34th Street, 5th Floor, New York, NY 10001",
+    "description": "Video software company offering cloud-based video hosting, creation, collaboration, and analytics tools for businesses and creators.",
+    "imageName": "vimeo.com.jpg",
+    "id": "6b3173cc-48bf-4bc9-885f-65c0f05e28d5",
+    "lat": 40.75260189999999,
+    "lng": -73.9951169,
+    "wikipediaSlug": "Vimeo"
+  },
+  {
+    "name": "Datadog",
+    "address": "620 8th Avenue, 45th Floor, New York, NY 10018",
+    "description": "Cloud-based monitoring and analytics platform for IT infrastructure, applications, and security in real-time.",
+    "imageName": "datadoghq.com.jpg",
+    "id": "fb297a6e-12a5-4ce6-a839-f5f6b1d8c20b",
+    "lat": 40.7563103,
+    "lng": -73.99029759999999,
+    "wikipediaSlug": "Datadog"
+  },
+  {
+    "name": "Shutterstock",
+    "address": "350 Fifth Avenue, 20th Floor, New York, NY 10118",
+    "description": "Global provider of licensed stock photography, footage, music, and editing tools for creative professionals and businesses.",
+    "imageName": "shutterstock.com.jpg",
+    "id": "8f29bba9-0897-4013-b8cc-07e30f8bcae2",
+    "lat": 40.7484914,
+    "lng": -73.9856709,
+    "wikipediaSlug": "Shutterstock"
+  },
+  {
+    "name": "Stash",
+    "address": "257 Park Avenue South, Room 900, New York, NY 10010",
+    "description": "Personal finance app offering investing, banking, and educational tools to help individuals save and build wealth.",
+    "imageName": "stash.com.jpg",
+    "id": "18419882-ef50-4c5a-8ce9-98b8ab0d0e58",
+    "lat": 40.7385476,
+    "lng": -73.9871936,
+    "wikipediaSlug": "Stash_(company)"
+  }
+]
