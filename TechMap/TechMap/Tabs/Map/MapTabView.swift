@@ -18,11 +18,12 @@ struct MapTabView: View {
     @State var selectedCompany: Company?
     @State private var route: MKRoute?
     @State private var showingDirections = false
+    @State private var cameraPosition: MapCameraPosition = .automatic
     
     var body: some View {
         GeometryReader { geo in
             ZStack(alignment: .bottom) {
-                Map(selection: $selectedCompany) {
+                Map(position: $cameraPosition, selection: $selectedCompany) {
                     UserAnnotation {
                         ZStack {
                             // Direction cone/sector with gradient
@@ -84,6 +85,14 @@ struct MapTabView: View {
                     MapPitchToggle() //3D/2D button
                     MapScaleView() //only appears when zooming in and out
                 }
+                .onAppear {
+                    setInitialMapRegion()
+                }
+                .onChange(of: locationVM.currentLocation) {
+                    if cameraPosition == .automatic {
+                        setInitialMapRegion()
+                    }
+                }
                 .overlay(alignment: .topLeading) {
                     if showingDirections {
                         Button("Clear Route") {
@@ -116,6 +125,17 @@ struct MapTabView: View {
                 .animation(.spring, value: selectedCompany == nil)
                 .padding()
             }
+        }
+    }
+    
+    private func setInitialMapRegion() {
+        if let userLocation = locationVM.currentLocation {
+            let region = MKCoordinateRegion(
+                center: userLocation.coordinate,
+                latitudinalMeters: 8047, // 5 miles in meters
+                longitudinalMeters: 8047
+            )
+            cameraPosition = .region(region)
         }
     }
     

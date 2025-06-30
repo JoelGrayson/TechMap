@@ -41,7 +41,7 @@ class LocationVM: NSObject, CLLocationManagerDelegate {
     private var locationManager = CLLocationManager()
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        currentLocation = locations.last
+        currentLocation = locations.last //useful for the map centering at the start
         calculate() //when moving around, calculate the new location
     }
     
