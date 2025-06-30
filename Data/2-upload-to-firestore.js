@@ -15,7 +15,7 @@ const db=getFirestore(); //use the (default) firebase database because this is w
 // Upload the data
 (async ()=>{
     /** @type {{ name: string; address: string; id: string; lat: number; lng: number; imageName: string; description: string }[]} */
-    const companies=JSON.parse(await fs.readFile('./output-with-desc.json'));
+    const companies=JSON.parse(await fs.readFile('./2-geocoded/bay-area/2/output.json'));
     const collectionRef=db.collection('companies');
     for (const company of companies) {
         process.stdout.write('*')

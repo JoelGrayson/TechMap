@@ -12,9 +12,10 @@ const geocoder=NodeGeocoder({
 
 
 (async ()=>{
-    const data=JSON.parse(await fsPromises.readFile('./input-data.json'));
+    const data=JSON.parse(await fsPromises.readFile('./1-raw-company-list/bay-area/2/adding-part-two.json'));
     for (let i=0; i<data.length; i++) {
         process.stdout.write('*');
+        // console.log(data);
         data[i].id=uuid();
         const res=await geocoder.geocode(data[i].address);
         const lat=res?.[0]?.latitude, lng=res?.[0]?.longitude;
@@ -22,20 +23,18 @@ const geocoder=NodeGeocoder({
             data[i].lat=lat;
             data[i].lng=lng;
         }
-        const imageName=data[i].logo.split('/').at(-1)+'.jpg';
-        data[i].imageName=imageName;
-        const logoUrl=data[i].logo+'?token='+process.env.LOGO_PUBLIC_TOKEN;
+        const imageName=data[i].imageName;
+        const imageNameWODotCom=imageName.slice(0, -4); //no .com
+        const logoUrl='https://img.logo.dev/'+imageNameWODotCom+'?token='+process.env.LOGO_PUBLIC_TOKEN;
         axios.get(logoUrl, {
             responseType: 'stream'
         })
             .then(res=>{
                 res.data.pipe(fs.createWriteStream('images/'+imageName));
             });
-        data[i].logo=undefined;
     }
     const outputString=JSON.stringify(data, null, 4);
     await fsPromises.writeFile('output.json', outputString);
-    // console.log(outputString);
     console.log('\nDone writing', data.length, 'companies to output.json. Downloading logo images to images folder.');
 })();
 
