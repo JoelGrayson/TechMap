@@ -150,7 +150,7 @@ struct MapTabView: View {
         let request = MKDirections.Request()
         request.source = MKMapItem.forCurrentLocation()
         request.destination = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: company.lat, longitude: company.lng)))
-        request.transportType = .walking
+        request.transportType = jTransportationTypeToMK(settings.transportationMethod)
         
         let directions = MKDirections(request: request)
         directions.calculate { response, error in

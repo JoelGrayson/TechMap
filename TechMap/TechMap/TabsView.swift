@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseFirestore
+import SwiftData
 
 struct TabsView: View {
     let firebaseVM: FirebaseVM
@@ -16,6 +17,11 @@ struct TabsView: View {
     var companies: [Company]
     
     @State private var checks: [Check] = []
+    
+    @Query var rawSettings: [Settings]
+    var settings: Settings {
+        rawSettings.first ?? Settings.defaultSettings
+    }
     
     var body: some View {
         TabView {
@@ -31,6 +37,7 @@ struct TabsView: View {
         }
         .onAppear {
             loadChecks()
+            locationVM.settings = settings
         }
         .onChange(of: firebaseVM.uid) {
             loadChecks()

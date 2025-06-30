@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		380CB8B62E1268CA00FF5158 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CB8B52E1268CA00FF5158 /* Settings.swift */; };
+		380CB8B82E126FC300FF5158 /* jTransportationTypeToMK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CB8B72E126FC300FF5158 /* jTransportationTypeToMK.swift */; };
 		381C1DCA2E11ADE5006BF692 /* randomNonceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C1DC92E11ADE5006BF692 /* randomNonceString.swift */; };
 		381C1DCF2E11C18A006BF692 /* LocationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C1DCE2E11C18A006BF692 /* LocationVM.swift */; };
 		381C1DD12E11D2BF006BF692 /* showSiteInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C1DD02E11D2BF006BF692 /* showSiteInApp.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		380CB8B52E1268CA00FF5158 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		380CB8B72E126FC300FF5158 /* jTransportationTypeToMK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jTransportationTypeToMK.swift; sourceTree = "<group>"; };
 		381C1DC92E11ADE5006BF692 /* randomNonceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomNonceString.swift; sourceTree = "<group>"; };
 		381C1DCE2E11C18A006BF692 /* LocationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVM.swift; sourceTree = "<group>"; };
 		381C1DD02E11D2BF006BF692 /* showSiteInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showSiteInApp.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				38C25A162E10A9DE00233CFE /* playSound.swift */,
 				38C25A122E10A38F00233CFE /* check.m4a */,
 				381C1DD02E11D2BF006BF692 /* showSiteInApp.swift */,
+				380CB8B72E126FC300FF5158 /* jTransportationTypeToMK.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				38C259F92E10745300233CFE /* CompanyDetails.swift in Sources */,
 				38C259F72E106E6B00233CFE /* Styles.swift in Sources */,
 				380CB8B62E1268CA00FF5158 /* Settings.swift in Sources */,
+				380CB8B82E126FC300FF5158 /* jTransportationTypeToMK.swift in Sources */,
 				38303E5C2E0E00970085AFC4 /* FirebaseVM.swift in Sources */,
 				38303E4A2E0DB17B0085AFC4 /* ListTabView.swift in Sources */,
 				381C1DD12E11D2BF006BF692 /* showSiteInApp.swift in Sources */,

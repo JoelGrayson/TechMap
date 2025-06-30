@@ -23,7 +23,7 @@ struct SettingsTabView: View {
     @Query var rawSettings: [Settings]
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Account")
                 .sectionTitle()
             
@@ -88,8 +88,10 @@ struct SettingsTabView: View {
             
             Text("General")
                 .sectionTitle()
+                .padding(.top)
             
             if let settings = rawSettings.first {
+                // Marker size
                 HStack {
                     Text("Marker Size")
                     Spacer()
@@ -111,28 +113,57 @@ struct SettingsTabView: View {
                     .labelsHidden()
                 }
                 
-                Section {
-                    if let url = URL(string: "https://forms.gle/WvifgC66xR2g1Y5p6") {
-                        Link(destination: url) {
-                            Text("Leave feedback or report a bug")
-                        }
-                    } else {
-                        Text("If you have any feedback or there is a bug, feel free to email joel@joelgrayson.com")
+                
+                // Transportation option
+                HStack {
+                    Text("Transportation Method")
+                    Spacer()
+                    Picker(
+                        "Transportation Method",
+                        selection: .init(get: { settings.transportationMethod }, set: { newValue in
+                            settings.transportationMethod = newValue
+                            try? modelContext.save()
+                        })
+                    ) {
+                        Text("Walking")
+                            .tag(Settings.TransportMethod.walking)
+                        Text("Biking")
+                            .tag(Settings.TransportMethod.biking)
+                        Text("Driving")
+                            .tag(Settings.TransportMethod.driving)
                     }
+                    .pickerStyle(.segmented)
+                    .labelsHidden()
                 }
                 
-                Button("Reset Settings", systemImage: "arrow.counterclockwise.circle") {
-                    settings.markerSize = Settings.defaultSettings.markerSize
+                
+                // Reset button
+                HStack {
+                    Spacer()
+                    Button("Reset Settings", systemImage: "arrow.counterclockwise.circle") {
+                        settings.markerSize = Settings.defaultSettings.markerSize
+                        settings.transportationMethod = Settings.defaultSettings.transportationMethod
+                    }
+                    .tint(.red)
+                    .buttonStyle(.bordered)
+                    Spacer()
                 }
-                .tint(.red)
-                .padding(.vertical)
-                .padding(.top)
                 
             } else {
                 Text("Settings has not been configured yet.")
             }
             
             Spacer()
+            
+            Section {
+                if let url = URL(string: "https://forms.gle/WvifgC66xR2g1Y5p6") {
+                    Link(destination: url) {
+                        Text("Leave feedback or report a bug")
+                    }
+                } else {
+                    Text("If you have any feedback or there is a bug, feel free to email joel@joelgrayson.com")
+                }
+            }
         }
         .padding()
     }

@@ -17,6 +17,7 @@ class LocationVM: NSObject, CLLocationManagerDelegate {
             calculate()
         }
     }
+    var settings: Settings?
     func startTracking() {
         locationManager.startUpdatingLocation()
         locationManager.startUpdatingHeading()
@@ -59,7 +60,7 @@ class LocationVM: NSObject, CLLocationManagerDelegate {
                 coordinate: CLLocationCoordinate2D(latitude: company.lat, longitude: company.lng)
             )
         )
-        request.transportType = .walking //TODO: make this configurable in settings
+        request.transportType = jTransportationTypeToMK((settings ?? Settings.defaultSettings).transportationMethod)
         
         let directions = MKDirections(request: request)
         directions.calculateETA { response, error in
