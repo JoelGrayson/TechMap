@@ -29,7 +29,9 @@ struct CompanyDetails: View {
     // Actions
     private func markAsVisited() {
         firebaseVM.addCheck(companyId: company?.id)
-        playSound(named: "check")
+        if settings.playSoundWhenChecked {
+            playSound(named: "check")
+        }
     }
     private func uncheck() {
         firebaseVM.deleteCheck(companyId: company?.id)

@@ -134,6 +134,25 @@ struct SettingsTabView: View {
                     .labelsHidden()
                 }
                 
+                // Play sound when checked
+                HStack {
+                    Text("Play Sound When Checked")
+                    Spacer()
+                    Toggle(
+                        "Play Sound When Checked",
+                        isOn: Binding<Bool>(
+                            get: { settings.playSoundWhenChecked },
+                            set: { newValue in
+                                settings.playSoundWhenChecked = newValue
+                                try? modelContext.save()
+                            }
+                        )
+                    )
+                    .toggleStyle(.switch)
+                    .labelsHidden()
+                }
+                
+                
                 
                 // Reset button
                 HStack {
@@ -141,6 +160,7 @@ struct SettingsTabView: View {
                     Button("Reset Settings", systemImage: "arrow.counterclockwise.circle") {
                         settings.markerSize = Settings.defaultSettings.markerSize
                         settings.transportationMethod = Settings.defaultSettings.transportationMethod
+                        settings.playSoundWhenChecked = Settings.defaultSettings.playSoundWhenChecked
                     }
                     .tint(.red)
                     .buttonStyle(.bordered)

@@ -12,11 +12,13 @@ import SwiftData
 class Settings {
     var markerSize: MarkerSize = MarkerSize.normal
     var transportationMethod: TransportMethod = TransportMethod.walking
+    var playSoundWhenChecked: Bool = true
     // account/auth managed by FirebaseVM
     
-    init(markerSize: MarkerSize = .normal, transportationMethod: TransportMethod = .walking) {
+    init(markerSize: MarkerSize = .normal, transportationMethod: TransportMethod = .walking, playSoundWhenChecked: Bool = true) {
         self.markerSize = markerSize
         self.transportationMethod = transportationMethod
+        self.playSoundWhenChecked = playSoundWhenChecked
     }
     
     enum TransportMethod: String, Codable {
