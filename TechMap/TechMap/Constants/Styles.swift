@@ -16,5 +16,8 @@ struct Styles {
     static let closeIconSize = 8 as CGFloat
     static let charIconSize = 22 as CGFloat
     static let signInButtonHeight = 45 as CGFloat
+    
+    static let settingsGapBetweenSections = 30 as CGFloat
+    static let settingsGapBetweenItems = 20 as CGFloat
 }
 

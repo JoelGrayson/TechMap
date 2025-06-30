@@ -25,148 +25,150 @@ struct SettingsTabView: View {
             Text("Account")
                 .sectionTitle()
             
-            if let errorMessage = firebaseVM.errorMessage {
-                Text("Auth error \(errorMessage)")
-            }
-            if firebaseVM.isSignedIn == .signedIn {
-                HStack {
-                    if let photoURL = firebaseVM.photoURL {
-                        KFImage(photoURL)
-                    }
-                    if let email = firebaseVM.email {
-                        if let name = firebaseVM.name {
-                            Text("Signed in as \(name) <\(email)>")
-                        } else {
-                            Text("Signed in as \(email)")
+            VStack(spacing: Styles.settingsGapBetweenItems) {
+                if let errorMessage = firebaseVM.errorMessage {
+                    Text("Auth error \(errorMessage)")
+                }
+                if firebaseVM.isSignedIn == .signedIn {
+                    HStack {
+                        if let photoURL = firebaseVM.photoURL {
+                            KFImage(photoURL)
+                        }
+                        if let email = firebaseVM.email {
+                            if let name = firebaseVM.name {
+                                Text("Signed in as \(name) <\(email)>")
+                            } else {
+                                Text("Signed in as \(email)")
+                            }
                         }
                     }
-                }
-                Button("Sign Out") {
-                    firebaseVM.signOut()
-                }
-                .buttonStyle(.bordered)
-            }
-            
-            if firebaseVM.isSignedIn == .notSignedIn {
-                Text("Not signed in")
-            }
-            if firebaseVM.isSignedIn == .anonymouslySignedIn, let uid = firebaseVM.uid {
-                Text("Signed in with guest UID \(uid)")
-            }
-            if firebaseVM.isSignedIn != .signedIn {
-                // Continue with Google button
-                Text("Sign in to sync your visited list to multiple devices/the cloud so you never lose them")
-                
-                Button {
-                    Task {
-                        await firebaseVM.signInWithGoogle()
+                    Button("Sign Out") {
+                        firebaseVM.signOut()
                     }
-                } label: {
-                    HStack {
-                        Image("google")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 30, alignment: .center)
-                        Text("Continue with Google") //continue means sign in if account exists and sign up if no account exists yet
-                            .foregroundStyle(colorScheme == .dark ? .white : .black)
+                    .buttonStyle(.bordered)
+                }
+                
+                if firebaseVM.isSignedIn == .notSignedIn {
+                    Text("Not signed in")
+                }
+                if firebaseVM.isSignedIn == .anonymouslySignedIn, let uid = firebaseVM.uid {
+                    Text("Signed in with guest UID \(uid)")
+                }
+                if firebaseVM.isSignedIn != .signedIn {
+                    // Continue with Google button
+                    Text("Sign in to sync your visited list to multiple devices/the cloud so you never lose them")
+                    
+                    Button {
+                        Task {
+                            await firebaseVM.signInWithGoogle()
+                        }
+                    } label: {
+                        HStack {
+                            Image("google")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 30, alignment: .center)
+                            Text("Continue with Google") //continue means sign in if account exists and sign up if no account exists yet
+                                .foregroundStyle(colorScheme == .dark ? .white : .black)
+                        }
+                        .frame(maxWidth: .infinity)
+                        //.frame(height: Styles.signInButtonHeight)
                     }
-                    .frame(maxWidth: .infinity)
-                    //.frame(height: Styles.signInButtonHeight)
+                    .buttonStyle(.bordered)
+                    
+                    
+                    // Continue with Apple button
+                    SignInWithAppleButton(.continue) { req in
+                        firebaseVM.handleSignInWithAppleRequest(req)
+                    } onCompletion: { res in
+                        firebaseVM.handleSignInWithAppleCompletion(res)
+                    }
+                    .frame(height: Styles.signInButtonHeight)
                 }
-                .buttonStyle(.bordered)
-                
-                
-                // Continue with Apple button
-                SignInWithAppleButton(.continue) { req in
-                    firebaseVM.handleSignInWithAppleRequest(req)
-                } onCompletion: { res in
-                    firebaseVM.handleSignInWithAppleCompletion(res)
-                }
-                .frame(height: Styles.signInButtonHeight)
             }
             
             
             Text("General")
                 .sectionTitle()
-                .padding(.top)
+                .padding(.top, Styles.settingsGapBetweenSections)
             
             if let settings = rawSettings.first {
-                // Marker size
-                HStack {
-                    Text("Marker Size")
-                    Spacer()
-                    Picker(
-                        "Marker Size",
-                        selection: .init(get: { settings.markerSize }, set: { newValue in
-                            settings.markerSize = newValue
-                            try? modelContext.save()
-                        })
-                    ) {
-                        Text("Small")
-                            .tag(Settings.MarkerSize.small)
-                        Text("Normal")
-                            .tag(Settings.MarkerSize.normal)
-                        Text("Large")
-                            .tag(Settings.MarkerSize.large)
-                    }
-                    .pickerStyle(.segmented)
-                    .labelsHidden()
-                }
-                
-                
-                // Transportation option
-                HStack {
-                    Text("Transportation Method")
-                    Spacer()
-                    Picker(
-                        "Transportation Method",
-                        selection: .init(get: { settings.transportationMethod }, set: { newValue in
-                            settings.transportationMethod = newValue
-                            try? modelContext.save()
-                        })
-                    ) {
-                        Text("Walking")
-                            .tag(Settings.TransportMethod.walking)
-                        Text("Driving")
-                            .tag(Settings.TransportMethod.driving)
-                    }
-                    .pickerStyle(.segmented)
-                    .labelsHidden()
-                }
-                
-                // Play sound when checked
-                HStack {
-                    Text("Play Sound When Checked")
-                    Spacer()
-                    Toggle(
-                        "Play Sound When Checked",
-                        isOn: Binding<Bool>(
-                            get: { settings.playSoundWhenChecked },
-                            set: { newValue in
-                                settings.playSoundWhenChecked = newValue
+                VStack(spacing: Styles.settingsGapBetweenItems) {
+                    // Marker size
+                    HStack {
+                        Text("Marker Size")
+                        Spacer()
+                        Picker(
+                            "Marker Size",
+                            selection: .init(get: { settings.markerSize }, set: { newValue in
+                                settings.markerSize = newValue
                                 try? modelContext.save()
-                            }
-                        )
-                    )
-                    .toggleStyle(.switch)
-                    .labelsHidden()
-                }
-                
-                
-                
-                // Reset button
-                HStack {
-                    Spacer()
-                    Button("Reset Settings", systemImage: "arrow.counterclockwise.circle") {
-                        settings.markerSize = Settings.defaultSettings.markerSize
-                        settings.transportationMethod = Settings.defaultSettings.transportationMethod
-                        settings.playSoundWhenChecked = Settings.defaultSettings.playSoundWhenChecked
+                            })
+                        ) {
+                            Text("Small")
+                                .tag(Settings.MarkerSize.small)
+                            Text("Normal")
+                                .tag(Settings.MarkerSize.normal)
+                            Text("Large")
+                                .tag(Settings.MarkerSize.large)
+                        }
+                        .pickerStyle(.segmented)
+                        .labelsHidden()
                     }
-                    .tint(.red)
-                    .buttonStyle(.bordered)
-                    Spacer()
+                    
+                    
+                    // Transportation option
+                    HStack {
+                        Text("Transportation Method")
+                        Spacer()
+                        Picker(
+                            "Transportation Method",
+                            selection: .init(get: { settings.transportationMethod }, set: { newValue in
+                                settings.transportationMethod = newValue
+                                try? modelContext.save()
+                            })
+                        ) {
+                            Text("Walking")
+                                .tag(Settings.TransportMethod.walking)
+                            Text("Driving")
+                                .tag(Settings.TransportMethod.driving)
+                        }
+                        .pickerStyle(.segmented)
+                        .labelsHidden()
+                    }
+                    
+                    // Play sound when checked
+                    HStack {
+                        Text("Play Sound When Checked")
+                        Spacer()
+                        Toggle(
+                            "Play Sound When Checked",
+                            isOn: Binding<Bool>(
+                                get: { settings.playSoundWhenChecked },
+                                set: { newValue in
+                                    settings.playSoundWhenChecked = newValue
+                                    try? modelContext.save()
+                                }
+                            )
+                        )
+                        .toggleStyle(.switch)
+                        .labelsHidden()
+                    }
+                    
+                    
+                    // Reset button
+                    HStack {
+                        Spacer()
+                        Button("Reset Settings", systemImage: "arrow.counterclockwise.circle") {
+                            settings.markerSize = Settings.defaultSettings.markerSize
+                            settings.transportationMethod = Settings.defaultSettings.transportationMethod
+                            settings.playSoundWhenChecked = Settings.defaultSettings.playSoundWhenChecked
+                        }
+                        .tint(.red)
+                        .buttonStyle(.bordered)
+                        Spacer()
+                    }
                 }
-                
             } else {
                 Text("Settings has not been configured yet.")
             }
@@ -174,14 +176,13 @@ struct SettingsTabView: View {
             Spacer()
             
             Section {
-                if let url = URL(string: "https://forms.gle/WvifgC66xR2g1Y5p6") {
-                    Link(destination: url) {
-                        Text("Leave feedback or report a bug")
-                    }
-                } else {
-                    Text("If you have any feedback or there is a bug, feel free to email joel@joelgrayson.com")
+                HStack {
+                    Spacer()
+                    FeedbackButton()
+                    Spacer()
                 }
             }
+            .padding(.bottom, Styles.settingsGapBetweenSections)
         }
         .padding()
     }

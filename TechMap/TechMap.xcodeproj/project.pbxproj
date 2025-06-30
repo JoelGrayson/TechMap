@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		380CB8B62E1268CA00FF5158 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CB8B52E1268CA00FF5158 /* Settings.swift */; };
 		380CB8B82E126FC300FF5158 /* jTransportationTypeToMK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CB8B72E126FC300FF5158 /* jTransportationTypeToMK.swift */; };
+		380CB8BA2E1306B400FF5158 /* FeedbackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CB8B92E1306B400FF5158 /* FeedbackButton.swift */; };
 		381C1DCA2E11ADE5006BF692 /* randomNonceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C1DC92E11ADE5006BF692 /* randomNonceString.swift */; };
 		381C1DCF2E11C18A006BF692 /* LocationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C1DCE2E11C18A006BF692 /* LocationVM.swift */; };
 		381C1DD12E11D2BF006BF692 /* showSiteInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C1DD02E11D2BF006BF692 /* showSiteInApp.swift */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		380CB8B52E1268CA00FF5158 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		380CB8B72E126FC300FF5158 /* jTransportationTypeToMK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jTransportationTypeToMK.swift; sourceTree = "<group>"; };
+		380CB8B92E1306B400FF5158 /* FeedbackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackButton.swift; sourceTree = "<group>"; };
 		381C1DC92E11ADE5006BF692 /* randomNonceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomNonceString.swift; sourceTree = "<group>"; };
 		381C1DCE2E11C18A006BF692 /* LocationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVM.swift; sourceTree = "<group>"; };
 		381C1DD02E11D2BF006BF692 /* showSiteInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showSiteInApp.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				38303E472E0DB16D0085AFC4 /* SettingsTabView.swift */,
+				380CB8B92E1306B400FF5158 /* FeedbackButton.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380CB8BA2E1306B400FF5158 /* FeedbackButton.swift in Sources */,
 				38C259F92E10745300233CFE /* CompanyDetails.swift in Sources */,
 				38C259F72E106E6B00233CFE /* Styles.swift in Sources */,
 				380CB8B62E1268CA00FF5158 /* Settings.swift in Sources */,
