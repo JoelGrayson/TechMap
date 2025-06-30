@@ -84,7 +84,7 @@ struct MapTabView: View {
                     MapPitchToggle() //3D/2D button
                     MapScaleView() //only appears when zooming in and out
                 }
-                .overlay(alignment: .topTrailing) {
+                .overlay(alignment: .topLeading) {
                     if showingDirections {
                         Button("Clear Route") {
                             route = nil

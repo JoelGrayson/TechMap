@@ -125,8 +125,22 @@ struct CompanyDetails: View {
                             
                             Text(company.description)
                         }
+                        
+                        Button {
+                            showSiteInApp(urlString: "https://en.wikipedia.org/wiki/Apple_Inc." /*company.wikipediaLink*/)
+                        } label: {
+                            HStack {
+                                Image("wikipedia")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 40, height: 40)
+                                
+                                Text("Open its Wikipedia")
+                            }
+                        }
                     }
-                    .lineLimit(closable ? 8 : nil) //when closable, it is in its small form
+                    // .lineLimit(closable ? 8 : nil) //when closable, it is in its small form
+                    
                 }
             }
             .opacity(hidden ? 0 : 1)
