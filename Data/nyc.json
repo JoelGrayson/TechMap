@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Trello",
+        "address": "80 State St, Albany, NY 12207",
+        "description": "Visual collaboration and project management tool using boards, lists, and cards to organize tasks and workflows for teams and individuals.",
+        "imageName": "trello.com.jpg"
+    },
+    {
+        "name": "SeatGeek",
+        "address": "902 Broadway, New York, NY 10010",
+        "description": "Mobile-focused ticket platform that enables users to buy and sell tickets for live sports, concerts, and theater events.",
+        "imageName": "seatgeek.com.jpg"
+    },
+    {
+        "name": "MongoDB",
+        "address": "1633 Broadway, 38th Floor, New York, NY 10019",
+        "description": "Developer of a leading general-purpose, document-based database platform, offering cloud and on-premises solutions for scalable data management.",
+        "imageName": "mongodb.com.jpg"
+    },
+    {
+        "name": "Etsy",
+        "address": "117 Adams Street, Brooklyn, NY 11201",
+        "description": "Global online marketplace specializing in unique, handmade, vintage, and creative goods from independent sellers.",
+        "imageName": "etsy.com.jpg"
+    },
+    {
+        "name": "Codecademy",
+        "address": "575 Broadway, 5th Floor, New York, NY 10012",
+        "description": "Online interactive learning platform offering coding classes in various programming languages for beginners and professionals.",
+        "imageName": "codecademy.com.jpg"
+    },
+    {
+        "name": "Kickstarter",
+        "address": "58 Kent St, Brooklyn, NY 11222",
+        "description": "Crowdfunding platform enabling creators to raise funds for creative projects in art, music, technology, and more.",
+        "imageName": "kickstarter.com.jpg"
+    },
+    {
+        "name": "Peloton",
+        "address": "441 9th Avenue, 6th Floor, New York, NY 10001",
+        "description": "Fitness technology company offering connected exercise equipment and subscription-based interactive workout classes.",
+        "imageName": "onepeloton.com.jpg"
+    },
+    {
+        "name": "Squarespace",
+        "address": "225 Varick Street, 12th Floor, New York, NY 10014",
+        "description": "All-in-one website building and hosting platform providing tools for creating professional websites, online stores, and portfolios.",
+        "imageName": "squarespace.com.jpg"
+    },
+    {
+        "name": "Zocdoc",
+        "address": "568 Broadway, 2nd Floor, New York, NY 10012",
+        "description": "Online healthcare marketplace allowing patients to find doctors, book appointments, and access telehealth services.",
+        "imageName": "zocdoc.com.jpg"
+    },
+    {
+        "name": "Vimeo",
+        "address": "330 West 34th Street, 5th Floor, New York, NY 10001",
+        "description": "Video software company offering cloud-based video hosting, creation, collaboration, and analytics tools for businesses and creators.",
+        "imageName": "vimeo.com.jpg"
+    },
+    {
+        "name": "Datadog",
+        "address": "620 8th Avenue, 45th Floor, New York, NY 10018",
+        "description": "Cloud-based monitoring and analytics platform for IT infrastructure, applications, and security in real-time.",
+        "imageName": "datadoghq.com.jpg"
+    },
+    {
+        "name": "Shutterstock",
+        "address": "350 Fifth Avenue, 20th Floor, New York, NY 10118",
+        "description": "Global provider of licensed stock photography, footage, music, and editing tools for creative professionals and businesses.",
+        "imageName": "shutterstock.com.jpg"
+    },
+    {
+        "name": "Stash",
+        "address": "257 Park Avenue South, Room 900, New York, NY 10010",
+        "description": "Personal finance app offering investing, banking, and educational tools to help individuals save and build wealth.",
+        "imageName": "stash.com.jpg"
+    },
+    {
+        "name": "Noom",
+        "address": "530 W 25th Street, New York, NY 10001",
+        "description": "Digital health platform combining psychology, technology, and coaching to help users achieve weight loss and lifestyle goals.",
+        "imageName": "noom.com.jpg"
+    },
+    {
+        "name": "Giphy",
+        "address": "350 Fifth Avenue, 20th Floor, New York, NY 10118",
+        "description": "Online platform and search engine for discovering, creating, and sharing animated GIFs and stickers across digital communications.",
+        "imageName": "giphy.com.jpg"
+    }
+]

@@ -15,12 +15,6 @@
         "imageName": "airbnb.com.jpg"
     },
     {
-        "name": "Craigslist",
-        "address": "989 Market St #200, San Francisco, CA 94103",
-        "description": "Online classifieds website for jobs, housing, services, and local community events.",
-        "imageName": "craigslist.org.jpg"
-    },
-    {
         "name": "Twitch",
         "address": "350 Bush Street, San Francisco, CA 94104",
         "description": "Live streaming platform, primarily for gamers and creative content, acquired by Amazon in 2014.",
