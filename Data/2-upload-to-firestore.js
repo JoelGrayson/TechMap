@@ -10,12 +10,12 @@ initializeApp({
 });
 
 const db=getFirestore(); //use the (default) firebase database because this is what @FirestoreQuery works with
-// const db=getFirestore('techmap');
 
-// Upload the data
-(async ()=>{
-    /** @type {{ name: string; address: string; id: string; lat: number; lng: number; imageName: string; description: string }[]} */
-    const companies=JSON.parse(await fs.readFile('./2-geocoded/nyc/output.json'));
+
+async function uploadJSON(filename) {
+    /** @type {{ name: string; address: string; id: string; lat: number; lng: number; imageName: string; description: string, wikipediaSlug: string }[]} */
+    const companies=JSON.parse(await fs.readFile('./2-geocoded/bay-area/2/output-with-wiki.json'));
+
     const collectionRef=db.collection('companies');
     for (const company of companies) {
         process.stdout.write('*')
@@ -25,8 +25,22 @@ const db=getFirestore(); //use the (default) firebase database because this is w
             lat: company.lat,
             lng: company.lng,
             imageName: company.imageName,
-            description: company.description
+            description: company.description,
+            wikipediaSlug: company.wikipediaSlug
         });
     }
-})();
+}
+
+
+async function main() {
+    console.log('Uploading Bay Area 1');
+    await uploadJSON('./2-geocoded/bay-area/1/output-with-wiki.json');
+    console.log('\nUploading Bay Area 2');
+    await uploadJSON('./2-geocoded/bay-area/2/output-with-wiki.json');
+    console.log('\nUploading NYC');
+    await uploadJSON('./2-geocoded/nyc/output-with-wiki.json');
+}
+
+
+main();
 

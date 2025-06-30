@@ -136,7 +136,7 @@ struct CompanyDetails: View {
                         }
                         
                         Button {
-                            showSiteInApp(urlString: "https://en.wikipedia.org/wiki/Apple_Inc." /*company.wikipediaLink*/)
+                            showSiteInApp(urlString: "https://en.wikipedia.org/wiki/\(company.wikipediaSlug)")
                         } label: {
                             HStack {
                                 Image("wikipedia")
