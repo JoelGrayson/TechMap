@@ -17,6 +17,7 @@ struct TechMapApp: App {
     var body: some Scene {
         WindowGroup {
             UserWrapper()
+                .modelContainer(for: [Settings.self])
         }
     }
 }

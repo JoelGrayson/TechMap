@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380CB8B62E1268CA00FF5158 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380CB8B52E1268CA00FF5158 /* Settings.swift */; };
 		381C1DCA2E11ADE5006BF692 /* randomNonceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C1DC92E11ADE5006BF692 /* randomNonceString.swift */; };
 		381C1DCF2E11C18A006BF692 /* LocationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C1DCE2E11C18A006BF692 /* LocationVM.swift */; };
 		381C1DD12E11D2BF006BF692 /* showSiteInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C1DD02E11D2BF006BF692 /* showSiteInApp.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		380CB8B52E1268CA00FF5158 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		381C1DC92E11ADE5006BF692 /* randomNonceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = randomNonceString.swift; sourceTree = "<group>"; };
 		381C1DCE2E11C18A006BF692 /* LocationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVM.swift; sourceTree = "<group>"; };
 		381C1DD02E11D2BF006BF692 /* showSiteInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showSiteInApp.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				38303E5B2E0E00970085AFC4 /* FirebaseVM.swift */,
 				381C1DCE2E11C18A006BF692 /* LocationVM.swift */,
 				38C259EC2E104D6500233CFE /* Company.swift */,
+				380CB8B52E1268CA00FF5158 /* Settings.swift */,
 				38C25A032E10862300233CFE /* Check.swift */,
 			);
 			path = Model;
@@ -306,6 +309,7 @@
 			files = (
 				38C259F92E10745300233CFE /* CompanyDetails.swift in Sources */,
 				38C259F72E106E6B00233CFE /* Styles.swift in Sources */,
+				380CB8B62E1268CA00FF5158 /* Settings.swift in Sources */,
 				38303E5C2E0E00970085AFC4 /* FirebaseVM.swift in Sources */,
 				38303E4A2E0DB17B0085AFC4 /* ListTabView.swift in Sources */,
 				381C1DD12E11D2BF006BF692 /* showSiteInApp.swift in Sources */,

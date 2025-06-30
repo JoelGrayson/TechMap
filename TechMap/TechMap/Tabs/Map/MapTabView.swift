@@ -8,6 +8,7 @@
 import SwiftUI
 import MapKit
 import Kingfisher
+import SwiftData
 
 struct MapTabView: View {
     var firebaseVM: FirebaseVM
@@ -19,6 +20,11 @@ struct MapTabView: View {
     @State private var route: MKRoute?
     @State private var showingDirections = false
     @State private var cameraPosition: MapCameraPosition = .automatic
+    
+    @Query var rawSettings: [Settings]
+    var settings: Settings {
+        rawSettings.first ?? Settings.defaultSettings
+    }
     
     var body: some View {
         GeometryReader { geo in
@@ -68,7 +74,8 @@ struct MapTabView: View {
                             JMarker(
                                 checked: companyChecked(company: company, checks: checks),
                                 imageName: company.imageName,
-                                selected: selectedCompany == company
+                                selected: selectedCompany == company,
+                                markerSize: settings.markerSize
                             )
                         }
                         .tag(company)

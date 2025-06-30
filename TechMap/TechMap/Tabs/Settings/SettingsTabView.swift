@@ -9,16 +9,24 @@ import SwiftUI
 import Kingfisher
 import AuthenticationServices
 
+import SwiftData
+
 //TODO: option to change from Bay Area to NYC
 
 struct SettingsTabView: View {
+    @Environment(\.modelContext) var modelContext
     @Environment(\.colorScheme) var colorScheme
     
     var firebaseVM: FirebaseVM
     var locationVM: LocationVM
-
+    
+    @Query var rawSettings: [Settings]
+    
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
+            Text("Account")
+                .sectionTitle()
+            
             if let errorMessage = firebaseVM.errorMessage {
                 Text("Auth error \(errorMessage)")
             }
@@ -76,11 +84,37 @@ struct SettingsTabView: View {
                 }
                 .frame(height: Styles.signInButtonHeight)
             }
+            
+            
+            Text("General")
+                .sectionTitle()
+            
+            if let settings = rawSettings.first {
+                HStack {
+                    Text("Marker Size")
+                    Spacer()
+                    Picker(
+                        "Marker Size",
+                        selection: .init(get: { settings.markerSize }, set: { newValue in
+                            settings.markerSize = newValue
+                            try? modelContext.save()
+                        })
+                    ) {
+                        Text("Small")
+                            .tag(Settings.MarkerSize.small)
+                        Text("Normal")
+                            .tag(Settings.MarkerSize.normal)
+                        Text("Large")
+                            .tag(Settings.MarkerSize.large)
+                    }
+                    .pickerStyle(.segmented)
+                    .labelsHidden()
+                }
+            } else {
+                Text("Settings has not been configured yet.")
+            }
         }
         .padding()
     }
 }
 
-#Preview {
-    SettingsTabView(firebaseVM: MockData.firebaseVM, locationVM: .init())
-}

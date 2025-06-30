@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct UserWrapper: View {
+    @Environment(\.modelContext) var modelContext
+    @Query var rawSettings: [Settings]
+    
     @State private var firebaseVM = FirebaseVM()
     
     var body: some View {
@@ -20,6 +24,11 @@ struct UserWrapper: View {
         }
             .onAppear {
                 firebaseVM.checkAuthState()
+            }
+            .task {
+                if rawSettings.isEmpty {
+                    modelContext.insert(Settings())
+                }
             }
     }
 }

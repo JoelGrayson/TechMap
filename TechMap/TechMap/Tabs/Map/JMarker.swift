@@ -11,10 +11,21 @@ struct JMarker: View {
     var checked: Bool
     var imageName: String
     var selected: Bool
+    var markerSize: Settings.MarkerSize
     
     // Computed properties
     var scaleFactor: CGFloat {
         selected ? 1.3 : 1.0
+    }
+    var markerSizeScalingFactor: CGFloat {
+        switch markerSize {
+        case .small:
+            0.75
+        case .normal:
+            1
+        case .large:
+            1.25
+        }
     }
     
     var body: some View {
@@ -47,8 +58,8 @@ struct JMarker: View {
             }
         }
         .frame(
-            width: Styles.markerSize * scaleFactor,
-            height: Styles.markerSize * scaleFactor
+            width: Styles.markerSize * markerSizeScalingFactor * scaleFactor,
+            height: Styles.markerSize * markerSizeScalingFactor * scaleFactor
         )
         .animation(.spring(duration: Styles.animationDuration), value: scaleFactor)
     }
@@ -66,7 +77,8 @@ struct CheckmarkShape: Shape {
 
 #Preview {
     VStack {
-        JMarker(checked: true, imageName: "apple.com.jpg", selected: false)
-        JMarker(checked: false, imageName: "apple.com.jpg", selected: false)
+        JMarker(checked: true, imageName: "apple.com.jpg", selected: false, markerSize: .normal)
+        JMarker(checked: false, imageName: "apple.com.jpg", selected: false, markerSize: .normal)
     }
 }
+
