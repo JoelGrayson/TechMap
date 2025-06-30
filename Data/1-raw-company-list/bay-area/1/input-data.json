@@ -89,7 +89,6 @@
     { "name": "Airtable", "address": "799 Market St, San Francisco, CA 94103", "logo": "https://img.logo.dev/airtable.com" },
     { "name": "Zapier", "address": "548 Market St #62411, San Francisco, CA 94104", "logo": "https://img.logo.dev/zapier.com" },
     { "name": "Miro", "address": "201 Mission St #2900, San Francisco, CA 94105", "logo": "https://img.logo.dev/miro.com" },
-    { "name": "Datadog", "address": "620 3rd St, San Francisco, CA 94107", "logo": "https://img.logo.dev/datadoghq.com" },
     { "name": "Unity Technologies", "address": "657 Mission St, San Francisco, CA 94105", "logo": "https://img.logo.dev/unity.com" },
     { "name": "AppLovin", "address": "1100 Page Mill Rd, Palo Alto, CA 94304", "logo": "https://img.logo.dev/applovin.com" }
 ]

@@ -810,15 +810,6 @@
         "description": "Miro offers an online collaborative whiteboard used by distributed teams for brainstorming, agile planning, and diagramming. Founded in 2011 (as RealtimeBoard), Miro surged in popularity during remote-work shifts. The platform features sticky notes, templates, and integrations with Slack, Jira, and Zoom. Miroverse hosts community-created templates for design sprints, OKRs, and user-journey maps. The company is headquartered in Amsterdam and San Francisco, serving over 60 million users."
     },
     {
-        "name": "Datadog",
-        "address": "620 3rd St, San Francisco, CA 94107",
-        "id": "06408f35-41f7-42ef-bdee-d57e03af4997",
-        "lat": 37.7795133,
-        "lng": -122.3940493,
-        "imageName": "datadoghq.com.jpg",
-        "description": "Datadog provides cloud-scale monitoring and security for applications, infrastructure, logs, and user experience, consolidating observability into a single SaaS platform. Founded in 2010, it integrates with 700+ technologies, including AWS, Kubernetes, and PostgreSQL. Datadog’s real-user monitoring (RUM) and APM help DevOps teams detect performance issues quickly. The company has expanded into cloud-security posture management and application-security testing. Datadog went public in 2019 and continues rapid growth driven by digital transformation."
-    },
-    {
         "name": "Unity Technologies",
         "address": "657 Mission St, San Francisco, CA 94105",
         "id": "08d5d35f-c43d-4e44-b900-1ca468b40c2c",
