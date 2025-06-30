@@ -1,0 +1,335 @@
+[
+    {
+        "name": "Shockley Semiconductor Sculpture",
+        "address": "391 San Antonio Rd, Mountain View, CA 94040",
+        "id": "c89e0d16-60b3-4b61-92d0-f91d4796c189",
+        "lat": 37.40504060372209,
+        "lng": -122.11108604500488,
+        "imageName": "shockley-semiconductors.jpg",
+        "description": "This plaque marks the site of Shockley Semiconductor Laboratory, founded in 1956 by William Shockley, co-inventor of the transistor. It was the first semiconductor company in Silicon Valley, setting the stage for the region’s tech boom. Internal tensions led eight engineers to leave and form Fairchild Semiconductor, sparking a wave of innovation and new startups. This moment is considered the catalyst for Silicon Valley’s entrepreneurial spirit and the modern tech industry."
+    },
+    {
+        "name": "Airbnb",
+        "address": "888 Brannan St., San Francisco, CA 94103",
+        "description": "Home-sharing platform connecting travelers with hosts for unique stays and experiences worldwide.",
+        "imageName": "airbnb.com.jpg"
+    },
+    {
+        "name": "Craigslist",
+        "address": "989 Market St #200, San Francisco, CA 94103",
+        "description": "Online classifieds website for jobs, housing, services, and local community events.",
+        "imageName": "craigslist.org.jpg"
+    },
+    {
+        "name": "Twitch",
+        "address": "350 Bush Street, San Francisco, CA 94104",
+        "description": "Live streaming platform, primarily for gamers and creative content, acquired by Amazon in 2014.",
+        "imageName": "twitch.tv.jpg"
+    },
+    {
+        "name": "Yelp",
+        "address": "350 Mission Street, 10th Floor, San Francisco, CA 94105",
+        "description": "Reviews and recommendations site for local businesses, restaurants, and services.",
+        "imageName": "yelp.com.jpg"
+    },
+    {
+        "name": "Roblox Corporation",
+        "address": "3150 South Delaware Street, San Mateo, CA 94403",
+        "description": "Online gaming platform and game creation system enabling users to create and play immersive 3D experiences.",
+        "imageName": "roblox.com.jpg"
+    },
+    {
+        "name": "Pixar",
+        "address": "1200 Park Ave., Emeryville, CA 94608",
+        "description": "Animation studio renowned for pioneering computer-generated feature films such as “Toy Story” and “Inside Out.”",
+        "imageName": "pixar.com.jpg"
+    },
+    {
+        "name": "Dolby Laboratories",
+        "address": "1275 Market St FL 15, San Francisco, CA 94103",
+        "description": "Audio technology company specializing in sound and imaging innovations for cinema, home, and mobile devices.",
+        "imageName": "dolby.com.jpg"
+    },
+    {
+        "name": "Crunchyroll",
+        "address": "835 Market St, 7th Floor, San Francisco, CA 94103",
+        "description": "Anime streaming service offering a vast library of anime, manga, and Asian dramas.",
+        "imageName": "crunchyroll.com.jpg"
+    },
+    {
+        "name": "Niantic",
+        "address": "Suite 200, 1 Ferry Building, San Francisco, CA 94111",
+        "description": "Developer of augmented reality mobile games including Pokémon GO and Ingress.",
+        "imageName": "nianticlabs.com.jpg"
+    },
+    {
+        "name": "Capcom U.S.A.",
+        "address": "800 Concar Drive, Suite 300, San Mateo, CA 94402",
+        "description": "U.S. arm of the Japanese video game publisher known for franchises like Street Fighter and Resident Evil.",
+        "imageName": "capcom.com.jpg"
+    },
+    {
+        "name": "Ubisoft",
+        "address": "Unknown",
+        "description": "Video game publisher with popular franchises such as Assassin’s Creed and Far Cry; U.S. office present but HQ address not confirmed.",
+        "imageName": "ubisoft.com.jpg"
+    },
+    {
+        "name": "Sony Interactive Entertainment (PlayStation)",
+        "address": "2207 Bridgepointe Parkway, San Mateo, CA 94404",
+        "description": "Gaming division of Sony, responsible for PlayStation consoles, games, and network services.",
+        "imageName": "playstation.com.jpg"
+    },
+    {
+        "name": "Industrial Light & Magic",
+        "address": "PO Box 29909, San Francisco, CA 94129",
+        "description": "Visual effects studio founded by George Lucas, known for groundbreaking effects in film and television.",
+        "imageName": "ilm.com.jpg"
+    },
+    {
+        "name": "Lucasfilm Animation",
+        "address": "Unknown",
+        "description": "Animation studio producing animated features and series set in the Star Wars universe; based in San Rafael but precise HQ address not confirmed.",
+        "imageName": "lucasfilm.com.jpg"
+    },
+    {
+        "name": "Skywalker Sound",
+        "address": "Skywalker Ranch, Marin County, CA (exact address not public)",
+        "description": "Audio post-production company specializing in sound design and mixing for film, television, and games.",
+        "imageName": "skywalkersound.com.jpg"
+    },
+    {
+        "name": "SurveyMonkey",
+        "address": "Unknown",
+        "description": "Online survey development and cloud-based software company; HQ in San Mateo but address not confirmed.",
+        "imageName": "surveymonkey.com.jpg"
+    },
+    {
+        "name": "Zendesk",
+        "address": "Unknown",
+        "description": "Provider of customer service and engagement software for businesses; HQ in San Francisco but address not confirmed.",
+        "imageName": "zendesk.com.jpg"
+    },
+    {
+        "name": "Glassdoor",
+        "address": "Unknown",
+        "description": "Job and recruiting site featuring company reviews, salary reports, and interview insights; HQ in Mill Valley but address not confirmed.",
+        "imageName": "glassdoor.com.jpg"
+    },
+    {
+        "name": "Fandom",
+        "address": "Unknown",
+        "description": "Wiki hosting platform for fan communities covering entertainment, gaming, and pop culture; HQ in San Francisco but address not confirmed.",
+        "imageName": "fandom.com.jpg"
+    },
+    {
+        "name": "Autodesk",
+        "address": "One Market, Ste. 400, San Francisco, CA 94105",
+        "description": "Global leader in 3D design, engineering, and entertainment software, best known for AutoCAD, Revit, and Maya.",
+        "imageName": "autodesk.com.jpg"
+    },
+    {
+        "name": "Discord",
+        "address": "444 De Haro Street, Suite 200, San Francisco, CA 94107",
+        "description": "Voice, video, and text chat platform popular with gaming and online communities, used for group communication and collaboration.",
+        "imageName": "discord.com.jpg"
+    },
+    {
+        "name": "Twilio",
+        "address": "101 Spear Street, Fifth Floor, San Francisco, CA 94105",
+        "description": "Cloud communications platform enabling businesses to integrate voice, SMS, and other messaging services into their applications via APIs.",
+        "imageName": "twilio.com.jpg"
+    },
+    {
+        "name": "Asana",
+        "address": "633 Folsom St, Suite 100, San Francisco, CA 94107",
+        "description": "Work management platform designed to help teams organize, track, and manage their projects and tasks.",
+        "imageName": "asana.com.jpg"
+    },
+    {
+        "name": "Cloudflare",
+        "address": "101 Townsend St, San Francisco, CA 94107",
+        "description": "Web infrastructure and security company providing content delivery network (CDN), DDoS mitigation, and internet security services.",
+        "imageName": "cloudflare.com.jpg"
+    },
+    {
+        "name": "Okta",
+        "address": "100 First Street, Suite 600, San Francisco, CA 94105",
+        "description": "Identity and access management company offering secure authentication and single sign-on solutions for enterprises.",
+        "imageName": "okta.com.jpg"
+    },
+    {
+        "name": "Fastly",
+        "address": "475 Brannan St, Suite 300, San Francisco, CA 94107",
+        "description": "Edge cloud platform delivering content delivery, security, and edge computing services for websites and applications.",
+        "imageName": "fastly.com.jpg"
+    },
+    {
+        "name": "PagerDuty",
+        "address": "600 Townsend St, Suite 200, San Francisco, CA 94103",
+        "description": "Incident response platform for IT departments, helping organizations manage and resolve critical incidents quickly.",
+        "imageName": "pagerduty.com.jpg"
+    },
+    {
+        "name": "Databricks",
+        "address": "160 Spear Street, Suite 1300, San Francisco, CA 94105",
+        "description": "Data and AI company known for its unified analytics platform built on Apache Spark, enabling big data processing and machine learning.",
+        "imageName": "databricks.com.jpg"
+    },
+    {
+        "name": "Snowflake",
+        "address": "106 East Babcock Street, Suite 3A, Bozeman, MT 59715",
+        "description": "Cloud-based data warehousing company providing scalable storage and analytics solutions for enterprise data.",
+        "imageName": "snowflake.com.jpg"
+    },
+    {
+        "name": "Coinbase",
+        "address": "548 Market St, Suite 23008, San Francisco, CA 94104",
+        "description": "Cryptocurrency exchange platform enabling users to buy, sell, and store digital assets like Bitcoin and Ethereum.",
+        "imageName": "coinbase.com.jpg"
+    },
+    {
+        "name": "Zoox",
+        "address": "1149 Chess Dr, Foster City, CA 94404",
+        "description": "Autonomous vehicle company developing self-driving cars and mobility solutions for urban environments.",
+        "imageName": "zoox.com.jpg"
+    },
+    {
+        "name": "Lime",
+        "address": "85 2nd St, San Francisco, CA 94105",
+        "description": "Micromobility company offering electric scooter and bike rentals for urban transportation.",
+        "imageName": "li.me.jpg"
+    },
+    {
+        "name": "Cruise",
+        "address": "333 Brannan St, San Francisco, CA 94107",
+        "description": "Developer of autonomous vehicle technology focused on self-driving cars for ride-hailing services.",
+        "imageName": "getcruise.com.jpg"
+    },
+    {
+        "name": "ChargePoint",
+        "address": "240 East Hacienda Avenue, Campbell, CA 95008",
+        "description": "Provider of electric vehicle charging infrastructure and networked charging solutions for businesses and drivers.",
+        "imageName": "chargepoint.com.jpg"
+    },
+    {
+        "name": "NerdWallet",
+        "address": "55 Hawthorne St, 10th Floor, San Francisco, CA 94105",
+        "description": "Personal finance company offering tools and advice for credit cards, loans, investing, and financial decision-making.",
+        "imageName": "nerdwallet.com.jpg"
+    },
+    {
+        "name": "Quora",
+        "address": "650 Castro St, Suite 450, Mountain View, CA 94041",
+        "description": "Question-and-answer platform where users share knowledge and expertise on a wide range of topics.",
+        "imageName": "quora.com.jpg"
+    },
+    {
+        "name": "Replit",
+        "address": "767 Bryant St, San Francisco, CA 94107",
+        "description": "Online coding platform enabling users to write, run, and collaborate on code in multiple programming languages.",
+        "imageName": "replit.com.jpg"
+    },
+    {
+        "name": "Wikimedia Foundation",
+        "address": "1 Montgomery Street, Suite 1600, San Francisco, CA 94104",
+        "description": "Nonprofit organization that operates Wikipedia and other free knowledge projects.",
+        "imageName": "wikimedia.org.jpg"
+    },
+    {
+        "name": "Glassdoor",
+        "address": "300 Mission St, 16th Floor, San Francisco, CA 94105",
+        "description": "Online platform where jobseekers can search for jobs, research potential employers, and read anonymous company reviews and salary information. Founded in 2007, Glassdoor is known for its transparency and user-generated insights into workplace culture.",
+        "imageName": "glassdoor.com.jpg"
+    },
+    {
+        "name": "Chegg",
+        "address": "3990 Freedom Circle, Santa Clara, CA 95054-1204",
+        "description": "Education technology company providing homework help, textbook rentals, online tutoring, and other student services.",
+        "imageName": "chegg.com.jpg"
+    },
+    {
+        "name": "Udemy",
+        "address": "600 Harrison Street, 3rd Floor, San Francisco, CA 94107",
+        "description": "Online learning and teaching platform offering a vast range of courses in business, technology, personal development, and more.",
+        "imageName": "udemy.com.jpg"
+    },
+    {
+        "name": "Poshmark",
+        "address": "203 Redwood Shores Parkway, 8th Floor, Redwood City, CA 94065",
+        "description": "Social commerce marketplace for buying and selling new and second-hand fashion, home goods, and electronics.",
+        "imageName": "poshmark.com.jpg"
+    },
+    {
+        "name": "Stitch Fix",
+        "address": "One Montgomery Tower, Suite 1500, San Francisco, CA 94104",
+        "description": "Online personal styling service using expert stylists and AI to recommend clothing and accessories tailored to individual tastes.",
+        "imageName": "stitchfix.com.jpg"
+    },
+    {
+        "name": "Eventbrite",
+        "address": "95 Third Street, 2nd Floor, San Francisco, CA 94103",
+        "description": "Online event management and ticketing platform enabling users to browse, create, and promote local events.",
+        "imageName": "eventbrite.com.jpg"
+    },
+    {
+        "name": "ServiceNow",
+        "address": "2225 Lawson Lane, Santa Clara, CA 95054",
+        "description": "Cloud-based platform for automating enterprise workflows, specializing in IT service management and business process automation.",
+        "imageName": "servicenow.com.jpg"
+    },
+    {
+        "name": "VMware",
+        "address": "3401 Hillview Avenue, Palo Alto, CA 94304",
+        "description": "Virtualization and cloud computing company known for its hypervisor and software solutions for data centers and enterprise IT.",
+        "imageName": "vmware.com.jpg"
+    },
+    {
+        "name": "Mozilla",
+        "address": "149 New Montgomery Street, 4th Floor, San Francisco, CA 94105",
+        "description": "Nonprofit organization and software community best known for the Firefox browser and for promoting open standards and free software.",
+        "imageName": "mozilla.org.jpg"
+    },
+    {
+        "name": "McAfee",
+        "address": "6220 America Center Drive, America Center Building 4, San Jose, CA 95002",
+        "description": "Global cybersecurity company providing antivirus, endpoint security, and online protection solutions for consumers and businesses.",
+        "imageName": "mcafee.com.jpg"
+    },
+    {
+        "name": "Malwarebytes",
+        "address": "3979 Freedom Circle, 12th Floor, Santa Clara, CA 95054",
+        "description": "Cybersecurity company specializing in malware detection, removal, and protection software for individuals and organizations.",
+        "imageName": "malwarebytes.com.jpg"
+    },
+    {
+        "name": "Shutterfly",
+        "address": "10 Almaden Boulevard, San Jose, CA 95113",
+        "description": "Online photo service offering photo books, personalized gifts, prints, and other custom photo products.",
+        "imageName": "shutterfly.com.jpg"
+    },
+    {
+        "name": "Zazzle",
+        "address": "1800 Seaport Blvd, Redwood City, CA 94063",
+        "description": "Online marketplace for custom products, allowing designers and makers to sell personalized goods to consumers worldwide.",
+        "imageName": "zazzle.com.jpg"
+    },
+    {
+        "name": "Brave",
+        "address": "512 2nd St, San Francisco, CA 94107",
+        "description": "Privacy-focused software company best known for the Brave browser, which blocks ads and trackers by default.",
+        "imageName": "brave.com.jpg"
+    },
+    {
+        "name": "Scribd",
+        "address": "460 Bryant St #100, San Francisco, CA 94107",
+        "description": "Digital library and subscription service offering ebooks, audiobooks, magazines, and documents to readers worldwide.",
+        "imageName": "scribd.com.jpg"
+    },
+    {
+        "name": "Medium",
+        "address": "799 Market St, 5th Floor, San Francisco, CA 94103",
+        "description": "Online publishing platform for articles and blogs, connecting writers and readers through a subscription-based model.",
+        "imageName": "medium.com.jpg"
+    }
+]

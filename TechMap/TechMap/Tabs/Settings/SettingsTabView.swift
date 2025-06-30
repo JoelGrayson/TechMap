@@ -11,8 +11,6 @@ import AuthenticationServices
 
 import SwiftData
 
-//TODO: option to change from Bay Area to NYC
-
 struct SettingsTabView: View {
     @Environment(\.modelContext) var modelContext
     @Environment(\.colorScheme) var colorScheme
@@ -57,6 +55,8 @@ struct SettingsTabView: View {
             }
             if firebaseVM.isSignedIn != .signedIn {
                 // Continue with Google button
+                Text("Sign in to sync your visited list to multiple devices/the cloud so you never lose them")
+                
                 Button {
                     Task {
                         await firebaseVM.signInWithGoogle()
