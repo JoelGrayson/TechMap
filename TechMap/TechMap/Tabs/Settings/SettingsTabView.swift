@@ -23,7 +23,7 @@ struct SettingsTabView: View {
     @Query var rawSettings: [Settings]
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             Text("Account")
                 .sectionTitle()
             
@@ -110,9 +110,29 @@ struct SettingsTabView: View {
                     .pickerStyle(.segmented)
                     .labelsHidden()
                 }
+                
+                Section {
+                    if let url = URL(string: "https://forms.gle/WvifgC66xR2g1Y5p6") {
+                        Link(destination: url) {
+                            Text("Leave feedback or report a bug")
+                        }
+                    } else {
+                        Text("If you have any feedback or there is a bug, feel free to email joel@joelgrayson.com")
+                    }
+                }
+                
+                Button("Reset Settings", systemImage: "arrow.counterclockwise.circle") {
+                    settings.markerSize = Settings.defaultSettings.markerSize
+                }
+                .tint(.red)
+                .padding(.vertical)
+                .padding(.top)
+                
             } else {
                 Text("Settings has not been configured yet.")
             }
+            
+            Spacer()
         }
         .padding()
     }
