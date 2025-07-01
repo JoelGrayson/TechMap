@@ -1,15 +1,5 @@
 [
   {
-    "name": "Trello",
-    "address": "80 State St, Albany, NY 12207",
-    "description": "Visual collaboration and project management tool using boards, lists, and cards to organize tasks and workflows for teams and individuals.",
-    "imageName": "trello.com.jpg",
-    "id": "825aa359-a7d5-4d20-9736-df94ab036973",
-    "lat": 42.6493893,
-    "lng": -73.7524892,
-    "wikipediaSlug": "Trello"
-  },
-  {
     "name": "SeatGeek",
     "address": "902 Broadway, New York, NY 10010",
     "description": "Mobile-focused ticket platform that enables users to buy and sell tickets for live sports, concerts, and theater events.",

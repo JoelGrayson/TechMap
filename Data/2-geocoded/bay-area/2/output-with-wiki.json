@@ -240,16 +240,6 @@
     "wikipediaSlug": "Databricks"
   },
   {
-    "name": "Snowflake",
-    "address": "106 East Babcock Street, Suite 3A, Bozeman, MT 59715",
-    "description": "Cloud-based data warehousing company providing scalable storage and analytics solutions for enterprise data.",
-    "imageName": "snowflake.com.jpg",
-    "id": "d6c7082f-ebdb-4ef2-9613-dfa8eb50f596",
-    "lat": 45.677979,
-    "lng": -111.0348157,
-    "wikipediaSlug": "Snowflake_Inc."
-  },
-  {
     "name": "Coinbase",
     "address": "548 Market St, Suite 23008, San Francisco, CA 94104",
     "description": "Cryptocurrency exchange platform enabling users to buy, sell, and store digital assets like Bitcoin and Ethereum.",

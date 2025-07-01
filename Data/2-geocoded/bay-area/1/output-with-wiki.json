@@ -63,8 +63,8 @@
     "name": "HP (Hewlett-Packard)",
     "address": "1501 Page Mill Road, Palo Alto, CA 94304",
     "id": "dbaa9191-30b8-45b7-b1f5-49490178bb09",
-    "lat": 37.4118261,
-    "lng": -122.1481305,
+    "lat": 37.4118997,
+    "lng": -122.1497962,
     "imageName": "hp.com.jpg",
     "description": "HP Inc. traces its roots to a 1939 Palo Alto garage often cited as the birthplace of Silicon Valley. The company focuses today on PCs, printers, and related services after splitting from Hewlett Packard Enterprise in 2015. HP is a global PC-shipment leader, known for its Spectre laptops, OMEN gaming rigs, and enterprise LaserJet printers. It is committed to sustainability, using recycled plastics and closing the loop on printer supplies. HP operates in nearly every country, serving consumers, businesses, and schools with hardware, managed print, and device-as-a-service offerings.",
     "wikipediaSlug": "Hewlett-Packard"
@@ -350,16 +350,6 @@
     "wikipediaSlug": "Robinhood_Markets"
   },
   {
-    "name": "ZoomInfo",
-    "address": "805 Broadway St #900, Vancouver, WA 98660",
-    "id": "d9ca3584-0865-4b39-ad42-fddd940a66cb",
-    "lat": 45.6277198,
-    "lng": -122.6697387,
-    "imageName": "zoominfo.com.jpg",
-    "description": "ZoomInfo Technologies offers a cloud-based go-to-market intelligence platform that provides contact data, intent signals, and workflow automation for B2B sales and marketing teams. Launched in 2007, it aggregates data through web crawlers, contributed contacts, and machine learning, claiming millions of business profiles. Users leverage the platform to find decision-makers, build targeted lists, and integrate insights into CRM systems. ZoomInfo went public in 2020 under the ticker ZI. Compliance programs aim to address privacy and data accuracy concerns.",
-    "wikipediaSlug": "ZoomInfo"
-  },
-  {
     "name": "Roku",
     "address": "1155 Coleman Ave, San Jose, CA 95110",
     "id": "0eb01df0-c8f9-4ae4-adab-ef3778c7db8d",
@@ -418,16 +408,6 @@
     "imageName": "evernote.com.jpg",
     "description": "Evernote is a note-taking and information-organization app that allows users to capture ideas, web clippings, documents, and tasks across devices. Founded in 2008, it pioneered cloud-synced notebooks with powerful search and tagging. Monetization comes from premium subscriptions offering offline access, increased storage, and collaboration features. In 2023, Evernote was acquired by Italian company Bending Spoons to revitalize growth. Competitors include Microsoft OneNote, Notion, and Google Keep.",
     "wikipediaSlug": "Evernote"
-  },
-  {
-    "name": "Symantec",
-    "address": "60 E Rio Salado Pkwy #1000, Tempe, AZ 85281",
-    "id": "ac3f3a80-3ac6-45a3-af64-72f2c60ee480",
-    "lat": 33.4314106,
-    "lng": -111.9397918,
-    "imageName": "symantec.com.jpg",
-    "description": "Symantec’s enterprise-security business, now part of Broadcom, provides endpoint protection, email security, and threat-intelligence services to global organizations. Founded in 1982, Symantec became synonymous with Norton antivirus for consumers, which was later spun off as Gen Digital. Broadcom acquired Symantec’s enterprise division in 2019 for US $10.7 billion, integrating it with its infrastructure software portfolio. The Symantec brand continues to deliver zero-trust solutions and advanced threat detection. Research divisions publish widely cited threat reports on cyber-crime trends.",
-    "wikipediaSlug": "Symantec"
   },
   {
     "name": "Fortinet",
@@ -530,16 +510,6 @@
     "wikipediaSlug": "Intuit"
   },
   {
-    "name": "Palantir Technologies",
-    "address": "1200 17th St, Floor 15, Denver, CO 80202",
-    "id": "21724e5b-bb04-4a9f-afcd-4294c2c4f993",
-    "lat": 39.7495021,
-    "lng": -104.9962985,
-    "imageName": "palantir.com.jpg",
-    "description": "Palantir builds data-integration and analytics platforms used by governments, defense agencies, and commercial enterprises to make sense of complex, disparate datasets. Its flagship products are Palantir Gotham for intelligence and defense and Palantir Foundry for commercial customers. Founded in 2003 with backing from the CIA’s In-Q-Tel, Palantir became known for counter-terrorism and fraud-detection work. The company went public via direct listing in 2020 and later relocated headquarters from Palo Alto to Denver. Palantir advocates an ethical stance on data privacy while remaining a polarizing player due to its government contracts.",
-    "wikipediaSlug": "Palantir_Technologies"
-  },
-  {
     "name": "Genentech",
     "address": "1 DNA Way, South San Francisco, CA 94080",
     "id": "a76e6873-7e63-42e1-a3bf-4213ed0cfb97",
@@ -558,16 +528,6 @@
     "imageName": "gilead.com.jpg",
     "description": "Gilead Sciences is a biopharmaceutical company best known for antiviral therapies treating HIV, hepatitis C, and COVID-19. Founded in 1987, Gilead revolutionized HCV care with curative drugs Harvoni and Sovaldi and produces Truvada and Biktarvy for HIV prevention and treatment. The company expanded into oncology with its 2020 acquisition of Immunomedics and CAR-T developer Kite Pharma. Gilead’s headquarters overlook a man-made lake in Foster City, symbolizing its Bay Area biotech roots. Access programs aim to widen availability of lifesaving antivirals in low-income countries.",
     "wikipediaSlug": "Gilead_Sciences"
-  },
-  {
-    "name": "Illumina",
-    "address": "5200 Illumina Way, San Diego, CA 92122",
-    "id": "72a60ed7-a1cc-462d-83ac-1bac4ee6e294",
-    "lat": 32.8704019,
-    "lng": -117.1989921,
-    "imageName": "illumina.com.jpg",
-    "description": "Illumina is the global leader in next-generation DNA sequencing technology, enabling rapid, low-cost genomic analysis. Its sequencing instruments, reagents, and software are used in research, clinical diagnostics, and population-genomics programs. Founded in 1998, Illumina’s innovations have helped reduce the cost of sequencing a human genome from millions to under $200. Regulatory scrutiny led to divesting its Grail cancer-screening subsidiary in 2025. Illumina’s mission is to unlock the power of the genome to improve human health.",
-    "wikipediaSlug": "Illumina,_Inc."
   },
   {
     "name": "23andMe",
@@ -698,16 +658,6 @@
     "imageName": "five9.com.jpg",
     "description": "Five9 provides cloud contact-center software that enables businesses to deliver omnichannel customer service via voice, chat, email, and social media. Founded in 2001, it replaced legacy on-premise call centers with scalable, AI-powered solutions. Five9’s Intelligent Cloud Contact Center integrates with CRM systems like Salesforce and uses predictive dialing and speech analytics. A proposed acquisition by Zoom in 2021 fell through, but the two companies remain strategic partners. Five9 serves enterprises in retail, healthcare, finance, and outsourcing.",
     "wikipediaSlug": "Five9"
-  },
-  {
-    "name": "Smartsheet",
-    "address": "500 108th Ave NE #200, Bellevue, WA 98004",
-    "id": "2dfb36b3-b379-4e6d-8272-3c9922b7f34b",
-    "lat": 47.6150107,
-    "lng": -122.1957478,
-    "imageName": "smartsheet.com.jpg",
-    "description": "Smartsheet offers a work-management platform that combines spreadsheet ease with project-management and automation capabilities. Launched in 2006, it enables teams to plan, track, and report on projects using grids, cards, Gantt charts, and dashboards. Integrations with Microsoft 365, Google Workspace, and Slack enhance collaboration. Smartsheet Gov provides a FedRAMP-authorized version for U.S. government agencies. Use cases range from marketing campaigns to construction schedules and IT service management.",
-    "wikipediaSlug": "Smartsheet"
   },
   {
     "name": "Coupa Software",
