@@ -82,6 +82,7 @@ struct ListTabView: View {
                 }
                 .listStyle(.plain)
             }
+            .padding()
             .navigationDestination(for: Company.self) { company in
                 CompanyDetails(
                     company: .constant(company),
@@ -91,9 +92,9 @@ struct ListTabView: View {
                     closable: false,
                     onDirectionsRequested: nil
                 )
+                .padding()
             }
         }
-        .padding()
     }
 }
 

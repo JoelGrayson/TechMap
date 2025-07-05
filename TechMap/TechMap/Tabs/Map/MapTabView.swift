@@ -123,6 +123,7 @@ struct MapTabView: View {
                         calculateRoute(to: company)
                     }
                 )
+                .padding()
                 .frame(height: height)
                 .background {
                     RoundedRectangle(cornerRadius: Styles.cornerRadius)

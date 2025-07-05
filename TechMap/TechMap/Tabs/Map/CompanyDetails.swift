@@ -153,7 +153,6 @@ struct CompanyDetails: View {
                 }
             }
             .opacity(hidden ? 0 : 1)
-            .padding()
         }
         .onAppear {
             locationVM.company = company
