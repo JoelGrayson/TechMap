@@ -37,6 +37,7 @@ class LocationVM: NSObject, CLLocationManagerDelegate {
     override init() {
         super.init()
         locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
     }
     
     // Internal stuff to make sure it works

@@ -15,7 +15,7 @@ struct RatingButton: View {
     @Environment(\.requestReview) private var requestReview
     
     var body: some View {
-        Button("Leave a Rating") {
+        Button("Leaving a Rating") {
             requestReview()
         }
         .buttonStyle(.bordered)

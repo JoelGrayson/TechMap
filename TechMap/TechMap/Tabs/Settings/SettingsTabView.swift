@@ -218,16 +218,19 @@ struct SettingsTabView: View {
                 Spacer()
                 
                 Section {
-                    HStack {
-                        Spacer()
-                        FeedbackButton()
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        Spacer()
-                        RatingButton()
-                        Spacer()
+                    VStack(spacing: Styles.settingsGapBetweenItems*0.7) {
+                        HStack {
+                            Spacer()
+                            FeedbackButton()
+                            Spacer()
+                        }
+                        
+                        HStack {
+                            Spacer()
+                            Text("Help by")
+                            RatingButton()
+                            Spacer()
+                        }
                     }
                 }
                 .padding(.bottom, Styles.settingsGapBetweenSections)

@@ -21,5 +21,7 @@
 	<string>This app can use your location when app in use to see which companies are closest to you.</string>
 	<key>NSLocationUsageDescription</key>
 	<string>This app can use your location to see which companies are closest to you.</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
