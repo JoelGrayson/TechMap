@@ -140,11 +140,45 @@ class FirebaseVM { //handles auth and firestore
                 setPropertiesFrom(user: result.user)
                 print("Linked anonymous account to user")
             } catch {
-                // If linking fails (credential already exists), sign in directly
+                // If linking fails (credential already exists), handle based on credential type
                 print("Linking failed, signing in directly: \(error.localizedDescription)")
-                let result = try await Auth.auth().signIn(with: credential)
-                setPropertiesFrom(user: result.user)
-                print("Signed in with existing Google account with email \(result.user.email ?? "undefined")")
+                
+                // Check if this is an Apple Sign-In credential causing duplicate error
+                if let authError = error as NSError?, 
+                   authError.code == AuthErrorCode.credentialAlreadyInUse.rawValue ||
+                   authError.code == AuthErrorCode.emailAlreadyInUse.rawValue {
+                    
+                    // For Apple Sign-In duplicate credential, we need to handle this differently
+                    // The user is already signed in with this Apple ID, so we should just acknowledge that
+                    print("Credential already in use - user is already signed in with this account")
+                    
+                    // Try to get the existing user info from the error
+                    if let existingCredential = (authError.userInfo[AuthErrorUserInfoUpdatedCredentialKey] as? AuthCredential) {
+                        do {
+                            let result = try await Auth.auth().signIn(with: existingCredential)
+                            setPropertiesFrom(user: result.user)
+                            print("Successfully signed in with existing credential")
+                            return
+                        } catch {
+                            print("Failed to sign in with existing credential: \(error.localizedDescription)")
+                        }
+                    }
+                    
+                    // If we can't get the existing credential, throw an informative error
+                    throw NSError(domain: "AuthError", code: 1, userInfo: [
+                        NSLocalizedDescriptionKey: "This Apple ID is already linked to another account. Please use a different sign-in method or contact support."
+                    ])
+                }
+                
+                // For other types of linking failures, try direct sign-in
+                do {
+                    let result = try await Auth.auth().signIn(with: credential)
+                    setPropertiesFrom(user: result.user)
+                    print("Signed in with existing account with email \(result.user.email ?? "undefined")")
+                } catch {
+                    print("Error signing in after link failure: \(error.localizedDescription)")
+                    throw error
+                }
             }
         } else {
             // No current user or user is not anonymous - sign in directly
