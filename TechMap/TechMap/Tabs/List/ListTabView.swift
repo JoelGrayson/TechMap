@@ -79,7 +79,7 @@ struct ListTabView: View {
     }
     var checksWithAssociatedCompaniesInRegion: [CheckWithAssociatedCompany] {
         checksWithAssociatedCompanies
-            .filter { region == .all || $0.company?.region == region.code }
+            .filter { region == .all || $0.company.region == region.code }
     }
     var companiesInRegion: [Company] {
         companies
@@ -88,13 +88,18 @@ struct ListTabView: View {
     var checksWithAssociatedCompanies: [CheckWithAssociatedCompany] {
         checks
             .map { check in
-                CheckWithAssociatedCompany(
-                    check: check,
-                    company: companies.first(where: { company in
-                        company.id == check.companyId
-                    })
-                )
+                if let company = companies.first(where: { company in
+                    company.id == check.companyId
+                }) {
+                    CheckWithAssociatedCompany(
+                        check: check,
+                        company: company
+                    )
+                } else {
+                    CheckWithAssociatedCompany.toRemove
+                }
             }
+            .filter { $0.check.companyId != CheckWithAssociatedCompany.deleteMeCompanyId }
             .sorted {
                 $0.check.createdAt > $1.check.createdAt
             }
@@ -113,29 +118,23 @@ struct ListTabView: View {
         NavigationStack {
             VStack(alignment: .leading) {
                 // Visited companies
-                Text("Visited (\(checks.count))")
+                Text("Visited (\(checksWithAssociatedCompaniesInRegion.count))")
                     .sectionTitle()
                 
                 if checksWithAssociatedCompaniesInRegion.isEmpty {
-                    Text("You have not visited any companies \(region == .all ? "" : "in \(region.fullDescription)")yet. Click on a company on the map and select \"Mark as Visited\" to visit one.")
+                    Text("You have not visited any companies \(region == .all ? "" : "in \(region.fullDescription) ")yet. Click on a company on the map and select \"Mark as Visited\" to visit one.")
                         .padding(.vertical)
                         .padding(.bottom)
                 } else {
                     List(checksWithAssociatedCompaniesInRegion, id: \CheckWithAssociatedCompany.check.id) { c in
-                        if let company = c.company {
-                            NavigationLink(value: company) {
-                                HStack {
-                                    InlineLogo(imageName: company.imageName)
-                                    Text(company.name)
-                                    Spacer()
-                                    Text(JDateFormatter.formatRelatively(c.check.createdAt))
-                                        .padding(.vertical, 4)
-                                }
+                        NavigationLink(value: c.company) {
+                            HStack {
+                                InlineLogo(imageName: c.company.imageName)
+                                Text(c.company.name)
+                                Spacer()
+                                Text(JDateFormatter.formatRelatively(c.check.createdAt))
+                                    .padding(.vertical, 4)
                             }
-                        } else {
-                            // Company doesn't exist anymore
-                            // Text(c.check.companyId)
-                            EmptyView()
                         }
                     }
                     .listStyle(.plain)
@@ -199,7 +198,10 @@ struct ListTabView: View {
 
 struct CheckWithAssociatedCompany {
     let check: Check
-    let company: Company?
+    let company: Company
+    
+    static let deleteMeCompanyId = "DELETE ME"
+    static let toRemove = CheckWithAssociatedCompany(check: .init(companyId: deleteMeCompanyId, userId: "", createdAt: .now, device: ""), company: MockData.companies[0])
 }
 
 //#Preview {
