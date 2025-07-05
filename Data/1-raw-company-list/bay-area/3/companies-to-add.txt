@@ -1,0 +1,33 @@
+# Bay Area
+Postman - 201 Mission Street Suite 2375 San Francisco, CA 94105
+Applied Materials - 3050 Bowers Avenue PO Box 58039 Santa Clara, CA 95054-3299
+Cloudera - 5470 Great America Parkway Santa Clara, CA 95054
+Visa - San Francisco Innovation Center One Market Plaza San Francisco, CA 94105
+Scale AI - 650 Townsend Street San Francisco, CA 94103 United States
+Proofpoint - 925 West Maude Avenue Sunnyvale, CA 94085 United States
+Physical Intelligence - 396 Treat Avenue San Francisco, CA 94110 United States
+PostHog - 2261 Market Street Suite 4008 San Francisco, CA 94114
+Perplexity - 115 Sansome Street Suite 900 San Francisco, CA 94104
+Neon - 2128 Sand Hill Road Menlo Park, CA 94025
+Vercel (not HQ) - 1900 Jefferson Street San Francisco, CA 94123 United States
+Grammarly - 548 Market Street Suite 35410 San Francisco, CA 94104
+Strava - 208 Utah Street San Francisco, CA 94103
+Concentrix - 39899 Balentine Drive Suite 235 Newark, CA 94560
+Keysight Technologies - 1400 Fountaingrove Parkway Santa Rosa, CA 95403-1738
+Advanced Micro Devices (AMD) - 2485 Augustine Drive Santa Clara, CA 95054
+Broadcom - 3421 Hillview Avenue Palo Alto, CA 94304 United States
+Cadence Design Systems - 2655 Seely Avenue Building 5 San Jose, CA 95134
+TD Synnex - 44201 Nobel Drive Fremont, CA 94538
+Global Logic - 2535 Augustine Drive Suite 500 Santa Clara, CA 95054
+Sanmina
+Workday
+Palo Alto Networks - 3000 Tannery Way Santa Clara, CA 95054
+
+
+Updated Instagram
+
+
+# NYC
+Hugging Face - 20 Jay Street Suite 620, Brooklyn New York, NY 11201
+DigitalOcean - 101 Avenue of the Americas 2nd Floor New York, NY 10013
+

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Microsoft",
+    "address": "1 Memorial Drive, Cambridge, MA 02142",
+    "id": "4a76f799-5a8e-4dca-bb79-6d5a2786582a",
+    "imageName": "microsoft.com.jpg",
+    "description": "Microsoft Corporation is a multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services. Founded in 1975, it's best known for Windows operating systems, Office productivity suite, Azure cloud platform, and Xbox gaming console. The Cambridge office focuses on research and development in AI, machine learning, and emerging technologies.",
+    "wikipediaSlug": "Microsoft",
+    "isHeadquarters": false
+  },
+  {
+    "name": "Amazon",
+    "address": "111 Harbor Way, Boston, MA 02210",
+    "id": "c1af516a-1476-4621-bc67-053874d6728d",
+    "imageName": "amazon.com.jpg",
+    "description": "Amazon.com Inc. is a multinational technology and e-commerce company focusing on online retail, cloud computing, digital streaming, and artificial intelligence. Founded in 1994, Amazon is known for its marketplace, Prime membership, AWS cloud services, and Alexa voice assistant. The Boston Tech Hub focuses on Alexa services, Amazon Pharmacy, AWS, and robotics intelligence.",
+    "wikipediaSlug": "Amazon_(company)",
+    "isHeadquarters": false
+  },
+  {
+    "name": "Google",
+    "address": "325 Main Street, Cambridge, MA 02142",
+    "id": "b49121ef-e926-48e2-80e9-dd41a8b6fb44",
+    "imageName": "google.com.jpg",
+    "description": "Google LLC is a multinational technology company specializing in Internet-related services and products, including online advertising, search engine, cloud computing, software, and hardware. Founded in 1998, Google is known for its search engine, Android OS, YouTube, and Google Cloud Platform. The Cambridge office houses over 1,200 employees working on Search, Android, Cloud, YouTube, and Research.",
+    "wikipediaSlug": "Google",
+    "isHeadquarters": false
+  },
+  {
+    "name": "Spotify",
+    "address": "3 Center Plaza, Boston, MA 02108",
+    "id": "5493a7b9-8d55-421b-a111-2fcd0e4957a7",
+    "imageName": "spotify.com.jpg",
+    "description": "Spotify Technology S.A. is a Swedish audio streaming and media services provider. Founded in 2006, Spotify is the world's largest music streaming service with over 500 million users. The Boston office serves as the East Coast R&D hub, focusing on audio technology, recommendation algorithms, and user experience innovation.",
+    "wikipediaSlug": "Spotify",
+    "isHeadquarters": false
+  },
+  {
+    "name": "HubSpot",
+    "address": "25 First Street, Cambridge, MA 02141",
+    "id": "8f123456-1234-4567-8901-234567890abc",
+    "imageName": "hubspot.com.jpg",
+    "description": "HubSpot Inc. is a developer and marketer of software products for inbound marketing, sales, and customer service. Founded in 2006, HubSpot offers a full platform of marketing, sales, customer service, and CRM software, plus the methodology, resources, and support to help businesses grow. Cambridge headquarters houses over 7,600 employees globally.",
+    "wikipediaSlug": "HubSpot",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Akamai Technologies",
+    "address": "145 Broadway, Cambridge, MA 02142",
+    "id": "6d345678-3456-6789-0123-456789012cde",
+    "imageName": "akamai.com.jpg",
+    "description": "Akamai Technologies Inc. is a global content delivery network (CDN), cybersecurity, and cloud service company, providing web and Internet security services. Founded in 1998, Akamai operates one of the world's largest distributed computing platforms, with over 325,000 servers in 135 countries. The Cambridge headquarters houses the company's global operations.",
+    "wikipediaSlug": "Akamai_Technologies",
+    "isHeadquarters": true
+  },
+  {
+    "name": "TripAdvisor",
+    "address": "400 1st Avenue, Needham, MA 02494",
+    "id": "5c456789-4567-7890-1234-567890123def",
+    "imageName": "tripadvisor.com.jpg",
+    "description": "TripAdvisor Inc. is an American online travel company that operates a website and mobile app with user-generated content and a comparison shopping website. Founded in 2000, TripAdvisor is the world's largest travel guidance platform with over 1 billion reviews and opinions. The Needham headquarters features 282,000 square feet of collaborative workspace.",
+    "wikipediaSlug": "TripAdvisor",
+    "isHeadquarters": true
+  },
+  {
+    "name": "DataRobot",
+    "address": "225 Franklin Street, 13th Floor, Boston, MA 02110",
+    "id": "4b567890-5678-8901-2345-678901234ef0",
+    "imageName": "datarobot.com.jpg",
+    "description": "DataRobot Inc. provides an enterprise AI platform that democratizes data science and automates the end-to-end machine learning lifecycle. Founded in 2012, DataRobot enables organizations to build and deploy accurate predictive models in a fraction of the time it used to take. The Boston headquarters focuses on AI platform development and customer success.",
+    "wikipediaSlug": "DataRobot",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Toast Inc",
+    "address": "333 Summer Street, Boston, MA 02210",
+    "id": "3a678901-6789-9012-3456-789012345f01",
+    "imageName": "toast.com.jpg",
+    "description": "Toast Inc. is a cloud-based restaurant management platform that provides point-of-sale (POS), kitchen display systems, online ordering, gift cards, loyalty programs, and payroll services. Founded in 2011, Toast serves over 93,000 restaurant locations. The Boston Seaport headquarters opened in 2024, featuring collaborative spaces and innovation labs.",
+    "wikipediaSlug": "Toast,_Inc.",
+    "isHeadquarters": true
+  },
+  {
+    "name": "DraftKings",
+    "address": "222 Berkeley Street, 5th Floor, Boston, MA 02116",
+    "id": "29789012-7890-0123-4567-890123456012",
+    "imageName": "draftkings.com.jpg",
+    "description": "DraftKings Inc. is a digital sports entertainment and gaming company. Founded in 2012, DraftKings provides daily and weekly fantasy sports contests, sports betting, online casino gaming, and other online gaming products. The Boston headquarters at Back Bay houses over 650 employees in a 105,000 square foot space.",
+    "wikipediaSlug": "DraftKings",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Klaviyo",
+    "address": "125 Summer Street Floor 6 Boston, MA 02111",
+    "id": "18890123-8901-1234-5678-901234567123",
+    "imageName": "klaviyo.com.jpg",
+    "description": "Klaviyo Inc. is a marketing automation platform that specializes in email and SMS marketing for e-commerce businesses. Founded in 2012, Klaviyo helps over 169,000 brands create personalized marketing campaigns using customer data and behavioral insights. The Boston headquarters serves as the global command center for the company's operations.",
+    "wikipediaSlug": "Klaviyo",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Moderna",
+    "address": "325 Binney Street, Cambridge, MA 02142",
+    "id": "e5123456-1234-4567-8901-234567890456",
+    "imageName": "moderna.com.jpg",
+    "description": "Moderna Inc. is a biotechnology company that focuses on developing messenger RNA (mRNA) therapeutics and vaccines. Founded in 2010, Moderna gained worldwide recognition for its COVID-19 vaccine and continues to develop treatments for infectious diseases, rare diseases, and cancer. The Cambridge headquarters houses state-of-the-art mRNA research facilities.",
+    "wikipediaSlug": "Moderna",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Boston Dynamics",
+    "address": "200 Smith Street, Suite 4100, Waltham, MA 02451",
+    "id": "7f2099a8-9df4-4c31-8c8b-0ba2d791d0fa",
+    "imageName": "bostondynamics.com.jpg",
+    "description": "Boston Dynamics Inc. is a robotics and engineering company known for developing advanced mobile robots with remarkable mobility, dexterity, and agility. Founded in 1992, Boston Dynamics creates robots like Atlas (humanoid), Spot (quadruped), and Stretch (logistics) for industrial, research, and public safety applications. The Waltham headquarters houses robotics laboratories and testing facilities.",
+    "wikipediaSlug": "Boston_Dynamics",
+    "isHeadquarters": true
+  },
+  {
+    "name": "iRobot",
+    "address": "8 Crosby Drive, Bedford, MA 01730",
+    "id": "6a2170b0-488e-4d6f-9285-476f8551f78e",
+    "imageName": "irobot.com.jpg",
+    "description": "iRobot Corporation is a consumer robotics company that designs and builds robots for home cleaning and maintenance. Founded in 1990, iRobot is best known for the Roomba robotic vacuum cleaner and has sold over 50 million home robots worldwide. The Bedford headquarters focuses on consumer robotics innovation and manufacturing.",
+    "wikipediaSlug": "IRobot",
+    "isHeadquarters": true
+  }
+]

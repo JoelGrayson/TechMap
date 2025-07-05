@@ -1,0 +1,272 @@
+[
+  {
+    "uuid": "e6d640d9-7c28-40b4-bdd0-3feac97c2aa5",
+    "name": "Dell Technologies",
+    "description": "American multinational computer technology company that develops, sells, repairs, and supports computers and related products and services.",
+    "address": "1 Dell Way, Round Rock, TX 78682",
+    "imageName": "dell_technologies_logo.dev.jpg",
+    "wikipediaSlug": "Dell",
+    "isHeadquarters": true
+  },
+  {
+    "uuid": "87e10c0d-9df4-4526-9be1-9735acc2fb71",
+    "name": "Apple",
+    "description": "American multinational technology company that designs, develops, and sells consumer electronics, computer software, and online services.",
+    "address": "Unknown",
+    "imageName": "apple_logo.dev.jpg",
+    "wikipediaSlug": "Apple_Inc.",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "faf9cf21-8ff3-4009-a7b1-8b7ab6e71e21",
+    "name": "Google",
+    "description": "American multinational technology company that specializes in Internet-related services and products.",
+    "address": "500 W 2nd St, Austin, TX 78701",
+    "imageName": "google_logo.dev.jpg",
+    "wikipediaSlug": "Google",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "2318a75d-f07f-43e7-8611-0f0ceb3179a6",
+    "name": "Meta",
+    "description": "American multinational technology conglomerate holding company focused on social technology.",
+    "address": "300 W 6th St, Austin, TX 78701",
+    "imageName": "meta_logo.dev.jpg",
+    "wikipediaSlug": "Meta_Platforms",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "cee46367-029b-4305-a510-f4196950c658",
+    "name": "Amazon",
+    "description": "American multinational technology company focused on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+    "address": "11501 Alterra Pkwy, Austin, TX 78758",
+    "imageName": "amazon_logo.dev.jpg",
+    "wikipediaSlug": "Amazon_(company)",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "7736cb80-920e-407c-8802-4343e62eddcd",
+    "name": "IBM",
+    "description": "American multinational technology corporation that produces and sells computer hardware, middleware and software.",
+    "address": "11501 Burnet Rd, Austin, TX 78758",
+    "imageName": "ibm_logo.dev.jpg",
+    "wikipediaSlug": "IBM",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "3cca18c2-69ae-4332-bf8f-2a9a4264747a",
+    "name": "Microsoft",
+    "description": "American multinational technology corporation that produces computer software, consumer electronics, personal computers, and related services.",
+    "address": "Unknown",
+    "imageName": "microsoft_logo.dev.jpg",
+    "wikipediaSlug": "Microsoft",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "32590c13-7943-4c79-a87a-770cfcb0286f",
+    "name": "Oracle",
+    "description": "American multinational computer technology corporation headquartered in Austin, Texas that provides database software and cloud computing services.",
+    "address": "2300 Oracle Way, Austin, TX 78741",
+    "imageName": "oracle_logo.dev.jpg",
+    "wikipediaSlug": "Oracle_Corporation",
+    "isHeadquarters": true
+  },
+  {
+    "uuid": "a891acee-b3f8-457e-b4aa-a68ee13bb3e1",
+    "name": "Tesla",
+    "description": "American multinational automotive and clean energy company that designs, manufactures and sells battery electric vehicles, energy storage systems and solar panels.",
+    "address": "1 Tesla Rd, Austin, TX 78725",
+    "imageName": "tesla_logo.dev.jpg",
+    "wikipediaSlug": "Tesla,_Inc.",
+    "isHeadquarters": true
+  },
+  {
+    "uuid": "53dd1f5a-fda9-4d6a-ad56-4131b6e70f73",
+    "name": "Samsung Austin Semiconductor",
+    "description": "Semiconductor manufacturing facility that produces advanced semiconductor products and memory solutions.",
+    "address": "12100 Samsung Blvd, Austin, TX 78754",
+    "imageName": "samsung_austin_semiconductor_logo.dev.jpg",
+    "wikipediaSlug": "Samsung",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "c0c0189c-ad1d-4416-a54f-ec1294788447",
+    "name": "AMD",
+    "description": "American multinational semiconductor company that develops computer processors and related technologies for business and consumer markets.",
+    "address": "7171 Southwest Pkwy, Austin, TX 78735",
+    "imageName": "amd_logo.dev.jpg",
+    "wikipediaSlug": "AMD",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "0e8c0222-5f12-4310-a443-325aba9a074c",
+    "name": "Cisco Systems",
+    "description": "American multinational technology conglomerate that develops, manufactures and sells networking hardware, software, telecommunications equipment and other high-technology services.",
+    "address": "12515 Research Blvd, Austin, TX 78759",
+    "imageName": "cisco_systems_logo.dev.jpg",
+    "wikipediaSlug": "Cisco",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "4a3a8246-3b50-4e5f-9249-a485b132bf2f",
+    "name": "Intel",
+    "description": "American multinational corporation and technology company that designs and manufactures microprocessors and other semiconductor components.",
+    "address": "Unknown",
+    "imageName": "intel_logo.dev.jpg",
+    "wikipediaSlug": "Intel",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "6e2facae-6756-4fd6-85e4-0cc8483328f6",
+    "name": "Atlassian",
+    "description": "Australian software company that develops products for software developers, project managers, and content management.",
+    "address": "Unknown",
+    "imageName": "atlassian_logo.dev.jpg",
+    "wikipediaSlug": "Atlassian",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "448246fe-5041-48b5-b655-fbe7c3ec3399",
+    "name": "Dropbox",
+    "description": "American file hosting service company that offers cloud storage, file synchronization, personal cloud, and client software.",
+    "address": "Unknown",
+    "imageName": "dropbox_logo.dev.jpg",
+    "wikipediaSlug": "Dropbox",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "f060c6db-bf2f-4f51-947e-409e06dbdf40",
+    "name": "eBay",
+    "description": "American multinational e-commerce corporation that facilitates consumer-to-consumer and business-to-consumer sales through its website.",
+    "address": "Unknown",
+    "imageName": "ebay_logo.dev.jpg",
+    "wikipediaSlug": "EBay",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "420ffe34-563c-4ad5-a657-9af69e5ee911",
+    "name": "PayPal",
+    "description": "American company operating an online payments system that supports online money transfers.",
+    "address": "Unknown",
+    "imageName": "paypal_logo.dev.jpg",
+    "wikipediaSlug": "PayPal",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "5b377182-780a-485b-85ba-c2167be2e09a",
+    "name": "Indeed",
+    "description": "American worldwide employment-related search engine for job listings launched in November 2004.",
+    "address": "Unknown",
+    "imageName": "indeed_logo.dev.jpg",
+    "wikipediaSlug": "Indeed",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "e698e2ec-3273-433e-b73c-e13baadcea27",
+    "name": "Silicon Labs",
+    "description": "American fabless semiconductor company that designs and manufactures semiconductors, other silicon devices and software.",
+    "address": "Unknown",
+    "imageName": "silicon_labs_logo.dev.jpg",
+    "wikipediaSlug": "Silicon_Labs",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "f8480e97-f3f5-4d4e-8df1-38452e5f2062",
+    "name": "National Instruments",
+    "description": "American multinational company that produces automated test equipment and virtual instrumentation software.",
+    "address": "Unknown",
+    "imageName": "national_instruments_logo.dev.jpg",
+    "wikipediaSlug": "National_Instruments",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "2718598e-aa20-4d4b-9c18-d6218c1c2bcc",
+    "name": "NXP Semiconductors",
+    "description": "Dutch semiconductor manufacturer with headquarters in the Netherlands but significant operations worldwide.",
+    "address": "Unknown",
+    "imageName": "nxp_semiconductors_logo.dev.jpg",
+    "wikipediaSlug": "NXP_Semiconductors",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "d31dd75c-e859-44ba-9c6a-ec638ee2dac2",
+    "name": "Unity Technologies",
+    "description": "American video game software development company that provides a real-time 3D development platform.",
+    "address": "Unknown",
+    "imageName": "unity_technologies_logo.dev.jpg",
+    "wikipediaSlug": "Unity_Technologies",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "a3c3e01f-2a6e-4c33-8da7-e983571446e1",
+    "name": "Electronic Arts",
+    "description": "American video game company that develops, publishes, and distributes video games.",
+    "address": "Unknown",
+    "imageName": "electronic_arts_logo.dev.jpg",
+    "wikipediaSlug": "Electronic_Arts",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "9b905adb-98c9-46df-95a1-6f877909fa72",
+    "name": "Blizzard Entertainment",
+    "description": "American video game developer and publisher known for games like World of Warcraft, Overwatch, and Diablo.",
+    "address": "Unknown",
+    "imageName": "blizzard_entertainment_logo.dev.jpg",
+    "wikipediaSlug": "Blizzard_Entertainment",
+    "isHeadquarters": false
+  },
+  {
+    "uuid": "fb983b8f-f395-4b9f-8560-40e7c58e01c8",
+    "name": "BigCommerce",
+    "description": "American technology company that provides e-commerce software as a service.",
+    "address": "11305 Four Points Drive Building 2, First Floor Austin, TX 78726",
+    "imageName": "bigcommerce_logo.dev.jpg",
+    "wikipediaSlug": "BigCommerce",
+    "isHeadquarters": true
+  },
+  {
+    "uuid": "613371ec-7f0a-4cf5-bc2a-dc08e369b5fc",
+    "name": "WP Engine",
+    "description": "American technology company that provides managed WordPress hosting services.",
+    "address": "504 Lavaca Street Suite 1000 Austin, TX 78701",
+    "imageName": "wp_engine_logo.dev.jpg",
+    "wikipediaSlug": "WP_Engine",
+    "isHeadquarters": true
+  },
+  {
+    "uuid": "88f15843-24c3-4f41-8b8c-396350ea1ca3",
+    "name": "Bazaarvoice",
+    "description": "American company that provides software to help businesses collect and display customer reviews.",
+    "address": "10901 Stonelake Boulevard Austin, TX 78759",
+    "imageName": "bazaarvoice_logo.dev.jpg",
+    "wikipediaSlug": "Bazaarvoice",
+    "isHeadquarters": true
+  },
+  {
+    "uuid": "efe055e0-a718-4515-8338-402f549cb28a",
+    "name": "RetailMeNot",
+    "description": "American multinational company that maintains a collection of coupon web sites.",
+    "address": "301 Congress Avenue Suite 700 Austin, TX 78701",
+    "imageName": "retailmenot_logo.dev.jpg",
+    "wikipediaSlug": "RetailMeNot",
+    "isHeadquarters": true
+  },
+  {
+    "uuid": "c24a8b51-4e05-400e-8ce1-a4b3519aa594",
+    "name": "Cirrus Logic",
+    "description": "American fabless semiconductor company that develops analog and mixed-signal integrated circuits.",
+    "address": "800 West 6th Street Austin, TX 78701",
+    "imageName": "cirrus_logic_logo.dev.jpg",
+    "wikipediaSlug": "Cirrus_Logic",
+    "isHeadquarters": true
+  },
+  {
+    "uuid": "1e2182f8-90d1-4b3f-9da3-62c6f55d79d8",
+    "name": "Bumble",
+    "description": "American online dating application.",
+    "address": "1105 West 41st Street Austin, TX 78756 United States",
+    "imageName": "bumble_logo.dev.jpg",
+    "wikipediaSlug": "Bumble",
+    "isHeadquarters": true
+  }
+]

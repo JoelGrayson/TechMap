@@ -160,6 +160,12 @@
     "wikipediaSlug": "Oracle_Corporation"
   },
   {
+    "name": "Oracle",
+    "address": "4150 Network Circle Santa Clara, CA 95054",
+    "isHeadquarters": false,
+    "description": "This place was the former headquarters of Sun microsystems"
+  },
+  {
     "name": "Western Digital",
     "address": "5601 Great Oaks Parkway, San Jose, CA 95119",
     "id": "8a4ed159-150b-433a-ad82-f391e1003568",
@@ -221,7 +227,7 @@
   },
   {
     "name": "Instagram (Meta)",
-    "address": "200 Jefferson Dr, Menlo Park, CA 94025",
+    "address": "1 Hacker Way Menlo Park, CA ",
     "id": "3f031f9c-f20f-426a-86bf-c536123eaaf3",
     "lat": 37.4799547,
     "lng": -122.1690575,

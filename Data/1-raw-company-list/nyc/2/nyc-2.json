@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Hugging Face",
+    "address": "20 Jay Street Suite 620, Brooklyn, NY 11201",
+    "id": "8f001861-e0fd-48a4-a20d-b02b103265cf",
+    "lat": 40.7042,
+    "lng": -73.9878,
+    "imageName": "huggingface.co.jpg",
+    "isHeadquarters": true,
+    "description": "Hugging Face is an AI-focused company that provides the world's leading platform for machine learning models, datasets, and applications. Founded in 2016, it operates as the 'GitHub of machine learning,' hosting over 500,000 models and serving millions of developers worldwide. The company democratizes AI by making state-of-the-art machine learning models accessible through its transformers library and Hub platform, supporting natural language processing, computer vision, and audio tasks. Hugging Face has raised over $395 million in funding and is valued at $4.5 billion, with backing from major tech companies including Google, Amazon, Nvidia, and Salesforce.",
+    "wikipediaSlug": "Hugging_Face"
+  },
+  {
+    "name": "DigitalOcean",
+    "address": "101 Avenue of the Americas, 2nd Floor, New York, NY 10013",
+    "id": "3bc1906a-49a0-4afa-909a-d566af5856ba",
+    "lat": 40.7204,
+    "lng": -74.0048,
+    "imageName": "digitalocean.com.jpg",
+    "isHeadquarters": true,
+    "description": "DigitalOcean is a cloud infrastructure provider that simplifies web hosting and cloud computing for developers, startups, and small-to-medium businesses. Founded in 2011, the company offers virtual private servers called 'Droplets,' managed databases, Kubernetes services, and object storage solutions. Known for its developer-friendly approach, transparent pricing, and extensive documentation, DigitalOcean serves over 600,000 customers globally. The company went public in 2021 and operates 15 data centers worldwide, focusing on providing simple, scalable, and affordable cloud infrastructure that enables developers to build, deploy, and scale applications quickly.",
+    "wikipediaSlug": "DigitalOcean"
+  }
+]

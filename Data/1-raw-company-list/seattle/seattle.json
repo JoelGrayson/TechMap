@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Amazon",
+    "address": "440 Terry Ave N, Seattle, WA 98109",
+    "id": "d869bf15-1449-4cb1-b21d-3bddbb3f3f17",
+    "imageName": "amazon.com.jpg",
+    "description": "Amazon is a multinational technology company focused on e-commerce, cloud computing, digital streaming, and artificial intelligence. Founded in 1994 by Jeff Bezos, it started as an online bookstore and evolved into one of the world's largest retailers and cloud service providers. Amazon Web Services (AWS) is a leading cloud computing platform, while Prime membership offers shipping benefits and digital content. The company also operates devices like Alexa and ventures into logistics, advertising, and entertainment.",
+    "wikipediaSlug": "Amazon_(company)",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Microsoft",
+    "address": "One Microsoft Way, Redmond, WA 98052",
+    "id": "607f5f14-f781-4b75-bc5b-0c76df47d513",
+    "imageName": "microsoft.com.jpg",
+    "description": "Microsoft is a multinational technology corporation that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, and personal computers. Founded in 1975 by Bill Gates and Paul Allen, Microsoft is best known for Windows operating systems, Office productivity suite, Azure cloud platform, and Xbox gaming console. The company has transformed from a software-focused business to a cloud-first, mobile-first organization under CEO Satya Nadella.",
+    "wikipediaSlug": "Microsoft",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Expedia",
+    "address": "1111 Expedia Group Way W, Seattle, WA 98119",
+    "id": "c525cd9e-85b9-4c1c-a004-76a253456ce5",
+    "imageName": "expedia.com.jpg",
+    "description": "Expedia Group is an online travel company that operates as a platform for booking flights, hotels, car rentals, and vacation packages. Founded in 1996 as a division of Microsoft, it became independent in 1999. The company owns multiple brands including Expedia.com, Hotels.com, Vrbo, and Trivago. Expedia revolutionized travel booking by providing consumers with direct access to compare prices and make reservations online, becoming one of the world's largest online travel agencies.",
+    "wikipediaSlug": "Expedia_Group",
+    "isHeadquarters": true
+  },
+  {
+    "name": "T-Mobile",
+    "address": "12920 SE 38th St, Bellevue, WA 98006",
+    "id": "7b189791-d1db-4d99-95d1-0c86ccafaace",
+    "imageName": "t-mobile.com.jpg",
+    "description": "T-Mobile US is a major wireless network operator providing mobile communications services. Originally founded as VoiceStream Wireless in 1994, it was acquired by Deutsche Telekom and rebranded as T-Mobile in 2002. Known for its 'Un-carrier' strategy, T-Mobile has disrupted the wireless industry by eliminating service contracts, offering unlimited data plans, and promoting customer-friendly policies. The company completed a merger with Sprint in 2020, making it the second-largest wireless carrier in the United States.",
+    "wikipediaSlug": "T-Mobile_US",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Zillow",
+    "address": "1301 2nd Ave, Floor 31, Seattle, WA 98101",
+    "id": "9649041d-04be-4f4e-a21e-3719075655bd",
+    "imageName": "zillow.com.jpg",
+    "description": "Zillow is an online marketplace and technology company that facilitates real estate transactions. Founded in 2006, Zillow operates web-based platforms where users can search property listings, view neighborhood information, and estimate home values through its Zestimate tool. The company expanded beyond listings to offer services like iBuying (Zillow Offers), mortgage lending (Zillow Home Loans), and rental services (Zillow Rental Manager). Zillow has transformed how Americans buy, sell, and rent homes by digitizing the real estate experience.",
+    "wikipediaSlug": "Zillow",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Redfin",
+    "address": "1099 Stewart St #600, Seattle, WA 98101",
+    "id": "5b096c78-cd21-47ec-9316-eb758ffdccd9",
+    "imageName": "redfin.com.jpg",
+    "description": "Redfin is a technology-powered real estate brokerage that aims to redefine the home buying and selling experience. Founded in 2004, Redfin combines online property search tools with full-service real estate agents who are company employees rather than independent contractors. The company offers lower commission fees than traditional brokerages and provides services including home tours, market analysis, and closing support. Redfin also operates RedfinNow (iBuying) and mortgage services, leveraging technology to streamline real estate transactions.",
+    "wikipediaSlug": "Redfin",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Tableau Software",
+    "address": "1621 N 34th St, Seattle, WA 98103",
+    "id": "5d1fbba5-be5d-4b20-94c8-b5240dc626ab",
+    "imageName": "tableau.com.jpg",
+    "description": "Tableau Software is a data visualization and business intelligence company that helps people see and understand data. Founded in 2003, Tableau developed intuitive drag-and-drop software that allows users to create interactive data visualizations and dashboards without programming knowledge. The platform connects to various data sources and enables organizations to make data-driven decisions through visual analytics. Salesforce acquired Tableau in 2019 for $15.7 billion, integrating it into their customer success platform.",
+    "wikipediaSlug": "Tableau_Software",
+    "isHeadquarters": true
+  },
+  {
+    "name": "F5",
+    "address": "801 5th Ave, Seattle, WA 98104",
+    "id": "aece136d-3d72-48bf-b17e-097cafc3b723",
+    "imageName": "f5.com.jpg",
+    "description": "F5 Networks is a technology company that specializes in application delivery networking, security, and performance solutions. Founded in 1996, F5 develops hardware and software products that optimize application performance and security across various environments including on-premises, cloud, and hybrid infrastructures. Their flagship product is the BIG-IP application delivery controller, which provides load balancing, security, and traffic management. F5 has evolved to offer comprehensive application services and multi-cloud solutions for modern digital businesses.",
+    "wikipediaSlug": "F5,_Inc.",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Cray Inc.",
+    "address": "901 5th Ave #1000, Seattle, WA 98164",
+    "id": "394fd93b-bc6c-484f-8104-85bb6de2c107",
+    "imageName": "cray.com.jpg",
+    "description": "Cray Inc. was a supercomputer manufacturer and pioneer in high-performance computing (HPC). Founded in 1972 by Seymour Cray, the company developed some of the world's fastest supercomputers used for scientific research, weather modeling, and complex simulations. Cray's systems were known for their innovative parallel processing architectures and vector processing capabilities. The company went through several ownership changes before being acquired by Hewlett Packard Enterprise (HPE) in 2019 for $1.3 billion, continuing its legacy in exascale computing.",
+    "wikipediaSlug": "Cray",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Smartsheet",
+    "address": "500 108th Ave NE #200, Bellevue, WA 98004",
+    "id": "e511aa83-9294-435f-8166-a0a0bd8dff66",
+    "imageName": "smartsheet.com.jpg",
+    "description": "Smartsheet is a cloud-based platform for work management and automation. Founded in 2005, Smartsheet provides a familiar spreadsheet-like interface combined with powerful project management, collaboration, and workflow automation capabilities. The platform helps teams plan, capture, manage, automate, and report on work across the enterprise. Smartsheet serves various industries and use cases, from simple project tracking to complex work management scenarios, and integrates with popular business applications to create a comprehensive work ecosystem.",
+    "wikipediaSlug": "Smartsheet",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Bungie",
+    "address": "550 106th Ave NE, Bellevue, WA 98004",
+    "id": "8151082f-d044-42ac-8bb8-4fee1ff97807",
+    "imageName": "bungie.net.jpg",
+    "description": "Bungie is an independent video game development studio known for creating iconic gaming franchises. Founded in 1991, Bungie developed the Marathon series, Myth series, and most notably the Halo franchise while owned by Microsoft. After becoming independent in 2007, Bungie created the Destiny franchise, a shared-world shooter that combines elements of role-playing games with competitive multiplayer. The company is recognized for innovative gameplay mechanics, compelling storytelling, and building passionate gaming communities around their titles.",
+    "wikipediaSlug": "Bungie",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Valve Corporation",
+    "address": "10900 NE 4th St #500, Bellevue, WA 98004",
+    "id": "87f2226b-ee05-4002-b8b6-bfc534035e94",
+    "imageName": "valvesoftware.com.jpg",
+    "description": "Valve Corporation is a video game developer and digital distribution company. Founded in 1996 by former Microsoft employees, Valve created the critically acclaimed Half-Life series, Portal series, and Team Fortress games. The company revolutionized PC gaming with Steam, a digital distribution platform launched in 2003 that became the dominant marketplace for PC games. Valve also developed the Source game engine and hardware like the Steam Deck handheld gaming device, maintaining a significant influence on the gaming industry.",
+    "wikipediaSlug": "Valve_Corporation",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Big Fish Games",
+    "address": "906 Alaskan Way #700, Seattle, WA 98104",
+    "id": "7fd44db9-aa66-4d93-8b3c-424c04b0d724",
+    "imageName": "bigfishgames.com.jpg",
+    "description": "Big Fish Games is a casual video game developer and publisher founded in 2002. The company specializes in downloadable casual games across various genres including hidden object, time management, puzzle, and adventure games. Big Fish Games operates a digital distribution platform offering thousands of games for PC, Mac, and mobile devices. Known for high-quality, family-friendly gaming experiences, the company has published popular series like Mystery Case Files and has expanded into mobile gaming and free-to-play titles.",
+    "wikipediaSlug": "Big_Fish_Games",
+    "isHeadquarters": true
+  },
+  {
+    "name": "PopCap Games",
+    "address": "2401 4th Ave #300, Seattle, WA 98121",
+    "id": "f4d75be7-a428-4058-a530-bff75dacd142",
+    "imageName": "popcap.com.jpg",
+    "description": "PopCap Games is a casual video game developer best known for creating addictive and accessible puzzle games. Founded in 2000, PopCap developed iconic franchises including Bejeweled, Plants vs. Zombies, Peggle, and Zuma. The company pioneered the casual gaming market with simple yet engaging gameplay mechanics that appealed to broad audiences. Electronic Arts acquired PopCap in 2011 for $1.3 billion, and the studio continues to develop mobile and casual games under the EA umbrella.",
+    "wikipediaSlug": "PopCap_Games",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Nintendo of America",
+    "address": "4600 150th Ave NE, Redmond, WA 98052",
+    "id": "32d4b539-8b94-4f78-b3ed-856f94d277f9",
+    "imageName": "nintendo.com.jpg",
+    "description": "Nintendo of America (NOA) is the American subsidiary of Japanese video game company Nintendo. Established in 1980, NOA is responsible for marketing, sales, and distribution of Nintendo products in North America. The company played a crucial role in revitalizing the video game industry after the 1983 crash with the Nintendo Entertainment System (NES). NOA continues to localize and promote Nintendo's gaming hardware and software, including the Switch console and franchises like Mario, Zelda, and Pok\u00e9mon.",
+    "wikipediaSlug": "Nintendo_of_America",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Getty Images",
+    "address": "605 5th Ave S #400, Seattle, WA 98104",
+    "id": "3987386e-3f31-4dac-a504-1ccd40da4416",
+    "imageName": "gettyimages.com.jpg",
+    "description": "Getty Images is a global visual content company that supplies stock photos, editorial photography, video, and music to businesses, media organizations, and individuals. Founded in 1995, Getty Images maintains one of the world's largest collections of creative and editorial imagery, serving customers in over 100 countries. The company provides content for advertising, marketing, corporate communications, and media publications. Getty Images has evolved to offer AI-powered search and licensing solutions while maintaining high-quality standards for visual content.",
+    "wikipediaSlug": "Getty_Images",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Auth0",
+    "address": "10800 NE 8th St #600, Bellevue, WA 98004",
+    "id": "624c9497-1d3c-496f-9d23-dbc59a007512",
+    "imageName": "auth0.com.jpg",
+    "description": "Auth0 is an identity management platform that provides authentication and authorization services for applications and APIs. Founded in 2013, Auth0 offers developers tools to implement secure login systems, single sign-on (SSO), multi-factor authentication, and user management features. The platform serves businesses of all sizes, from startups to enterprises, helping them secure their applications and improve user experience. Okta acquired Auth0 in 2021 for $6.5 billion, integrating it into their identity and access management ecosystem.",
+    "wikipediaSlug": "Auth0",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Moz",
+    "address": "1752 NW Market St, Seattle, WA 98107",
+    "id": "eda9ddd0-5a5f-4b38-9425-51ef9c0bdf88",
+    "imageName": "moz.com.jpg",
+    "description": "Moz is a software company that provides search engine optimization (SEO) tools and resources. Founded in 2004 by Rand Fishkin, Moz develops tools for keyword research, link building, site audits, and rank tracking to help businesses improve their search engine visibility. The company also offers educational content, industry reports, and community resources for SEO professionals. Moz's products include Moz Pro, Moz Local, and various free SEO tools that have become industry standards for digital marketing professionals.",
+    "wikipediaSlug": "Moz_(company)",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Amazon Fresh",
+    "address": "1227 124th Ave NE, Bellevue, WA 98005",
+    "id": "a2d8dcda-815c-4aa2-8041-b19f12f46f0b",
+    "imageName": "amazonfresh.com.jpg",
+    "description": "Amazon Fresh is Amazon's grocery delivery service and chain of physical grocery stores. Initially launched in 2007 as a delivery-only service in Seattle, it evolved into a chain of cashierless supermarkets in 2020. Amazon Fresh stores feature advanced technology including Amazon Dash Carts for streamlined shopping and Just Walk Out technology. The service offers fresh produce, meat, seafood, and Amazon-branded products, serving as a subsidiary of Amazon focused on revolutionizing grocery shopping through technology integration.",
+    "wikipediaSlug": "Amazon_Fresh",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Amazon Go",
+    "address": "2131 7th Ave, Seattle, WA 98121",
+    "id": "0c35c84d-1fc4-4081-b97e-0d38866d15e0",
+    "imageName": "amazongostore.com.jpg",
+    "description": "Amazon Go is a chain of convenience stores operated by Amazon featuring cashierless shopping technology. The first store opened to employees in 2016 and to the public in 2018. Amazon Go stores use computer vision, deep learning algorithms, and sensor fusion to enable customers to shop without traditional checkout processes. Customers scan their Amazon app to enter, select items, and are automatically charged when they exit. The stores offer prepared foods, snacks, beverages, and everyday essentials across locations in Seattle, Chicago, New York, and San Francisco.",
+    "wikipediaSlug": "Amazon_Go",
+    "isHeadquarters": true
+  },
+  {
+    "name": "Bluesky",
+    "address": "113 Cherry Street Suite 24821, Seattle, WA 98104",
+    "id": "1abac4bf-69d1-414b-bd58-a38c4a175cdf",
+    "imageName": "bsky.app.jpg",
+    "description": "Bluesky is a decentralized social media platform that operates as a microblogging service similar to Twitter. Founded in 2021 and spun out from Twitter's research initiative, Bluesky is built on the AT Protocol, an open communication protocol for distributed social networks. The platform features algorithmic choice, custom feeds, and user-managed moderation. Bluesky emphasizes user control and composability, offering features like domain-based handles for verification and starter packs for community building. The company is structured as a benefit corporation focused on developing open social internet technologies.",
+    "wikipediaSlug": "Bluesky",
+    "isHeadquarters": true
+  }
+]
