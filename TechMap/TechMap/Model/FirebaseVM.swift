@@ -65,6 +65,7 @@ class FirebaseVM { //handles auth and firestore
         }
         
         do {
+            // Get google credential
             let userAuthentication = try await GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController)
             let user = userAuthentication.user
             guard let idToken = user.idToken else {
@@ -73,24 +74,9 @@ class FirebaseVM { //handles auth and firestore
             }
             let accessToken = user.accessToken
             let credential = GoogleAuthProvider.credential(withIDToken: idToken.tokenString, accessToken: accessToken.tokenString)
-            if let currentUser = Auth.auth().currentUser, currentUser.isAnonymous {
-                // Try to link the anonymous user to the Google account
-                do {
-                    let result = try await currentUser.link(with: credential)
-                    setPropertiesFrom(user: result.user)
-                    print("Linked anonymous account to user")
-                } catch {
-                    // If linking fails (credential already exists), sign in directly
-                    print("Linking failed, signing in directly: \(error.localizedDescription)")
-                    let result = try await Auth.auth().signIn(with: credential)
-                    setPropertiesFrom(user: result.user)
-                    print("Signed in with existing Google account")
-                }
-            } else {
-                let result = try await Auth.auth().signIn(with: credential)
-                setPropertiesFrom(user: result.user)
-                print("Signed in with a blank slate account")
-            }
+            
+            
+            try await signInAndLinkIfNecessary(credential: credential)
             
             isSignedIn = .signedIn
             errorMessage = nil //no error
@@ -132,13 +118,38 @@ class FirebaseVM { //handles auth and firestore
                 
                 Task {
                     do {
-                        let result = try await Auth.auth().signIn(with: credential)
-                        setPropertiesFrom(user: result.user)
+                        try await signInAndLinkIfNecessary(credential: credential)
+                        
+                        isSignedIn = .signedIn
+                        errorMessage = nil
                     } catch {
                         print("Error authenticating: \(error.localizedDescription)")
+                        errorMessage = error.localizedDescription
                     }
                 }
             }
+        }
+    }
+    
+    func signInAndLinkIfNecessary(credential: AuthCredential) async throws {
+        // Sign in with Google and link anonymous account if possible
+        if let currentUser = Auth.auth().currentUser, currentUser.isAnonymous {
+            // Try to link the anonymous user to the Google account
+            do {
+                let result = try await currentUser.link(with: credential)
+                setPropertiesFrom(user: result.user)
+                print("Linked anonymous account to user")
+            } catch {
+                // If linking fails (credential already exists), sign in directly
+                print("Linking failed, signing in directly: \(error.localizedDescription)")
+                let result = try await Auth.auth().signIn(with: credential)
+                setPropertiesFrom(user: result.user)
+                print("Signed in with existing Google account with email \(result.user.email ?? "undefined")")
+            }
+        } else {
+            let result = try await Auth.auth().signIn(with: credential)
+            setPropertiesFrom(user: result.user)
+            print("Signed in with a blank slate account with UID \(result.user.uid)")
         }
     }
     
@@ -163,7 +174,7 @@ class FirebaseVM { //handles auth and firestore
         let _ = Auth.auth().addStateDidChangeListener { auth, user in
             DispatchQueue.main.async {
                 if let user = user {
-                    print("Signed in with user", user)
+                    print("Signed in with user with email \(user.email ?? "undefined") and uid \(user.uid)")
                     self.setPropertiesFrom(user: user)
                     if user.isAnonymous {
                         self.isSignedIn = .anonymouslySignedIn

@@ -250,7 +250,7 @@
         "imageName": "whatsapp.com.jpg",
         "description": "WhatsApp is a free, end-to-end encrypted messaging and calling app used by over two billion people worldwide. Launched in 2009, it was acquired by Facebook (now Meta) in 2014 for approximately US $19 billion, one of the largest tech deals ever. The app supports text, voice, video, group chats, and file sharing, relying on a user’s phone number rather than usernames. WhatsApp Business tools help merchants provide customer support and catalog listings, with future plans for payments in select regions. Privacy-focused features like disappearing messages aim to maintain trust amid encryption debates.",
         "wikipediaSlug": "WhatsApp",
-        "isHeadquarters": false
+        "isHeadquarters": true
     },
     {
         "name": "Instagram (Meta)",
