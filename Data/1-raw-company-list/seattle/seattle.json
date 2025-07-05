@@ -171,15 +171,6 @@
     "isHeadquarters": true
   },
   {
-    "name": "Amazon Go",
-    "address": "2131 7th Ave, Seattle, WA 98121",
-    "id": "0c35c84d-1fc4-4081-b97e-0d38866d15e0",
-    "imageName": "amazongostore.com.jpg",
-    "description": "Amazon Go is a chain of convenience stores operated by Amazon featuring cashierless shopping technology. The first store opened to employees in 2016 and to the public in 2018. Amazon Go stores use computer vision, deep learning algorithms, and sensor fusion to enable customers to shop without traditional checkout processes. Customers scan their Amazon app to enter, select items, and are automatically charged when they exit. The stores offer prepared foods, snacks, beverages, and everyday essentials across locations in Seattle, Chicago, New York, and San Francisco.",
-    "wikipediaSlug": "Amazon_Go",
-    "isHeadquarters": true
-  },
-  {
     "name": "Bluesky",
     "address": "113 Cherry Street Suite 24821, Seattle, WA 98104",
     "id": "1abac4bf-69d1-414b-bd58-a38c4a175cdf",

@@ -1086,7 +1086,7 @@
         "lat": 37.7983937,
         "lng": -122.4508838,
         "wikipediaSlug": "Lucasfilm_Animation",
-        "isHeadquarters": false
+        "isHeadquarters": true
     },
     {
         "name": "Skywalker Sound",
@@ -1518,12 +1518,12 @@
         "isHeadquarters": true
     },
     {
-        "name": "Visa Innovation Center",
+        "name": "Visa",
         "address": "One Market Plaza San Francisco, CA 94105",
         "id": "950faf8d-fc90-4a26-9bcb-701f00b472c2",
         "lat": 37.7937188,
         "lng": -122.3942152,
-        "imageName": "visainnovationcenter.com.jpg",
+        "imageName": "visa.com.jpg",
         "description": "Visa's San Francisco Innovation Center is a state-of-the-art facility designed for clients, partners, and governments to collaborate on the future of digital commerce. The center provides immersive experiences and showcases Visa's innovations in payments technology, security, and next-generation commerce solutions.",
         "wikipediaSlug": "Visa_Inc.",
         "isHeadquarters": false
@@ -2085,20 +2085,9 @@
         "imageName": "amazonfresh.com.jpg",
         "description": "Amazon Fresh is Amazon's grocery delivery service and chain of physical grocery stores. Initially launched in 2007 as a delivery-only service in Seattle, it evolved into a chain of cashierless supermarkets in 2020. Amazon Fresh stores feature advanced technology including Amazon Dash Carts for streamlined shopping and Just Walk Out technology. The service offers fresh produce, meat, seafood, and Amazon-branded products, serving as a subsidiary of Amazon focused on revolutionizing grocery shopping through technology integration.",
         "wikipediaSlug": "Amazon_Fresh",
-        "isHeadquarters": false,
+        "isHeadquarters": true,
         "lat": 47.62231,
         "lng": -122.1753189
-    },
-    {
-        "name": "Amazon Go",
-        "address": "2131 7th Ave, Seattle, WA 98121",
-        "id": "b158efae-83c1-4667-a5d5-97df0192943a",
-        "imageName": "amazongostore.com.jpg",
-        "description": "Amazon Go is a chain of convenience stores operated by Amazon featuring cashierless shopping technology. The first store opened to employees in 2016 and to the public in 2018. Amazon Go stores use computer vision, deep learning algorithms, and sensor fusion to enable customers to shop without traditional checkout processes. Customers scan their Amazon app to enter, select items, and are automatically charged when they exit. The stores offer prepared foods, snacks, beverages, and everyday essentials across locations in Seattle, Chicago, New York, and San Francisco.",
-        "wikipediaSlug": "Amazon_Go",
-        "isHeadquarters": false,
-        "lat": 47.616179,
-        "lng": -122.3399573
     },
     {
         "name": "Bluesky",

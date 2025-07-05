@@ -33,12 +33,12 @@
     "isHeadquarters": true
   },
   {
-    "name": "Visa Innovation Center",
+    "name": "Visa",
     "address": "One Market Plaza San Francisco, CA 94105",
-    "id": "a938811d-de01-439a-a314-6ca7134bcf4e",
-    "lat": 37.7943,
-    "lng": -122.3943,
-    "imageName": "visainnovationcenter.com.jpg",
+    "id": "950faf8d-fc90-4a26-9bcb-701f00b472c2",
+    "lat": 37.7937188,
+    "lng": -122.3942152,
+    "imageName": "visa.com.jpg",
     "description": "Visa's San Francisco Innovation Center is a state-of-the-art facility designed for clients, partners, and governments to collaborate on the future of digital commerce. The center provides immersive experiences and showcases Visa's innovations in payments technology, security, and next-generation commerce solutions.",
     "wikipediaSlug": "Visa_Inc.",
     "isHeadquarters": false
@@ -170,7 +170,7 @@
     "id": "63badb13-dae1-41d4-94d6-2bde05c5f017",
     "lat": 37.3829254,
     "lng": -121.9703842,
-    "imageName": "advancedmicrodevicesamd.com.jpg",
+    "imageName": "amd.com.jpg",
     "description": "Advanced Micro Devices (AMD) designs high-performance CPUs, GPUs, and adaptive SoCs for PCs, gaming consoles, data centers, and automotive systems. Founded in 1969, AMD competes with Intel and Nvidia through its Ryzen processors, Radeon graphics, and EPYC server chips, and has become a fabless company using contract manufacturers.",
     "wikipediaSlug": "AMD",
     "isHeadquarters": true

@@ -33,15 +33,15 @@
     "isHeadquarters": true
   },
   {
-    "name": "Visa Innovation Center",
-    "address": "One Market Plaza San Francisco, CA 94105",
-    "id": "950faf8d-fc90-4a26-9bcb-701f00b472c2",
-    "lat": 37.7937188,
-    "lng": -122.3942152,
-    "imageName": "visainnovationcenter.com.jpg",
-    "description": "Visa's San Francisco Innovation Center is a state-of-the-art facility designed for clients, partners, and governments to collaborate on the future of digital commerce. The center provides immersive experiences and showcases Visa's innovations in payments technology, security, and next-generation commerce solutions.",
-    "wikipediaSlug": "Visa_Inc.",
-    "isHeadquarters": false
+      "name": "Visa",
+      "address": "One Market Plaza San Francisco, CA 94105",
+      "id": "950faf8d-fc90-4a26-9bcb-701f00b472c2",
+      "lat": 37.7937188,
+      "lng": -122.3942152,
+      "imageName": "visa.com.jpg",
+      "description": "Visa's San Francisco Innovation Center is a state-of-the-art facility designed for clients, partners, and governments to collaborate on the future of digital commerce. The center provides immersive experiences and showcases Visa's innovations in payments technology, security, and next-generation commerce solutions.",
+      "wikipediaSlug": "Visa_Inc.",
+      "isHeadquarters": false
   },
   {
     "name": "Scale AI",
