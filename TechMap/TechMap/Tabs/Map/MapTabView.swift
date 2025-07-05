@@ -26,6 +26,8 @@ struct MapTabView: View {
         rawSettings.first ?? Settings.defaultSettings
     }
     
+    @State private var needsToPositionAtStart = true
+    
     var body: some View {
         GeometryReader { geo in
             ZStack(alignment: .bottom) {
@@ -94,10 +96,12 @@ struct MapTabView: View {
                     MapScaleView() //only appears when zooming in and out
                 }
                 .onAppear {
-                    setInitialMapRegion()
+                    if needsToPositionAtStart {
+                        setInitialMapRegion()
+                    }
                 }
                 .onChange(of: locationVM.currentLocation) {
-                    if cameraPosition == .automatic {
+                    if needsToPositionAtStart {
                         setInitialMapRegion()
                     }
                 }
@@ -145,6 +149,7 @@ struct MapTabView: View {
                 longitudinalMeters: 8047
             )
             cameraPosition = .region(region)
+            needsToPositionAtStart = false //only change to false if was able to change
         }
     }
     

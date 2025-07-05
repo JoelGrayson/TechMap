@@ -261,7 +261,7 @@
         "imageName": "instagram.com.jpg",
         "description": "Instagram is a photo- and video-sharing social network popular for curated images, short Reels, and influencer culture. Launched in 2010 and bought by Facebook for US $1 billion in 2012, it now boasts well over two billion monthly users. Key features include Stories, IGTV, shopping tags, and creator subscriptions that help monetize content. Instagram’s algorithmic feed and explore tab make it a powerful marketing platform for brands and celebrities. Concerns over mental health impacts on teens have pushed the company to add safety and time-management tools.",
         "wikipediaSlug": "Instagram",
-        "isHeadquarters": false
+        "isHeadquarters": true
     },
     {
         "name": "Fitbit (Google)",
