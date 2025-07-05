@@ -17,6 +17,6 @@ struct Company: Codable, Identifiable, Hashable {
     var imageName: String
     var description: String
     var wikipediaSlug: String
+    var region: String
 }
-
 

@@ -13,6 +13,7 @@ class Settings {
     var markerSize: MarkerSize = MarkerSize.normal
     var transportationMethod: TransportMethod = TransportMethod.walking
     var playSoundWhenChecked: Bool = true
+    var region: Region? //which region to show in the ListTabView. Stored in settings so it is persisted.
     // account/auth managed by FirebaseVM
     
     init(markerSize: MarkerSize = .normal, transportationMethod: TransportMethod = .walking, playSoundWhenChecked: Bool = true) {
@@ -30,6 +31,22 @@ class Settings {
         case small
         case normal //default
         case large
+    }
+    
+    enum Region: String, Codable {
+        case nyc = "NYC"
+        case bayArea = "Bay Area"
+        case seattle = "Seattle Metropolitan Area"
+        case all = "All"
+        
+        var code: String { // region.code used in firebase. region.rawValue is used for displaying
+            switch self {
+            case .nyc: "nyc"
+            case .bayArea: "bay-area"
+            case .seattle: "seattle"
+            case .all: "all"
+            }
+        }
     }
     
     static let defaultSettings = Settings()
