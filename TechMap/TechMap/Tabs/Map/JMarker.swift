@@ -12,6 +12,7 @@ struct JMarker: View {
     var imageName: String
     var selected: Bool
     var markerSize: Settings.MarkerSize
+    var isHeadquarters: Bool
     
     // Computed properties
     var scaleFactor: CGFloat {
@@ -30,8 +31,13 @@ struct JMarker: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: Styles.cornerRadius)
-                .fill(checked ? Color("Checked") : Color("Unchecked"))
+            if isHeadquarters {
+                RoundedRectangle(cornerRadius: Styles.cornerRadius)
+                    .fill(checked ? Color("Checked") : Color("Unchecked"))
+            } else {
+                RoundedRectangle(cornerRadius: Styles.cornerRadius)
+                    .stroke(checked ? Color("Checked") : Color("Unchecked"), style: StrokeStyle(lineWidth: Styles.borderSize, dash: [5, 3]))
+            }
             
             AsyncImage(url: imageURL(imageName: imageName)) { phase in
                 switch phase {
@@ -77,8 +83,8 @@ struct CheckmarkShape: Shape {
 
 #Preview {
     VStack {
-        JMarker(checked: true, imageName: "apple.com.jpg", selected: false, markerSize: .normal)
-        JMarker(checked: false, imageName: "apple.com.jpg", selected: false, markerSize: .normal)
+        JMarker(checked: true, imageName: "apple.com.jpg", selected: false, markerSize: .normal, isHeadquarters: true)
+        JMarker(checked: false, imageName: "apple.com.jpg", selected: false, markerSize: .normal, isHeadquarters: false)
     }
 }
 

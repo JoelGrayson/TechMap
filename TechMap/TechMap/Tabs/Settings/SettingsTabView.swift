@@ -150,6 +150,25 @@ struct SettingsTabView: View {
                             .frame(maxWidth: 200)
                         }
                         
+                        
+                        // Only show headquarters
+                        HStack {
+                            Text("Only Show if is Headquarters")
+                            Spacer()
+                            Toggle(
+                                "Only Show if is Headquarters",
+                                isOn: Binding<Bool>(
+                                    get: { settings.onlyShowHeadquarters },
+                                    set: { newValue in
+                                        settings.onlyShowHeadquarters = newValue
+                                        try? modelContext.save()
+                                    }
+                                )
+                            )
+                            .toggleStyle(.switch)
+                            .labelsHidden()
+                        }
+                        
                         // Play sound when checked
                         HStack {
                             Text("Play Sound When Checked")

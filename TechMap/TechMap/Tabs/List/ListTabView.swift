@@ -31,7 +31,7 @@ struct ListTabView: View {
         }
     }
     
-    private func calculateRegionFromLocation() -> Settings.Region {
+    private func calculateRegionFromLocation() -> Settings.Region { //written by Claude code
         guard let currentLocation = locationVM.currentLocation else {
             return .all
         }

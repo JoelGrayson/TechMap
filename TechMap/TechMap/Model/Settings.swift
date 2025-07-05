@@ -14,12 +14,15 @@ class Settings {
     var transportationMethod: TransportMethod = TransportMethod.walking
     var playSoundWhenChecked: Bool = true
     var region: Region? //which region to show in the ListTabView. Stored in settings so it is persisted.
+    var onlyShowHeadquarters: Bool = false //hides companies where isHeadquarters == false
     // account/auth managed by FirebaseVM
     
-    init(markerSize: MarkerSize = .normal, transportationMethod: TransportMethod = .walking, playSoundWhenChecked: Bool = true) {
+    init(markerSize: MarkerSize = .normal, transportationMethod: TransportMethod = .walking, playSoundWhenChecked: Bool = true, region: Region? = nil, onlyShowHeadquarters: Bool = false) {
         self.markerSize = markerSize
         self.transportationMethod = transportationMethod
         self.playSoundWhenChecked = playSoundWhenChecked
+        self.region = region
+        self.onlyShowHeadquarters = onlyShowHeadquarters
     }
     
     enum TransportMethod: String, Codable {

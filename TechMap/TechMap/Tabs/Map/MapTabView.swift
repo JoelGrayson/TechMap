@@ -75,7 +75,8 @@ struct MapTabView: View {
                                 checked: companyChecked(company: company, checks: checks),
                                 imageName: company.imageName,
                                 selected: selectedCompany == company,
-                                markerSize: settings.markerSize
+                                markerSize: settings.markerSize,
+                                isHeadquarters: company.isHeadquarters
                             )
                         }
                         .tag(company)

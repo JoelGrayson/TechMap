@@ -14,7 +14,17 @@ struct TabsView: View {
     @State private var locationVM = LocationVM()
     
     @FirestoreQuery(collectionPath: "companies")
-    var companies: [Company]
+    var rawCompanies: [Company]
+    var companies: [Company] { //take into account settings
+        rawCompanies
+            .filter({ company in
+                if settings.onlyShowHeadquarters {
+                    return company.isHeadquarters //only show companies with isHeadquarters true
+                } else {
+                    return true //show all companies
+                }
+            })
+    }
     
     @State private var checks: [Check] = []
     
