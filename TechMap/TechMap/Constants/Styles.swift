@@ -19,5 +19,7 @@ struct Styles {
     
     static let settingsGapBetweenSections = 30 as CGFloat
     static let settingsGapBetweenItems = 20 as CGFloat
+    
+    static let profilePhotoSize = 50 as CGFloat
 }
 

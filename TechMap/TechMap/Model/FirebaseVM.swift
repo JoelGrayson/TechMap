@@ -147,9 +147,10 @@ class FirebaseVM { //handles auth and firestore
                 print("Signed in with existing Google account with email \(result.user.email ?? "undefined")")
             }
         } else {
+            // No current user or user is not anonymous - sign in directly
             let result = try await Auth.auth().signIn(with: credential)
             setPropertiesFrom(user: result.user)
-            print("Signed in with a blank slate account with UID \(result.user.uid)")
+            print("Signed in with account with email \(result.user.email ?? "undefined")")
         }
     }
     

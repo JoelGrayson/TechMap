@@ -35,6 +35,8 @@ struct SettingsTabView: View {
                         HStack {
                             if let photoURL = firebaseVM.photoURL {
                                 KFImage(photoURL)
+                                    .resizable()
+                                    .frame(maxWidth: Styles.profilePhotoSize, maxHeight: Styles.profilePhotoSize)
                             }
                             if let email = firebaseVM.email {
                                 if let name = firebaseVM.name {

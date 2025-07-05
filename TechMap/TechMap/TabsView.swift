@@ -12,6 +12,7 @@ import SwiftData
 struct TabsView: View {
     let firebaseVM: FirebaseVM
     @State private var locationVM = LocationVM()
+    @Binding var selectedTab: String
     
     @FirestoreQuery(collectionPath: "companies")
     var rawCompanies: [Company]
@@ -34,14 +35,14 @@ struct TabsView: View {
     }
     
     var body: some View {
-        TabView {
-            Tab("Map", systemImage: "mappin.circle.fill") {
+        TabView(selection: $selectedTab) {
+            Tab("Map", systemImage: "mappin.circle.fill", value: "Map") {
                 MapTabView(firebaseVM: firebaseVM, locationVM: locationVM, companies: companies, checks: checks)
             }
-            Tab("List", systemImage: "list.bullet") {
+            Tab("List", systemImage: "list.bullet", value: "List") {
                 ListTabView(firebaseVM: firebaseVM, locationVM: locationVM, companies: companies, checks: checks)
             }
-            Tab("Settings", systemImage: "gearshape.fill") {
+            Tab("Settings", systemImage: "gearshape.fill", value: "Settings") {
                 SettingsTabView(firebaseVM: firebaseVM, locationVM: locationVM)
             }
         }
