@@ -36,7 +36,7 @@ async function uploadJSON(filename, region) {
 
 
 async function main() {
-    // These files were edited
+    // Some of these files were edited so please if you (me) rebuild them, do it with caution.
 
     console.log('Uploading Bay Area 1');
     await uploadJSON('./2-geocoded/bay-area/1/output-with-wiki.json', 'bay-area');

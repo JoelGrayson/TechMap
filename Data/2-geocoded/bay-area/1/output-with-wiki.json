@@ -6,8 +6,9 @@
     "lat": 37.3287379,
     "lng": -122.0078912,
     "imageName": "apple.com.jpg",
-    "description": "Apple Inc. designs and sells iPhones, Macs, iPads, Apple Watch, and other premium consumer electronics. It pairs this hardware with proprietary software like iOS and macOS and services such as iCloud, Apple Music, and Apple TV+. Founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne, the company pioneered the graphical-user-interface personal computer. Apple is publicly traded (AAPL) and is regularly ranked among the world’s most valuable companies. Its headquarters, Apple Park, is a circular, solar-powered campus often called “the spaceship.”",
-    "wikipediaSlug": "Apple_Inc."
+    "description": "Apple Inc. designs and sells iPhones, Macs, iPads, Apple Watch, and other premium consumer electronics. It pairs this hardware with proprietary software like iOS and macOS and services such as iCloud, Apple Music, and Apple TV+. Founded in 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne, the company pioneered the graphical-user-interface personal computer. Apple is publicly traded (AAPL) and is regularly ranked among the world\u2019s most valuable companies. Its headquarters, Apple Park, is a circular, solar-powered campus often called \u201cthe spaceship.\u201d",
+    "wikipediaSlug": "Apple_Inc.",
+    "isHeadquarters": true
   },
   {
     "name": "Google (Alphabet)",
@@ -16,8 +17,9 @@
     "lat": 37.4220101,
     "lng": -122.0847516,
     "imageName": "google.com.jpg",
-    "description": "Alphabet is the parent company of Google and numerous other businesses ranging from self-driving cars (Waymo) to health tech (Verily). Google dominates global web search and digital advertising while also operating Android, YouTube, Google Cloud, and Google Maps. Founded in 1998 by Larry Page and Sergey Brin, the firm restructured as Alphabet in 2015 to separate its core internet services from longer-term “moonshots.” Advertising still provides the lion’s share of revenue, but cloud services and AI tools are the fastest-growing segments. Alphabet is one of the “Big Five” U.S. tech giants and trades under the tickers GOOGL and GOOG.",
-    "wikipediaSlug": "Google"
+    "description": "Alphabet is the parent company of Google and numerous other businesses ranging from self-driving cars (Waymo) to health tech (Verily). Google dominates global web search and digital advertising while also operating Android, YouTube, Google Cloud, and Google Maps. Founded in 1998 by Larry Page and Sergey Brin, the firm restructured as Alphabet in 2015 to separate its core internet services from longer-term \u201cmoonshots.\u201d Advertising still provides the lion\u2019s share of revenue, but cloud services and AI tools are the fastest-growing segments. Alphabet is one of the \u201cBig Five\u201d U.S. tech giants and trades under the tickers GOOGL and GOOG.",
+    "wikipediaSlug": "Google",
+    "isHeadquarters": true
   },
   {
     "name": "Meta (Facebook)",
@@ -26,8 +28,9 @@
     "lat": 37.482503,
     "lng": -122.1479457,
     "imageName": "meta.com.jpg",
-    "description": "Meta Platforms owns Facebook, Instagram, WhatsApp, Messenger, and Threads, serving billions of monthly users worldwide. Advertising on these social apps generates nearly all of the company’s revenue, making Meta one of the largest digital ad sellers. Rebranded from Facebook to Meta in 2021, the company invests heavily in virtual- and augmented-reality hardware through its Reality Labs division. Founder and CEO Mark Zuckerberg has positioned Meta to build the “metaverse,” an immersive, interconnected digital world. Despite rapid growth, the firm faces ongoing scrutiny over privacy, content moderation, and competition.",
-    "wikipediaSlug": "Facebook"
+    "description": "Meta Platforms owns Facebook, Instagram, WhatsApp, Messenger, and Threads, serving billions of monthly users worldwide. Advertising on these social apps generates nearly all of the company\u2019s revenue, making Meta one of the largest digital ad sellers. Rebranded from Facebook to Meta in 2021, the company invests heavily in virtual- and augmented-reality hardware through its Reality Labs division. Founder and CEO Mark Zuckerberg has positioned Meta to build the \u201cmetaverse,\u201d an immersive, interconnected digital world. Despite rapid growth, the firm faces ongoing scrutiny over privacy, content moderation, and competition.",
+    "wikipediaSlug": "Facebook",
+    "isHeadquarters": true
   },
   {
     "name": "Netflix",
@@ -36,8 +39,9 @@
     "lat": 37.2570306,
     "lng": -121.9639833,
     "imageName": "netflix.com.jpg",
-    "description": "Netflix is the world’s leading subscription streaming service, offering films, TV series, and mobile games in more than 190 countries. Originally a DVD-by-mail company founded in 1997, it pivoted to streaming in 2007 and began producing original content like “House of Cards” in 2013. Today its library features hundreds of Netflix Originals that often dominate award shows and global pop-culture conversation. The platform operates on tiered, monthly plans and introduced an ad-supported option in 2023. With tens of millions of subscribers, Netflix competes with Disney+, Prime Video, and other big streamers for viewer attention.",
-    "wikipediaSlug": "Netflix"
+    "description": "Netflix is the world\u2019s leading subscription streaming service, offering films, TV series, and mobile games in more than 190 countries. Originally a DVD-by-mail company founded in 1997, it pivoted to streaming in 2007 and began producing original content like \u201cHouse of Cards\u201d in 2013. Today its library features hundreds of Netflix Originals that often dominate award shows and global pop-culture conversation. The platform operates on tiered, monthly plans and introduced an ad-supported option in 2023. With tens of millions of subscribers, Netflix competes with Disney+, Prime Video, and other big streamers for viewer attention.",
+    "wikipediaSlug": "Netflix",
+    "isHeadquarters": true
   },
   {
     "name": "Intel",
@@ -46,8 +50,9 @@
     "lat": 37.3880625,
     "lng": -121.9655205,
     "imageName": "intel.com.jpg",
-    "description": "Intel Corporation is a pioneer of the microprocessor, powering most personal computers for decades with its x86 CPU architecture. Founded in 1968, the company now produces processors, graphics chips, networking gear, memory, and advanced packaging technologies. Intel is investing billions in U.S. and European fabs to regain manufacturing leadership and meet growing AI and data-center demand. Its products serve PCs, servers, edge-computing devices, and automotive applications. The iconic “Intel Inside” marketing campaign made the brand a household name.",
-    "wikipediaSlug": "Intel"
+    "description": "Intel Corporation is a pioneer of the microprocessor, powering most personal computers for decades with its x86 CPU architecture. Founded in 1968, the company now produces processors, graphics chips, networking gear, memory, and advanced packaging technologies. Intel is investing billions in U.S. and European fabs to regain manufacturing leadership and meet growing AI and data-center demand. Its products serve PCs, servers, edge-computing devices, and automotive applications. The iconic \u201cIntel Inside\u201d marketing campaign made the brand a household name.",
+    "wikipediaSlug": "Intel",
+    "isHeadquarters": true
   },
   {
     "name": "Nvidia",
@@ -56,8 +61,9 @@
     "lat": 37.37187,
     "lng": -121.9659302,
     "imageName": "nvidia.com.jpg",
-    "description": "Nvidia pioneered the graphics processing unit (GPU) in 1999, sparking the modern PC-gaming boom. Its parallel-processing chips now power cutting-edge AI, data-center acceleration, autonomous vehicles, and digital-twin simulations. Led by co-founder Jensen Huang, Nvidia has transformed into a full-stack computing company providing hardware, software, and cloud services such as DGX systems and the Omniverse platform. GeForce GPUs remain popular with gamers and creators, while the company’s data-center revenue has surged amid generative-AI demand. Nvidia briefly surpassed US $3 trillion in market capitalization in 2025, reflecting its central role in the AI economy.",
-    "wikipediaSlug": "Nvidia"
+    "description": "Nvidia pioneered the graphics processing unit (GPU) in 1999, sparking the modern PC-gaming boom. Its parallel-processing chips now power cutting-edge AI, data-center acceleration, autonomous vehicles, and digital-twin simulations. Led by co-founder Jensen Huang, Nvidia has transformed into a full-stack computing company providing hardware, software, and cloud services such as DGX systems and the Omniverse platform. GeForce GPUs remain popular with gamers and creators, while the company\u2019s data-center revenue has surged amid generative-AI demand. Nvidia briefly surpassed US $3 trillion in market capitalization in 2025, reflecting its central role in the AI economy.",
+    "wikipediaSlug": "Nvidia",
+    "isHeadquarters": true
   },
   {
     "name": "HP (Hewlett-Packard)",
@@ -67,7 +73,8 @@
     "lng": -122.1497962,
     "imageName": "hp.com.jpg",
     "description": "HP Inc. traces its roots to a 1939 Palo Alto garage often cited as the birthplace of Silicon Valley. The company focuses today on PCs, printers, and related services after splitting from Hewlett Packard Enterprise in 2015. HP is a global PC-shipment leader, known for its Spectre laptops, OMEN gaming rigs, and enterprise LaserJet printers. It is committed to sustainability, using recycled plastics and closing the loop on printer supplies. HP operates in nearly every country, serving consumers, businesses, and schools with hardware, managed print, and device-as-a-service offerings.",
-    "wikipediaSlug": "Hewlett-Packard"
+    "wikipediaSlug": "Hewlett-Packard",
+    "isHeadquarters": true
   },
   {
     "name": "Cisco Systems",
@@ -76,8 +83,9 @@
     "lat": 37.4083615,
     "lng": -121.9541545,
     "imageName": "cisco.com.jpg",
-    "description": "Cisco Systems is the world’s leading supplier of networking equipment and enterprise cybersecurity solutions. Its routers, switches, wireless gear, and Webex collaboration suite underpin much of the internet’s backbone and corporate IT infrastructure. Founded in 1984 by Stanford computer scientists, Cisco grew rapidly during the dot-com boom by acquiring dozens of startups. The company now derives a growing share of revenue from subscription software, security, and observability products. Cisco’s certification programs (CCNA, CCIE) are industry standards for network professionals.",
-    "wikipediaSlug": "Cisco"
+    "description": "Cisco Systems is the world\u2019s leading supplier of networking equipment and enterprise cybersecurity solutions. Its routers, switches, wireless gear, and Webex collaboration suite underpin much of the internet\u2019s backbone and corporate IT infrastructure. Founded in 1984 by Stanford computer scientists, Cisco grew rapidly during the dot-com boom by acquiring dozens of startups. The company now derives a growing share of revenue from subscription software, security, and observability products. Cisco\u2019s certification programs (CCNA, CCIE) are industry standards for network professionals.",
+    "wikipediaSlug": "Cisco",
+    "isHeadquarters": true
   },
   {
     "name": "Adobe",
@@ -87,7 +95,8 @@
     "lng": -121.8942626,
     "imageName": "adobe.com.jpg",
     "description": "Adobe Inc. empowers creatives and marketers with flagship software such as Photoshop, Illustrator, Premiere Pro, and Acrobat PDF. Since 2013 the company has shifted to a cloud-subscription model under Creative Cloud, Document Cloud, and Experience Cloud brands. Adobe Sensei, its AI engine, fuels generative-AI features like Firefly for image synthesis and automated video edits. Founded in 1982, Adobe helped establish the desktop-publishing revolution with PostScript and later the ubiquitous PDF standard. Its tools are considered industry benchmarks for digital imaging, design, and marketing analytics.",
-    "wikipediaSlug": "Adobe_Inc."
+    "wikipediaSlug": "Adobe_Inc.",
+    "isHeadquarters": true
   },
   {
     "name": "eBay",
@@ -96,8 +105,9 @@
     "lat": 37.2952019,
     "lng": -121.9267507,
     "imageName": "ebay.com.jpg",
-    "description": "eBay Inc. is a global e-commerce marketplace that enables consumer-to-consumer and business-to-consumer sales of new and used goods. Founded in 1995 as AuctionWeb by Pierre Omidyar, it popularized online auctions before shifting toward fixed-price “Buy It Now” listings. The platform hosts 130 million active buyers and handled about US $73 billion in gross merchandise volume in 2024. eBay generates revenue through seller fees, advertising, and payment services after spinning off PayPal in 2015. Its feedback rating system established early trust and remains a hallmark of online marketplaces.",
-    "wikipediaSlug": "EBay"
+    "description": "eBay Inc. is a global e-commerce marketplace that enables consumer-to-consumer and business-to-consumer sales of new and used goods. Founded in 1995 as AuctionWeb by Pierre Omidyar, it popularized online auctions before shifting toward fixed-price \u201cBuy It Now\u201d listings. The platform hosts 130 million active buyers and handled about US $73 billion in gross merchandise volume in 2024. eBay generates revenue through seller fees, advertising, and payment services after spinning off PayPal in 2015. Its feedback rating system established early trust and remains a hallmark of online marketplaces.",
+    "wikipediaSlug": "EBay",
+    "isHeadquarters": true
   },
   {
     "name": "PayPal",
@@ -106,8 +116,9 @@
     "lat": 37.3768642,
     "lng": -121.9229464,
     "imageName": "paypal.com.jpg",
-    "description": "PayPal Holdings operates one of the world’s largest digital-payments platforms, connecting more than 400 million consumers and merchants across nearly 200 markets. Its services enable online checkout, peer-to-peer transfers via PayPal and Venmo, and in-store QR payments. Founded in 1998 and famously tied to the “PayPal Mafia” of Silicon Valley entrepreneurs, it was acquired by eBay in 2002 and spun out as an independent public company in 2015. PayPal earns fees on each transaction and offers merchant services like fraud protection and working-capital loans. The firm is expanding into crypto trading and “buy now, pay later” installments.",
-    "wikipediaSlug": "PayPal"
+    "description": "PayPal Holdings operates one of the world\u2019s largest digital-payments platforms, connecting more than 400 million consumers and merchants across nearly 200 markets. Its services enable online checkout, peer-to-peer transfers via PayPal and Venmo, and in-store QR payments. Founded in 1998 and famously tied to the \u201cPayPal Mafia\u201d of Silicon Valley entrepreneurs, it was acquired by eBay in 2002 and spun out as an independent public company in 2015. PayPal earns fees on each transaction and offers merchant services like fraud protection and working-capital loans. The firm is expanding into crypto trading and \u201cbuy now, pay later\u201d installments.",
+    "wikipediaSlug": "PayPal",
+    "isHeadquarters": true
   },
   {
     "name": "Tesla Engineering HQ",
@@ -116,8 +127,9 @@
     "lat": 37.4118261,
     "lng": -122.1481305,
     "imageName": "tesla.com.jpg",
-    "description": "Tesla, Inc. designs and manufactures electric vehicles, battery-storage systems, and solar-energy products with a mission to accelerate the world’s transition to sustainable energy. The Palo Alto Engineering HQ focuses on vehicle design, powertrain innovation, and Autopilot software. Since the 2012 Model S, Tesla has scaled production to deliver mass-market EVs like the Model 3 and Model Y and premium products such as Cybertruck and Semi. Tesla operates a global Supercharger network to alleviate range anxiety and sells energy products including Powerwall and Megapack batteries. CEO Elon Musk’s bold timelines and innovations keep Tesla in the media spotlight and stock-market limelight.",
-    "wikipediaSlug": "Tesla,_Inc."
+    "description": "Tesla, Inc. designs and manufactures electric vehicles, battery-storage systems, and solar-energy products with a mission to accelerate the world\u2019s transition to sustainable energy. The Palo Alto Engineering HQ focuses on vehicle design, powertrain innovation, and Autopilot software. Since the 2012 Model S, Tesla has scaled production to deliver mass-market EVs like the Model 3 and Model Y and premium products such as Cybertruck and Semi. Tesla operates a global Supercharger network to alleviate range anxiety and sells energy products including Powerwall and Megapack batteries. CEO Elon Musk\u2019s bold timelines and innovations keep Tesla in the media spotlight and stock-market limelight.",
+    "wikipediaSlug": "Tesla,_Inc.",
+    "isHeadquarters": true
   },
   {
     "name": "LinkedIn HQ",
@@ -126,8 +138,9 @@
     "lat": 37.3923878,
     "lng": -122.0421758,
     "imageName": "linkedin.com.jpg",
-    "description": "LinkedIn is the world’s largest professional networking platform, boasting over one billion members across 200+ countries. Users maintain digital résumés, connect with colleagues, search jobs, and publish industry content, while recruiters and sales teams leverage premium data tools. Founded in 2003 and acquired by Microsoft for US $26 billion in 2016, LinkedIn generates revenue from advertising, subscriptions like LinkedIn Premium and Sales Navigator, and talent solutions. Its Sunnyvale campus houses product, engineering, and sales teams that support the ever-growing network. The platform’s “Open to Work” and skill-endorsement features have reshaped modern hiring.",
-    "wikipediaSlug": "LinkedIn"
+    "description": "LinkedIn is the world\u2019s largest professional networking platform, boasting over one billion members across 200+ countries. Users maintain digital r\u00e9sum\u00e9s, connect with colleagues, search jobs, and publish industry content, while recruiters and sales teams leverage premium data tools. Founded in 2003 and acquired by Microsoft for US $26 billion in 2016, LinkedIn generates revenue from advertising, subscriptions like LinkedIn Premium and Sales Navigator, and talent solutions. Its Sunnyvale campus houses product, engineering, and sales teams that support the ever-growing network. The platform\u2019s \u201cOpen to Work\u201d and skill-endorsement features have reshaped modern hiring.",
+    "wikipediaSlug": "LinkedIn",
+    "isHeadquarters": true
   },
   {
     "name": "LinkedIn Office",
@@ -136,8 +149,9 @@
     "lat": 37.7864752,
     "lng": -122.3981167,
     "imageName": "linkedin.com.jpg",
-    "description": "LinkedIn’s San Francisco office anchors its presence in the heart of the Bay Area tech scene. Teams here focus on product design, engineering initiatives, and partnerships with enterprise customers. The downtown location enables collaboration with startups and Fortune 500 clients seeking talent solutions. Like all LinkedIn sites, it emphasizes a culture of transformation, integrity, and results. The office also hosts community events on career development and diversity in tech.",
-    "wikipediaSlug": "LinkedIn"
+    "description": "LinkedIn\u2019s San Francisco office anchors its presence in the heart of the Bay Area tech scene. Teams here focus on product design, engineering initiatives, and partnerships with enterprise customers. The downtown location enables collaboration with startups and Fortune 500 clients seeking talent solutions. Like all LinkedIn sites, it emphasizes a culture of transformation, integrity, and results. The office also hosts community events on career development and diversity in tech.",
+    "wikipediaSlug": "LinkedIn",
+    "isHeadquarters": false
   },
   {
     "name": "Yahoo",
@@ -146,8 +160,9 @@
     "lat": 37.4187924,
     "lng": -122.0257514,
     "imageName": "yahoo.com.jpg",
-    "description": "Yahoo is an internet pioneer offering email, news, sports, finance, and advertising services to a global audience. Founded in 1994, the company once dominated web search and media before selling its core business to Verizon in 2017; it is now privately held as part of Apollo Global Management. Yahoo’s homepage, fantasy-sports leagues, and Yahoo Finance remain heavily trafficked destinations. Most revenue comes from digital display and search advertising sold across its content network. The iconic exclamation-point logo and purple color scheme still resonate with longtime users.",
-    "wikipediaSlug": "Yahoo"
+    "description": "Yahoo is an internet pioneer offering email, news, sports, finance, and advertising services to a global audience. Founded in 1994, the company once dominated web search and media before selling its core business to Verizon in 2017; it is now privately held as part of Apollo Global Management. Yahoo\u2019s homepage, fantasy-sports leagues, and Yahoo Finance remain heavily trafficked destinations. Most revenue comes from digital display and search advertising sold across its content network. The iconic exclamation-point logo and purple color scheme still resonate with longtime users.",
+    "wikipediaSlug": "Yahoo",
+    "isHeadquarters": true
   },
   {
     "name": "Oracle",
@@ -156,8 +171,9 @@
     "lat": 37.53059750000001,
     "lng": -122.264388,
     "imageName": "oracle.com.jpg",
-    "description": "Oracle Corporation is a multinational provider of database software, cloud infrastructure, and enterprise applications such as ERP, HCM, and CRM. Founded in 1977 by Larry Ellison, the company commercialized the first SQL relational database and remains a market leader with Oracle Database and Exadata systems. It offers Oracle Cloud Infrastructure (OCI) to compete with AWS, Azure, and Google Cloud, emphasizing high-performance and security for enterprise workloads. Oracle has acquired over 140 companies, including Sun Microsystems, PeopleSoft, and Cerner, to broaden its portfolio. Headquarters at Redwood Shores feature the distinctive blue glass “sailboat” towers overlooking a man-made lagoon.",
-    "wikipediaSlug": "Oracle_Corporation"
+    "description": "Oracle Corporation is a multinational provider of database software, cloud infrastructure, and enterprise applications such as ERP, HCM, and CRM. Founded in 1977 by Larry Ellison, the company commercialized the first SQL relational database and remains a market leader with Oracle Database and Exadata systems. It offers Oracle Cloud Infrastructure (OCI) to compete with AWS, Azure, and Google Cloud, emphasizing high-performance and security for enterprise workloads. Oracle has acquired over 140 companies, including Sun Microsystems, PeopleSoft, and Cerner, to broaden its portfolio. Headquarters at Redwood Shores feature the distinctive blue glass \u201csailboat\u201d towers overlooking a man-made lagoon.",
+    "wikipediaSlug": "Oracle_Corporation",
+    "isHeadquarters": true
   },
   {
     "name": "Sun Microsystems (now Oracle)",
@@ -178,7 +194,8 @@
     "lng": -121.7937037,
     "imageName": "westerndigital.com.jpg",
     "description": "Western Digital designs and manufactures data-storage devices and solutions under the Western Digital, WD, and SanDisk brands. Its product lineup spans hard-disk drives, solid-state drives, and flash memory used in PCs, smartphones, data centers, and connected cars. Founded in 1970 as General Digital, the company pivoted from semiconductors to storage and now operates large fabrication facilities in the U.S. and Asia. Western Digital partners with Kioxia in Japan to produce advanced flash memory. As global data generation skyrockets, the firm focuses on capacity leadership and energy-efficient drives.",
-    "wikipediaSlug": "Western_Digital"
+    "wikipediaSlug": "Western_Digital",
+    "isHeadquarters": true
   },
   {
     "name": "AMD (Advanced Micro Devices)",
@@ -187,8 +204,9 @@
     "lat": 37.3829254,
     "lng": -121.9703842,
     "imageName": "amd.com.jpg",
-    "description": "Advanced Micro Devices designs high-performance CPUs, GPUs, and adaptive SoCs for PCs, gaming consoles, data centers, and automotive systems. Its Ryzen processors and Radeon graphics compete head-to-head with Intel and Nvidia, while EPYC server chips power hyperscale clouds. AMD became a fabless company after spinning off GlobalFoundries in 2009 and acquired FPGA leader Xilinx in 2022 to expand into adaptive computing. CEO Lisa Su is credited with reviving AMD’s fortunes through innovative Zen architectures. The company’s chips appear in both Microsoft Xbox and Sony PlayStation consoles.",
-    "wikipediaSlug": "AMD"
+    "description": "Advanced Micro Devices designs high-performance CPUs, GPUs, and adaptive SoCs for PCs, gaming consoles, data centers, and automotive systems. Its Ryzen processors and Radeon graphics compete head-to-head with Intel and Nvidia, while EPYC server chips power hyperscale clouds. AMD became a fabless company after spinning off GlobalFoundries in 2009 and acquired FPGA leader Xilinx in 2022 to expand into adaptive computing. CEO Lisa Su is credited with reviving AMD\u2019s fortunes through innovative Zen architectures. The company\u2019s chips appear in both Microsoft Xbox and Sony PlayStation consoles.",
+    "wikipediaSlug": "AMD",
+    "isHeadquarters": true
   },
   {
     "name": "Salesforce",
@@ -197,8 +215,9 @@
     "lat": 37.7897969,
     "lng": -122.3972342,
     "imageName": "salesforce.com.jpg",
-    "description": "Salesforce pioneered cloud-based customer-relationship-management (CRM) software with its 1999 “No Software” model. Its Customer 360 platform now includes sales, service, marketing, analytics, and Slack collaboration tools. Chairman Marc Benioff champions a stakeholder-capitalism ethos and the company’s 1-1-1 philanthropic model of donating equity, products, and employee time. Salesforce Tower dominates the San Francisco skyline and features an Ohana culture emphasizing equality and innovation. The company powers digital transformation for enterprises worldwide and is a component of the Dow Jones Industrial Average.",
-    "wikipediaSlug": "Salesforce"
+    "description": "Salesforce pioneered cloud-based customer-relationship-management (CRM) software with its 1999 \u201cNo Software\u201d model. Its Customer 360 platform now includes sales, service, marketing, analytics, and Slack collaboration tools. Chairman Marc Benioff champions a stakeholder-capitalism ethos and the company\u2019s 1-1-1 philanthropic model of donating equity, products, and employee time. Salesforce Tower dominates the San Francisco skyline and features an Ohana culture emphasizing equality and innovation. The company powers digital transformation for enterprises worldwide and is a component of the Dow Jones Industrial Average.",
+    "wikipediaSlug": "Salesforce",
+    "isHeadquarters": true
   },
   {
     "name": "Zoom Video Communications",
@@ -207,8 +226,9 @@
     "lat": 37.3329888,
     "lng": -121.8951264,
     "imageName": "zoom.us.jpg",
-    "description": "Zoom provides cloud-based video meetings, team chat, webinars, and an expanding phone and contact-center platform. Founded in 2011 by former Cisco Webex engineer Eric Yuan, Zoom gained global prominence during the COVID-19 pandemic as remote work and schooling exploded. The company now bills itself as an AI-first communications provider with tools like Zoom AI Companion for meeting summaries. Zoom’s freemium model allows unlimited 40-minute group calls, fostering viral adoption before upselling paid plans. Headquarters remain in Silicon Valley, but the service is used by governments, enterprises, and families worldwide.",
-    "wikipediaSlug": "Zoom_Communications"
+    "description": "Zoom provides cloud-based video meetings, team chat, webinars, and an expanding phone and contact-center platform. Founded in 2011 by former Cisco Webex engineer Eric Yuan, Zoom gained global prominence during the COVID-19 pandemic as remote work and schooling exploded. The company now bills itself as an AI-first communications provider with tools like Zoom AI Companion for meeting summaries. Zoom\u2019s freemium model allows unlimited 40-minute group calls, fostering viral adoption before upselling paid plans. Headquarters remain in Silicon Valley, but the service is used by governments, enterprises, and families worldwide.",
+    "wikipediaSlug": "Zoom_Communications",
+    "isHeadquarters": true
   },
   {
     "name": "YouTube (Google)",
@@ -217,8 +237,9 @@
     "lat": 37.6282436,
     "lng": -122.4263355,
     "imageName": "youtube.com.jpg",
-    "description": "YouTube is the world’s largest video-sharing platform, hosting over two billion logged-in users who watch more than a billion hours of video daily. Founded in 2005 and acquired by Google in 2006 for US $1.65 billion, it now offers ad-supported content, YouTube Premium subscriptions, and live-TV streaming via YouTube TV. Creators monetize through ads, memberships, and merchandise shelves, while YouTube Shorts competes with TikTok for short-form attention. The San Bruno HQ manages policy, trust and safety, and product engineering. YouTube’s influence spans entertainment, education, news, and social movements.",
-    "wikipediaSlug": "YouTube"
+    "description": "YouTube is the world\u2019s largest video-sharing platform, hosting over two billion logged-in users who watch more than a billion hours of video daily. Founded in 2005 and acquired by Google in 2006 for US $1.65 billion, it now offers ad-supported content, YouTube Premium subscriptions, and live-TV streaming via YouTube TV. Creators monetize through ads, memberships, and merchandise shelves, while YouTube Shorts competes with TikTok for short-form attention. The San Bruno HQ manages policy, trust and safety, and product engineering. YouTube\u2019s influence spans entertainment, education, news, and social movements.",
+    "wikipediaSlug": "YouTube",
+    "isHeadquarters": true
   },
   {
     "name": "WhatsApp (Meta)",
@@ -227,8 +248,9 @@
     "lat": 37.482503,
     "lng": -122.1479457,
     "imageName": "whatsapp.com.jpg",
-    "description": "WhatsApp is a free, end-to-end encrypted messaging and calling app used by over two billion people worldwide. Launched in 2009, it was acquired by Facebook (now Meta) in 2014 for approximately US $19 billion, one of the largest tech deals ever. The app supports text, voice, video, group chats, and file sharing, relying on a user’s phone number rather than usernames. WhatsApp Business tools help merchants provide customer support and catalog listings, with future plans for payments in select regions. Privacy-focused features like disappearing messages aim to maintain trust amid encryption debates.",
-    "wikipediaSlug": "WhatsApp"
+    "description": "WhatsApp is a free, end-to-end encrypted messaging and calling app used by over two billion people worldwide. Launched in 2009, it was acquired by Facebook (now Meta) in 2014 for approximately US $19 billion, one of the largest tech deals ever. The app supports text, voice, video, group chats, and file sharing, relying on a user\u2019s phone number rather than usernames. WhatsApp Business tools help merchants provide customer support and catalog listings, with future plans for payments in select regions. Privacy-focused features like disappearing messages aim to maintain trust amid encryption debates.",
+    "wikipediaSlug": "WhatsApp",
+    "isHeadquarters": false
   },
   {
     "name": "Instagram (Meta)",
@@ -237,8 +259,9 @@
     "lat": 37.4799547,
     "lng": -122.1690575,
     "imageName": "instagram.com.jpg",
-    "description": "Instagram is a photo- and video-sharing social network popular for curated images, short Reels, and influencer culture. Launched in 2010 and bought by Facebook for US $1 billion in 2012, it now boasts well over two billion monthly users. Key features include Stories, IGTV, shopping tags, and creator subscriptions that help monetize content. Instagram’s algorithmic feed and explore tab make it a powerful marketing platform for brands and celebrities. Concerns over mental health impacts on teens have pushed the company to add safety and time-management tools.",
-    "wikipediaSlug": "Instagram"
+    "description": "Instagram is a photo- and video-sharing social network popular for curated images, short Reels, and influencer culture. Launched in 2010 and bought by Facebook for US $1 billion in 2012, it now boasts well over two billion monthly users. Key features include Stories, IGTV, shopping tags, and creator subscriptions that help monetize content. Instagram\u2019s algorithmic feed and explore tab make it a powerful marketing platform for brands and celebrities. Concerns over mental health impacts on teens have pushed the company to add safety and time-management tools.",
+    "wikipediaSlug": "Instagram",
+    "isHeadquarters": false
   },
   {
     "name": "Fitbit (Google)",
@@ -247,8 +270,9 @@
     "lat": 37.789873,
     "lng": -122.394781,
     "imageName": "fitbit.com.jpg",
-    "description": "Fitbit makes wearable fitness trackers and smartwatches that monitor activity, sleep, heart rate, and more to encourage healthier lifestyles. Founded in 2007, the company went public in 2015 and was acquired by Google in 2021 to bolster its hardware portfolio. Popular devices include the Charge series, Versa watches, and Pixel Watch line that now integrates deeper with Google services. Users engage through the Fitbit app’s social challenges, premium coaching, and wellness insights. Fitbit data has been used in health studies, raising both opportunities and privacy considerations.",
-    "wikipediaSlug": "Fitbit"
+    "description": "Fitbit makes wearable fitness trackers and smartwatches that monitor activity, sleep, heart rate, and more to encourage healthier lifestyles. Founded in 2007, the company went public in 2015 and was acquired by Google in 2021 to bolster its hardware portfolio. Popular devices include the Charge series, Versa watches, and Pixel Watch line that now integrates deeper with Google services. Users engage through the Fitbit app\u2019s social challenges, premium coaching, and wellness insights. Fitbit data has been used in health studies, raising both opportunities and privacy considerations.",
+    "wikipediaSlug": "Fitbit",
+    "isHeadquarters": true
   },
   {
     "name": "Nest (Google)",
@@ -258,7 +282,8 @@
     "lng": -122.1476521,
     "imageName": "nest.com.jpg",
     "description": "Google Nest offers smart-home products such as learning thermostats, security cameras, doorbells, speakers, and displays designed for energy savings and convenience. Originally founded as Nest Labs in 2010 by Tony Fadell and Matt Rogers, it was acquired by Google for US $3.2 billion in 2014. Nest products leverage machine learning to adapt to user habits and integrate with Google Assistant for voice control. In 2018 Google unified its smart-home lineup under the Google Nest brand. The devices emphasize sustainability, security, and seamless setup within the Google Home ecosystem.",
-    "wikipediaSlug": "Google_Nest"
+    "wikipediaSlug": "Google_Nest",
+    "isHeadquarters": true
   },
   {
     "name": "DoorDash",
@@ -267,8 +292,9 @@
     "lat": 37.7853512,
     "lng": -122.395477,
     "imageName": "doordash.com.jpg",
-    "description": "DoorDash is North America’s largest on-demand food-delivery and logistics platform, connecting customers with restaurants, convenience stores, and grocers. Founded in 2013 by Stanford students, it operates in thousands of cities across the U.S., Canada, Australia, and beyond. DoorDash partners with independent “Dashers” who choose flexible shifts and earn delivery fees and tips. Revenue comes from delivery fees, merchant commissions, advertising, and the DashPass subscription offering reduced fees. The company went public in 2020 and is expanding into ultrafast grocery and nationwide shipping.",
-    "wikipediaSlug": "DoorDash"
+    "description": "DoorDash is North America\u2019s largest on-demand food-delivery and logistics platform, connecting customers with restaurants, convenience stores, and grocers. Founded in 2013 by Stanford students, it operates in thousands of cities across the U.S., Canada, Australia, and beyond. DoorDash partners with independent \u201cDashers\u201d who choose flexible shifts and earn delivery fees and tips. Revenue comes from delivery fees, merchant commissions, advertising, and the DashPass subscription offering reduced fees. The company went public in 2020 and is expanding into ultrafast grocery and nationwide shipping.",
+    "wikipediaSlug": "DoorDash",
+    "isHeadquarters": true
   },
   {
     "name": "Uber",
@@ -278,7 +304,8 @@
     "lng": -122.3887739,
     "imageName": "uber.com.jpg",
     "description": "Uber Technologies began as a ride-hailing app in 2009 and has evolved into a global multimodal mobility and delivery platform. Users can book cars, scooters, shared rides, or order food via Uber Eats and groceries via Uber Direct in over 70 countries. The company uses dynamic pricing and a two-sided marketplace that matches riders with independent driver-partners. Uber invests in autonomous-vehicle research and freight logistics to diversify beyond rides. Regulatory challenges and driver classification debates continue as it pursues profitability.",
-    "wikipediaSlug": "Uber"
+    "wikipediaSlug": "Uber",
+    "isHeadquarters": true
   },
   {
     "name": "Lyft",
@@ -288,7 +315,8 @@
     "lng": -122.3920774,
     "imageName": "lyft.com.jpg",
     "description": "Lyft offers ride-hailing, rental bikes and scooters, and car rentals primarily in the United States and Canada. Founded in 2012 as a spinoff of Zimride, Lyft brands itself on friendliness and pink mustache imagery to differentiate from Uber. Drivers use their own cars and earn flexible income while passengers enjoy on-demand rides through the app. Revenue comes from trip commissions and subscription products like Lyft Pink for frequent riders. The company is exploring autonomous-vehicle partnerships to lower costs and improve safety.",
-    "wikipediaSlug": "Lyft"
+    "wikipediaSlug": "Lyft",
+    "isHeadquarters": true
   },
   {
     "name": "Pinterest",
@@ -297,8 +325,9 @@
     "lat": 37.7754369,
     "lng": -122.3996287,
     "imageName": "pinterest.com.jpg",
-    "description": "Pinterest is a visual-discovery platform where over 500 million monthly users “pin” images and videos to themed boards for inspiration on recipes, fashion, DIY projects, and more. Founded in 2010, the site functions like a digital scrapbook and drives significant referral traffic to e-commerce sites. Pinterest monetizes through visual search advertising and shoppable product pins. Its positive, planning-oriented community distinguishes it from other social networks. Recent features include AI-powered style matching and creator-led Idea Pins.",
-    "wikipediaSlug": "Pinterest"
+    "description": "Pinterest is a visual-discovery platform where over 500 million monthly users \u201cpin\u201d images and videos to themed boards for inspiration on recipes, fashion, DIY projects, and more. Founded in 2010, the site functions like a digital scrapbook and drives significant referral traffic to e-commerce sites. Pinterest monetizes through visual search advertising and shoppable product pins. Its positive, planning-oriented community distinguishes it from other social networks. Recent features include AI-powered style matching and creator-led Idea Pins.",
+    "wikipediaSlug": "Pinterest",
+    "isHeadquarters": true
   },
   {
     "name": "Dropbox",
@@ -307,8 +336,9 @@
     "lat": 37.76511170000001,
     "lng": -122.39269,
     "imageName": "dropbox.com.jpg",
-    "description": "Dropbox provides cloud storage, file synchronization, and collaborative tools to more than 700 million registered users. Founded in 2007 after a forgotten USB drive inspired co-founder Drew Houston, Dropbox pioneered seamless folder syncing across devices. The platform offers Dropbox Paper for document collaboration and integrates with Slack, Zoom, and Microsoft Office. Revenue comes from paid individual and business subscriptions beyond its free 2 GB tier. Dropbox focuses on a “Virtual First” remote-work culture and carbon-neutral operations.",
-    "wikipediaSlug": "Dropbox"
+    "description": "Dropbox provides cloud storage, file synchronization, and collaborative tools to more than 700 million registered users. Founded in 2007 after a forgotten USB drive inspired co-founder Drew Houston, Dropbox pioneered seamless folder syncing across devices. The platform offers Dropbox Paper for document collaboration and integrates with Slack, Zoom, and Microsoft Office. Revenue comes from paid individual and business subscriptions beyond its free 2 GB tier. Dropbox focuses on a \u201cVirtual First\u201d remote-work culture and carbon-neutral operations.",
+    "wikipediaSlug": "Dropbox",
+    "isHeadquarters": true
   },
   {
     "name": "Slack",
@@ -317,8 +347,9 @@
     "lat": 37.7883503,
     "lng": -122.3963764,
     "imageName": "slack.com.jpg",
-    "description": "Slack is a business-messaging platform that replaces email with organized channels, direct messages, and app integrations. Launched in 2013 from a failed gaming startup, it quickly became essential for team collaboration thanks to its searchable history and playful design. Slack supports voice/video calls and workflows, integrating with thousands of third-party tools. The company was acquired by Salesforce for US $27.7 billion in 2021, forming the backbone of Salesforce’s digital HQ strategy. Millions of users rely on Slack emojis, bots, and huddles to streamline daily work.",
-    "wikipediaSlug": "Slack_Technologies"
+    "description": "Slack is a business-messaging platform that replaces email with organized channels, direct messages, and app integrations. Launched in 2013 from a failed gaming startup, it quickly became essential for team collaboration thanks to its searchable history and playful design. Slack supports voice/video calls and workflows, integrating with thousands of third-party tools. The company was acquired by Salesforce for US $27.7 billion in 2021, forming the backbone of Salesforce\u2019s digital HQ strategy. Millions of users rely on Slack emojis, bots, and huddles to streamline daily work.",
+    "wikipediaSlug": "Slack_Technologies",
+    "isHeadquarters": true
   },
   {
     "name": "Reddit",
@@ -327,8 +358,9 @@
     "lat": 37.7908517,
     "lng": -122.4006138,
     "imageName": "reddit.com.jpg",
-    "description": "Reddit is a vast network of user-created communities (subreddits) covering almost any topic imaginable, from news and science to memes and niche hobbies. Founded in 2005, it brands itself as “the front page of the internet,” with content ranked by community upvotes and comments. Reddit generates revenue through advertising, premium memberships (Reddit Premium), and digital goods such as Reddit Coins. Its open, anonymous culture fosters lively debate and occasional controversy, including the influential r/WallStreetBets stock-trading community. Reddit filed for an IPO in 2024, aiming to scale while preserving its community ethos.",
-    "wikipediaSlug": "Reddit"
+    "description": "Reddit is a vast network of user-created communities (subreddits) covering almost any topic imaginable, from news and science to memes and niche hobbies. Founded in 2005, it brands itself as \u201cthe front page of the internet,\u201d with content ranked by community upvotes and comments. Reddit generates revenue through advertising, premium memberships (Reddit Premium), and digital goods such as Reddit Coins. Its open, anonymous culture fosters lively debate and occasional controversy, including the influential r/WallStreetBets stock-trading community. Reddit filed for an IPO in 2024, aiming to scale while preserving its community ethos.",
+    "wikipediaSlug": "Reddit",
+    "isHeadquarters": true
   },
   {
     "name": "Square (Block)",
@@ -338,7 +370,8 @@
     "lng": -122.4177334,
     "imageName": "squareup.com.jpg",
     "description": "Block, Inc. (formerly Square) provides financial-services hardware and software that enable small businesses to accept card payments via Square Readers and Square POS systems. Founded in 2009 by Jack Dorsey, it expanded into Cash App peer-to-peer payments, Buy Now Pay Later via Afterpay, and Bitcoin services through TBD and Spiral. The seller ecosystem offers inventory, payroll, and e-commerce tools that integrate with Square terminals. Block rebranded in 2021 to reflect its broader ecosystem beyond point-of-sale. Its business model blends hardware sales, transaction fees, and subscription services.",
-    "wikipediaSlug": "Block,_Inc."
+    "wikipediaSlug": "Block,_Inc.",
+    "isHeadquarters": true
   },
   {
     "name": "Stripe",
@@ -348,7 +381,8 @@
     "lng": -122.383587,
     "imageName": "stripe.com.jpg",
     "description": "Stripe provides online payment processing and financial infrastructure APIs used by millions of internet businesses from startups to Fortune 500 companies. Founded in 2010 by Irish brothers Patrick and John Collison, Stripe simplifies accepting cards, bank debits, and mobile wallets in over 135 currencies. The company has expanded into billing, tax, fraud prevention, lending, and carbon-removal marketplaces. Despite remaining private, Stripe is one of the highest-valued fintech firms, surpassing US $50 billion in 2025. Its developer-friendly documentation and quick integration time are industry benchmarks.",
-    "wikipediaSlug": "Stripe,_Inc."
+    "wikipediaSlug": "Stripe,_Inc.",
+    "isHeadquarters": true
   },
   {
     "name": "Robinhood",
@@ -357,8 +391,9 @@
     "lat": 37.4545281,
     "lng": -122.1650922,
     "imageName": "robinhood.com.jpg",
-    "description": "Robinhood Markets revolutionized retail investing by offering commission-free stock, ETF, options, and crypto trading via a mobile-first app. Founded in 2013, it targets younger investors with intuitive design and no account minimums. Revenue comes from payment for order flow, margin interest, and Robinhood Gold subscriptions. The platform gained notoriety during the 2021 GameStop short squeeze, spotlighting its role in meme-stock culture. Robinhood’s mission is to democratize finance for all, but it faces scrutiny over gamification and outages.",
-    "wikipediaSlug": "Robinhood_Markets"
+    "description": "Robinhood Markets revolutionized retail investing by offering commission-free stock, ETF, options, and crypto trading via a mobile-first app. Founded in 2013, it targets younger investors with intuitive design and no account minimums. Revenue comes from payment for order flow, margin interest, and Robinhood Gold subscriptions. The platform gained notoriety during the 2021 GameStop short squeeze, spotlighting its role in meme-stock culture. Robinhood\u2019s mission is to democratize finance for all, but it faces scrutiny over gamification and outages.",
+    "wikipediaSlug": "Robinhood_Markets",
+    "isHeadquarters": true
   },
   {
     "name": "Roku",
@@ -367,8 +402,9 @@
     "lat": 37.3529581,
     "lng": -121.9260145,
     "imageName": "roku.com.jpg",
-    "description": "Roku builds streaming media players, smart-TV operating systems, and an advertising platform that reaches tens of millions of U.S. households. Founded in 2002, Roku’s affordable sticks and TVs make over-the-top viewing simple, while its Roku Channel offers free, ad-supported content and live TV. Revenue splits roughly between hardware sales and higher-margin platform ads/subscriptions. Roku’s OS partners with TV manufacturers like TCL and Hisense to embed its interface natively. The company competes with Amazon Fire TV, Apple TV, and Google TV in the crowded streaming ecosystem.",
-    "wikipediaSlug": "Roku"
+    "description": "Roku builds streaming media players, smart-TV operating systems, and an advertising platform that reaches tens of millions of U.S. households. Founded in 2002, Roku\u2019s affordable sticks and TVs make over-the-top viewing simple, while its Roku Channel offers free, ad-supported content and live TV. Revenue splits roughly between hardware sales and higher-margin platform ads/subscriptions. Roku\u2019s OS partners with TV manufacturers like TCL and Hisense to embed its interface natively. The company competes with Amazon Fire TV, Apple TV, and Google TV in the crowded streaming ecosystem.",
+    "wikipediaSlug": "Roku",
+    "isHeadquarters": true
   },
   {
     "name": "DocuSign",
@@ -377,8 +413,9 @@
     "lat": 37.790344,
     "lng": -122.392177,
     "imageName": "docusign.com.jpg",
-    "description": "DocuSign is the market leader in electronic signatures and digital agreement-management solutions, helping organizations automate contract workflows. Founded in 2003, it allows legally binding signatures on virtually any device and complies with eIDAS and U.S. ESIGN acts. The broader DocuSign Agreement Cloud includes CLM, contract analytics, and identity verification services. DocuSign’s APIs integrate with Salesforce, Microsoft 365, and Google Workspace. Millions of users completed more than one billion agreements through the platform as businesses shift to paperless operations.",
-    "wikipediaSlug": "Docusign"
+    "description": "DocuSign is the market leader in electronic signatures and digital agreement-management solutions, helping organizations automate contract workflows. Founded in 2003, it allows legally binding signatures on virtually any device and complies with eIDAS and U.S. ESIGN acts. The broader DocuSign Agreement Cloud includes CLM, contract analytics, and identity verification services. DocuSign\u2019s APIs integrate with Salesforce, Microsoft 365, and Google Workspace. Millions of users completed more than one billion agreements through the platform as businesses shift to paperless operations.",
+    "wikipediaSlug": "Docusign",
+    "isHeadquarters": true
   },
   {
     "name": "Atlassian",
@@ -387,8 +424,9 @@
     "lat": 37.7910081,
     "lng": -122.4033221,
     "imageName": "atlassian.com.jpg",
-    "description": "Atlassian develops collaboration and productivity software for software teams, including Jira for project tracking, Confluence for documentation, and Trello for visual boards. Founded in Sydney in 2002, the company pursued a unique no-salesforce, self-service model and later listed on the NASDAQ in 2015. Atlassian’s cloud migration is driving recurring revenue growth, with over 260,000 customers worldwide. Products integrate into DevOps toolchains and are popular among agile development teams. Atlassian champions an open-company, no-BS culture and remote-first work practices.",
-    "wikipediaSlug": "Atlassian"
+    "description": "Atlassian develops collaboration and productivity software for software teams, including Jira for project tracking, Confluence for documentation, and Trello for visual boards. Founded in Sydney in 2002, the company pursued a unique no-salesforce, self-service model and later listed on the NASDAQ in 2015. Atlassian\u2019s cloud migration is driving recurring revenue growth, with over 260,000 customers worldwide. Products integrate into DevOps toolchains and are popular among agile development teams. Atlassian champions an open-company, no-BS culture and remote-first work practices.",
+    "wikipediaSlug": "Atlassian",
+    "isHeadquarters": true
   },
   {
     "name": "GitHub",
@@ -397,8 +435,9 @@
     "lat": 37.7822647,
     "lng": -122.39117,
     "imageName": "github.com.jpg",
-    "description": "GitHub hosts the world’s largest code-sharing and collaboration platform, with more than 100 million developers contributing to public and private repositories. Founded in 2008, it popularized Git distributed-version control and offers issue tracking, CI/CD, and security tools. Microsoft acquired GitHub for US $7.5 billion in 2018, keeping it independent and open to all languages and frameworks. GitHub Copilot, powered by OpenAI, uses AI to suggest code, transforming developer productivity. The Octocat mascot symbolizes open-source culture and community.",
-    "wikipediaSlug": "GitHub"
+    "description": "GitHub hosts the world\u2019s largest code-sharing and collaboration platform, with more than 100 million developers contributing to public and private repositories. Founded in 2008, it popularized Git distributed-version control and offers issue tracking, CI/CD, and security tools. Microsoft acquired GitHub for US $7.5 billion in 2018, keeping it independent and open to all languages and frameworks. GitHub Copilot, powered by OpenAI, uses AI to suggest code, transforming developer productivity. The Octocat mascot symbolizes open-source culture and community.",
+    "wikipediaSlug": "GitHub",
+    "isHeadquarters": true
   },
   {
     "name": "Box",
@@ -408,7 +447,8 @@
     "lng": -122.229315,
     "imageName": "box.com.jpg",
     "description": "Box offers secure cloud content management, enabling enterprises to store, share, and collaborate on files with compliance controls and deep integrations. Launched in 2005 by college student Aaron Levie, Box pivoted from consumer to enterprise focus and went public in 2015. Its platform includes Box Sign for e-signatures, Box Shield for data-loss prevention, and Box Relay for workflow automation. The company touts zero-trust architecture and partnerships with Microsoft, Google, and Slack. Box serves heavily regulated industries like healthcare, finance, and government.",
-    "wikipediaSlug": "Box_(company)"
+    "wikipediaSlug": "Box_(company)",
+    "isHeadquarters": true
   },
   {
     "name": "Evernote",
@@ -418,7 +458,8 @@
     "lng": -122.2224462,
     "imageName": "evernote.com.jpg",
     "description": "Evernote is a note-taking and information-organization app that allows users to capture ideas, web clippings, documents, and tasks across devices. Founded in 2008, it pioneered cloud-synced notebooks with powerful search and tagging. Monetization comes from premium subscriptions offering offline access, increased storage, and collaboration features. In 2023, Evernote was acquired by Italian company Bending Spoons to revitalize growth. Competitors include Microsoft OneNote, Notion, and Google Keep.",
-    "wikipediaSlug": "Evernote"
+    "wikipediaSlug": "Evernote",
+    "isHeadquarters": true
   },
   {
     "name": "Fortinet",
@@ -427,8 +468,9 @@
     "lat": 37.3756011,
     "lng": -122.0112969,
     "imageName": "fortinet.com.jpg",
-    "description": "Fortinet develops cybersecurity solutions such as next-generation firewalls, secure SD-WAN, and endpoint protection, all unified by its FortiOS operating system. Founded in 2000 by brothers Ken and Michael Xie, the company’s ASIC-accelerated FortiGate firewalls deliver high performance at lower cost. The Fortinet Security Fabric integrates network, cloud, and IoT security under a single management console. Training services like the NSE certification program address the global cyber-skills gap. Fortinet is publicly traded (FTNT) and services enterprises, service providers, and governments worldwide.",
-    "wikipediaSlug": "Fortinet"
+    "description": "Fortinet develops cybersecurity solutions such as next-generation firewalls, secure SD-WAN, and endpoint protection, all unified by its FortiOS operating system. Founded in 2000 by brothers Ken and Michael Xie, the company\u2019s ASIC-accelerated FortiGate firewalls deliver high performance at lower cost. The Fortinet Security Fabric integrates network, cloud, and IoT security under a single management console. Training services like the NSE certification program address the global cyber-skills gap. Fortinet is publicly traded (FTNT) and services enterprises, service providers, and governments worldwide.",
+    "wikipediaSlug": "Fortinet",
+    "isHeadquarters": true
   },
   {
     "name": "Juniper Networks",
@@ -437,8 +479,9 @@
     "lat": 37.4075369,
     "lng": -122.0293769,
     "imageName": "juniper.net.jpg",
-    "description": "Juniper Networks designs high-performance networking hardware, software, and security solutions for service providers, enterprises, and cloud operators. Its MX routers, QFX switches, and Mist AI-driven Wi-Fi compete with Cisco in backbone and data-center deployments. Founded in 1996, Juniper introduced ASIC-based routers that accelerated internet traffic in the dot-com era. The company now emphasizes AI-driven networking and experience-first management through its Mist acquisition. Juniper’s Contrail software supports multicloud orchestration and network virtualization.",
-    "wikipediaSlug": "Juniper_Networks"
+    "description": "Juniper Networks designs high-performance networking hardware, software, and security solutions for service providers, enterprises, and cloud operators. Its MX routers, QFX switches, and Mist AI-driven Wi-Fi compete with Cisco in backbone and data-center deployments. Founded in 1996, Juniper introduced ASIC-based routers that accelerated internet traffic in the dot-com era. The company now emphasizes AI-driven networking and experience-first management through its Mist acquisition. Juniper\u2019s Contrail software supports multicloud orchestration and network virtualization.",
+    "wikipediaSlug": "Juniper_Networks",
+    "isHeadquarters": true
   },
   {
     "name": "Arista Networks",
@@ -447,8 +490,9 @@
     "lat": 37.4119567,
     "lng": -121.9761527,
     "imageName": "arista.com.jpg",
-    "description": "Arista Networks supplies cloud-scale data-center switches and routers built on its Extensible Operating System (EOS). Founded in 2004 by former Cisco execs Andy Bechtolsheim and Jayshree Ullal, Arista became a preferred vendor for hyperscale clouds and financial-trading networks requiring low latency. Its 400G and 800G platforms power AI clusters, and Arista CloudVision provides centralized automation and telemetry. The company’s open-standards approach and high-reliability silicon have driven rapid market-share gains. Arista is headquartered in Santa Clara with R&D in India and Canada.",
-    "wikipediaSlug": "Arista_Networks"
+    "description": "Arista Networks supplies cloud-scale data-center switches and routers built on its Extensible Operating System (EOS). Founded in 2004 by former Cisco execs Andy Bechtolsheim and Jayshree Ullal, Arista became a preferred vendor for hyperscale clouds and financial-trading networks requiring low latency. Its 400G and 800G platforms power AI clusters, and Arista CloudVision provides centralized automation and telemetry. The company\u2019s open-standards approach and high-reliability silicon have driven rapid market-share gains. Arista is headquartered in Santa Clara with R&D in India and Canada.",
+    "wikipediaSlug": "Arista_Networks",
+    "isHeadquarters": true
   },
   {
     "name": "Seagate Technology",
@@ -457,8 +501,9 @@
     "lat": 37.4769034,
     "lng": -121.9306374,
     "imageName": "seagate.com.jpg",
-    "description": "Seagate is a leading manufacturer of hard-disk drives (HDDs) and storage-solutions provider for data centers, PCs, and consumer electronics. Founded in 1979, Seagate shipped the first 5.25-inch HDD and continues to push capacity using Heat-Assisted Magnetic Recording (HAMR) technology. The company’s Lyve cloud and edge storage services offer subscription-based data management. Seagate competes with Western Digital and Toshiba in the HDD market while collaborating on open-source storage initiatives. Headquarters are in Fremont, California, with manufacturing in the U.S. and Asia.",
-    "wikipediaSlug": "Seagate_Technology"
+    "description": "Seagate is a leading manufacturer of hard-disk drives (HDDs) and storage-solutions provider for data centers, PCs, and consumer electronics. Founded in 1979, Seagate shipped the first 5.25-inch HDD and continues to push capacity using Heat-Assisted Magnetic Recording (HAMR) technology. The company\u2019s Lyve cloud and edge storage services offer subscription-based data management. Seagate competes with Western Digital and Toshiba in the HDD market while collaborating on open-source storage initiatives. Headquarters are in Fremont, California, with manufacturing in the U.S. and Asia.",
+    "wikipediaSlug": "Seagate_Technology",
+    "isHeadquarters": true
   },
   {
     "name": "Logitech",
@@ -467,8 +512,9 @@
     "lat": 37.5391586,
     "lng": -122.0616318,
     "imageName": "logitech.com.jpg",
-    "description": "Logitech designs peripherals such as mice, keyboards, webcams, headsets, and gaming gear under the Logitech G, ASTRO, and Blue brands. Founded in 1981 in Switzerland, it pioneered the first commercially successful computer mouse. The company experienced renewed growth by focusing on esports-grade devices, work-from-home webcams, and creator products like StreamCam. Sustainability is central to Logitech’s strategy, with many products now using recycled plastics and carbon-neutral packaging. Logitech International trades on both the SIX Swiss Exchange and NASDAQ (LOGI).",
-    "wikipediaSlug": "Logitech"
+    "description": "Logitech designs peripherals such as mice, keyboards, webcams, headsets, and gaming gear under the Logitech G, ASTRO, and Blue brands. Founded in 1981 in Switzerland, it pioneered the first commercially successful computer mouse. The company experienced renewed growth by focusing on esports-grade devices, work-from-home webcams, and creator products like StreamCam. Sustainability is central to Logitech\u2019s strategy, with many products now using recycled plastics and carbon-neutral packaging. Logitech International trades on both the SIX Swiss Exchange and NASDAQ (LOGI).",
+    "wikipediaSlug": "Logitech",
+    "isHeadquarters": true
   },
   {
     "name": "GoPro",
@@ -477,8 +523,9 @@
     "lat": 37.5344622,
     "lng": -122.330383,
     "imageName": "gopro.com.jpg",
-    "description": "GoPro makes rugged, compact action cameras and accessories that capture immersive footage for sports, travel, and vlogging. Founded by Nick Woodman in 2002, the company popularized wearable POV filming with its HERO lineup. GoPro’s Quik app offers automatic video edits, while GoPro Subscription provides unlimited cloud backup and camera replacement. The firm has ventured into 360° and drone cameras, though the Karma drone was discontinued. User-generated GoPro videos have become iconic across social media and broadcast sports.",
-    "wikipediaSlug": "GoPro"
+    "description": "GoPro makes rugged, compact action cameras and accessories that capture immersive footage for sports, travel, and vlogging. Founded by Nick Woodman in 2002, the company popularized wearable POV filming with its HERO lineup. GoPro\u2019s Quik app offers automatic video edits, while GoPro Subscription provides unlimited cloud backup and camera replacement. The firm has ventured into 360\u00b0 and drone cameras, though the Karma drone was discontinued. User-generated GoPro videos have become iconic across social media and broadcast sports.",
+    "wikipediaSlug": "GoPro",
+    "isHeadquarters": true
   },
   {
     "name": "Electronic Arts (EA)",
@@ -487,8 +534,9 @@
     "lat": 37.5228593,
     "lng": -122.2536905,
     "imageName": "ea.com.jpg",
-    "description": "Electronic Arts is one of the world’s largest video-game publishers, known for franchises like EA Sports FC (formerly FIFA), Madden NFL, The Sims, Apex Legends, and Battlefield. Founded in 1982, EA pioneered treating game developers as “software artists.” The company now focuses on live services, mobile expansion, and EA Play subscription offerings. EA’s Frostbite engine powers many titles, and acquisitions such as Codemasters and Glu Mobile bolster its portfolio. Competitive gaming and in-game purchases drive recurring revenue alongside annual sports releases.",
-    "wikipediaSlug": "Electronic_Arts"
+    "description": "Electronic Arts is one of the world\u2019s largest video-game publishers, known for franchises like EA Sports FC (formerly FIFA), Madden NFL, The Sims, Apex Legends, and Battlefield. Founded in 1982, EA pioneered treating game developers as \u201csoftware artists.\u201d The company now focuses on live services, mobile expansion, and EA Play subscription offerings. EA\u2019s Frostbite engine powers many titles, and acquisitions such as Codemasters and Glu Mobile bolster its portfolio. Competitive gaming and in-game purchases drive recurring revenue alongside annual sports releases.",
+    "wikipediaSlug": "Electronic_Arts",
+    "isHeadquarters": true
   },
   {
     "name": "Zynga",
@@ -497,8 +545,9 @@
     "lat": 37.7704556,
     "lng": -122.4041025,
     "imageName": "zynga.com.jpg",
-    "description": "Zynga develops social and mobile games such as Words With Friends, FarmVille, and CSR Racing, engaging hundreds of millions of players. Founded in 2007 and named after the co-founder’s bulldog, the company initially thrived on Facebook-based games before shifting to mobile. Zynga monetizes through in-app purchases and advertising. In 2022, it was acquired by Take-Two Interactive for US $12.7 billion to strengthen Take-Two’s mobile presence. The studio focuses on live-ops updates and branded collaborations to retain players.",
-    "wikipediaSlug": "Zynga"
+    "description": "Zynga develops social and mobile games such as Words With Friends, FarmVille, and CSR Racing, engaging hundreds of millions of players. Founded in 2007 and named after the co-founder\u2019s bulldog, the company initially thrived on Facebook-based games before shifting to mobile. Zynga monetizes through in-app purchases and advertising. In 2022, it was acquired by Take-Two Interactive for US $12.7 billion to strengthen Take-Two\u2019s mobile presence. The studio focuses on live-ops updates and branded collaborations to retain players.",
+    "wikipediaSlug": "Zynga",
+    "isHeadquarters": true
   },
   {
     "name": "Super Micro Computer",
@@ -507,8 +556,9 @@
     "lat": 37.3892159,
     "lng": -121.9049216,
     "imageName": "supermicro.com.jpg",
-    "description": "Supermicro produces high-performance, energy-efficient servers, storage systems, and motherboards for data centers, cloud, AI, and edge computing. Founded in 1993, the company emphasizes rapid deployment of the latest Intel and AMD processors in modular, “building-block” designs. Its server racks are used by hyperscale and enterprise customers worldwide. Supermicro is investing in green-compute facilities and liquid-cooling solutions to reduce data-center power usage. Headquarters and a large manufacturing campus reside in San Jose, California.",
-    "wikipediaSlug": "Super_Micro_Computer"
+    "description": "Supermicro produces high-performance, energy-efficient servers, storage systems, and motherboards for data centers, cloud, AI, and edge computing. Founded in 1993, the company emphasizes rapid deployment of the latest Intel and AMD processors in modular, \u201cbuilding-block\u201d designs. Its server racks are used by hyperscale and enterprise customers worldwide. Supermicro is investing in green-compute facilities and liquid-cooling solutions to reduce data-center power usage. Headquarters and a large manufacturing campus reside in San Jose, California.",
+    "wikipediaSlug": "Super_Micro_Computer",
+    "isHeadquarters": true
   },
   {
     "name": "Intuit (TurboTax, QuickBooks)",
@@ -517,8 +567,9 @@
     "lat": 37.4306346,
     "lng": -122.0960826,
     "imageName": "intuit.com.jpg",
-    "description": "Intuit provides financial-management software including QuickBooks for small-business accounting, TurboTax for tax preparation, and Credit Karma for consumer credit monitoring. Founded in 1983, Intuit popularized user-friendly financial software and has transitioned to cloud-based SaaS offerings. Its Mailchimp acquisition added marketing automation to the ecosystem. Intuit uses AI under the umbrella of “Intuit Assist” to deliver personalized advice and automation. The company’s products aim to help consumers and small businesses prosper by simplifying money matters.",
-    "wikipediaSlug": "Intuit"
+    "description": "Intuit provides financial-management software including QuickBooks for small-business accounting, TurboTax for tax preparation, and Credit Karma for consumer credit monitoring. Founded in 1983, Intuit popularized user-friendly financial software and has transitioned to cloud-based SaaS offerings. Its Mailchimp acquisition added marketing automation to the ecosystem. Intuit uses AI under the umbrella of \u201cIntuit Assist\u201d to deliver personalized advice and automation. The company\u2019s products aim to help consumers and small businesses prosper by simplifying money matters.",
+    "wikipediaSlug": "Intuit",
+    "isHeadquarters": true
   },
   {
     "name": "Genentech",
@@ -527,8 +578,9 @@
     "lat": 37.6566481,
     "lng": -122.378031,
     "imageName": "gene.com.jpg",
-    "description": "Genentech, a member of the Roche Group, is a pioneering biotechnology company credited with commercializing recombinant DNA therapeutics. Founded in 1976, it developed breakthrough drugs like Rituxan for cancer and Pulmozyme for cystic fibrosis. The company’s research campus in South San Francisco is a major hub for oncology, immunology, and neuroscience innovation. Genentech’s patient-assistance programs and science education outreach reflect its mission to do now what patients need next. Roche completed its full acquisition of Genentech in 2009, maintaining the brand and research independence.",
-    "wikipediaSlug": "Genentech"
+    "description": "Genentech, a member of the Roche Group, is a pioneering biotechnology company credited with commercializing recombinant DNA therapeutics. Founded in 1976, it developed breakthrough drugs like Rituxan for cancer and Pulmozyme for cystic fibrosis. The company\u2019s research campus in South San Francisco is a major hub for oncology, immunology, and neuroscience innovation. Genentech\u2019s patient-assistance programs and science education outreach reflect its mission to do now what patients need next. Roche completed its full acquisition of Genentech in 2009, maintaining the brand and research independence.",
+    "wikipediaSlug": "Genentech",
+    "isHeadquarters": true
   },
   {
     "name": "Gilead Sciences",
@@ -537,8 +589,9 @@
     "lat": 37.5669823,
     "lng": -122.2816625,
     "imageName": "gilead.com.jpg",
-    "description": "Gilead Sciences is a biopharmaceutical company best known for antiviral therapies treating HIV, hepatitis C, and COVID-19. Founded in 1987, Gilead revolutionized HCV care with curative drugs Harvoni and Sovaldi and produces Truvada and Biktarvy for HIV prevention and treatment. The company expanded into oncology with its 2020 acquisition of Immunomedics and CAR-T developer Kite Pharma. Gilead’s headquarters overlook a man-made lake in Foster City, symbolizing its Bay Area biotech roots. Access programs aim to widen availability of lifesaving antivirals in low-income countries.",
-    "wikipediaSlug": "Gilead_Sciences"
+    "description": "Gilead Sciences is a biopharmaceutical company best known for antiviral therapies treating HIV, hepatitis C, and COVID-19. Founded in 1987, Gilead revolutionized HCV care with curative drugs Harvoni and Sovaldi and produces Truvada and Biktarvy for HIV prevention and treatment. The company expanded into oncology with its 2020 acquisition of Immunomedics and CAR-T developer Kite Pharma. Gilead\u2019s headquarters overlook a man-made lake in Foster City, symbolizing its Bay Area biotech roots. Access programs aim to widen availability of lifesaving antivirals in low-income countries.",
+    "wikipediaSlug": "Gilead_Sciences",
+    "isHeadquarters": true
   },
   {
     "name": "23andMe",
@@ -548,7 +601,8 @@
     "lng": -122.0335455,
     "imageName": "23andme.com.jpg",
     "description": "23andMe offers direct-to-consumer genetic testing kits that provide ancestry insights and health-risk reports based on DNA analysis. Founded in 2006, it became the first company to receive FDA authorization to market such tests without a prescription. Data from consenting customers supports drug-discovery partnerships, including a multi-year collaboration with GlaxoSmithKline. In 2021, 23andMe went public via SPAC, emphasizing its dual role as a consumer brand and biotech-research platform. Privacy policies and data-sharing transparency are core to customer trust.",
-    "wikipediaSlug": "23andMe"
+    "wikipediaSlug": "23andMe",
+    "isHeadquarters": true
   },
   {
     "name": "OpenAI",
@@ -557,8 +611,9 @@
     "lat": 37.7700936,
     "lng": -122.3889942,
     "imageName": "openai.com.jpg",
-    "description": "OpenAI researches and deploys artificial general intelligence (AGI) that benefits all of humanity, best known for language models like ChatGPT and DALL-E image generation. Founded in 2015 as a non-profit, it created a capped-profit structure to fund massive compute needs while aligning with its mission. Microsoft is OpenAI’s primary cloud partner and investor, integrating models into Azure and Copilot products. OpenAI’s API allows businesses to build generative-AI applications for code, content, and data analysis. The organization advocates for responsible AI governance and safety research.",
-    "wikipediaSlug": "OpenAI"
+    "description": "OpenAI researches and deploys artificial general intelligence (AGI) that benefits all of humanity, best known for language models like ChatGPT and DALL-E image generation. Founded in 2015 as a non-profit, it created a capped-profit structure to fund massive compute needs while aligning with its mission. Microsoft is OpenAI\u2019s primary cloud partner and investor, integrating models into Azure and Copilot products. OpenAI\u2019s API allows businesses to build generative-AI applications for code, content, and data analysis. The organization advocates for responsible AI governance and safety research.",
+    "wikipediaSlug": "OpenAI",
+    "isHeadquarters": true
   },
   {
     "name": "Anthropic",
@@ -568,7 +623,8 @@
     "lng": -122.4006138,
     "imageName": "anthropic.com.jpg",
     "description": "Anthropic is an AI-safety-focused research company developing large language models under the Claude family, emphasizing constitutional AI and alignment. Founded in 2021 by former OpenAI researchers Dario and Daniela Amodei, the startup has secured billions in funding from Google and AWS. Anthropic aims to create reliable, steerable, and interpretable AI systems to mitigate risks of misinformation and misuse. Its Claude models power chat assistants and enterprise knowledge tools via API and integrations. The company publishes safety research and collaborates on policy initiatives.",
-    "wikipediaSlug": "Anthropic"
+    "wikipediaSlug": "Anthropic",
+    "isHeadquarters": true
   },
   {
     "name": "Synnex",
@@ -577,8 +633,9 @@
     "lat": 37.496726,
     "lng": -121.9798511,
     "imageName": "synnex.com.jpg",
-    "description": "Synnex, now operating as TD Synnex after a 2021 merger with Tech Data, is one of the world’s largest IT distributors and solutions aggregators. It provides logistics, integration services, and supply-chain management for over 150,000 technology resellers. The company distributes hardware, software, and cloud services from vendors like HP, Cisco, Microsoft, and Apple. TD Synnex supports partners with financing, education, and lifecycle management programs. Headquarters are cobranded in Fremont, California, and Clearwater, Florida.",
-    "wikipediaSlug": "TD_SYNNEX"
+    "description": "Synnex, now operating as TD Synnex after a 2021 merger with Tech Data, is one of the world\u2019s largest IT distributors and solutions aggregators. It provides logistics, integration services, and supply-chain management for over 150,000 technology resellers. The company distributes hardware, software, and cloud services from vendors like HP, Cisco, Microsoft, and Apple. TD Synnex supports partners with financing, education, and lifecycle management programs. Headquarters are cobranded in Fremont, California, and Clearwater, Florida.",
+    "wikipediaSlug": "TD_SYNNEX",
+    "isHeadquarters": true
   },
   {
     "name": "Lam Research",
@@ -587,8 +644,9 @@
     "lat": 37.4885263,
     "lng": -121.9570265,
     "imageName": "lamresearch.com.jpg",
-    "description": "Lam Research supplies wafer-fabrication equipment and services critical to producing advanced semiconductor devices. Its plasma-etch and deposition tools enable chipmakers like TSMC, Samsung, and Intel to pattern nanoscale transistor structures. Founded in 1980, Lam plays a pivotal role in scaling Moore’s Law by introducing atomic-layer processes and EUV-compatible chambers. The company invests heavily in R&D and a global network of customer engineering centers. Semiconductor equipment cycles make Lam’s revenue sensitive to foundry capital-expenditure trends.",
-    "wikipediaSlug": "Lam_Research"
+    "description": "Lam Research supplies wafer-fabrication equipment and services critical to producing advanced semiconductor devices. Its plasma-etch and deposition tools enable chipmakers like TSMC, Samsung, and Intel to pattern nanoscale transistor structures. Founded in 1980, Lam plays a pivotal role in scaling Moore\u2019s Law by introducing atomic-layer processes and EUV-compatible chambers. The company invests heavily in R&D and a global network of customer engineering centers. Semiconductor equipment cycles make Lam\u2019s revenue sensitive to foundry capital-expenditure trends.",
+    "wikipediaSlug": "Lam_Research",
+    "isHeadquarters": true
   },
   {
     "name": "KLA Corporation",
@@ -597,8 +655,9 @@
     "lat": 37.4213037,
     "lng": -121.9240275,
     "imageName": "kla.com.jpg",
-    "description": "KLA develops process-control and yield-management systems that inspect and measure silicon wafers and chips during semiconductor fabrication. Its optical and e-beam inspection tools detect defects at nanometer scales, helping manufacturers improve yields and reduce costs. Formed by the 1997 merger of KLA Instruments and Tencor, the company now integrates AI to analyze vast inspection data. KLA’s metrology equipment is essential for advanced-node production, competing with companies like Applied Materials and ASML. The Milpitas campus includes a state-of-the-art cleanroom and training center.",
-    "wikipediaSlug": "KLA_Corporation"
+    "description": "KLA develops process-control and yield-management systems that inspect and measure silicon wafers and chips during semiconductor fabrication. Its optical and e-beam inspection tools detect defects at nanometer scales, helping manufacturers improve yields and reduce costs. Formed by the 1997 merger of KLA Instruments and Tencor, the company now integrates AI to analyze vast inspection data. KLA\u2019s metrology equipment is essential for advanced-node production, competing with companies like Applied Materials and ASML. The Milpitas campus includes a state-of-the-art cleanroom and training center.",
+    "wikipediaSlug": "KLA_Corporation",
+    "isHeadquarters": true
   },
   {
     "name": "Marvell Technology",
@@ -607,8 +666,9 @@
     "lat": 37.4116952,
     "lng": -121.982038,
     "imageName": "marvell.com.jpg",
-    "description": "Marvell designs data-infrastructure semiconductor solutions, including networking, storage, and custom ASICs for cloud, 5G, and automotive markets. Founded in 1995, Marvell reinvented itself through acquisitions like Cavium and Innovium and a focus on high-speed Ethernet and PAM4 optical DSPs. Its custom silicon unit collaborates with hyperscale cloud providers on AI accelerators and security chips. Marvell’s portfolio targets bandwidth-hungry workloads and edge-to-cloud connectivity. Headquarters reside in Santa Clara, with R&D centers worldwide.",
-    "wikipediaSlug": "Marvell_Technology"
+    "description": "Marvell designs data-infrastructure semiconductor solutions, including networking, storage, and custom ASICs for cloud, 5G, and automotive markets. Founded in 1995, Marvell reinvented itself through acquisitions like Cavium and Innovium and a focus on high-speed Ethernet and PAM4 optical DSPs. Its custom silicon unit collaborates with hyperscale cloud providers on AI accelerators and security chips. Marvell\u2019s portfolio targets bandwidth-hungry workloads and edge-to-cloud connectivity. Headquarters reside in Santa Clara, with R&D centers worldwide.",
+    "wikipediaSlug": "Marvell_Technology",
+    "isHeadquarters": true
   },
   {
     "name": "Nutanix",
@@ -618,7 +678,8 @@
     "lng": -121.9181011,
     "imageName": "nutanix.com.jpg",
     "description": "Nutanix pioneered hyperconverged infrastructure (HCI), combining compute, storage, and networking into a single software-defined platform that runs on industry-standard servers. Founded in 2009, its Acropolis OS and Prism management simplify data-center operations and enable hybrid cloud deployments. Nutanix has transitioned to a subscription-licensed software model and partners closely with HPE, Lenovo, and Dell. Its clusters host enterprise workloads, virtual desktops, and Kubernetes containers. The company is expanding into database-as-a-service and cloud-native management.",
-    "wikipediaSlug": "Nutanix"
+    "wikipediaSlug": "Nutanix",
+    "isHeadquarters": true
   },
   {
     "name": "Pure Storage",
@@ -627,8 +688,9 @@
     "lat": 37.3878672,
     "lng": -122.0830261,
     "imageName": "purestorage.com.jpg",
-    "description": "Pure Storage delivers all-flash data storage arrays and subscription services that replace legacy spinning disks with faster, more energy-efficient NVMe media. Founded in 2009, Pure’s Evergreen and Pure-as-a-Service models provide non-disruptive upgrades and OPEX flexibility. Its FlashArray and FlashBlade lines support databases, analytics, AI, and unstructured data workloads. Pure’s unique DirectFlash architecture reduces latency and improves endurance. The company emphasizes sustainability by touting power savings compared to traditional storage.",
-    "wikipediaSlug": "Pure_Storage"
+    "description": "Pure Storage delivers all-flash data storage arrays and subscription services that replace legacy spinning disks with faster, more energy-efficient NVMe media. Founded in 2009, Pure\u2019s Evergreen and Pure-as-a-Service models provide non-disruptive upgrades and OPEX flexibility. Its FlashArray and FlashBlade lines support databases, analytics, AI, and unstructured data workloads. Pure\u2019s unique DirectFlash architecture reduces latency and improves endurance. The company emphasizes sustainability by touting power savings compared to traditional storage.",
+    "wikipediaSlug": "Pure_Storage",
+    "isHeadquarters": true
   },
   {
     "name": "Splunk",
@@ -637,8 +699,9 @@
     "lat": 37.782784,
     "lng": -122.3913852,
     "imageName": "splunk.com.jpg",
-    "description": "Splunk provides a platform for collecting, indexing, and analyzing machine-generated data to deliver observability and cybersecurity insights. Its core product turns logs and metrics into dashboards, alerts, and AI-driven analytics. Founded in 2003, Splunk coined the term “Google for machine data” and now serves DevOps, IT, and security teams. Splunk transitioned to cloud subscriptions and was acquired by Cisco in 2024 to bolster its security and observability portfolio. Customers use Splunk to monitor applications, detect threats, and ensure compliance.",
-    "wikipediaSlug": "Splunk"
+    "description": "Splunk provides a platform for collecting, indexing, and analyzing machine-generated data to deliver observability and cybersecurity insights. Its core product turns logs and metrics into dashboards, alerts, and AI-driven analytics. Founded in 2003, Splunk coined the term \u201cGoogle for machine data\u201d and now serves DevOps, IT, and security teams. Splunk transitioned to cloud subscriptions and was acquired by Cisco in 2024 to bolster its security and observability portfolio. Customers use Splunk to monitor applications, detect threats, and ensure compliance.",
+    "wikipediaSlug": "Splunk",
+    "isHeadquarters": true
   },
   {
     "name": "RingCentral",
@@ -647,8 +710,9 @@
     "lat": 37.5108949,
     "lng": -122.3065331,
     "imageName": "ringcentral.com.jpg",
-    "description": "RingCentral offers cloud-based unified-communications-as-a-service (UCaaS) including business phone, video meetings, team messaging, and contact-center solutions. Founded in 1999, RingCentral displaced legacy PBX systems with its VoIP and mobile apps. The company partners with Avaya and Mitel to migrate on-prem customers to the cloud. RingCentral’s MVP platform integrates with Microsoft Teams, Salesforce, and hundreds of other apps. Predictive analytics and AI-powered transcriptions enhance productivity and customer engagement.",
-    "wikipediaSlug": "RingCentral"
+    "description": "RingCentral offers cloud-based unified-communications-as-a-service (UCaaS) including business phone, video meetings, team messaging, and contact-center solutions. Founded in 1999, RingCentral displaced legacy PBX systems with its VoIP and mobile apps. The company partners with Avaya and Mitel to migrate on-prem customers to the cloud. RingCentral\u2019s MVP platform integrates with Microsoft Teams, Salesforce, and hundreds of other apps. Predictive analytics and AI-powered transcriptions enhance productivity and customer engagement.",
+    "wikipediaSlug": "RingCentral",
+    "isHeadquarters": true
   },
   {
     "name": "Sumo Logic",
@@ -658,7 +722,8 @@
     "lng": -122.2259889,
     "imageName": "sumologic.com.jpg",
     "description": "Sumo Logic delivers cloud-native log management and security analytics as a multi-tenant SaaS platform. Founded in 2010, it helps DevSecOps teams monitor application performance, troubleshoot incidents, and detect threats in real time. The platform leverages machine learning to provide anomaly detection and predictive insights. Sumo Logic supports structured and unstructured data from AWS, Azure, Kubernetes, and more. In 2023, the company was taken private by Francisco Partners to accelerate growth in cybersecurity and observability.",
-    "wikipediaSlug": "Sumo_Logic"
+    "wikipediaSlug": "Sumo_Logic",
+    "isHeadquarters": true
   },
   {
     "name": "Five9",
@@ -667,8 +732,9 @@
     "lat": 37.7644739,
     "lng": -121.9621458,
     "imageName": "five9.com.jpg",
-    "description": "Five9 provides cloud contact-center software that enables businesses to deliver omnichannel customer service via voice, chat, email, and social media. Founded in 2001, it replaced legacy on-premise call centers with scalable, AI-powered solutions. Five9’s Intelligent Cloud Contact Center integrates with CRM systems like Salesforce and uses predictive dialing and speech analytics. A proposed acquisition by Zoom in 2021 fell through, but the two companies remain strategic partners. Five9 serves enterprises in retail, healthcare, finance, and outsourcing.",
-    "wikipediaSlug": "Five9"
+    "description": "Five9 provides cloud contact-center software that enables businesses to deliver omnichannel customer service via voice, chat, email, and social media. Founded in 2001, it replaced legacy on-premise call centers with scalable, AI-powered solutions. Five9\u2019s Intelligent Cloud Contact Center integrates with CRM systems like Salesforce and uses predictive dialing and speech analytics. A proposed acquisition by Zoom in 2021 fell through, but the two companies remain strategic partners. Five9 serves enterprises in retail, healthcare, finance, and outsourcing.",
+    "wikipediaSlug": "Five9",
+    "isHeadquarters": true
   },
   {
     "name": "Coupa Software",
@@ -677,8 +743,9 @@
     "lat": 37.5534964,
     "lng": -122.2995154,
     "imageName": "coupa.com.jpg",
-    "description": "Coupa delivers cloud spend-management software that helps organizations control procurement, invoicing, and expenses on a single platform. Founded in 2006, Coupa emphasizes “Value as a Service,” tracking customer savings and ROI. The platform uses community intelligence data and AI to benchmark pricing and flag compliance issues. In 2023, private-equity firm Thoma Bravo acquired Coupa for US $8 billion, taking it private to accelerate innovation. Customers across industries use Coupa to gain visibility and automate business spend.",
-    "wikipediaSlug": "Coupa"
+    "description": "Coupa delivers cloud spend-management software that helps organizations control procurement, invoicing, and expenses on a single platform. Founded in 2006, Coupa emphasizes \u201cValue as a Service,\u201d tracking customer savings and ROI. The platform uses community intelligence data and AI to benchmark pricing and flag compliance issues. In 2023, private-equity firm Thoma Bravo acquired Coupa for US $8 billion, taking it private to accelerate innovation. Customers across industries use Coupa to gain visibility and automate business spend.",
+    "wikipediaSlug": "Coupa",
+    "isHeadquarters": true
   },
   {
     "name": "Bill.com",
@@ -688,7 +755,8 @@
     "lng": -121.9784034,
     "imageName": "bill.com.jpg",
     "description": "Bill.com automates accounts-payable and accounts-receivable workflows for small and mid-size businesses, streamlining invoice capture, approvals, payments, and reconciliation. Founded in 2006, it integrates with QuickBooks, Xero, NetSuite, and major banks. The company expanded into expense management with its acquisition of Divvy and into cross-border payments via international wires. Bill.com earns revenue from software subscriptions and transaction fees. Its AI-enabled Intelligent Virtual Assistant extracts invoice data and matches it to purchase orders.",
-    "wikipediaSlug": "Bill.com"
+    "wikipediaSlug": "Bill.com",
+    "isHeadquarters": true
   },
   {
     "name": "Nextdoor",
@@ -698,7 +766,8 @@
     "lng": -122.4111101,
     "imageName": "nextdoor.com.jpg",
     "description": "Nextdoor is a social-networking app for neighborhoods, where verified residents share local news, recommendations, and community alerts. Launched in 2011, it operates in 11 countries and partners with public agencies for emergency communications. Businesses use Nextdoor Ads and free Business Pages to reach nearby customers. The company went public via SPAC in 2021 under the ticker KIND. Privacy is reinforced through address verification, though moderation challenges persist.",
-    "wikipediaSlug": "Nextdoor"
+    "wikipediaSlug": "Nextdoor",
+    "isHeadquarters": true
   },
   {
     "name": "Instacart",
@@ -707,8 +776,9 @@
     "lat": 37.791302,
     "lng": -122.3963906,
     "imageName": "instacart.com.jpg",
-    "description": "Instacart operates a grocery-delivery and pick-up marketplace, connecting shoppers with retailers like Kroger, Costco, and Walmart across North America. Founded in 2012 by Apoorva Mehta, the platform uses a network of gig-economy shoppers to fulfill orders. Revenue comes from delivery fees, Instacart + subscriptions, and a growing retail-media advertising business. Instacart went public in 2023 under the ticker CART. The company is expanding into software services that power grocers’ own e-commerce sites.",
-    "wikipediaSlug": "Instacart"
+    "description": "Instacart operates a grocery-delivery and pick-up marketplace, connecting shoppers with retailers like Kroger, Costco, and Walmart across North America. Founded in 2012 by Apoorva Mehta, the platform uses a network of gig-economy shoppers to fulfill orders. Revenue comes from delivery fees, Instacart + subscriptions, and a growing retail-media advertising business. Instacart went public in 2023 under the ticker CART. The company is expanding into software services that power grocers\u2019 own e-commerce sites.",
+    "wikipediaSlug": "Instacart",
+    "isHeadquarters": true
   },
   {
     "name": "Chime",
@@ -718,7 +788,8 @@
     "lng": -122.4046581,
     "imageName": "chime.com.jpg",
     "description": "Chime is a neobank offering fee-free checking accounts, savings, and secured credit-builder cards through partnerships with FDIC-insured banks. Founded in 2012, it targets millennials underserved by traditional banks, highlighting no overdraft fees and early paycheck access. The Chime app provides real-time transaction alerts and automatic savings features. Revenue primarily comes from interchange fees on debit-card transactions. Chime remains privately held and one of the most valuable U.S. fintech startups.",
-    "wikipediaSlug": "Chime_(company)"
+    "wikipediaSlug": "Chime_(company)",
+    "isHeadquarters": true
   },
   {
     "name": "SoFi",
@@ -727,8 +798,9 @@
     "lat": 37.7877665,
     "lng": -122.3957115,
     "imageName": "sofi.com.jpg",
-    "description": "SoFi Technologies began as a student-loan refinancer in 2011 and evolved into a one-stop financial-services app offering personal loans, mortgages, stock and crypto trading, credit cards, and banking. It obtained a U.S. bank charter in 2022 after acquiring Golden Pacific Bancorp. SoFi Stadium naming rights boosted brand recognition through NFL and major events. The company targets digitally native consumers with educational content and community resources. SoFi’s Galileo subsidiary provides payments-processing APIs to other fintechs.",
-    "wikipediaSlug": "SoFi"
+    "description": "SoFi Technologies began as a student-loan refinancer in 2011 and evolved into a one-stop financial-services app offering personal loans, mortgages, stock and crypto trading, credit cards, and banking. It obtained a U.S. bank charter in 2022 after acquiring Golden Pacific Bancorp. SoFi Stadium naming rights boosted brand recognition through NFL and major events. The company targets digitally native consumers with educational content and community resources. SoFi\u2019s Galileo subsidiary provides payments-processing APIs to other fintechs.",
+    "wikipediaSlug": "SoFi",
+    "isHeadquarters": true
   },
   {
     "name": "Affirm",
@@ -738,7 +810,8 @@
     "lng": -122.405241,
     "imageName": "affirm.com.jpg",
     "description": "Affirm offers Buy Now Pay Later financing that lets consumers split purchases into installment payments with transparent terms and no late fees. Founded in 2012 by PayPal co-founder Max Levchin, Affirm partners with merchants like Amazon, Shopify, and Peloton to boost conversion and average order value. Affirm Card extends BNPL flexibility to everyday purchases. The company earns revenue from merchant fees and interest on longer-term loans. Critics monitor the impact of BNPL on consumer debt, prompting increased regulation.",
-    "wikipediaSlug": "Affirm"
+    "wikipediaSlug": "Affirm",
+    "isHeadquarters": true
   },
   {
     "name": "Plaid",
@@ -747,8 +820,9 @@
     "lat": 37.7917585,
     "lng": -122.394398,
     "imageName": "plaid.com.jpg",
-    "description": "Plaid provides APIs that let fintech apps connect securely to customers’ bank accounts for payments, identity, and financial-data aggregation. Founded in 2013, Plaid underpins services like Venmo, Robinhood, and Chime. A $5.3 billion acquisition by Visa was blocked by regulators in 2021, after which Plaid raised funding independently. The company is expanding into payroll data, credit underwriting, and open-banking initiatives. Plaid’s mission is to unlock financial freedom for everyone by powering modern digital finance.",
-    "wikipediaSlug": "Plaid_(company)"
+    "description": "Plaid provides APIs that let fintech apps connect securely to customers\u2019 bank accounts for payments, identity, and financial-data aggregation. Founded in 2013, Plaid underpins services like Venmo, Robinhood, and Chime. A $5.3 billion acquisition by Visa was blocked by regulators in 2021, after which Plaid raised funding independently. The company is expanding into payroll data, credit underwriting, and open-banking initiatives. Plaid\u2019s mission is to unlock financial freedom for everyone by powering modern digital finance.",
+    "wikipediaSlug": "Plaid_(company)",
+    "isHeadquarters": true
   },
   {
     "name": "Carta",
@@ -757,8 +831,9 @@
     "lat": 37.7907897,
     "lng": -122.4031102,
     "imageName": "carta.com.jpg",
-    "description": "Carta manages cap tables, valuations, and equity plans for private and public companies, making ownership more transparent. Founded in 2012, it digitized paper stock certificates and simplified issuing option grants to employees. Carta’s platform hosts secondary share sales through CartaX and provides fund-administration services for VCs. The company advocates for broader employee equity and publishes an annual State of Private Markets report. Privacy concerns and market fluctuations challenge its expansion into trading.",
-    "wikipediaSlug": "Carta_(software)"
+    "description": "Carta manages cap tables, valuations, and equity plans for private and public companies, making ownership more transparent. Founded in 2012, it digitized paper stock certificates and simplified issuing option grants to employees. Carta\u2019s platform hosts secondary share sales through CartaX and provides fund-administration services for VCs. The company advocates for broader employee equity and publishes an annual State of Private Markets report. Privacy concerns and market fluctuations challenge its expansion into trading.",
+    "wikipediaSlug": "Carta_(software)",
+    "isHeadquarters": true
   },
   {
     "name": "Brex",
@@ -768,7 +843,8 @@
     "lng": -122.3953756,
     "imageName": "brex.com.jpg",
     "description": "Brex offers corporate cards, spend-management software, and venture debt tailored to startups and fast-growing businesses. Launched in 2017 by Brazilian founders, Brex uses real-time underwriting to provide high limits without personal guarantees. It expanded into business banking and global expense management through its Empower platform. Brex rewards points can be redeemed for travel, crypto, or statement credits. In 2024 the company shifted focus to larger tech and mid-market customers, pausing services for smaller SMBs.",
-    "wikipediaSlug": "Brex"
+    "wikipediaSlug": "Brex",
+    "isHeadquarters": true
   },
   {
     "name": "Gusto",
@@ -778,7 +854,8 @@
     "lng": -122.3860163,
     "imageName": "gusto.com.jpg",
     "description": "Gusto provides cloud payroll, HR, and benefits administration to over 300,000 small- and medium-sized businesses in the United States. Founded in 2011 as ZenPayroll, it automates tax filings, direct deposits, and compliance. Gusto Wallet offers employees budgeting tools and early wage access. The platform integrates with accounting and time-tracking apps, delivering a one-stop HR solution. Gusto prioritizes employee experience and transparent pricing over traditional payroll providers.",
-    "wikipediaSlug": "Gusto_(company)"
+    "wikipediaSlug": "Gusto_(company)",
+    "isHeadquarters": true
   },
   {
     "name": "Blend Labs",
@@ -787,8 +864,9 @@
     "lat": 37.7918954,
     "lng": -122.4045358,
     "imageName": "blend.com.jpg",
-    "description": "Blend provides digital-lending software that streamlines mortgage, consumer-loan, and deposit-account origination for banks and credit unions. Founded in 2012, Blend’s white-label platform powers applications for Wells Fargo, U.S. Bank, and other major lenders. It leverages data connectivity to prefill forms and verify income quickly, reducing application friction. Blend went public in 2021 but faces mortgage-market cycles that affect revenue. The company is expanding into identity verification and home-equity products.",
-    "wikipediaSlug": "Blend_Labs"
+    "description": "Blend provides digital-lending software that streamlines mortgage, consumer-loan, and deposit-account origination for banks and credit unions. Founded in 2012, Blend\u2019s white-label platform powers applications for Wells Fargo, U.S. Bank, and other major lenders. It leverages data connectivity to prefill forms and verify income quickly, reducing application friction. Blend went public in 2021 but faces mortgage-market cycles that affect revenue. The company is expanding into identity verification and home-equity products.",
+    "wikipediaSlug": "Blend_Labs",
+    "isHeadquarters": true
   },
   {
     "name": "Upstart",
@@ -797,8 +875,9 @@
     "lat": 37.5413944,
     "lng": -122.2997062,
     "imageName": "upstart.com.jpg",
-    "description": "Upstart is an AI-driven lending platform that partners with banks to offer personal loans, auto refinancing, and small-business loans. Founded by former Google execs in 2012, it uses alternative data like education and employment to assess creditworthiness. Upstart’s model aims to expand credit access to thin-file borrowers while maintaining low default rates. The company operates as a loan marketplace, selling most originations to bank partners or capital markets. Economic conditions and funding-cost swings influence loan volumes.",
-    "wikipediaSlug": "Upstart_(company)"
+    "description": "Upstart is an AI-driven lending platform that partners with banks to offer personal loans, auto refinancing, and small-business loans. Founded by former Google execs in 2012, it uses alternative data like education and employment to assess creditworthiness. Upstart\u2019s model aims to expand credit access to thin-file borrowers while maintaining low default rates. The company operates as a loan marketplace, selling most originations to bank partners or capital markets. Economic conditions and funding-cost swings influence loan volumes.",
+    "wikipediaSlug": "Upstart_(company)",
+    "isHeadquarters": true
   },
   {
     "name": "Mashgin",
@@ -808,7 +887,8 @@
     "lng": -122.1969753,
     "imageName": "mashgin.com.jpg",
     "description": "Mashgin builds AI-powered self-checkout kiosks that use computer vision to identify multiple items instantly without barcodes. Founded in 2013, the system is deployed in stadiums, cafeterias, and convenience stores to reduce wait times. Customers place items on the tray, see the total, and pay in seconds. Mashgin reports average transaction times under 15 seconds and increased throughput for merchants. The company competes with Amazon Just Walk Out and other cashierless technologies.",
-    "wikipediaSlug": "Mashgin"
+    "wikipediaSlug": "Mashgin",
+    "isHeadquarters": true
   },
   {
     "name": "Figma",
@@ -818,7 +898,8 @@
     "lng": -122.4056342,
     "imageName": "figma.com.jpg",
     "description": "Figma offers a browser-based interface-design and collaboration platform that allows teams to co-design in real time, replacing desktop tools like Sketch. Founded in 2012, its multiplayer editing, component libraries, and design-system features have made it a favorite among product designers. Figma Community lets users share and remix templates and plugins. Adobe announced a $20 billion acquisition in 2022, but antitrust regulators blocked the deal in 2024. Figma continues to expand with FigJam online whiteboards and DevMode handoff tools.",
-    "wikipediaSlug": "Figma"
+    "wikipediaSlug": "Figma",
+    "isHeadquarters": true
   },
   {
     "name": "Notion Labs",
@@ -827,8 +908,9 @@
     "lat": 37.76039,
     "lng": -122.4131897,
     "imageName": "notion.so.jpg",
-    "description": "Notion is an all-in-one workspace for notes, databases, project management, and wikis, used by individuals and teams to organize information flexibly. Launched in 2016, Notion’s block-based pages allow drag-and-drop customization without coding. The tool’s templates and integrations support use cases from personal journaling to company knowledge bases. Notion AI assists with writing, summarizing, and task creation. The company remains privately funded and profitable, with a vibrant community and marketplace ecosystem.",
-    "wikipediaSlug": "Notion_(productivity_software)"
+    "description": "Notion is an all-in-one workspace for notes, databases, project management, and wikis, used by individuals and teams to organize information flexibly. Launched in 2016, Notion\u2019s block-based pages allow drag-and-drop customization without coding. The tool\u2019s templates and integrations support use cases from personal journaling to company knowledge bases. Notion AI assists with writing, summarizing, and task creation. The company remains privately funded and profitable, with a vibrant community and marketplace ecosystem.",
+    "wikipediaSlug": "Notion_(productivity_software)",
+    "isHeadquarters": true
   },
   {
     "name": "Airtable",
@@ -838,7 +920,8 @@
     "lng": -122.4052753,
     "imageName": "airtable.com.jpg",
     "description": "Airtable combines the familiarity of spreadsheets with the power of relational databases to let users build custom workflow apps without code. Founded in 2012, Airtable Base can track projects, inventory, or content calendars and syncs across views like grid, kanban, and timeline. The platform supports scripting, automation, and an extensive marketplace of extensions. Enterprise adoption has grown through data-governance and connected-apps features. Airtable is used by marketing teams, product managers, and non-technical builders worldwide.",
-    "wikipediaSlug": "Airtable"
+    "wikipediaSlug": "Airtable",
+    "isHeadquarters": true
   },
   {
     "name": "Zapier",
@@ -847,8 +930,9 @@
     "lat": 37.7908517,
     "lng": -122.4006138,
     "imageName": "zapier.com.jpg",
-    "description": "Zapier is a no-code automation platform enabling users to connect over 6,000 web apps and automate workflows called “Zaps.” Founded in 2011, it allows small businesses and individuals to transfer data and trigger actions without developer resources. Zapier’s freemium model scales to paid tiers offering multi-step Zaps, premium apps, and advanced features. The fully remote company is bootstrapped and profitable, often cited as a leader in the no-code movement. AI-powered Zap creation and “Interfaces” micro-apps extend its automation capabilities.",
-    "wikipediaSlug": "Zapier"
+    "description": "Zapier is a no-code automation platform enabling users to connect over 6,000 web apps and automate workflows called \u201cZaps.\u201d Founded in 2011, it allows small businesses and individuals to transfer data and trigger actions without developer resources. Zapier\u2019s freemium model scales to paid tiers offering multi-step Zaps, premium apps, and advanced features. The fully remote company is bootstrapped and profitable, often cited as a leader in the no-code movement. AI-powered Zap creation and \u201cInterfaces\u201d micro-apps extend its automation capabilities.",
+    "wikipediaSlug": "Zapier",
+    "isHeadquarters": true
   },
   {
     "name": "Miro",
@@ -858,7 +942,8 @@
     "lng": -122.3950694,
     "imageName": "miro.com.jpg",
     "description": "Miro offers an online collaborative whiteboard used by distributed teams for brainstorming, agile planning, and diagramming. Founded in 2011 (as RealtimeBoard), Miro surged in popularity during remote-work shifts. The platform features sticky notes, templates, and integrations with Slack, Jira, and Zoom. Miroverse hosts community-created templates for design sprints, OKRs, and user-journey maps. The company is headquartered in Amsterdam and San Francisco, serving over 60 million users.",
-    "wikipediaSlug": "Miro_(software)"
+    "wikipediaSlug": "Miro_(software)",
+    "isHeadquarters": true
   },
   {
     "name": "Unity Technologies",
@@ -867,8 +952,9 @@
     "lat": 37.7867095,
     "lng": -122.4008276,
     "imageName": "unity.com.jpg",
-    "description": "Unity develops a real-time 3D game engine and development platform used in over half of the world’s mobile and VR games. Founded in Denmark in 2004, Unity democratized game creation with an accessible engine and asset store. Beyond gaming, Unity powers simulations in automotive, film, architecture, and digital twins. The company monetizes through software subscriptions, advertising (Unity Ads), and in-game purchases. A 2023 merger with ironSource expanded Unity’s ad-tech capabilities amid competition with Epic Games’ Unreal Engine.",
-    "wikipediaSlug": "Unity_(game_engine)"
+    "description": "Unity develops a real-time 3D game engine and development platform used in over half of the world\u2019s mobile and VR games. Founded in Denmark in 2004, Unity democratized game creation with an accessible engine and asset store. Beyond gaming, Unity powers simulations in automotive, film, architecture, and digital twins. The company monetizes through software subscriptions, advertising (Unity Ads), and in-game purchases. A 2023 merger with ironSource expanded Unity\u2019s ad-tech capabilities amid competition with Epic Games\u2019 Unreal Engine.",
+    "wikipediaSlug": "Unity_(game_engine)",
+    "isHeadquarters": true
   },
   {
     "name": "AppLovin",
@@ -877,7 +963,8 @@
     "lat": 37.4152188,
     "lng": -122.153139,
     "imageName": "applovin.com.jpg",
-    "description": "AppLovin provides a software platform for mobile app developers to acquire users, monetize through advertising, and analyze performance. Founded in 2012, it combines the AppLovin Exchange, MAX mediation, and SparkLabs creative tools. The company owns and operates its own studios, including Machine Zone and Lion Studios, producing games like “Game of War.” AppLovin went public in 2021 and pivoted toward AI-driven ad targeting after privacy changes challenged mobile advertising. It competes with Unity Ads and ironSource in the app-monetization ecosystem.",
-    "wikipediaSlug": "AppLovin"
+    "description": "AppLovin provides a software platform for mobile app developers to acquire users, monetize through advertising, and analyze performance. Founded in 2012, it combines the AppLovin Exchange, MAX mediation, and SparkLabs creative tools. The company owns and operates its own studios, including Machine Zone and Lion Studios, producing games like \u201cGame of War.\u201d AppLovin went public in 2021 and pivoted toward AI-driven ad targeting after privacy changes challenged mobile advertising. It competes with Unity Ads and ironSource in the app-monetization ecosystem.",
+    "wikipediaSlug": "AppLovin",
+    "isHeadquarters": true
   }
 ]

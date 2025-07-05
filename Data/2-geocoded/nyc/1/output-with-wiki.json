@@ -7,7 +7,8 @@
     "id": "1ff6e548-8ad0-47d5-ba62-ebe7ead2199d",
     "lat": 40.7394362,
     "lng": -73.9895524,
-    "wikipediaSlug": "SeatGeek"
+    "wikipediaSlug": "SeatGeek",
+    "isHeadquarters": true
   },
   {
     "name": "MongoDB",
@@ -17,7 +18,8 @@
     "id": "d7a84784-f723-4a59-ac3c-ddfa3793864b",
     "lat": 40.7620791,
     "lng": -73.98460990000001,
-    "wikipediaSlug": "MongoDB"
+    "wikipediaSlug": "MongoDB",
+    "isHeadquarters": true
   },
   {
     "name": "Etsy",
@@ -27,7 +29,8 @@
     "id": "6dba7613-eec3-41b9-8abe-e25543944c70",
     "lat": 40.7005529,
     "lng": -73.98828879999999,
-    "wikipediaSlug": "Etsy"
+    "wikipediaSlug": "Etsy",
+    "isHeadquarters": true
   },
   {
     "name": "Codecademy",
@@ -37,7 +40,8 @@
     "id": "9249a77c-3f0c-4c34-9257-fa2f9189d269",
     "lat": 40.7246343,
     "lng": -73.9976263,
-    "wikipediaSlug": "Codecademy"
+    "wikipediaSlug": "Codecademy",
+    "isHeadquarters": true
   },
   {
     "name": "Kickstarter",
@@ -47,7 +51,8 @@
     "id": "1f4dfed6-219d-4d34-a48b-9ec9d29d88b0",
     "lat": 40.7303597,
     "lng": -73.9586928,
-    "wikipediaSlug": "Kickstarter"
+    "wikipediaSlug": "Kickstarter",
+    "isHeadquarters": false
   },
   {
     "name": "Peloton",
@@ -57,7 +62,8 @@
     "id": "f6d45a55-2ae8-4ef0-a9cb-b6a531c25166",
     "lat": 40.7539512,
     "lng": -73.9965153,
-    "wikipediaSlug": "Peloton_Interactive"
+    "wikipediaSlug": "Peloton_Interactive",
+    "isHeadquarters": true
   },
   {
     "name": "Squarespace",
@@ -67,7 +73,8 @@
     "id": "2f9a29b9-c0c6-4e83-a256-887ba79ce79c",
     "lat": 40.7289729,
     "lng": -74.00549389999999,
-    "wikipediaSlug": "Squarespace"
+    "wikipediaSlug": "Squarespace",
+    "isHeadquarters": true
   },
   {
     "name": "Zocdoc",
@@ -77,7 +84,8 @@
     "id": "9b8cc6fb-168b-49c8-a53a-d5647ab1e07d",
     "lat": 40.7243328,
     "lng": -73.997408,
-    "wikipediaSlug": "Zocdoc"
+    "wikipediaSlug": "Zocdoc",
+    "isHeadquarters": true
   },
   {
     "name": "Vimeo",
@@ -87,7 +95,8 @@
     "id": "6b3173cc-48bf-4bc9-885f-65c0f05e28d5",
     "lat": 40.75260189999999,
     "lng": -73.9951169,
-    "wikipediaSlug": "Vimeo"
+    "wikipediaSlug": "Vimeo",
+    "isHeadquarters": true
   },
   {
     "name": "Datadog",
@@ -97,7 +106,8 @@
     "id": "fb297a6e-12a5-4ce6-a839-f5f6b1d8c20b",
     "lat": 40.7563103,
     "lng": -73.99029759999999,
-    "wikipediaSlug": "Datadog"
+    "wikipediaSlug": "Datadog",
+    "isHeadquarters": true
   },
   {
     "name": "Shutterstock",
@@ -107,7 +117,8 @@
     "id": "8f29bba9-0897-4013-b8cc-07e30f8bcae2",
     "lat": 40.7484914,
     "lng": -73.9856709,
-    "wikipediaSlug": "Shutterstock"
+    "wikipediaSlug": "Shutterstock",
+    "isHeadquarters": true
   },
   {
     "name": "Stash",
@@ -117,6 +128,7 @@
     "id": "18419882-ef50-4c5a-8ce9-98b8ab0d0e58",
     "lat": 40.7385476,
     "lng": -73.9871936,
-    "wikipediaSlug": "Stash_(company)"
+    "wikipediaSlug": "Stash_(company)",
+    "isHeadquarters": true
   }
 ]
