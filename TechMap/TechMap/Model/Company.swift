@@ -18,5 +18,6 @@ struct Company: Codable, Identifiable, Hashable {
     var description: String
     var wikipediaSlug: String
     var region: String
+    var isHeadquarters: Bool
 }
 

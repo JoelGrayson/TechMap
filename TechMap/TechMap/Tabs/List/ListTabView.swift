@@ -112,34 +112,12 @@ struct ListTabView: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
-                // Region Picker
-                if let settings = rawSettings.first {
-                    Picker(
-                        "Region",
-                        selection: .init(get: { region }, set: { newValue in
-                            settings.region = newValue
-                            try? modelContext.save()
-                        })
-                    ) {
-                        Text(Settings.Region.bayArea.rawValue)
-                            .tag(Settings.Region.bayArea)
-                        Text(Settings.Region.nyc.rawValue)
-                            .tag(Settings.Region.nyc)
-                        Text(Settings.Region.seattle.rawValue)
-                            .tag(Settings.Region.seattle)
-                    }
-                    .pickerStyle(.segmented)
-                    .labelsHidden()
-                    .frame(maxWidth: 200)
-                }
-                
-                
                 // Visited companies
                 Text("Visited (\(checks.count))")
                     .sectionTitle()
                 
                 if checksWithAssociatedCompaniesInRegion.isEmpty {
-                    Text("You have not visited any companies yet. Click on a company on the map and select \"Mark as Visited\" to visit one.")
+                    Text("You have not visited any companies \(region == .all ? "" : "in \(region.fullDescription)")yet. Click on a company on the map and select \"Mark as Visited\" to visit one.")
                         .padding(.vertical)
                         .padding(.bottom)
                 } else {
@@ -190,6 +168,30 @@ struct ListTabView: View {
                 )
                 .padding()
             }
+            .overlay(alignment: .topTrailing) {
+                if let settings = rawSettings.first {
+                    Picker(
+                        "Region",
+                        selection: .init(get: { region }, set: { newValue in
+                            settings.region = newValue
+                            try? modelContext.save()
+                        })
+                    ) {
+                        Text(Settings.Region.bayArea.rawValue)
+                            .tag(Settings.Region.bayArea)
+                        Text(Settings.Region.nyc.rawValue)
+                            .tag(Settings.Region.nyc)
+                        Text(Settings.Region.seattle.rawValue)
+                            .tag(Settings.Region.seattle)
+                        Text(Settings.Region.all.rawValue)
+                            .tag(Settings.Region.all)
+                    }
+                    .pickerStyle(.menu)
+                    .labelsHidden()
+                    .padding(.top, 10)
+                    .padding(.trailing, 20)
+                }
+            }
         }
     }
 }
@@ -200,6 +202,7 @@ struct CheckWithAssociatedCompany {
     let company: Company?
 }
 
-#Preview {
-    ListTabView(firebaseVM: MockData.firebaseVM, locationVM: .init(), companies: MockData.companies, checks: MockData.checks)
-}
+//#Preview {
+//    ListTabView(firebaseVM: MockData.firebaseVM, locationVM: .init(), companies: MockData.companies, checks: MockData.checks)
+//}
+

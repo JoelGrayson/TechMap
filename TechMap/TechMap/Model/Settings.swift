@@ -47,6 +47,14 @@ class Settings {
             case .all: "all"
             }
         }
+        var fullDescription: String {
+            switch self {
+            case .nyc: "NYC"
+            case .bayArea: "the Bay Area"
+            case .seattle: "the Seattle Metropolitan Area"
+            case .all: "All"
+            }
+        }
     }
     
     static let defaultSettings = Settings()

@@ -13,7 +13,7 @@ const db=getFirestore(); //use the (default) firebase database because this is w
 
 
 async function uploadJSON(filename, region) {
-    /** @type {{ name: string; address: string; id: string; lat: number; lng: number; imageName: string; description: string, wikipediaSlug: string }[]} */
+    /** @type {{ name: string; address: string; id: string; lat: number; lng: number; imageName: string; description: string, wikipediaSlug: string, isHeadquarters: boolean }[]} */
     const companies=JSON.parse(await fs.readFile(filename));
 
     const collectionRef=db.collection('companies');
@@ -29,6 +29,7 @@ async function uploadJSON(filename, region) {
             imageName: company.imageName,
             description: company.description,
             wikipediaSlug: company.wikipediaSlug,
+            isHeadquarters: company.isHeadquarters,
             region
         });
     }
