@@ -160,10 +160,15 @@
     "wikipediaSlug": "Oracle_Corporation"
   },
   {
-    "name": "Oracle",
+    "name": "Sun Microsystems (now Oracle)",
     "address": "4150 Network Circle Santa Clara, CA 95054",
+    "lat": 37.393412056086994,
+    "lng": -121.95399945617885,
+    "imageName": "sunmicrosystems.jpg",
+    "id": "f51e345f-7c4d-4aa3-98ea-b4cdfb90c953",
     "isHeadquarters": false,
-    "description": "This place was the former headquarters of Sun microsystems"
+    "description": "This place was the former headquarters of Sun microsystems. Now it is the place of some Oracle offices",
+    "wikipediaSlug": "Sun_Microsystems"
   },
   {
     "name": "Western Digital",

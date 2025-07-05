@@ -12,7 +12,7 @@ const geocoder=NodeGeocoder({
 
 
 (async ()=>{
-    const data=JSON.parse(await fsPromises.readFile('./1-raw-company-list/nyc/nyc.json'));
+    const data=JSON.parse(await fsPromises.readFile('./1-raw-company-list/seattle/seattle.json'));
     for (let i=0; i<data.length; i++) {
         process.stdout.write('*');
         // console.log(data);
