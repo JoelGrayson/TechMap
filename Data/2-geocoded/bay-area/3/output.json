@@ -165,17 +165,6 @@
     "isHeadquarters": true
   },
   {
-    "name": "Advanced Micro Devices (AMD)",
-    "address": "2485 Augustine Drive Santa Clara, CA 95054",
-    "id": "c654e0d7-1582-4403-8aef-b52908d6933a",
-    "lat": 37.3829254,
-    "lng": -121.9703842,
-    "imageName": "advancedmicrodevicesamd.com.jpg",
-    "description": "Advanced Micro Devices (AMD) designs high-performance CPUs, GPUs, and adaptive SoCs for PCs, gaming consoles, data centers, and automotive systems. Founded in 1969, AMD competes with Intel and Nvidia through its Ryzen processors, Radeon graphics, and EPYC server chips, and has become a fabless company using contract manufacturers.",
-    "wikipediaSlug": "AMD",
-    "isHeadquarters": true
-  },
-  {
     "name": "Broadcom",
     "address": "3421 Hillview Avenue Palo Alto, CA 94304 United States",
     "id": "5141bcdb-d3cf-44fc-998f-193554b06e5c",

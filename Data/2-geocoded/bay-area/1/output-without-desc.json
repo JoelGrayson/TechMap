@@ -171,16 +171,16 @@
         "name": "WhatsApp (Meta)",
         "address": "1601 Willow Rd, Menlo Park, CA 94025",
         "id": "b415d311-0e2f-4e70-ad9f-fa3bbf03868b",
-        "lat": 37.482503,
-        "lng": -122.1479457,
+        "lat": 37.48451882436818,
+        "lng": -122.14729525320755,
         "imageName": "whatsapp.com.jpg"
     },
     {
         "name": "Instagram (Meta)",
         "address": "200 Jefferson Dr, Menlo Park, CA 94025",
         "id": "3f031f9c-f20f-426a-86bf-c536123eaaf3",
-        "lat": 37.4799547,
-        "lng": -122.1690575,
+        "lat": 37.47976297929931,
+        "lng": -122.16891357648237,
         "imageName": "instagram.com.jpg"
     },
     {
@@ -478,14 +478,6 @@
         "lat": 37.7908517,
         "lng": -122.4006138,
         "imageName": "anthropic.com.jpg"
-    },
-    {
-        "name": "Synnex",
-        "address": "44201 Nobel Dr, Fremont, CA 94538",
-        "id": "1068459d-9f70-451a-8618-4f8ddccc5c4e",
-        "lat": 37.496726,
-        "lng": -121.9798511,
-        "imageName": "synnex.com.jpg"
     },
     {
         "name": "Lam Research",

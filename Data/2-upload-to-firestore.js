@@ -53,6 +53,23 @@ async function main() {
 
     console.log('\nUploading Seattle');
     await uploadJSON('./2-geocoded/seattle/1/output.json', 'seattle');
+
+
+    // Create one large file called all-companies.json. It is useful since I can paste it into LLMs to tell me if there are any duplicates or errors.
+    const forAllCombined=[
+        './2-geocoded/bay-area/1/output-with-wiki.json',
+        './2-geocoded/bay-area/2/output-with-wiki.json',
+        './2-geocoded/bay-area/3/output.json',
+        './2-geocoded/nyc/1/output-with-wiki.json',
+        './2-geocoded/nyc/2/output.json',
+        './2-geocoded/seattle/1/output.json'
+    ];
+    let allCompanies=[];
+    for (const fileName of forAllCombined) {
+        const companies=JSON.parse(await fs.readFile(fileName));
+        allCompanies=allCompanies.concat(companies);
+    }
+    fs.writeFile('all-companies.json', JSON.stringify(allCompanies, null, 4));
 }
 
 
