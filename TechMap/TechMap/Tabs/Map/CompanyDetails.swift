@@ -95,7 +95,7 @@ struct CompanyDetails: View {
                                 .truncationMode(.tail)
                         }
                     }
-                    if let distance = locationVM.distance, let time = locationVM.time {
+                    if let distance = locationVM.distance, let time = locationVM.time, let rawTimeInterval = locationVM.rawTimeInterval, rawTimeInterval < 3 * 60 * 60 /* 3 hours max to show the walking/driving duration */ {
                         HStack {
                             // Walk icon
                             Image(systemName: settings.transportationMethod == .walking ? "figure.walk" : "car.fill")

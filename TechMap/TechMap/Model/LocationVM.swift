@@ -29,6 +29,7 @@ class LocationVM: NSObject, CLLocationManagerDelegate {
     
     // Calculated published properties. Accessed by the user
     var time: String?
+    var rawTimeInterval: TimeInterval?
     var distance: String?
     var currentLocation: CLLocation?
     var heading: CLLocationDirection = 0
@@ -78,6 +79,7 @@ class LocationVM: NSObject, CLLocationManagerDelegate {
                     timeFormatter.unitsStyle = .abbreviated
                     timeFormatter.allowedUnits = [.hour, .minute]
                     self.time = timeFormatter.string(from: response.expectedTravelTime)
+                    self.rawTimeInterval = response.expectedTravelTime
                 }
             }
         }
