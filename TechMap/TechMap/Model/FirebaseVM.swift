@@ -155,7 +155,13 @@ class FirebaseVM { //handles auth and firestore
                     // Try to get the existing user info from the error
                     if let existingCredential = (authError.userInfo[AuthErrorUserInfoUpdatedCredentialKey] as? AuthCredential) {
                         do {
+                            let oldUserId = currentUser.uid
                             let result = try await Auth.auth().signIn(with: existingCredential)
+                            let newUserId = result.user.uid
+                            
+                            // Transfer checks from anonymous account to signed-in account
+                            await transferChecks(from: oldUserId, to: newUserId)
+                            
                             setPropertiesFrom(user: result.user)
                             print("Successfully signed in with existing credential")
                             return
@@ -172,7 +178,13 @@ class FirebaseVM { //handles auth and firestore
                 
                 // For other types of linking failures, try direct sign-in
                 do {
+                    let oldUserId = currentUser.uid
                     let result = try await Auth.auth().signIn(with: credential)
+                    let newUserId = result.user.uid
+                    
+                    // Transfer checks from anonymous account to signed-in account
+                    await transferChecks(from: oldUserId, to: newUserId)
+                    
                     setPropertiesFrom(user: result.user)
                     print("Signed in with existing account with email \(result.user.email ?? "undefined")")
                 } catch {
@@ -235,6 +247,51 @@ class FirebaseVM { //handles auth and firestore
         uid = nil
     }
     
+    func transferChecks(from oldUserId: String, to newUserId: String) async {
+        let db = Firestore.firestore()
+        
+        do {
+            // Get all checks for the old user ID
+            let snapshot = try await db.collection("checkmarks")
+                .whereField("userId", isEqualTo: oldUserId)
+                .getDocuments()
+            
+            guard !snapshot.documents.isEmpty else {
+                print("No checks to transfer from anonymous account")
+                return
+            }
+            
+            print("Transferring \(snapshot.documents.count) checks from anonymous account to signed-in account")
+            
+            // Create new checkmarks with the new user ID (don't delete old ones)
+            for document in snapshot.documents {
+                do {
+                    // Parse the existing check data
+                    let existingCheck = try document.data(as: Check.self)
+                    
+                    // Create a new check with the new user ID
+                    let newCheck = Check(
+                        companyId: existingCheck.companyId,
+                        userId: newUserId,
+                        createdAt: existingCheck.createdAt,
+                        device: existingCheck.device
+                    )
+                    
+                    // Add the new check
+                    try db.collection("checkmarks").addDocument(from: newCheck)
+                    
+                } catch {
+                    print("Error transferring check \(document.documentID): \(error.localizedDescription)")
+                }
+            }
+            
+            print("Successfully transferred \(snapshot.documents.count) checks to new account")
+            
+        } catch {
+            print("Error transferring checks: \(error.localizedDescription)")
+        }
+    }
+    
     
     // Checks functions
     func addCheck(companyId: String?) {
@@ -248,7 +305,7 @@ class FirebaseVM { //handles auth and firestore
         }
         
         let db = Firestore.firestore()
-        let check = Check(companyId: companyId, userId: uid, createdAt: .now, device: "iphone app")
+        let check = Check(companyId: companyId, userId: uid, createdAt: .now, device: Constants.deviceTypeMobile)
         
         do {
             try db
