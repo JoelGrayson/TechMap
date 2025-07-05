@@ -152,21 +152,31 @@ struct SettingsTabView: View {
                         
                         
                         // Only show headquarters
-                        HStack {
-                            Text("Only Show if is Headquarters")
-                            Spacer()
-                            Toggle(
-                                "Only Show if is Headquarters",
-                                isOn: Binding<Bool>(
-                                    get: { settings.onlyShowHeadquarters },
-                                    set: { newValue in
-                                        settings.onlyShowHeadquarters = newValue
-                                        try? modelContext.save()
-                                    }
+                        VStack {
+                            HStack {
+                                Text("Only Show Headquarters")
+                                Spacer()
+                                Toggle(
+                                    "Only Show Headquarters",
+                                    isOn: Binding<Bool>(
+                                        get: { settings.onlyShowHeadquarters },
+                                        set: { newValue in
+                                            settings.onlyShowHeadquarters = newValue
+                                            try? modelContext.save()
+                                        }
+                                    )
                                 )
-                            )
-                            .toggleStyle(.switch)
-                            .labelsHidden()
+                                .toggleStyle(.switch)
+                                .labelsHidden()
+                            }
+                            
+                            if !settings.onlyShowHeadquarters {
+                                HStack {
+                                    Text("Offices that aren't headquarters are surrounded by a dotted line like so:")
+                                    JMarker(checked: false, imageName: "linkedin.com.jpg", selected: false, markerSize: .small, isHeadquarters: false)
+                                }
+                                .padding(.leading)
+                            }
                         }
                         
                         // Play sound when checked

@@ -264,17 +264,6 @@
     "isHeadquarters": true
   },
   {
-    "name": "Coinbase",
-    "address": "548 Market St, Suite 23008, San Francisco, CA 94104",
-    "description": "Cryptocurrency exchange platform enabling users to buy, sell, and store digital assets like Bitcoin and Ethereum.",
-    "imageName": "coinbase.com.jpg",
-    "id": "6c75c200-2f81-4140-a8e0-27966cb03241",
-    "lat": 37.7908517,
-    "lng": -122.4006138,
-    "wikipediaSlug": "Coinbase",
-    "isHeadquarters": true
-  },
-  {
     "name": "Zoox",
     "address": "1149 Chess Dr, Foster City, CA 94404",
     "description": "Autonomous vehicle company developing self-driving cars and mobility solutions for urban environments.",

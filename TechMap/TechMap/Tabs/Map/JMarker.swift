@@ -39,22 +39,12 @@ struct JMarker: View {
                     .stroke(checked ? Color("Checked") : Color("Unchecked"), style: StrokeStyle(lineWidth: Styles.borderSize, dash: [5, 3]))
             }
             
-            AsyncImage(url: imageURL(imageName: imageName)) { phase in
-                switch phase {
-                case .empty:
-                    ProgressView()
-                case .success(let image):
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(RoundedRectangle(cornerRadius: Styles.cornerRadius))
-                case .failure(_): //let error
-                    EmptyView()
-                @unknown default:
-                    EmptyView()
-                }
-            }
-            .padding(Styles.borderSize) //so that there is room for the RoundedRectangle border beneath to show
+            imageIcon
+                .padding(
+                    isHeadquarters
+                    ? Styles.borderSize  //so that there is room for the RoundedRectangle border beneath to show
+                    : 0.5 //not necessary since there is a stroked rectangle
+                )
             
             if checked {
                 CheckmarkShape()
@@ -68,6 +58,24 @@ struct JMarker: View {
             height: Styles.markerSize * markerSizeScalingFactor * scaleFactor
         )
         .animation(.spring(duration: Styles.animationDuration), value: scaleFactor)
+    }
+    
+    var imageIcon: some View {
+        AsyncImage(url: imageURL(imageName: imageName)) { phase in
+            switch phase {
+            case .empty:
+                ProgressView()
+            case .success(let image):
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .clipShape(RoundedRectangle(cornerRadius: Styles.cornerRadius))
+            case .failure(_): //let error
+                EmptyView()
+            @unknown default:
+                EmptyView()
+            }
+        }
     }
 }
 
