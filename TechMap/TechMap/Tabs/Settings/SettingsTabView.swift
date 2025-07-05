@@ -173,7 +173,7 @@ struct SettingsTabView: View {
                             if !settings.onlyShowHeadquarters {
                                 HStack {
                                     Text("Offices that aren't headquarters are surrounded by a dotted line like so:")
-                                    JMarker(checked: false, imageName: "linkedin.com.jpg", selected: false, markerSize: .small, isHeadquarters: false)
+                                    JMarker(checked: false, imageName: "linkedin.com.jpg", selected: false, markerSize: .small, isHeadquarters: false, onLongPress: nil)
                                 }
                                 .padding(.leading)
                             }
@@ -223,6 +223,13 @@ struct SettingsTabView: View {
                         FeedbackButton()
                         Spacer()
                     }
+                    
+                    HStack {
+                        Spacer()
+                        RatingButton()
+                        Spacer()
+                    }
+                    .padding(.top)
                 }
                 .padding(.bottom, Styles.settingsGapBetweenSections)
             }

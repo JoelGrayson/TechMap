@@ -11,7 +11,7 @@ struct FeedbackButton: View {
     var body: some View {
         if let url = URL(string: "https://forms.gle/WvifgC66xR2g1Y5p6") {
             Link(destination: url) {
-                Text("Leave Feedback or Report a Bug")
+                Text("Give Feedback") //Report a Bug
             }
             .buttonStyle(.bordered)
         } else {
