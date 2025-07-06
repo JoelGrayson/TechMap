@@ -21,5 +21,6 @@ struct Styles {
     static let settingsGapBetweenItems = 20 as CGFloat
     
     static let profilePhotoSize = 50 as CGFloat
+    static let companyDetailsPadding = 23 as CGFloat
 }
 

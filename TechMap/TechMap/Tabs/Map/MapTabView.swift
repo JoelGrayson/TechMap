@@ -129,8 +129,9 @@ struct MapTabView: View {
                         calculateRoute(to: company)
                     }
                 )
-                .padding()
-                .frame(height: height)
+                .padding(Styles.companyDetailsPadding)
+                .frame(maxHeight: height)
+                .fixedSize(horizontal: false, vertical: true)
                 .background {
                     RoundedRectangle(cornerRadius: Styles.cornerRadius)
                         .fill(Color.whiteOrBlack)
