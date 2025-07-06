@@ -22,6 +22,8 @@ struct ListTabView: View {
     @Binding var cameraPosition: MapCameraPosition
     
     @Query var rawSettings: [Settings]
+    
+    @State private var searchText = ""
 
     // Computed properties
     var region: Settings.Region {
@@ -37,59 +39,25 @@ struct ListTabView: View {
         }
     }
     
-    private func calculateRegionFromLocation() -> Settings.Region { //written by Claude code
-        guard let currentLocation = locationVM.currentLocation else {
-            return .all
-        }
-        
-        let coordinate = currentLocation.coordinate
-        
-        // NYC boundaries (approximate)
-        let nycBounds = (
-            minLat: 40.4774, maxLat: 40.9176,
-            minLon: -74.2591, maxLon: -73.7004
-        )
-        
-        // Bay Area boundaries (approximate)
-        let bayAreaBounds = (
-            minLat: 37.1, maxLat: 38.0,
-            minLon: -122.8, maxLon: -121.2
-        )
-        
-        // Seattle Metro boundaries (approximate)
-        let seattleBounds = (
-            minLat: 47.0, maxLat: 47.8,
-            minLon: -122.8, maxLon: -121.5
-        )
-        
-        // Check if location is within NYC bounds
-        if coordinate.latitude >= nycBounds.minLat && coordinate.latitude <= nycBounds.maxLat &&
-           coordinate.longitude >= nycBounds.minLon && coordinate.longitude <= nycBounds.maxLon {
-            return .nyc
-        }
-        
-        // Check if location is within Bay Area bounds
-        if coordinate.latitude >= bayAreaBounds.minLat && coordinate.latitude <= bayAreaBounds.maxLat &&
-           coordinate.longitude >= bayAreaBounds.minLon && coordinate.longitude <= bayAreaBounds.maxLon {
-            return .bayArea
-        }
-        
-        // Check if location is within Seattle Metro bounds
-        if coordinate.latitude >= seattleBounds.minLat && coordinate.latitude <= seattleBounds.maxLat &&
-           coordinate.longitude >= seattleBounds.minLon && coordinate.longitude <= seattleBounds.maxLon {
-            return .seattle
-        }
-        
-        // If location doesn't match any specific region, return all
-        return .all
-    }
     var checksWithAssociatedCompaniesInRegion: [CheckWithAssociatedCompany] {
         checksWithAssociatedCompanies
             .filter { region == .all || $0.company.region == region.code }
     }
+    var checksWithAssociatedCompaniesInRegionMatchingSearch: [CheckWithAssociatedCompany] {
+        checksWithAssociatedCompaniesInRegion
+            .filter {
+                searchText.isEmpty || $0.company.name.localizedCaseInsensitiveContains(searchText)
+            }
+    }
     var companiesInRegion: [Company] {
         companies
             .filter { region == .all || $0.region == region.code }
+    }
+    var companiesInRegionMatchingSearch: [Company] {
+        companiesInRegion
+            .filter {
+                searchText.isEmpty || $0.name.localizedCaseInsensitiveContains(searchText)
+            }
     }
     var checksWithAssociatedCompanies: [CheckWithAssociatedCompany] {
         checks
@@ -111,7 +79,7 @@ struct ListTabView: View {
             }
     }
     var notVisitedYet: [Company] {
-        companiesInRegion
+        companiesInRegionMatchingSearch
             .filter {
                 !companyChecked(company: $0, checks: checks)
             }
@@ -124,15 +92,15 @@ struct ListTabView: View {
         NavigationStack {
             VStack(alignment: .leading) {
                 // Visited companies
-                Text("Visited (\(checksWithAssociatedCompaniesInRegion.count))")
+                Text("Visited (\(checksWithAssociatedCompaniesInRegionMatchingSearch.count))")
                     .sectionTitle()
                 
-                if checksWithAssociatedCompaniesInRegion.isEmpty {
+                if checksWithAssociatedCompaniesInRegionMatchingSearch.isEmpty {
                     Text("You have not visited any companies \(region == .all ? "" : "in \(region.fullDescription) ")yet. Click on a company on the map and select \"Mark as Visited\" to visit one.")
                         .padding(.vertical)
                         .padding(.bottom)
                 } else {
-                    List(checksWithAssociatedCompaniesInRegion, id: \CheckWithAssociatedCompany.check.id) { c in
+                    List(checksWithAssociatedCompaniesInRegionMatchingSearch, id: \CheckWithAssociatedCompany.check.id) { c in
                         NavigationLink(value: c.company) {
                             HStack {
                                 InlineLogo(imageName: c.company.imageName)
@@ -211,7 +179,55 @@ struct ListTabView: View {
                     .padding(.trailing, 20)
                 }
             }
+            .searchable(text: $searchText)
         }
+    }
+    
+    private func calculateRegionFromLocation() -> Settings.Region { //written by Claude code
+        guard let currentLocation = locationVM.currentLocation else {
+            return .all
+        }
+        
+        let coordinate = currentLocation.coordinate
+        
+        // NYC boundaries (approximate)
+        let nycBounds = (
+            minLat: 40.4774, maxLat: 40.9176,
+            minLon: -74.2591, maxLon: -73.7004
+        )
+        
+        // Bay Area boundaries (approximate)
+        let bayAreaBounds = (
+            minLat: 37.1, maxLat: 38.0,
+            minLon: -122.8, maxLon: -121.2
+        )
+        
+        // Seattle Metro boundaries (approximate)
+        let seattleBounds = (
+            minLat: 47.0, maxLat: 47.8,
+            minLon: -122.8, maxLon: -121.5
+        )
+        
+        // Check if location is within NYC bounds
+        if coordinate.latitude >= nycBounds.minLat && coordinate.latitude <= nycBounds.maxLat &&
+           coordinate.longitude >= nycBounds.minLon && coordinate.longitude <= nycBounds.maxLon {
+            return .nyc
+        }
+        
+        // Check if location is within Bay Area bounds
+        if coordinate.latitude >= bayAreaBounds.minLat && coordinate.latitude <= bayAreaBounds.maxLat &&
+           coordinate.longitude >= bayAreaBounds.minLon && coordinate.longitude <= bayAreaBounds.maxLon {
+            return .bayArea
+        }
+        
+        // Check if location is within Seattle Metro bounds
+        if coordinate.latitude >= seattleBounds.minLat && coordinate.latitude <= seattleBounds.maxLat &&
+           coordinate.longitude >= seattleBounds.minLon && coordinate.longitude <= seattleBounds.maxLon {
+            return .seattle
+        }
+        
+        // If location doesn't match any specific region, return all
+        return .all
     }
 }
 
