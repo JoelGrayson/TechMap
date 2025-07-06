@@ -9,11 +9,11 @@ import SwiftUI
 import MapKit
 import CoreLocation
 
-func zoomTo(coordinate: CLLocationCoordinate2D) -> MapCameraPosition {
+func zoomTo(coordinate: CLLocationCoordinate2D, radius: CLLocationDistance) -> MapCameraPosition {
     let region = MKCoordinateRegion(
         center: coordinate,
-        latitudinalMeters: 8047, // 5 miles in meters
-        longitudinalMeters: 8047
+        latitudinalMeters: radius,
+        longitudinalMeters: radius
     )
     return .region(region)
 }

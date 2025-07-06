@@ -144,7 +144,7 @@ struct MapTabView: View {
     
     private func setInitialMapRegion() {
         if let userLocation = locationVM.currentLocation {
-            cameraPosition = zoomTo(coordinate: userLocation.coordinate)
+            cameraPosition = zoomTo(coordinate: userLocation.coordinate, radius: 8000)
             needsToPositionAtStart = false //only change to false if was able to change
         }
     }

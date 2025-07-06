@@ -167,9 +167,9 @@ struct ListTabView: View {
                     HStack {
                         Spacer()
                         Button {
-                            selectedCompany = company
+                            // selectedCompany = company //Don't select the company because that shows the CompanyDetails which the user just came from
                             selectedTab = Constants.mapTabValue
-                            cameraPosition = zoomTo(coordinate: .init(latitude: company.lat, longitude: company.lng))
+                            cameraPosition = zoomTo(coordinate: .init(latitude: company.lat, longitude: company.lng), radius: 1000)
                         } label: {
                             Label("Show in TechMap", systemImage: Constants.mapIcon)
                         }
