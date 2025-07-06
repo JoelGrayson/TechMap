@@ -16,10 +16,11 @@ struct MapTabView: View {
     var companies: [Company]
     var checks: [Check]
     
-    @State var selectedCompany: Company?
     @State private var route: MKRoute?
     @State private var showingDirections = false
-    @State private var cameraPosition: MapCameraPosition = .automatic
+    
+    @Binding var selectedCompany: Company?
+    @Binding var cameraPosition: MapCameraPosition
     
     @Query var rawSettings: [Settings]
     var settings: Settings {
@@ -143,12 +144,7 @@ struct MapTabView: View {
     
     private func setInitialMapRegion() {
         if let userLocation = locationVM.currentLocation {
-            let region = MKCoordinateRegion(
-                center: userLocation.coordinate,
-                latitudinalMeters: 8047, // 5 miles in meters
-                longitudinalMeters: 8047
-            )
-            cameraPosition = .region(region)
+            cameraPosition = zoomTo(coordinate: userLocation.coordinate)
             needsToPositionAtStart = false //only change to false if was able to change
         }
     }
@@ -175,6 +171,6 @@ struct MapTabView: View {
 }
 
 #Preview {
-    MapTabView(firebaseVM: MockData.firebaseVM, locationVM: .init(), companies: MockData.companies, checks: MockData.checks)
+    MapTabView(firebaseVM: MockData.firebaseVM, locationVM: .init(), companies: MockData.companies, checks: MockData.checks, selectedCompany: .constant(nil), cameraPosition: .constant(.automatic))
 }
 

@@ -8,15 +8,21 @@
 import SwiftUI
 import SwiftData
 import CoreLocation
+import MapKit
 
 struct ListTabView: View {
+    @Environment(\.modelContext) private var modelContext
+    
     var firebaseVM: FirebaseVM
     var locationVM: LocationVM
     var companies: [Company]
     var checks: [Check]
-    @Query var rawSettings: [Settings]
-    @Environment(\.modelContext) private var modelContext
+    @Binding var selectedCompany: Company?
+    @Binding var selectedTab: String
+    @Binding var cameraPosition: MapCameraPosition
     
+    @Query var rawSettings: [Settings]
+
     // Computed properties
     var region: Settings.Region {
         if let settings = rawSettings.first {
@@ -157,15 +163,29 @@ struct ListTabView: View {
             }
             .padding()
             .navigationDestination(for: Company.self) { company in
-                CompanyDetails(
-                    company: .constant(company),
-                    checks: checks,
-                    firebaseVM: firebaseVM,
-                    locationVM: locationVM,
-                    closable: false,
-                    onDirectionsRequested: nil
-                )
-                .padding()
+                VStack {
+                    HStack {
+                        Spacer()
+                        Button {
+                            selectedCompany = company
+                            selectedTab = Constants.mapTabValue
+                            cameraPosition = zoomTo(coordinate: .init(latitude: company.lat, longitude: company.lng))
+                        } label: {
+                            Label("Show in TechMap", systemImage: Constants.mapIcon)
+                        }
+                        .buttonStyle(.bordered)
+                    }
+                    
+                    CompanyDetails(
+                        company: .constant(company),
+                        checks: checks,
+                        firebaseVM: firebaseVM,
+                        locationVM: locationVM,
+                        closable: false,
+                        onDirectionsRequested: nil
+                    )
+                }
+                .padding(.horizontal)
             }
             .overlay(alignment: .topTrailing) {
                 if let settings = rawSettings.first {

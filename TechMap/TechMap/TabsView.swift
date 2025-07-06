@@ -8,6 +8,7 @@
 import SwiftUI
 import FirebaseFirestore
 import SwiftData
+import MapKit
 
 struct TabsView: View {
     let firebaseVM: FirebaseVM
@@ -34,13 +35,16 @@ struct TabsView: View {
         rawSettings.first ?? Settings.defaultSettings
     }
     
+    @State private var cameraPosition: MapCameraPosition = .automatic
+    @State var selectedCompany: Company?
+    
     var body: some View {
         TabView(selection: $selectedTab) {
-            Tab("Map", systemImage: "mappin.circle.fill", value: "Map") {
-                MapTabView(firebaseVM: firebaseVM, locationVM: locationVM, companies: companies, checks: checks)
+            Tab("Map", systemImage: Constants.mapIcon, value: Constants.mapTabValue) {
+                MapTabView(firebaseVM: firebaseVM, locationVM: locationVM, companies: companies, checks: checks, selectedCompany: $selectedCompany, cameraPosition: $cameraPosition)
             }
             Tab("List", systemImage: "list.bullet", value: "List") {
-                ListTabView(firebaseVM: firebaseVM, locationVM: locationVM, companies: companies, checks: checks)
+                ListTabView(firebaseVM: firebaseVM, locationVM: locationVM, companies: companies, checks: checks, selectedCompany: $selectedCompany, selectedTab: $selectedTab, cameraPosition: $cameraPosition)
             }
             Tab("Settings", systemImage: "gearshape.fill", value: "Settings") {
                 SettingsTabView(firebaseVM: firebaseVM, locationVM: locationVM)

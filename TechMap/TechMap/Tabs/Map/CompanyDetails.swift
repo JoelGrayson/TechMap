@@ -144,12 +144,10 @@ struct CompanyDetails: View {
                                     .scaledToFit()
                                     .frame(width: 40, height: 40)
                                 
-                                Text("Open its Wikipedia")
+                                Text("Open Its Wikipedia")
                             }
                         }
                     }
-                    // .lineLimit(closable ? 8 : nil) //when closable, it is in its small form
-                    
                 }
             }
             .opacity(hidden ? 0 : 1)
