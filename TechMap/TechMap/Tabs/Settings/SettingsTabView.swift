@@ -236,9 +236,14 @@ struct SettingsTabView: View {
                                 RatingButton()
                                 Spacer()
                             }
+                            
+                            if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+                                Text("TechMap Version \(version)")
+                                    .font(.caption)
+                            }
                         }
                     }
-                    .padding(.bottom, Styles.settingsGapBetweenSections)
+                    .padding(.top, Styles.settingsGapBetweenSections)
                 }
                 .padding()
             }
