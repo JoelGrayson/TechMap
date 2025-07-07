@@ -47,10 +47,14 @@ struct SettingsTabView: View {
                                     }
                                 }
                             }
+                            
                             Button("Sign Out") {
                                 firebaseVM.signOut()
                             }
                             .buttonStyle(.bordered)
+                            
+                            NavigationLink("More Options", destination: Text("More opts"))
+                                .buttonStyle(.bordered)
                         }
                         
                         if firebaseVM.isSignedIn == .notSignedIn {
@@ -220,30 +224,37 @@ struct SettingsTabView: View {
                         Text("Settings has not been configured yet.")
                     }
                     
-                    Spacer()
                     
-                    Section {
-                        VStack(spacing: Styles.settingsGapBetweenItems*0.7) {
-                            HStack {
-                                Spacer()
-                                FeedbackButton()
-                                Spacer()
+                    Text("App Info")
+                        .sectionTitle()
+                        .padding(.top, Styles.settingsGapBetweenSections)
+                    
+                    VStack(spacing: Styles.settingsGapBetweenItems*0.7) {
+                        if let url = URL(string: "https://joelgrayson.com/techmap") {
+                            Link(destination: url) {
+                                Text("Open Web Version")
                             }
-                            
-                            HStack {
-                                Spacer()
-                                Text("Help by")
-                                RatingButton()
-                                Spacer()
-                            }
-                            
-                            if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
-                                Text("TechMap Version \(version)")
-                                    .font(.caption)
-                            }
+                            .buttonStyle(.bordered)
+                        }
+                        
+                        HStack {
+                            Spacer()
+                            FeedbackButton()
+                            Spacer()
+                        }
+                        
+                        HStack {
+                            Spacer()
+                            Text("Help by")
+                            RatingButton()
+                            Spacer()
+                        }
+                        
+                        if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+                            Text("TechMap Version \(version)")
+                                .font(.caption)
                         }
                     }
-                    .padding(.top, Styles.settingsGapBetweenSections)
                 }
                 .padding()
             }
