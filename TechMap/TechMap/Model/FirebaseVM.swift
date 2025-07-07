@@ -292,6 +292,43 @@ class FirebaseVM { //handles auth and firestore
         }
     }
     
+    func deleteAccount() async throws {
+        let a = Auth.auth()
+        let currentUserId = a.currentUser?.uid
+        guard let currentUserId else { throw DeleteAccountError.noCurrentUser }
+        
+        // Delete checkmarks associated with the account
+        do {
+            let db = Firestore.firestore()
+            let snapshot = try await db.collection("checkmarks")
+                .whereField("userId", isEqualTo: currentUserId)
+                .getDocuments()
+            
+            let batch = db.batch()
+            for document in snapshot.documents {
+                batch.deleteDocument(document.reference)
+            }
+            try await batch.commit()
+        } catch {
+            throw DeleteAccountError.failedToDeleteCheckmarks
+        }
+        
+        // Delete the account itself
+        do {
+            try await Auth.auth().currentUser?.delete()
+        } catch {
+            throw DeleteAccountError.failedToDeleteUser
+        }
+        
+        reset()
+    }
+    
+    enum DeleteAccountError: Error {
+        case noCurrentUser
+        case failedToDeleteCheckmarks
+        case failedToDeleteUser
+    }
+    
     
     // Checks functions
     func addCheck(companyId: String?) {

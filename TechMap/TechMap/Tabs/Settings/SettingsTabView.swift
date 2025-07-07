@@ -53,7 +53,7 @@ struct SettingsTabView: View {
                             }
                             .buttonStyle(.bordered)
                             
-                            NavigationLink("More Options", destination: Text("More opts"))
+                            NavigationLink("Manage Account", destination: MoreOptionsView(firebaseVM: firebaseVM))
                                 .buttonStyle(.bordered)
                         }
                         
