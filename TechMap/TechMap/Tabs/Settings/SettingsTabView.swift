@@ -8,7 +8,8 @@
 import SwiftUI
 import Kingfisher
 import AuthenticationServices
-
+import CoreLocation
+import MapKit
 import SwiftData
 
 struct SettingsTabView: View {
@@ -110,6 +111,31 @@ struct SettingsTabView: View {
                     Text("General")
                         .sectionTitle()
                         .padding(.top, Styles.settingsGapBetweenSections)
+                    
+                    // Location Services Prompt
+                    let authStatus = CLLocationManager().authorizationStatus
+                    if authStatus == .denied || authStatus == .notDetermined {
+                        VStack(alignment: .center, spacing: 8) {
+                            Text("Please enable location services to see where you are on the map")
+                                .font(.body)
+                                .foregroundColor(.secondary)
+                            
+                            Button(authStatus == .notDetermined ? "Enable Location Services" : "Open Settings") {
+                                if authStatus == .notDetermined {
+                                    locationVM.requestLocationPermission()
+                                } else {
+                                    if let settingsUrl = URL(string: UIApplication.openSettingsURLString) {
+                                        UIApplication.shared.open(settingsUrl)
+                                    }
+                                }
+                            }
+                            .buttonStyle(.bordered)
+                        }
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(8)
+                    }
                     
                     if let settings = rawSettings.first {
                         VStack(spacing: Styles.settingsGapBetweenItems) {

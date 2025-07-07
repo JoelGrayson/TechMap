@@ -27,6 +27,10 @@ class LocationVM: NSObject, CLLocationManagerDelegate {
         locationManager.stopUpdatingHeading()
     }
     
+    func requestLocationPermission() {
+        locationManager.requestWhenInUseAuthorization()
+    }
+    
     // Calculated published properties. Accessed by the user
     var time: String?
     var rawTimeInterval: TimeInterval?
