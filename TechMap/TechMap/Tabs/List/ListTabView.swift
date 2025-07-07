@@ -91,9 +91,54 @@ struct ListTabView: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
+                // Region picker
+                if let settings = rawSettings.first {
+                    HStack(alignment: .center) {
+                        Spacer()
+                        Text("Region:")
+                            .bold()
+                        Picker(
+                            "Region",
+                            selection: .init(get: { region }, set: { newValue in
+                                settings.region = newValue
+                                try? modelContext.save()
+                            })
+                        ) {
+                            Text(Settings.Region.bayArea.rawValue)
+                                .tag(Settings.Region.bayArea)
+                            Text(Settings.Region.nyc.rawValue)
+                                .tag(Settings.Region.nyc)
+                            Text(Settings.Region.seattle.rawValue)
+                                .tag(Settings.Region.seattle)
+                            Text(Settings.Region.all.rawValue)
+                                .tag(Settings.Region.all)
+                        }
+                        .pickerStyle(.menu)
+                        .labelsHidden()
+                    }
+                    .padding(.bottom)
+                }
+                
+                
                 // Visited companies
-                Text("Visited (\(checksWithAssociatedCompaniesInRegionMatchingSearch.count))")
-                    .sectionTitle()
+                HStack {
+                    Text("Visited (\(checksWithAssociatedCompaniesInRegionMatchingSearch.count))")
+                        .sectionTitle()
+                    
+                    Spacer()
+                    
+                    Button("Export") {
+                        if let fileUrl = exportToCSV(checksWithAssociatedCompaniesInRegion) {
+                            let activityVC = UIActivityViewController(activityItems: [fileUrl], applicationActivities: nil)
+                            
+                            // Present the share sheet
+                            if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                               let root = scene.windows.first?.rootViewController {
+                                root.present(activityVC, animated: true)
+                            }
+                        }
+                    }
+                }
                 
                 if checksWithAssociatedCompaniesInRegionMatchingSearch.isEmpty {
                     Text("You have not visited any companies \(region == .all ? "" : "in \(region.fullDescription) ")yet. Click on a company on the map and select \"Mark as Visited\" to visit one.")
@@ -154,30 +199,6 @@ struct ListTabView: View {
                     )
                 }
                 .padding(.horizontal)
-            }
-            .overlay(alignment: .topTrailing) {
-                if let settings = rawSettings.first {
-                    Picker(
-                        "Region",
-                        selection: .init(get: { region }, set: { newValue in
-                            settings.region = newValue
-                            try? modelContext.save()
-                        })
-                    ) {
-                        Text(Settings.Region.bayArea.rawValue)
-                            .tag(Settings.Region.bayArea)
-                        Text(Settings.Region.nyc.rawValue)
-                            .tag(Settings.Region.nyc)
-                        Text(Settings.Region.seattle.rawValue)
-                            .tag(Settings.Region.seattle)
-                        Text(Settings.Region.all.rawValue)
-                            .tag(Settings.Region.all)
-                    }
-                    .pickerStyle(.menu)
-                    .labelsHidden()
-                    .padding(.top, 10)
-                    .padding(.trailing, 20)
-                }
             }
             .searchable(text: $searchText)
         }
