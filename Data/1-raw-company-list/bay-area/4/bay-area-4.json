@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Houzz",
+        "address": "285 Hamilton Avenue 4th Floor Palo Alto, CA 94301",
+        "imageName": "houzz.com.jpg",
+        "isHeadquarters": true
+    },
+    {
+        "name": "IDEO",
+        "address": "2525 16th Street San Francisco, CA 94103 United States",
+        "imageName": "ideo.com.jpg",
+        "isHeadquarters": true
+    }
+]
