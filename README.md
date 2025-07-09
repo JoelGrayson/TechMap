@@ -3,10 +3,9 @@
     &nbsp;TechMap
 </h1>
 
-Open in web at [joelgrayson.com/techmap](https://joelgrayson.com/techmap) or 
+Ever visited Silicon Valley and wondered, "where are the tech companies located?" TechMap shows you a map of notable tech companies (like Instacart, Uber, LinkedIn, NVIDIA), a brief description about each, and lets you check off those that you visit so you can go tech company headquarters hopping! TechMap supports three regions: the Bay Area, NYC, and Seattle.
 
-[<img alt="Download on the App Store" src="Design/download-on-the-app-store.png" width="150px">](https://apps.apple.com/us/app/techmap/id6748248815)
-
+Open in web at [joelgrayson.com/techmap](https://joelgrayson.com/techmap) or  [<img alt="Download on the App Store" src="Design/download-on-the-app-store.png" width="150px">](https://apps.apple.com/us/app/techmap/id6748248815)
 
 ### Repository Folder Structure
 * `./Techmap` includes the cross-platform app (iPhone, iPad, Mac).
