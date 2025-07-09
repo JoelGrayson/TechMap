@@ -1,13 +1,11 @@
-<div style="display: flex; justify-content: center; gap: 15px">
-    <img alt="Techmap Logo" src="Design/Logo/v3/v3.0-for-web.png" height="40px">
-    <h1>Techmap</h1>
-</div>
+<h1 align="center">
+    <img src="Design/Logo/v3/v3.0-for-web.png" height="27" />
+    &nbsp;TechMap
+</h1>
 
 Open in web at [joelgrayson.com/techmap](https://joelgrayson.com/techmap) or 
 
 [<img alt="Download on the App Store" src="Design/download-on-the-app-store.png" width="150px">](https://apps.apple.com/us/app/techmap/id6748248815)
-
-
 
 
 ### Repository Folder Structure
